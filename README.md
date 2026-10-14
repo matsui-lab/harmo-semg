@@ -81,7 +81,7 @@ amplitude comparability. Windows and Linux require native acceptance testing.
 
 ## Citation and license
 
-- Public repository: https://github.com/matsui-lab/harmo-semg-public
+- Public repository: https://github.com/matsui-lab/harmo-semg
 - Archived release: https://doi.org/10.5281/zenodo.23362516
 - Software authors: Kosuke Ota; Masaaki Okabe; Yusuke Matsui.
 

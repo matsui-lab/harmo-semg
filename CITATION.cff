@@ -5,7 +5,7 @@ title: "harmo-semg: purpose-dependent harmonization of public electromyography d
 version: 0.3.1
 date-released: '2026-10-14'
 doi: 10.5281/zenodo.23362516
-repository-code: https://github.com/matsui-lab/harmo-semg-public
+repository-code: https://github.com/matsui-lab/harmo-semg
 license: Apache-2.0
 authors:
   - family-names: Ota
