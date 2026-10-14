@@ -1,0 +1,597 @@
+{
+  "online_repositories": [
+    {
+      "actual": {
+        "article_count": 4,
+        "article_ids": [
+          13169237,
+          13169240,
+          13169300,
+          14241812
+        ],
+        "file_count": 4,
+        "licenses": [
+          "CC0 1.0"
+        ],
+        "manifest_sha256": "7dc4db2cb58db6c3c5f1216631b804abd91a8182698a5c68648a553f78905cec",
+        "total_size_bytes": 5276406391,
+        "versions": [
+          1
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 4,
+        "article_ids": [
+          13169237,
+          13169240,
+          13169300,
+          14241812
+        ],
+        "file_count": 4,
+        "licenses": [
+          "CC0 1.0"
+        ],
+        "manifest_sha256": "7dc4db2cb58db6c3c5f1216631b804abd91a8182698a5c68648a553f78905cec",
+        "total_size_bytes": 5276406391,
+        "versions": [
+          1
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study31"
+    },
+    {
+      "actual": {
+        "article_count": 1,
+        "article_ids": [
+          29300888
+        ],
+        "file_count": 39,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "ddbe060d9899b5bbb08331066fb6236afa5495335e39d879c848441ebd5414d8",
+        "total_size_bytes": 1288693377,
+        "versions": [
+          2
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 1,
+        "article_ids": [
+          29300888
+        ],
+        "file_count": 39,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "ddbe060d9899b5bbb08331066fb6236afa5495335e39d879c848441ebd5414d8",
+        "total_size_bytes": 1288693377,
+        "versions": [
+          2
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study_1"
+    },
+    {
+      "actual": {
+        "article_count": 1,
+        "article_ids": [
+          27677016
+        ],
+        "file_count": 15,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "ffa0068a26217790e1a4ff69ca0af48a7a69a53d2992eac324b7f666cedc309c",
+        "total_size_bytes": 16512035708,
+        "versions": [
+          1
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 1,
+        "article_ids": [
+          27677016
+        ],
+        "file_count": 15,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "ffa0068a26217790e1a4ff69ca0af48a7a69a53d2992eac324b7f666cedc309c",
+        "total_size_bytes": 16512035708,
+        "versions": [
+          1
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study_120"
+    },
+    {
+      "actual": {
+        "article_count": 13,
+        "article_ids": [
+          24192480,
+          24192483,
+          24192486,
+          24192489,
+          24192492,
+          24192495,
+          24192498,
+          24192501,
+          24192504,
+          24192507,
+          24192510,
+          24192513,
+          24192516
+        ],
+        "file_count": 13,
+        "licenses": [
+          "CC0 1.0"
+        ],
+        "manifest_sha256": "cd1abb7523fc01b632bbb22660ce9cf83f5b57a264653d13340a47b5a73e2006",
+        "total_size_bytes": 10001542286,
+        "versions": [
+          1
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 13,
+        "article_ids": [
+          24192480,
+          24192483,
+          24192486,
+          24192489,
+          24192492,
+          24192495,
+          24192498,
+          24192501,
+          24192504,
+          24192507,
+          24192510,
+          24192513,
+          24192516
+        ],
+        "file_count": 13,
+        "licenses": [
+          "CC0 1.0"
+        ],
+        "manifest_sha256": "cd1abb7523fc01b632bbb22660ce9cf83f5b57a264653d13340a47b5a73e2006",
+        "total_size_bytes": 10001542286,
+        "versions": [
+          1
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study_28"
+    },
+    {
+      "actual": {
+        "article_count": 1,
+        "article_ids": [
+          22227337
+        ],
+        "file_count": 16,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "750cb50261a9a867eecea9e741034ccbba294cd701697e434ed54dfa94b6b6f6",
+        "total_size_bytes": 2787014912,
+        "versions": [
+          2
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 1,
+        "article_ids": [
+          22227337
+        ],
+        "file_count": 16,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "750cb50261a9a867eecea9e741034ccbba294cd701697e434ed54dfa94b6b6f6",
+        "total_size_bytes": 2787014912,
+        "versions": [
+          2
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study_32"
+    },
+    {
+      "pass": true,
+      "records": [
+        {
+          "checks": {
+            "doi": true,
+            "license": true,
+            "version": true
+          },
+          "doi": "10.17632/fcgm3chfff.2",
+          "landing_page": "https://data.mendeley.com/datasets/fcgm3chfff/2",
+          "pass": true,
+          "version": 2
+        },
+        {
+          "checks": {
+            "doi": true,
+            "license": true,
+            "version": true
+          },
+          "doi": "10.17632/k9kvm5tn3f.2",
+          "landing_page": "https://data.mendeley.com/datasets/k9kvm5tn3f/2",
+          "pass": true,
+          "version": 2
+        },
+        {
+          "checks": {
+            "doi": true,
+            "license": true,
+            "version": true
+          },
+          "doi": "10.17632/jj3r5f9pnf.2",
+          "landing_page": "https://data.mendeley.com/datasets/jj3r5f9pnf/2",
+          "pass": true,
+          "version": 2
+        }
+      ],
+      "repository": "mendeley-data",
+      "study_id": "study_33"
+    },
+    {
+      "actual": {
+        "article_count": 54,
+        "article_ids": [
+          8088302,
+          9759092,
+          9784961,
+          9784964,
+          9784967,
+          9784970,
+          9784973,
+          9784976,
+          9784979,
+          9784982,
+          9784985,
+          9784988,
+          9784991,
+          9784994,
+          9784997,
+          9785000,
+          9785003,
+          9785006,
+          9785009,
+          9785012,
+          9785015,
+          9785018,
+          9785021,
+          9785024,
+          9785027,
+          9785030,
+          9785033,
+          9785036,
+          9785039,
+          9785042,
+          9785045,
+          9785048,
+          9785051,
+          9785054,
+          9785057,
+          9785060,
+          9785063,
+          9785066,
+          9785069,
+          9785072,
+          9785075,
+          9785078,
+          9785081,
+          9785084,
+          9785087,
+          9785090,
+          9785093,
+          9785096,
+          9785099,
+          9785102,
+          9785105,
+          9785108,
+          9785111,
+          9785117
+        ],
+        "file_count": 54,
+        "licenses": [
+          "CC0 1.0"
+        ],
+        "manifest_sha256": "9ebabf10cb07fa59e34139941fce95153c453d4ea9a98e4b40661c3193d899c2",
+        "total_size_bytes": 515231189,
+        "versions": [
+          1
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 54,
+        "article_ids": [
+          8088302,
+          9759092,
+          9784961,
+          9784964,
+          9784967,
+          9784970,
+          9784973,
+          9784976,
+          9784979,
+          9784982,
+          9784985,
+          9784988,
+          9784991,
+          9784994,
+          9784997,
+          9785000,
+          9785003,
+          9785006,
+          9785009,
+          9785012,
+          9785015,
+          9785018,
+          9785021,
+          9785024,
+          9785027,
+          9785030,
+          9785033,
+          9785036,
+          9785039,
+          9785042,
+          9785045,
+          9785048,
+          9785051,
+          9785054,
+          9785057,
+          9785060,
+          9785063,
+          9785066,
+          9785069,
+          9785072,
+          9785075,
+          9785078,
+          9785081,
+          9785084,
+          9785087,
+          9785090,
+          9785093,
+          9785096,
+          9785099,
+          9785102,
+          9785105,
+          9785108,
+          9785111,
+          9785117
+        ],
+        "file_count": 54,
+        "licenses": [
+          "CC0 1.0"
+        ],
+        "manifest_sha256": "9ebabf10cb07fa59e34139941fce95153c453d4ea9a98e4b40661c3193d899c2",
+        "total_size_bytes": 515231189,
+        "versions": [
+          1
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study_38"
+    },
+    {
+      "actual": {
+        "article_count": 1,
+        "article_ids": [
+          24515092
+        ],
+        "file_count": 67,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "b88829dcebea63b206163bd8d37d19e38cd67b7e7a28fb884c85d77b0443d510",
+        "total_size_bytes": 1109865104,
+        "versions": [
+          4
+        ]
+      },
+      "checks": {
+        "article_count": true,
+        "article_ids": true,
+        "declared_license_matches_manifest": true,
+        "file_count": true,
+        "licenses": true,
+        "manifest_sha256": true,
+        "total_size_bytes": true,
+        "versions": true
+      },
+      "expected": {
+        "article_count": 1,
+        "article_ids": [
+          24515092
+        ],
+        "file_count": 67,
+        "licenses": [
+          "CC BY 4.0"
+        ],
+        "manifest_sha256": "b88829dcebea63b206163bd8d37d19e38cd67b7e7a28fb884c85d77b0443d510",
+        "total_size_bytes": 1109865104,
+        "versions": [
+          4
+        ]
+      },
+      "pass": true,
+      "repository": "figshare",
+      "study_id": "study_43"
+    }
+  ],
+  "online_requested": true,
+  "pass": true,
+  "registry_version": "1.1.0",
+  "rights": {
+    "expected_study_ids": [
+      "study31",
+      "study_1",
+      "study_120",
+      "study_28",
+      "study_32",
+      "study_33",
+      "study_38",
+      "study_43"
+    ],
+    "observed_study_ids": [
+      "study31",
+      "study_1",
+      "study_120",
+      "study_28",
+      "study_32",
+      "study_33",
+      "study_38",
+      "study_43"
+    ],
+    "pass": true,
+    "studies": [
+      {
+        "license": "CC0 1.0",
+        "pass": true,
+        "redistribution": "permitted",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study31"
+      },
+      {
+        "license": "CC BY 4.0",
+        "pass": true,
+        "redistribution": "permitted-with-attribution",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study_1"
+      },
+      {
+        "license": "CC BY 4.0",
+        "pass": true,
+        "redistribution": "permitted-with-attribution",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study_120"
+      },
+      {
+        "license": "CC0 1.0",
+        "pass": true,
+        "redistribution": "permitted",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study_28"
+      },
+      {
+        "license": "CC BY 4.0",
+        "pass": true,
+        "redistribution": "permitted-with-attribution",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study_32"
+      },
+      {
+        "license": "CC BY 4.0",
+        "pass": true,
+        "redistribution": "permitted-with-attribution",
+        "release_identity_ready": true,
+        "repository": "mendeley-data",
+        "rights_ready": true,
+        "study_id": "study_33"
+      },
+      {
+        "license": "CC0 1.0",
+        "pass": true,
+        "redistribution": "permitted",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study_38"
+      },
+      {
+        "license": "CC BY 4.0",
+        "pass": true,
+        "redistribution": "permitted-with-attribution",
+        "release_identity_ready": true,
+        "repository": "figshare",
+        "rights_ready": true,
+        "study_id": "study_43"
+      }
+    ],
+    "study_id_set_matches": true
+  },
+  "scope": "official-source-release-and-rights-verification"
+}

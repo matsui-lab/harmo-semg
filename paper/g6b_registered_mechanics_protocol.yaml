@@ -1,0 +1,33 @@
+schema_version: 1.0.0
+experiment_id: E2R
+gate_id: G6b-3R-H
+title: Exploratory held-out mechanics after dynamic marker registration
+frozen_at: '2026-07-22'
+freeze_state: frozen-after-registration-and-before-registered-heldout-computation
+relationship_to_g6b3: >-
+  Uses the unchanged G6b-3 mechanics protocol and thresholds. The original
+  G6b-3 result remains the retained baseline.
+scientific_question: >-
+  Does calibration-only, target-specific marker registration improve the
+  already observed 4.00 m/s benchmark mechanics relative to the retained
+  unregistered G6b-3 result?
+claim_boundary: >-
+  This is exploratory method-development evidence because the 4.00 m/s
+  benchmark result was observed before marker registration was designed. It
+  tests technical feasibility but is not independent confirmation and does not
+  establish population, rehabilitation, clinical, muscle-force, or
+  physiological validity.
+baseline_mechanics_protocol: paper/g6b_dynamic_mechanics_protocol.yaml
+baseline_mechanics_protocol_sha256: d37321014fbe8f1f0bfa9e304ec7e9a652b58d4669492bbe2b05b8113ab703f7
+registration_result: paper/results/validation/g6b_dynamic_registration_pilot.json
+registration_result_sha256: fd74a54fa90485912ca6b4904ed786fac2158adf61373c1650c88cc7e7f61a8a
+registered_model_sha256: e0090ed8b1146fd2a137321aa2ce5e9bf492b41917dd9102e21c3c20024edeee
+base_dynamic_model_sha256: d6e9d5477eadf0850c44cdb597e0c0b70d1cb2febc6a84a41e6fc38966b0c899
+registration_gate_status: failed-only-final-calibration-ik-max
+allow_exploratory_mechanics_after_failed_registration_gate: true
+heldout_inputs_used_in_registration: false
+threshold_policy: inherit-unchanged-from-baseline-mechanics-protocol
+comparison_policy:
+  primary: apply-all-original-g6b3-checks-without-threshold-changes
+  secondary: compare-registered-result-to-retained-unregistered-baseline
+  independent_confirmation_required: true

@@ -1,0 +1,51 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S4
+gate_id: G6c-S4
+title: RRA residual-moment axis, bias, external-wrench, and tracking localization
+frozen_at: '2026-07-22'
+design:
+  source_result: paper/results/validation/g6c_s3_state_reconstruction.json
+  source_work_artifacts:
+    s3_timeseries: g6c_s3_native_identity_timeseries.csv
+    pass1_directory: padded_rra/rra_pass1
+    pass2_directory: padded_rra/rra_pass2
+  public_source_roles:
+    ground_reaction: heldout_ground_reaction
+    raw_c3d: raw_c3d
+  comparison_window_s: [20.36, 21.01]
+  expected_sample_count: 651
+  vertical_axis: 1
+  public_prefixes: [l, r]
+  translational_coordinates: [pelvis_tx, pelvis_ty, pelvis_tz]
+  external_source_audit:
+    platform_index_zero_based: 1
+    c3d_to_ground_rotation:
+      - [0, -1, 0]
+      - [0, 0, 1]
+      - [-1, 0, 0]
+    c3d_time_offset_s: -0.01
+    contact_threshold_n: 20.0
+    minimum_contact_samples: 100
+    lowpass_cutoff_hz: 6.0
+    lowpass_order: 4
+    force_nrmse_tolerance: 0.05
+    cop_rmse_tolerance_m: 0.10
+    minimum_component_correlation: 0.90
+    minimum_free_moment_correlation: 0.70
+thresholds:
+  residual_moment_fraction: 0.01
+  minimum_dominant_axis_energy_share: 0.50
+  minimum_bias_energy_share: 0.50
+  minimum_vertical_free_mean_opposition_fraction: 0.80
+  maximum_pass_rms_relative_change: 0.10
+  minimum_waveform_association_correlation: 0.70
+  maximum_s3_moment_reproduction_error_nm: 1.0e-8
+  maximum_timeseries_identity_error_nm: 1.0e-6
+  maximum_energy_identity_error_nm2: 1.0e-9
+missing_policy: fail-closed-and-retain-result
+claim_boundary: >-
+  G6c-S4 localizes the retained common RRA moment failure into descriptive
+  axis, signed-mean, zero-mean, external-wrench, pass-stability, and tracking
+  components. Counterfactual removal of a source-faithful free moment is
+  diagnostic only. Association is not causal attribution, and S4 does not
+  validate personalization, joint moments, or muscle forces.

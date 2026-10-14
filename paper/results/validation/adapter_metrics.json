@@ -1,0 +1,116 @@
+{
+  "accounted_source_count": 3,
+  "active_work_scope": "confirmatory-adapter-execution-wall-time",
+  "active_work_seconds": 42.19872804199986,
+  "adapter_changed_lines": 969,
+  "all_sources_accounted": true,
+  "checks": [
+    {
+      "detail": "48b11912d177a100b290436917bf07df8e502359c3384557eeee612459d367c9",
+      "name": "processed-archive-identity",
+      "pass": true
+    },
+    {
+      "detail": true,
+      "name": "processed-archive-zip-crc",
+      "pass": true
+    },
+    {
+      "detail": {
+        "accounted": 3,
+        "total": 3
+      },
+      "name": "all-source-assets-accounted",
+      "pass": true
+    },
+    {
+      "detail": {
+        "materialized": 1
+      },
+      "name": "materialization-boundary",
+      "pass": true
+    },
+    {
+      "detail": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13"
+      ],
+      "name": "subjects-exact",
+      "pass": true
+    },
+    {
+      "detail": 208,
+      "name": "trials-exact",
+      "pass": true
+    },
+    {
+      "detail": 208,
+      "name": "every-trial-has-emg",
+      "pass": true
+    },
+    {
+      "detail": 208,
+      "name": "every-trial-has-imu",
+      "pass": true
+    },
+    {
+      "detail": 208,
+      "name": "every-trial-has-joint-angle",
+      "pass": true
+    },
+    {
+      "detail": 208,
+      "name": "all-source-time-increasing",
+      "pass": true
+    },
+    {
+      "detail": [
+        "158e5bdf0289b78113f6535608c650e94a061e75f4c6222bb2cbc837cfea83c6",
+        "158e5bdf0289b78113f6535608c650e94a061e75f4c6222bb2cbc837cfea83c6"
+      ],
+      "name": "repeated-normalized-manifest-identical",
+      "pass": true
+    },
+    {
+      "detail": 0,
+      "name": "core-changed-lines-zero",
+      "pass": true
+    },
+    {
+      "detail": [],
+      "name": "core-dataset-id-branches-zero",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "Passing demonstrates held-out extensibility, complete source accounting, and deterministic traceable conversion of the processed multimodal release. It does not validate the source authors' preprocessing, EMG amplitude comparability, model accuracy, clinical generalization, or the two non-materialized raw archives byte-for-byte.",
+  "core_changed_lines": 0,
+  "core_dataset_id_branch_findings": [],
+  "core_dataset_id_branches": 0,
+  "dataset": "ultra-mocap",
+  "materialized_source_count": 1,
+  "normalized_manifest_sha256": "158e5bdf0289b78113f6535608c650e94a061e75f4c6222bb2cbc837cfea83c6",
+  "pass": true,
+  "processed_archive_sha256": "48b11912d177a100b290436917bf07df8e502359c3384557eeee612459d367c9",
+  "processed_hdf5_sha256": "ac9a03d35dd4771411618517919afcf49b846678ec6c34cdba663b4096da2cce",
+  "protocol_id": "g7-held-out-ultra-mocap-adapter",
+  "repeat_count": 2,
+  "repeat_manifest_sha256": [
+    "158e5bdf0289b78113f6535608c650e94a061e75f4c6222bb2cbc837cfea83c6",
+    "158e5bdf0289b78113f6535608c650e94a061e75f4c6222bb2cbc837cfea83c6"
+  ],
+  "schema_version": "1.0",
+  "source_count": 3,
+  "subject_count": 13,
+  "trial_count": 208
+}

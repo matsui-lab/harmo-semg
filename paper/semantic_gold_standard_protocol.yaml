@@ -1,0 +1,24 @@
+schema_version: '1.0'
+protocol_id: g9-independent-semantic-gold-standard
+question: >-
+  Do two people who did not develop the semantic extractor independently
+  confirm the value, scope, and permitted machine action of its frozen
+  literature-authority claims?
+denominator:
+  authority_questions: 43
+  annotation_files: 2
+annotation_instructions:
+  - Use only the source identifier and property question in the blinded packet.
+  - Do not inspect literature_semantic_enrichment.yaml, its regexes, expected values, or the system result.
+  - Mark support as supported, unsupported, or uncertain.
+  - For supported items, transcribe the value as JSON and record the most specific supported scope.
+  - Use machine_action enrich only when the statement may populate the declared scope; use boundary-only for limitations or protocol boundaries.
+  - Record no participant- or trial-level value from a study-, cohort-, or channel-group-level statement.
+decision_rules:
+  minimum_rater_exact_agreement: 0.80
+  minimum_system_accuracy: 0.95
+  unsupported_promoted_count: 0
+claim_boundary: >-
+  The study estimates accuracy only for 43 frozen authority questions. It does
+  not estimate recall for facts outside that question set, inaccessible text,
+  tables requiring visual interpretation, or unrestricted natural language.

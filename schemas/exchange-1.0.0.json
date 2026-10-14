@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/exchange-1.0.0.json",
+  "title": "EMG ATLAS exchange index",
+  "type": "object",
+  "required": ["schema", "recording_id", "recording_digest", "run_id", "files", "digests", "trust_summary"],
+  "properties": {
+    "schema": {"const": "https://matsui-lab.github.io/emg-atlas/schemas/exchange-1.0.0.json"},
+    "recording_id": {"type": "string", "minLength": 1},
+    "recording_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "run_id": {"type": "string", "minLength": 1},
+    "files": {"type": "object", "required": ["recording", "manifest", "trust"], "additionalProperties": {"type": "string"}},
+    "digests": {"type": "object", "required": ["recording", "manifest", "trust"], "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "trust_summary": {
+      "type": "object",
+      "required": ["semantic_fidelity", "scientific_validity", "computational_reproducibility", "traceability"],
+      "additionalProperties": {"enum": ["pass", "warn", "fail", "unassessed"]}
+    }
+  },
+  "additionalProperties": false
+}

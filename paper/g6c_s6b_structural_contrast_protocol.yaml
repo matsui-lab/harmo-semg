@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S6b
+gate_id: G6c-S6b
+title: Paired observed-versus-torso-welded upper-limb structural contrast
+frozen_at: '2026-07-23'
+design:
+  source_result: paper/results/validation/g6c_s6_structural_adequacy.json
+  study1:
+    c3d_repository_path: studies/study_1/notebook/Ref01_sss_le_shoes05.c3d
+    subject_id: '1'
+    marker_groups:
+      torso_frame: [TRXO, TRXA, TRXL, TRXP]
+      left_upper_limb: [LSHO, LELB, LWRA, LWRB, LFIN]
+      right_upper_limb: [RSHO, RELB, RWRA, RWRB, RFIN]
+    calculated_markers: [CentreOfMass]
+    reference_frame_rule: middle-sample
+    counterfactual: >-
+      Retain the six scaled upper-limb segment masses and their middle-sample
+      positions, then make each position a fixed offset in the observed TRX
+      frame for every other sample. This is the orbital equivalent of welding
+      the arms to the torso at one pose; it is not a marker refit.
+    lowpass_cutoff_hz: 6.0
+    lowpass_order: 4
+    edge_exclusion_s: 0.15
+    reference_model:
+      name: LaiUhlrich2022
+      source_repository: https://github.com/matsui-lab/opencap-pipe
+      source_commit: 03f73df91ec62dc4e6b08f7dd1249edc318d7f32
+      source_path: opensimPipeline/Models/LaiUhlrich2022.osim
+      source_sha256: 7499645500d4bca9269f27fd669bd3ed3abbeccd549d87f86cd01119a1a24366
+      license: Apache-2.0
+      total_mass_kg: 75.337
+      one_side_segment_masses_kg:
+        humerus: 2.0325
+        forearm: 1.215
+        hand: 0.4575
+thresholds:
+  minimum_marker_valid_fraction: 0.99
+  maximum_force_platform_roundtrip_error_nmm: 1.0e-6
+  maximum_torso_orthonormality_error: 1.0e-5
+  maximum_reference_pose_error_m: 1.0e-10
+  maximum_mass_difference_kg: 1.0e-12
+  maximum_whole_body_com_vector_rms_m: 0.005
+  maximum_whole_body_com_maximum_m: 0.010
+  minimum_vertical_momentum_contrast_ratio: 0.50
+  minimum_vertical_torque_contrast_ratio: 0.50
+claim_boundary: >-
+  G6c-S6b is a same-sample, same-mass orbital counterfactual in one independent
+  Study 1 walking trial. It tests whether observed upper-limb articulation
+  materially changes vertical angular momentum compared with welding the same
+  masses to the observed torso at the middle pose. Segment spin is omitted in
+  both conditions. Whole-body COM is exactly matched at the reference pose and
+  its dynamic perturbation is reported and gated, not assumed away. The result
+  cannot identify the cause of the Study 31 running residual because participant,
+  activity, model, and RRA are not matched. It cannot validate personalization,
+  joint moments, muscle forces, or clinical use.

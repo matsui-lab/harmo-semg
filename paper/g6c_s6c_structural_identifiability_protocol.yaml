@@ -1,0 +1,70 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S6c
+gate_id: G6c-S6c
+title: Subject/activity-matched upper-limb structural identifiability preflight
+frozen_at: '2026-07-23'
+design:
+  subject_id: '02'
+  activity: 4.00-m/s-running
+  source_results:
+    s2: paper/results/validation/g6c_s2_mechanics_localization.json
+    s6: paper/results/validation/g6c_s6_structural_adequacy.json
+    s6b: paper/results/validation/g6c_s6b_structural_contrast.json
+  source_roles:
+    markers: heldout_markers
+    raw_c3d: raw_c3d
+    ground_reaction: heldout_ground_reaction
+    model: static_derived_model
+    public_ik: public_ik
+  attestations:
+    subject_specific_upper_limb_scale_lineage: false
+    paired_model_lower_body_equivalence: false
+    paired_model_mass_com_inertia_equivalence: false
+  requirements:
+    target_window_s: [20.355, 21.015]
+    minimum_observed_landmark_groups: 6
+    minimum_articulated_body_groups: 6
+    minimum_observed_coordinate_groups: 8
+    required_paired_model_roles:
+      - static_derived_model
+      - articulated_full_body_model
+      - arm_lumped_matched_model
+    upper_limb_marker_aliases:
+      left_shoulder: [LSHO, LSHOULDER, LACR, LACROMION]
+      left_elbow: [LELB, LELBOW, LEL, LME]
+      left_wrist: [LWRA, LWRB, LWRIST]
+      right_shoulder: [RSHO, RSHOULDER, RACR, RACROMION]
+      right_elbow: [RELB, RELBOW, REL, RME]
+      right_wrist: [RWRA, RWRB, RWRIST]
+    articulated_body_aliases:
+      left_upper_arm: [humerus_l, upperarm_l, arm_l]
+      left_forearm: [ulna_l, radius_l, forearm_l]
+      left_hand: [hand_l]
+      right_upper_arm: [humerus_r, upperarm_r, arm_r]
+      right_forearm: [ulna_r, radius_r, forearm_r]
+      right_hand: [hand_r]
+    upper_limb_coordinate_aliases:
+      left_shoulder_flexion: [arm_flex_l, shoulder_flexion_l]
+      left_shoulder_adduction: [arm_add_l, shoulder_adduction_l]
+      left_shoulder_rotation: [arm_rot_l, shoulder_rotation_l]
+      left_elbow_flexion: [elbow_flex_l, elbow_flexion_l]
+      right_shoulder_flexion: [arm_flex_r, shoulder_flexion_r]
+      right_shoulder_adduction: [arm_add_r, shoulder_adduction_r]
+      right_shoulder_rotation: [arm_rot_r, shoulder_rotation_r]
+      right_elbow_flexion: [elbow_flex_r, elbow_flexion_r]
+  prohibited_substitutions:
+    - graft-generic-arms-and-label-them-subject-specific
+    - import-upper-limb-kinematics-from-another-participant-or-activity
+    - optimize-unobserved-arm-trajectories-against-the-rra-residual
+    - treat-default-or-neutral-arm-coordinates-as-observed-motion
+    - interpret-a-bounded-synthetic-sensitivity-as-causal-attribution
+missing_policy: fail-closed-retain-unidentifiability
+claim_boundary: >-
+  G6c-S6c is a preflight for a subject- and activity-matched paired full-body
+  RRA comparison. It authorizes that computation only when upper-limb motion,
+  subject-specific upper-limb model lineage, and a mass/COM/inertia-matched
+  articulated-versus-lumped model pair are observed and traceable. Same-subject
+  markers, ground reaction, or an armless scaled model alone are insufficient.
+  A failed preflight is a completed identifiability result, not evidence that
+  upper limbs have no mechanical effect. It cannot validate personalization,
+  joint moments, muscle forces, or clinical use.

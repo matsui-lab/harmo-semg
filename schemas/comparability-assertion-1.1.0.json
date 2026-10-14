@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/comparability-assertion-1.1.0.json",
+  "title": "ComparabilityAssertion",
+  "type": "object",
+  "required": [
+    "left_id",
+    "right_id",
+    "variable",
+    "status",
+    "rationale",
+    "conditions",
+    "intended_use",
+    "left_channel_id",
+    "right_channel_id",
+    "evidence_refs",
+    "rule_version",
+    "schema_version"
+  ],
+  "properties": {
+    "left_id": {"type": "string", "minLength": 1},
+    "right_id": {"type": "string", "minLength": 1},
+    "variable": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": [
+        "comparable",
+        "conditionally_comparable",
+        "not_comparable",
+        "unassessed"
+      ]
+    },
+    "rationale": {"type": "string", "minLength": 1},
+    "conditions": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "intended_use": {"type": "string", "minLength": 1},
+    "left_channel_id": {"type": ["string", "null"], "minLength": 1},
+    "right_channel_id": {"type": ["string", "null"], "minLength": 1},
+    "evidence_refs": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "rule_version": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "1.1.0"}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"left_channel_id": {"type": "null"}},
+        "required": ["left_channel_id"]
+      },
+      "then": {"properties": {"right_channel_id": {"type": "null"}}},
+      "else": {"properties": {"right_channel_id": {"type": "string"}}}
+    }
+  ],
+  "additionalProperties": false
+}

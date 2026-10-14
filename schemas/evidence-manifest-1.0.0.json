@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/evidence-manifest-1.0.0.json",
+  "title": "EvidenceManifest",
+  "type": "object",
+  "required": ["run_id", "inputs", "outputs", "steps", "code_commit", "config_sha256", "environment", "created_at", "schema_version"],
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": ["artifact_id", "uri", "sha256", "media_type", "digest_kind"],
+      "properties": {
+        "artifact_id": {"type": "string", "minLength": 1},
+        "uri": {"type": "string", "minLength": 1},
+        "sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+        "media_type": {"type": ["string", "null"]},
+        "digest_kind": {"enum": ["sha256-file", "sha256-canonical-json"]}
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "inputs": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "outputs": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step_id", "name", "software", "software_version", "parameters", "inputs", "outputs", "started_at", "completed_at"],
+        "properties": {
+          "step_id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "software": {"type": "string", "minLength": 1},
+          "software_version": {"type": "string", "minLength": 1},
+          "parameters": {"type": "object"},
+          "inputs": {"type": "array", "items": {"type": "string"}},
+          "outputs": {"type": "array", "items": {"type": "string"}},
+          "started_at": {"type": ["string", "null"]},
+          "completed_at": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "code_commit": {"type": "string", "minLength": 1},
+    "config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "container_digest": {"type": ["string", "null"]},
+    "code_dirty": {"type": ["boolean", "null"]},
+    "working_tree_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "environment": {"type": "object", "additionalProperties": {"type": "string"}},
+    "created_at": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "1.0.0"}
+  },
+  "additionalProperties": false
+}

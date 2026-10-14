@@ -1,0 +1,847 @@
+{
+  "allowed_claims": [
+    "The frozen G6 source audit and complete 336-trial denominator were retained.",
+    "Public source absence and missing static-calibration lineage were not imputed.",
+    "The retained pilot localized state-reconstruction bias and an unresolved residual-moment failure.",
+    "The current release does not support validated OpenSim mechanics or dynamic-only personalization."
+  ],
+  "artifact_release_states": {
+    "dynamic_personalized_models": "excluded-from-standard-ai-ready-export",
+    "harmonized_emg": "governed-by-independent-emg-evidence",
+    "inverse_dynamics_joint_moments": "excluded-from-standard-ai-ready-export",
+    "inverse_kinematics": "experimental-unvalidated",
+    "rra_kinematics_and_adjusted_models": "experimental-unvalidated",
+    "source_emg": "governed-by-independent-emg-evidence",
+    "source_kinematics_and_external_loads": "source-traceable-not-mechanics-validated"
+  },
+  "continuation_trigger": "A new, subject- and activity-matched dataset with observed upper-limb kinematics and traceable subject-specific model/static-calibration lineage, or the original unrounded mechanics-generation lineage.",
+  "decision_id": "E-G6-final-disposition-2026-07-23",
+  "default_mechanics_export": "deny",
+  "dynamic_personalization_readiness": "unvalidated",
+  "environment": {
+    "code_commit": "5661f9b42c924dce5e56ce0cd8cbbd2a74e20d85",
+    "code_dirty": false
+  },
+  "evidence_artifacts": [
+    {
+      "evidence_id": "frozen_study31_ledger",
+      "path": "paper/results/validation/opensim_quality.json",
+      "sha256": "105cb676406caaea95c8716c4e5ce67d4b581c14459572bf132473323f3fdb47",
+      "size_bytes": 397108
+    },
+    {
+      "evidence_id": "frozen_study31_summary",
+      "path": "paper/results/validation/opensim_quality_summary.json",
+      "sha256": "f905426a6892383dbf3c6e44c2a4ac1142d65ba668961406a9c2c737c7aa6449",
+      "size_bytes": 12458
+    },
+    {
+      "evidence_id": "dynamic_measurement_pilot",
+      "path": "paper/results/validation/g6b_dynamic_calibration_pilot.json",
+      "sha256": "437faa622671918b801c78adbdaaa9aadfd93db0b15ba86c93930f04b88d049f",
+      "size_bytes": 34228
+    },
+    {
+      "evidence_id": "dynamic_model_geometry_pilot",
+      "path": "paper/results/validation/g6b_dynamic_model_pilot.json",
+      "sha256": "c1f6c44b99277e7eda439a49e75785e180e2a6eefbd33d425afe5c561a88338d",
+      "size_bytes": 12527
+    },
+    {
+      "evidence_id": "heldout_mechanics_pilot",
+      "path": "paper/results/validation/g6b_dynamic_mechanics_pilot.json",
+      "sha256": "4d4e6bc8ce8b9134ca348510668090ad796107f497c4a022025f4c95c194ea42",
+      "size_bytes": 13027
+    },
+    {
+      "evidence_id": "dynamic_registration_pilot",
+      "path": "paper/results/validation/g6b_dynamic_registration_pilot.json",
+      "sha256": "fd74a54fa90485912ca6b4904ed786fac2158adf61373c1650c88cc7e7f61a8a",
+      "size_bytes": 25217
+    },
+    {
+      "evidence_id": "registered_heldout_mechanics",
+      "path": "paper/results/validation/g6b_registered_mechanics_exploratory.json",
+      "sha256": "7b570a012ea94fddde23d2ed3e74751381bdddf430367a947c59b061ebd2c30f",
+      "size_bytes": 13414
+    },
+    {
+      "evidence_id": "mechanics_audit",
+      "path": "paper/results/validation/g6c_mechanics_audit.json",
+      "sha256": "aab27a81571a28918d4296378b47cd06c3048e9b404fd189e1add028c430680e",
+      "size_bytes": 14035
+    },
+    {
+      "evidence_id": "whole_body_balance",
+      "path": "paper/results/validation/g6c_whole_body_balance.json",
+      "sha256": "c3cdb2d5effb704780c24e864d288cbcfafd194e0b2309b3d0492cf3a07ba9e2",
+      "size_bytes": 17471
+    },
+    {
+      "evidence_id": "mechanics_localization",
+      "path": "paper/results/validation/g6c_s2_mechanics_localization.json",
+      "sha256": "c8705f8f3b43df0a337b38d32bb6ae0f7669d74c70ef00d49edd774c0e63fcc6",
+      "size_bytes": 72094
+    },
+    {
+      "evidence_id": "native_state_reconstruction",
+      "path": "paper/results/validation/g6c_s3_state_reconstruction.json",
+      "sha256": "0daab4682c61a4bfcaeb02a0e5af2f1d2910ae0374c8f69aebb241eab22a960e",
+      "size_bytes": 9025
+    },
+    {
+      "evidence_id": "residual_moment_localization",
+      "path": "paper/results/validation/g6c_s4_moment_localization.json",
+      "sha256": "d4feb9277c5df074af7ed7293edd9a56b53a55035b831ac340241f7f3d85f527",
+      "size_bytes": 29959
+    },
+    {
+      "evidence_id": "rra_sensitivity",
+      "path": "paper/results/validation/g6c_s5_rra_sensitivity.json",
+      "sha256": "7ffaec8ae019c10fbe27f660a2a85f5c8f95838ab635687c13fb1cc2d49daabf",
+      "size_bytes": 31301
+    },
+    {
+      "evidence_id": "structural_adequacy",
+      "path": "paper/results/validation/g6c_s6_structural_adequacy.json",
+      "sha256": "de237635d51e6ec62e00a15f2ed1a2e8590674cf67e47a58a9ded0e1c807f785",
+      "size_bytes": 20016
+    },
+    {
+      "evidence_id": "structural_contrast",
+      "path": "paper/results/validation/g6c_s6b_structural_contrast.json",
+      "sha256": "5a5a6272068cb41de2b31ed173e355dc7fede6ed600b6f2ecdd2bd3d2665ee47",
+      "size_bytes": 12080
+    },
+    {
+      "evidence_id": "structural_identifiability",
+      "path": "paper/results/validation/g6c_s6c_structural_identifiability.json",
+      "sha256": "7a1e2df3946b60df742348eaf40fb06c301336001f71395ba4754bebe0c62044",
+      "size_bytes": 16016
+    },
+    {
+      "evidence_id": "bounded_arm_sensitivity",
+      "path": "paper/results/validation/g6c_s6d_bounded_arm_sensitivity.json",
+      "sha256": "ecfa9e35d10de2b461e879ff8332e33bbdbfb918565b7ab8cddd98606c1ef6d3",
+      "size_bytes": 7898
+    },
+    {
+      "evidence_id": "whole_body_balance_reproducibility",
+      "path": "paper/results/validation/g6c_whole_body_balance_reproducibility.json",
+      "sha256": "f8d049fbae0dcba27af0247b00de41c8dd4dd677f3ed49403229d541647b28dc",
+      "size_bytes": 895
+    },
+    {
+      "evidence_id": "mechanics_localization_reproducibility",
+      "path": "paper/results/validation/g6c_s2_mechanics_localization_reproducibility.json",
+      "sha256": "832240431e6a53028a4dfbe8e9c9932c75b585071fb0791ae89527987cedd096",
+      "size_bytes": 2108
+    },
+    {
+      "evidence_id": "state_reconstruction_reproducibility",
+      "path": "paper/results/validation/g6c_s3_state_reconstruction_reproducibility.json",
+      "sha256": "d8d024a8f8b2285ffb0f1c69c1b2fb0331f9403d3bdf6d5c6681b42f360e08d7",
+      "size_bytes": 1009
+    },
+    {
+      "evidence_id": "moment_localization_reproducibility",
+      "path": "paper/results/validation/g6c_s4_moment_localization_reproducibility.json",
+      "sha256": "cff87209a97e8a84c6fd55ec5d922aff556629105495835d902bdbf8bfff737d",
+      "size_bytes": 965
+    },
+    {
+      "evidence_id": "rra_sensitivity_reproducibility",
+      "path": "paper/results/validation/g6c_s5_rra_sensitivity_reproducibility.json",
+      "sha256": "827eeb8e755e2bbc7d2acf348f8b2bdd4285537d7ae7d1c7de17cce298515021",
+      "size_bytes": 1716
+    },
+    {
+      "evidence_id": "structural_adequacy_reproducibility",
+      "path": "paper/results/validation/g6c_s6_structural_adequacy_reproducibility.json",
+      "sha256": "4f50095c4a21911583d6565077ba965570b812ad3d27a24dfd81c30f544dd131",
+      "size_bytes": 1157
+    },
+    {
+      "evidence_id": "structural_contrast_reproducibility",
+      "path": "paper/results/validation/g6c_s6b_structural_contrast_reproducibility.json",
+      "sha256": "5f07c479c43c5cb4c3002bd219822f03823a2181d728752491f43faff0ed0638",
+      "size_bytes": 998
+    },
+    {
+      "evidence_id": "structural_identifiability_reproducibility",
+      "path": "paper/results/validation/g6c_s6c_structural_identifiability_reproducibility.json",
+      "sha256": "a28c0cb09e2b65bd1ea73109ece6690c9551f2870fc7f246ffeae8acaafddfa9",
+      "size_bytes": 989
+    },
+    {
+      "evidence_id": "bounded_arm_sensitivity_reproducibility",
+      "path": "paper/results/validation/g6c_s6d_bounded_arm_sensitivity_reproducibility.json",
+      "sha256": "57cbb0588be11ca98799df9e28b9847556582883c44e8eec89ba9ae0cf799710",
+      "size_bytes": 1138
+    }
+  ],
+  "evidence_checks": [
+    {
+      "check_id": "frozen_study31_ledger:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_ledger:row_count",
+      "expected": 336,
+      "observed": 336,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_ledger:unique_identities",
+      "expected": 336,
+      "observed": 336,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_ledger:explicit_outcomes",
+      "expected": [
+        "fail",
+        "pass",
+        "unassessed"
+      ],
+      "observed": [
+        "unassessed"
+      ],
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:scope",
+      "expected": "checksum-bound-study31-opensim-quality",
+      "observed": "checksum-bound-study31-opensim-quality",
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:audit_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:checks.ledger_denominator",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:checks.released_static_calibration_available",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "frozen_study31_summary:checks.all_source_available_trials_completely_assessed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_measurement_pilot:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_measurement_pilot:scope",
+      "expected": "g6b-static-hidden-dynamic-calibration-pilot",
+      "observed": "g6b-static-hidden-dynamic-calibration-pilot",
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_measurement_pilot:pass",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_model_geometry_pilot:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_model_geometry_pilot:scope",
+      "expected": "g6b-dynamic-derived-model-pilot",
+      "observed": "g6b-dynamic-derived-model-pilot",
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_model_geometry_pilot:pass",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "heldout_mechanics_pilot:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "heldout_mechanics_pilot:scope",
+      "expected": "g6b-heldout-mechanics-pilot",
+      "observed": "g6b-heldout-mechanics-pilot",
+      "pass": true
+    },
+    {
+      "check_id": "heldout_mechanics_pilot:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_registration_pilot:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_registration_pilot:scope",
+      "expected": "g6b-dynamic-marker-registration-feasibility",
+      "observed": "g6b-dynamic-marker-registration-feasibility",
+      "pass": true
+    },
+    {
+      "check_id": "dynamic_registration_pilot:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "registered_heldout_mechanics:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "registered_heldout_mechanics:scope",
+      "expected": "g6b-registered-heldout-mechanics-exploratory",
+      "observed": "g6b-registered-heldout-mechanics-exploratory",
+      "pass": true
+    },
+    {
+      "check_id": "registered_heldout_mechanics:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_audit:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_audit:scope",
+      "expected": "g6c-mechanics-audit",
+      "observed": "g6c-mechanics-audit",
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_audit:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_audit:checks.external_load_semantics_traceable",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance:scope",
+      "expected": "g6c-s-whole-body-balance-audit",
+      "observed": "g6c-s-whole-body-balance-audit",
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization:scope",
+      "expected": "g6c-s2-mechanics-localization-audit",
+      "observed": "g6c-s2-mechanics-localization-audit",
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "native_state_reconstruction:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "native_state_reconstruction:scope",
+      "expected": "g6c-s3-state-reconstruction-audit",
+      "observed": "g6c-s3-state-reconstruction-audit",
+      "pass": true
+    },
+    {
+      "check_id": "native_state_reconstruction:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "native_state_reconstruction:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "native_state_reconstruction:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "residual_moment_localization:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "residual_moment_localization:scope",
+      "expected": "g6c-s4-moment-localization-audit",
+      "observed": "g6c-s4-moment-localization-audit",
+      "pass": true
+    },
+    {
+      "check_id": "residual_moment_localization:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "residual_moment_localization:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "residual_moment_localization:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity:scope",
+      "expected": "g6c-s5-rra-sensitivity-audit",
+      "observed": "g6c-s5-rra-sensitivity-audit",
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity:sensitivity_rescue_candidate",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy:scope",
+      "expected": "g6c-s6-structural-adequacy-audit",
+      "observed": "g6c-s6-structural-adequacy-audit",
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast:scope",
+      "expected": "g6c-s6b-structural-contrast-audit",
+      "observed": "g6c-s6b-structural-contrast-audit",
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:scope",
+      "expected": "g6c-s6c-structural-identifiability-audit",
+      "observed": "g6c-s6c-structural-identifiability-audit",
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:causal_structural_attribution",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:full_body_rra_authorized",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:scope",
+      "expected": "g6c-s6d-bounded-arm-sensitivity-audit",
+      "observed": "g6c-s6d-bounded-arm-sensitivity-audit",
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:diagnostic_complete",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:causal_structural_attribution",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:full_body_rra_authorized",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:mechanics_closed",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity:pass",
+      "expected": false,
+      "observed": false,
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance_reproducibility:scope",
+      "expected": "g6c-s-whole-body-balance-reproducibility",
+      "observed": "g6c-s-whole-body-balance-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "whole_body_balance_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization_reproducibility:scope",
+      "expected": "g6c-s2-mechanics-localization-reproducibility",
+      "observed": "g6c-s2-mechanics-localization-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "mechanics_localization_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "state_reconstruction_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "state_reconstruction_reproducibility:scope",
+      "expected": "g6c-s3-state-reconstruction-reproducibility",
+      "observed": "g6c-s3-state-reconstruction-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "state_reconstruction_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "moment_localization_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "moment_localization_reproducibility:scope",
+      "expected": "g6c-s4-moment-localization-reproducibility",
+      "observed": "g6c-s4-moment-localization-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "moment_localization_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity_reproducibility:scope",
+      "expected": "g6c-s5-rra-sensitivity-reproducibility",
+      "observed": "g6c-s5-rra-sensitivity-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "rra_sensitivity_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy_reproducibility:scope",
+      "expected": "g6c-s6-structural-adequacy-reproducibility",
+      "observed": "g6c-s6-structural-adequacy-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "structural_adequacy_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast_reproducibility:scope",
+      "expected": "g6c-s6b-structural-contrast-reproducibility",
+      "observed": "g6c-s6b-structural-contrast-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "structural_contrast_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability_reproducibility:scope",
+      "expected": "g6c-s6c-structural-identifiability-reproducibility",
+      "observed": "g6c-s6c-structural-identifiability-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "structural_identifiability_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity_reproducibility:present",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity_reproducibility:scope",
+      "expected": "g6c-s6d-bounded-arm-sensitivity-reproducibility",
+      "observed": "g6c-s6d-bounded-arm-sensitivity-reproducibility",
+      "pass": true
+    },
+    {
+      "check_id": "bounded_arm_sensitivity_reproducibility:byte_identical",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    }
+  ],
+  "evidence_complete": true,
+  "frozen_endpoint_status": "failed",
+  "mechanics_readiness": "unvalidated",
+  "pass": false,
+  "policy_path": "paper/g6_mechanics_disposition_policy.yaml",
+  "policy_sha256": "5edd3c4c8a0d905296b103c103ef37fe3d9ae38610cd250c474d6f970dd1fefb",
+  "post_outcome_reporting_policy": true,
+  "prohibited_claims": [
+    "OpenSim-derived joint mechanics are validated for Study 31.",
+    "Dynamic-only subject personalization is validated.",
+    "Upper-limb omission causally explains the Subject 02 residual moment.",
+    "All 330 source-available Study 31 trials have passed the five mechanics thresholds.",
+    "Unvalidated mechanics are standard AI-ready training features."
+  ],
+  "publication_role": "Completed negative stress test of claim-specific, fail-closed AI-readiness; concise main-text result with detailed diagnostics in the supplement.",
+  "reporting_complete": true,
+  "schema_version": "1.0.0",
+  "scientific_endpoint_pass": false,
+  "scope": "g6-final-mechanics-evidence-disposition",
+  "thresholds_or_upstream_results_changed": false
+}

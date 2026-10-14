@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/semantic-enrichment-report-1.0.0.json",
+  "title": "Scope-aware literature semantic enrichment report",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "plan_sha256",
+    "implementation_commit",
+    "code_dirty",
+    "working_tree_sha256",
+    "sources",
+    "claims",
+    "decisions",
+    "summary",
+    "claim_boundary",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "plan_sha256": {"$ref": "#/$defs/sha256"},
+    "implementation_commit": {
+      "oneOf": [
+        {"type": "null"},
+        {"const": "unknown"},
+        {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      ]
+    },
+    "code_dirty": {"type": ["boolean", "null"]},
+    "working_tree_sha256": {
+      "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/source"}
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/claim"}
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/decision"}
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "source_count",
+        "source_acquired",
+        "claim_count",
+        "authority_claim_count",
+        "observation_claim_count",
+        "extracted_claim_count",
+        "enrichment_ready_count",
+        "boundary_evidence_count",
+        "accepted_decision_count",
+        "corroborated_decision_count",
+        "conditional_decision_count",
+        "conflicting_decision_count",
+        "unresolved_decision_count",
+        "rejected_decision_count"
+      ],
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "claim_boundary": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "study_id",
+        "source_type",
+        "source_role",
+        "identifier",
+        "uri",
+        "release_binding",
+        "content_sha256",
+        "size_bytes",
+        "acquisition_status",
+        "retrieved_at",
+        "error"
+      ],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "study_id": {"type": "string", "minLength": 1},
+        "source_type": {"type": "string", "minLength": 1},
+        "source_role": {"enum": ["authority", "observation"]},
+        "identifier": {"type": "string", "minLength": 1},
+        "uri": {"type": "string", "minLength": 1},
+        "release_binding": {"type": "string", "minLength": 1},
+        "content_sha256": {
+          "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]
+        },
+        "size_bytes": {"type": ["integer", "null"], "minimum": 1},
+        "acquisition_status": {"enum": ["acquired", "failed"]},
+        "retrieved_at": {"type": ["string", "null"]},
+        "error": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "claim_id",
+        "study_id",
+        "property_path",
+        "value",
+        "scope_level",
+        "scope_selector",
+        "propagation",
+        "machine_action",
+        "source_id",
+        "source_type",
+        "source_role",
+        "source_sha256",
+        "locator",
+        "evidence_sha256",
+        "extraction_method",
+        "extraction_status",
+        "match_count",
+        "match_spans",
+        "requires_human_review",
+        "message"
+      ],
+      "properties": {
+        "schema_version": {"const": "1.0.0"},
+        "claim_id": {"type": "string", "minLength": 1},
+        "study_id": {"type": "string", "minLength": 1},
+        "property_path": {"type": "string", "minLength": 3},
+        "value": {},
+        "scope_level": {
+          "enum": [
+            "dataset",
+            "cohort",
+            "subject",
+            "session",
+            "trial",
+            "channel-group",
+            "channel"
+          ]
+        },
+        "scope_selector": {
+          "type": "object",
+          "additionalProperties": {"type": "string", "minLength": 1}
+        },
+        "propagation": {"enum": ["none", "all-descendants"]},
+        "machine_action": {"enum": ["enrich", "boundary-only"]},
+        "source_id": {"type": "string", "minLength": 1},
+        "source_type": {"type": "string", "minLength": 1},
+        "source_role": {"enum": ["authority", "observation"]},
+        "source_sha256": {
+          "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]
+        },
+        "locator": {"type": "string", "minLength": 1},
+        "evidence_sha256": {
+          "oneOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]
+        },
+        "extraction_method": {"type": "string", "minLength": 1},
+        "extraction_status": {
+          "enum": ["extracted", "not-found", "ambiguous", "invalid"]
+        },
+        "match_count": {"type": "integer", "minimum": 0},
+        "match_spans": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "integer", "minimum": 0},
+              {"type": "integer", "minimum": 1}
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "requires_human_review": {"type": "boolean"},
+        "message": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "decision": {
+      "type": "object",
+      "required": [
+        "claim_id",
+        "status",
+        "reason",
+        "machine_action",
+        "evidence_refs",
+        "corroborating_claim_ids",
+        "conflicting_claim_ids"
+      ],
+      "properties": {
+        "claim_id": {"type": "string", "minLength": 1},
+        "status": {
+          "enum": [
+            "accepted",
+            "corroborated",
+            "conditional",
+            "conflicting",
+            "unresolved",
+            "rejected"
+          ]
+        },
+        "reason": {"type": "string", "minLength": 1},
+        "machine_action": {"enum": ["enrich", "boundary-only"]},
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^.+:sha256:[0-9a-f]{64}$"
+          }
+        },
+        "corroborating_claim_ids": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "conflicting_claim_ids": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

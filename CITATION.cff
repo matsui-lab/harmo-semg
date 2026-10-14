@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this archived software release when using harmo-semg."
+type: software
+title: "harmo-semg: purpose-dependent harmonization of public electromyography data"
+version: 0.3.1
+date-released: '2026-10-14'
+doi: 10.5281/zenodo.23362516
+repository-code: https://github.com/matsui-lab/harmo-semg-public
+license: Apache-2.0
+authors:
+  - family-names: Ota
+    given-names: Kosuke
+    affiliation: Nagoya University
+  - family-names: Okabe
+    given-names: Masaaki
+    affiliation: Kansai University
+  - family-names: Matsui
+    given-names: Yusuke
+    affiliation: Nagoya University
+    orcid: https://orcid.org/0000-0003-3977-4313
+keywords:
+  - electromyography
+  - harmonization
+  - public data reuse
+  - gait

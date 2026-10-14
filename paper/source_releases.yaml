@@ -1,0 +1,348 @@
+registry_version: 1.1.0
+retrieved_at: '2026-07-20'
+purpose: authoritative release and rights metadata for empirical validation; source data are not committed
+
+sources:
+  study31:
+    title: Lower limb kinematic, kinetic, and EMG data during walking motion under controlled speeds
+    doi: 10.6084/m9.figshare.c.4923162.v1
+    landing_page: https://springernature.figshare.com/collections/Lower_limb_kinematic_kinetic_and_EMG_data_during_walking_motion_under_controlled_speeds/4923162/1
+    api_record: https://api.figshare.com/v2/collections/4923162/articles?page_size=100
+    release_version: 1
+    license: CC0 1.0
+    license_url: https://creativecommons.org/publicdomain/zero/1.0/
+    redistribution: permitted
+    attribution: Santos, Cristina; Vilas-Boas, Joao Paulo; Moreira, Luís Carlos; Figueiredo, Joana; Fonseca, Pedro (2021). Figshare collection 4923162, version 1.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls:
+        - https://api.figshare.com/v2/articles/13169237
+        - https://api.figshare.com/v2/articles/13169240
+        - https://api.figshare.com/v2/articles/13169300
+        - https://api.figshare.com/v2/articles/14241812
+      scope: all four collection members report CC0 at the repository record
+    release:
+      repository: figshare
+      record_type: collection
+      record_id: 4923162
+      api_record: https://api.figshare.com/v2/collections/4923162/articles?page_size=100
+      version_status: frozen
+      content_checksum_status: pending-download
+      manifest:
+        article_count: 4
+        article_ids: [13169237, 13169240, 13169300, 14241812]
+        file_count: 4
+        licenses: [CC0 1.0]
+        manifest_sha256: 7dc4db2cb58db6c3c5f1216631b804abd91a8182698a5c68648a553f78905cec
+        total_size_bytes: 5276406391
+        versions: [1]
+
+  study_1:
+    title: Dataset ramp walking
+    doi: 10.6084/m9.figshare.29300888.v2
+    landing_page: https://figshare.com/articles/dataset/Dataset_ramp_walking/29300888/2
+    api_record: https://api.figshare.com/v2/articles/29300888
+    release_version: 2
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    redistribution: permitted-with-attribution
+    attribution: Vielemeyer, Johanna; Müller, Roy; Tronicke, Lisa; Schreff, Lucas (2025). Dataset ramp walking. Figshare. Dataset. Version 2.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls: [https://api.figshare.com/v2/articles/29300888]
+      scope: current public dataset release; supersedes the v1 data-availability citation
+    release:
+      repository: figshare
+      record_type: article
+      record_id: 29300888
+      api_record: https://api.figshare.com/v2/articles/29300888
+      version_status: frozen
+      content_checksum_status: pending-download
+      manifest:
+        article_count: 1
+        article_ids: [29300888]
+        file_count: 39
+        licenses: [CC BY 4.0]
+        manifest_sha256: ddbe060d9899b5bbb08331066fb6236afa5495335e39d879c848441ebd5414d8
+        total_size_bytes: 1288693377
+        versions: [2]
+
+  study_120:
+    title: 'Comprehensive Human Locomotion and Electromyography Dataset: Gait120'
+    doi: 10.6084/m9.figshare.27677016.v1
+    landing_page: https://figshare.com/articles/dataset/Comprehensive_Human_Locomotion_and_Electromyography_Dataset_Gait120/27677016/1
+    api_record: https://api.figshare.com/v2/articles/27677016
+    release_version: 1
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    redistribution: permitted-with-attribution
+    attribution: Boo, Junyo; Seo, Dongwook; Kim, Minseung; Koo, Seungbum (2025). Comprehensive Human Locomotion and Electromyography Dataset Gait120. Figshare. Version 1.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls: [https://api.figshare.com/v2/articles/27677016]
+      scope: official dataset record resolves the repository label CC BY to CC BY 4.0 through its licence URL
+    release:
+      repository: figshare
+      record_type: article
+      record_id: 27677016
+      api_record: https://api.figshare.com/v2/articles/27677016
+      version_status: frozen
+      content_checksum_status: pending-download
+      manifest:
+        article_count: 1
+        article_ids: [27677016]
+        file_count: 15
+        licenses: [CC BY 4.0]
+        manifest_sha256: ffa0068a26217790e1a4ff69ca0af48a7a69a53d2992eac324b7f666cedc309c
+        total_size_bytes: 16512035708
+        versions: [1]
+
+  study_28:
+    title: A full-body motion capture gait dataset of 138 able-bodied adults across the life span and 50 stroke survivors
+    doi: 10.6084/m9.figshare.c.6503791.v1
+    landing_page: https://springernature.figshare.com/collections/A_full-body_motion_capture_gait_dataset_of_138_able-bodied_adults_across_the_life_span_and_50_stroke_survivors/6503791/1
+    api_record: https://api.figshare.com/v2/collections/6503791/articles?page_size=100
+    release_version: 1
+    license: CC0 1.0
+    license_url: https://creativecommons.org/publicdomain/zero/1.0/
+    redistribution: permitted
+    attribution: Van Criekinge, Tamaya; Saeys, Wim; Truijen, Steven; Vereeck, Luc; Sloot, Lizeth; Hallemans, Ann (2023). Figshare collection 6503791, version 1.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls: ['https://api.figshare.com/v2/collections/6503791/articles?page_size=100']
+      scope: all 13 collection members report CC0 at the repository record
+    release:
+      repository: figshare
+      record_type: collection
+      record_id: 6503791
+      api_record: https://api.figshare.com/v2/collections/6503791/articles?page_size=100
+      version_status: frozen
+      content_checksum_status: pending-download
+      manifest:
+        article_count: 13
+        article_ids: [24192480, 24192483, 24192486, 24192489, 24192492, 24192495, 24192498, 24192501, 24192504, 24192507, 24192510, 24192513, 24192516]
+        file_count: 13
+        licenses: [CC0 1.0]
+        manifest_sha256: cd1abb7523fc01b632bbb22660ce9cf83f5b57a264653d13340a47b5a73e2006
+        total_size_bytes: 10001542286
+        versions: [1]
+
+  study_32:
+    title: High-density EMG, IMU, Kinetic, and Kinematic Open-Source Dataset
+    doi: 10.6084/m9.figshare.22227337.v2
+    landing_page: https://figshare.com/articles/dataset/High-density_EMG_IMU_Kinetic_and_Kinematic_Open-Source_Dataset/22227337/2
+    api_record: https://api.figshare.com/v2/articles/22227337
+    release_version: 2
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    redistribution: permitted-with-attribution
+    attribution: Dimitrov, Hristo; Bull, Anthony M. J.; Farina, Dario (2023). High-density EMG, IMU, Kinetic, and Kinematic Open-Source Dataset. Figshare. Dataset. Version 2.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls: [https://api.figshare.com/v2/articles/22227337]
+      scope: official version-2 dataset record
+    release:
+      repository: figshare
+      record_type: article
+      record_id: 22227337
+      api_record: https://api.figshare.com/v2/articles/22227337
+      version_status: frozen
+      content_checksum_status: verified-10-participant-archives-other-release-files-metadata-only
+      manifest:
+        article_count: 1
+        article_ids: [22227337]
+        file_count: 16
+        licenses: [CC BY 4.0]
+        manifest_sha256: 750cb50261a9a867eecea9e741034ccbba294cd701697e434ed54dfa94b6b6f6
+        total_size_bytes: 2787014912
+        versions: [2]
+    semantic_authority:
+      article_doi: 10.1038/s41597-023-02679-x
+      article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10638431/
+      emg_sampling_rate_hz: 2000
+      imu_sampling_rate_hz: 2000
+      emg_raw_to_mv_scale_factor: 0.000286
+      evidence_location: Methods/Instrumentation and Data Records
+    assets:
+      P01:
+        file_id: 42558349
+        name: P01.zip
+        download_url: https://ndownloader.figshare.com/files/42558349
+        size_bytes: 252108693
+        md5: 58221d1db37b5334fb8456d58161952a
+        archive_format: zip
+      P02:
+        file_id: 42558379
+        name: P02.zip
+        download_url: https://ndownloader.figshare.com/files/42558379
+        size_bytes: 255277359
+        md5: 8523aabe536f652c0db672a32893de2b
+        archive_format: zip
+        declared_absent_mappings:
+          - mapping_id: study_32-017
+            reason: No static stairs TRC is present in the complete official P02 archive inventory; dynamic stairs trials remain present.
+            evidence_basis: Full ZIP member audit of file 42558379 at the registered MD5.
+      P03:
+        file_id: 42558400
+        name: P03.zip
+        download_url: https://ndownloader.figshare.com/files/42558400
+        size_bytes: 305025505
+        md5: 683185d867d04eb07cbaf867e22c1f34
+        archive_format: zip
+      P04:
+        file_id: 42558433
+        name: P04.zip
+        download_url: https://ndownloader.figshare.com/files/42558433
+        size_bytes: 250177389
+        md5: d8d0de85759345c515fd31df3d994409
+        archive_format: zip
+      P05:
+        file_id: 42558439
+        name: P05.zip
+        download_url: https://ndownloader.figshare.com/files/42558439
+        size_bytes: 305972404
+        md5: 1fcc3082d1276b07b79cf483cf080d06
+        archive_format: zip
+      P06:
+        file_id: 42558448
+        name: P06.zip
+        download_url: https://ndownloader.figshare.com/files/42558448
+        size_bytes: 265859924
+        md5: 31b1345c4592cfb46ba37255bbc03e0a
+        archive_format: zip
+      P07:
+        file_id: 42558451
+        name: P07.zip
+        download_url: https://ndownloader.figshare.com/files/42558451
+        size_bytes: 294694202
+        md5: 051452505ca02a92143c4f4ec0227868
+        archive_format: zip
+      P08:
+        file_id: 42558466
+        name: P08.zip
+        download_url: https://ndownloader.figshare.com/files/42558466
+        size_bytes: 305800049
+        md5: 40dec7fbd55aebcceaacfc23b391985a
+        archive_format: zip
+      P09:
+        file_id: 42558472
+        name: P09.zip
+        download_url: https://ndownloader.figshare.com/files/42558472
+        size_bytes: 259740703
+        md5: 8d8002850c7bf701aa32799953d760d9
+        archive_format: zip
+      P10:
+        file_id: 42558475
+        name: P10.zip
+        download_url: https://ndownloader.figshare.com/files/42558475
+        size_bytes: 292257064
+        md5: 024e0f8e331127919d40c010c02b4c00
+        archive_format: zip
+
+  study_33:
+    title: A comprehensive open-source dataset of lower limb biomechanics in multiple locomotion conditions
+    doi: 10.17632/fcgm3chfff.2
+    landing_page: https://data.mendeley.com/datasets/fcgm3chfff/2
+    api_record: https://data.mendeley.com/datasets/fcgm3chfff/2
+    release_version: 2
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    redistribution: permitted-with-attribution
+    attribution: Camargo, Jonathan (2021). Data repository for Camargo et al., parts 1-3. Mendeley Data. Version 2.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls:
+        - https://data.mendeley.com/datasets/fcgm3chfff/2
+        - https://data.mendeley.com/datasets/k9kvm5tn3f/2
+        - https://data.mendeley.com/datasets/jj3r5f9pnf/2
+      scope: all three current Mendeley Data parts state CC BY 4.0
+    release:
+      repository: mendeley-data
+      record_type: multipart-dataset
+      version_status: frozen
+      content_checksum_status: pending-download
+      records:
+        - doi: 10.17632/fcgm3chfff.2
+          version: 2
+          landing_page: https://data.mendeley.com/datasets/fcgm3chfff/2
+        - doi: 10.17632/k9kvm5tn3f.2
+          version: 2
+          landing_page: https://data.mendeley.com/datasets/k9kvm5tn3f/2
+        - doi: 10.17632/jj3r5f9pnf.2
+          version: 2
+          landing_page: https://data.mendeley.com/datasets/jj3r5f9pnf/2
+      validation_materialization:
+        doi: 10.17632/fcgm3chfff.1
+        version: 1
+        file_id: 38140606-9761-4eb1-b77c-a9673128bc92
+        name: AB06.zip
+        relationship: official version-1 participant archive; current version 2 repackages AB06-AB14 into one 10 GB archive
+        content_evidence: paper/validation_corpus.yaml
+
+  study_38:
+    title: Human kinematic, kinetic and EMG data during different walking and stair tasks
+    doi: 10.6084/m9.figshare.c.4494755.v1
+    landing_page: https://springernature.figshare.com/collections/Human_kinematic_kinetic_and_EMG_data_during_level_walking_toe_heel-walking_stairs_ascending_descending/4494755/1
+    api_record: https://api.figshare.com/v2/collections/4494755/articles?page_size=100
+    release_version: 1
+    license: CC0 1.0
+    license_url: https://creativecommons.org/publicdomain/zero/1.0/
+    redistribution: permitted
+    attribution: Ferrarin, Maurizio; Carpinella, Ilaria; Lencioni, Tiziana; Rabuffetti, Marco; Marzegan, Alberto (2019). Figshare collection 4494755, version 1.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls: ['https://api.figshare.com/v2/collections/4494755/articles?page_size=100']
+      scope: all 54 collection members report CC0 at the repository record
+    release:
+      repository: figshare
+      record_type: collection
+      record_id: 4494755
+      api_record: https://api.figshare.com/v2/collections/4494755/articles?page_size=100
+      version_status: frozen
+      content_checksum_status: pending-download
+      manifest:
+        article_count: 54
+        article_ids: [8088302, 9759092, 9784961, 9784964, 9784967, 9784970, 9784973, 9784976, 9784979, 9784982, 9784985, 9784988, 9784991, 9784994, 9784997, 9785000, 9785003, 9785006, 9785009, 9785012, 9785015, 9785018, 9785021, 9785024, 9785027, 9785030, 9785033, 9785036, 9785039, 9785042, 9785045, 9785048, 9785051, 9785054, 9785057, 9785060, 9785063, 9785066, 9785069, 9785072, 9785075, 9785078, 9785081, 9785084, 9785087, 9785090, 9785093, 9785096, 9785099, 9785102, 9785105, 9785108, 9785111, 9785117]
+        file_count: 54
+        licenses: [CC0 1.0]
+        manifest_sha256: 9ebabf10cb07fa59e34139941fce95153c453d4ea9a98e4b40661c3193d899c2
+        total_size_bytes: 515231189
+        versions: [1]
+
+  study_43:
+    title: Human Sitting to Walking Transitions A Motion Capture Dataset
+    doi: 10.26180/24515092.v4
+    landing_page: https://bridges.monash.edu/articles/dataset/_b_Human_Sitting_to_Walking_Transitions_A_Motion_Capture_Dataset_b_/24515092/4
+    api_record: https://api.figshare.com/v2/articles/24515092
+    release_version: 4
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    redistribution: permitted-with-attribution
+    attribution: Perera, Chamalka; Hussain, Zakia; Khant, Min; Agape, Alpha; Gouwanda, Darwin (2023). Human Sitting to Walking Transitions. Monash University. Version 4.
+    license_evidence:
+      evidence_type: official-repository-metadata
+      checked_at: '2026-07-20'
+      urls: [https://api.figshare.com/v2/articles/24515092]
+      scope: official Monash Bridges version-4 dataset record
+    release:
+      repository: figshare
+      record_type: article
+      record_id: 24515092
+      api_record: https://api.figshare.com/v2/articles/24515092
+      version_status: frozen
+      content_checksum_status: pending-download
+      manifest:
+        article_count: 1
+        article_ids: [24515092]
+        file_count: 67
+        licenses: [CC BY 4.0]
+        manifest_sha256: b88829dcebea63b206163bd8d37d19e38cd67b7e7a28fb884c85d77b0443d510
+        total_size_bytes: 1109865104
+        versions: [4]

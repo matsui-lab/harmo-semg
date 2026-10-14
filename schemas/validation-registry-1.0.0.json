@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/validation-registry-1.0.0.json",
+  "title": "harmo-semg empirical validation registry",
+  "type": "object",
+  "required": ["registry_version", "primary_unit", "thresholds", "studies", "experiments", "outputs"],
+  "properties": {
+    "registry_version": {"const": "1.0.0"},
+    "primary_unit": {"const": "subject"},
+    "thresholds": {"type": "object"},
+    "studies": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": ["id", "config", "doi", "license", "redistribution", "emg_available", "selection_source", "catalog_label", "catalog_url"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "config": {"type": "string", "pattern": "^studies/.+/config\\.yaml$"},
+          "doi": {"type": "string", "pattern": "^10\\."},
+          "license": {"type": "string", "minLength": 1},
+          "redistribution": {"type": "string", "minLength": 1}
+          ,"emg_available": {"type": "boolean"}
+          ,"selection_source": {"enum": ["workbook", "post-workbook-addition"]}
+          ,"selection_row": {"type": "integer", "minimum": 2}
+          ,"catalog_label": {"type": "string", "minLength": 1}
+          ,"catalog_url": {"type": "string", "pattern": "^https://"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "experiments": {
+      "type": "object",
+      "required": ["A", "B", "C", "D", "E", "F", "G"],
+      "properties": {
+        "A": {"type": "object"},
+        "B": {"type": "object"},
+        "C": {"type": "object"},
+        "D": {"type": "object"},
+        "E": {
+          "type": "object",
+          "required": ["subjects", "speeds", "trials", "denominator"],
+          "properties": {"denominator": {"const": 336}}
+        },
+        "F": {"type": "object"},
+        "G": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "outputs": {"type": "array", "minItems": 9, "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

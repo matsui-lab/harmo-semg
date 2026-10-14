@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/semantic-coverage-audit-1.0.0.json",
+  "title": "SemanticCoverageAudit",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "implementation_commit",
+    "code_dirty",
+    "scope",
+    "registry",
+    "mapping_outcomes",
+    "crosswalk",
+    "source_attestations",
+    "study_anatomy",
+    "mapping_rows",
+    "summary",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "implementation_commit": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "code_dirty": {"type": "boolean"},
+    "scope": {"type": "string", "minLength": 1},
+    "registry": {"$ref": "#/$defs/source"},
+    "mapping_outcomes": {"$ref": "#/$defs/source"},
+    "crosswalk": {
+      "type": "object",
+      "required": [
+        "crosswalk_id",
+        "sha256",
+        "ontology_asset_sha256",
+        "verified_exact_entries"
+      ]
+    },
+    "source_attestations": {"type": "array", "items": {"type": "object"}},
+    "study_anatomy": {"type": "object"},
+    "mapping_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "mapping_id",
+          "study_id",
+          "task_status",
+          "anatomy_status",
+          "config_ready_for_recording_materialization",
+          "recording_bundle_status"
+        ]
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "mapping_denominator",
+        "emg_semantics_applicable_mappings",
+        "task_status_counts",
+        "anatomy_status_counts",
+        "config_ready_for_recording_materialization",
+        "emg_config_ready_for_recording_materialization",
+        "unique_emg_channel_definitions",
+        "mapped_emg_channel_definitions",
+        "explicitly_excluded_emg_channel_definitions",
+        "unresolved_emg_channel_definitions"
+      ]
+    },
+    "claim_boundary": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

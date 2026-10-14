@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/comparability-resolution-index-1.0.0.json",
+  "title": "Activation-timing comparability resolution index",
+  "type": "object",
+  "required": [
+    "schema",
+    "resolution_id",
+    "intended_use",
+    "source_status",
+    "resolved_status",
+    "conditions_before",
+    "conditions_after",
+    "amplitude_comparability",
+    "left_release_status",
+    "right_release_status",
+    "exchange_exported",
+    "files",
+    "digests"
+  ],
+  "properties": {
+    "schema": {
+      "const": "https://matsui-lab.github.io/emg-atlas/schemas/comparability-resolution-index-1.0.0.json"
+    },
+    "resolution_id": {"type": "string", "minLength": 1},
+    "intended_use": {"const": "activation-timing"},
+    "source_status": {
+      "enum": [
+        "comparable",
+        "conditionally_comparable",
+        "not_comparable",
+        "unassessed"
+      ]
+    },
+    "resolved_status": {
+      "enum": [
+        "comparable",
+        "conditionally_comparable",
+        "not_comparable",
+        "unassessed"
+      ]
+    },
+    "conditions_before": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "conditions_after": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "amplitude_comparability": {"const": "not-established"},
+    "left_release_status": {
+      "enum": ["allow", "conditional", "quarantine", "deny"]
+    },
+    "right_release_status": {
+      "enum": ["allow", "conditional", "quarantine", "deny"]
+    },
+    "exchange_exported": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"enum": ["left", "right"]}
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "digests": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,122 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S6
+gate_id: G6c-S6
+title: Structural adequacy and missing-angular-momentum audit
+frozen_at: '2026-07-23'
+design:
+  source_results:
+    s2: paper/results/validation/g6c_s2_mechanics_localization.json
+    s5: paper/results/validation/g6c_s5_rra_sensitivity.json
+  source_work_artifacts:
+    rra_actuation: padded_rra/rra_pass2/g6b3_rra_pass2_Actuation_force.sto
+    s2_worker_report: g6c_s2_mechanics_localization_worker.json
+    s2_plan: g6c_s2_mechanics_localization_plan.json
+  baseline_cell: published_original__standard
+  ground_reaction_role: heldout_ground_reaction
+  study31:
+    subject_id: '02'
+    trial: 4.00-m/s
+    external_condition: published-original
+    tracking_condition: standard
+    contact_side: right
+    vertical_force_column: r_ground_force_vy
+    residual_moment_columns: [mx, my, mz]
+    vertical_axis: 1
+    analysis_window_s: [19.36, 22.014]
+    contact:
+      threshold_n: 20.0
+      minimum_duration_s: 0.15
+      lowpass_cutoff_hz: 6.0
+      lowpass_order: 4
+    stride:
+      minimum_duration_s: 0.45
+      maximum_duration_s: 0.80
+      sample_interval_s: 0.001
+      phase_points: 101
+    selection_rule: >-
+      Contacts and strides are selected from the right vertical ground-reaction
+      force only. Residual forces, residual moments, and RRA tracking errors are
+      prohibited from event selection.
+  study1_observational_control:
+    role: observed-full-body-upper-limb-angular-momentum-plausibility
+    c3d_repository_path: studies/study_1/notebook/Ref01_sss_le_shoes05.c3d
+    expected_c3d_sha256: c0c4784eb732b5799e3f9fadd0b2a2c337a29401e020dee8cba53ac66f935b9a
+    subject_id: '1'
+    point_unit: mm
+    vertical_axis: 2
+    marker_groups:
+      head_trunk: [LFHD, RFHD, LBHD, RBHD, C7, T10, CLAV, STRN, RBAK]
+      left_upper_limb: [LSHO, LUPA, LELB, LFRM, LWRA, LWRB, LFIN]
+      right_upper_limb: [RSHO, RUPA, RELB, RFRM, RWRA, RWRB, RFIN]
+      pelvis: [LASI, RASI, LPSI, RPSI]
+      left_lower_limb: [LTHI, LKNE, LTIB, LANK, LHEE, LTOE]
+      right_lower_limb: [RTHI, RKNE, RTIB, RANK, RHEE, RTOE]
+    calculated_markers: [CentreOfMass]
+    expected_force_moment_analog_channels:
+      - Force.Fx1
+      - Force.Fy1
+      - Force.Fz1
+      - Moment.Mx1
+      - Moment.My1
+      - Moment.Mz1
+      - Force.Fx2
+      - Force.Fy2
+      - Force.Fz2
+      - Moment.Mx2
+      - Moment.My2
+      - Moment.Mz2
+      - Force.Fx3
+      - Force.Fy3
+      - Force.Fz3
+      - Moment.Mx3
+      - Moment.My3
+      - Moment.Mz3
+    upper_limb_proxy:
+      lowpass_cutoff_hz: 6.0
+      lowpass_order: 4
+      edge_exclusion_s: 0.15
+      segment_center_approximation: endpoint-midpoint
+      spin_angular_momentum: omitted
+      reference_model:
+        name: LaiUhlrich2022
+        source_repository: https://github.com/matsui-lab/opencap-pipe
+        source_commit: 03f73df91ec62dc4e6b08f7dd1249edc318d7f32
+        source_path: opensimPipeline/Models/LaiUhlrich2022.osim
+        source_sha256: 7499645500d4bca9269f27fd669bd3ed3abbeccd549d87f86cd01119a1a24366
+        license: Apache-2.0
+        total_mass_kg: 75.337
+        one_side_segment_masses_kg:
+          humerus: 2.0325
+          forearm: 1.215
+          hand: 0.4575
+    coordinate_correspondence:
+      study31_vertical: y
+      study1_vertical: z
+    paired_rra_requirements:
+      - subject-matched-static-calibration
+      - force-platform-origin-and-orientation
+      - force-COP-free-moment-round-trip
+      - articulated-full-body-model
+      - arm-mass-lumped-model-with-identical-total-mass-and-COM
+      - identical-kinematics-and-external-loads
+thresholds:
+  residual_moment_fraction: 0.01
+  minimum_complete_strides: 2
+  minimum_vertical_phase_correlation: 0.80
+  maximum_vertical_peak_to_peak_cv: 0.30
+  maximum_periodic_closure_error_nms: 1.0e-10
+  minimum_marker_valid_fraction: 0.99
+  maximum_force_platform_roundtrip_error_nmm: 1.0e-6
+  descriptive_same_order_ratio_minimum: 0.25
+  descriptive_same_order_ratio_maximum: 4.0
+claim_boundary: >-
+  G6c-S6 tests whether the retained source-faithful RRA corrective moment has a
+  repeatable gait-locked component and whether independently observed upper-limb
+  motion can carry angular momentum of the same order. Integrating residual
+  torque yields required corrective angular momentum, not an observation of an
+  omitted body segment. The Study 1 comparison is a different subject and
+  activity and uses an orbital midpoint proxy without segment spin; it is
+  descriptive plausibility evidence only. Missing force-platform geometry or a
+  subject-matched full-body versus arm-lumped model pair blocks causal structural
+  attribution. G6c-S6 cannot validate personalization, joint moments, muscle
+  forces, or clinical use.

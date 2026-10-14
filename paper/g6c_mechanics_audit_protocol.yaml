@@ -1,0 +1,77 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c
+gate_id: G6c
+title: Source-faithful OpenSim mechanics evaluation audit
+frozen_at: '2026-07-22'
+design:
+  roles:
+    model: static_derived_model
+    markers: heldout_markers
+    ground_reaction: heldout_ground_reaction
+    raw_c3d: raw_c3d
+    public_ik: public_ik
+    public_id: public_id
+    ik_setup: public_ik_setup
+    id_setup: public_id_setup
+  window_s: [20.355, 21.015]
+  source_faithfulness_domain: full-public-ik-grid
+  vertical_axis: 1
+  moment_semantics: must-be-audited-from-raw-c3d
+  major_moments:
+    - hip_flexion_r_moment
+    - knee_angle_r_moment
+    - ankle_angle_r_moment
+    - hip_flexion_l_moment
+    - knee_angle_l_moment
+    - ankle_angle_l_moment
+  closure_diagnostic:
+    # Frozen independently of the resulting ID fit. The outer second on each
+    # side supplies filter/derivative padding and is excluded from comparison.
+    marker_rederived_window_s: [33.63, 38.63]
+    comparison_window_s: [34.63, 37.63]
+    distal_moments:
+      - knee_angle_r_moment
+      - ankle_angle_r_moment
+      - knee_angle_l_moment
+      - ankle_angle_l_moment
+    proximal_moments:
+      - hip_flexion_r_moment
+      - hip_flexion_l_moment
+    minimum_proximal_improvement_factor: 5.0
+    reference_replacement_allowed: false
+  external_loads:
+    aggregation: combined_platform
+    platform_index_zero_based: 1
+    published_prefixes: [l, r]
+    c3d_to_ground_rotation:
+      - [0, -1, 0]
+      - [0, 0, 1]
+      - [-1, 0, 0]
+    c3d_time_offset_s: -0.01
+    transform_provenance: exact C3D-marker to published-TRC coordinate identity
+    force_nrmse_tolerance: 0.05
+    cop_rmse_tolerance_m: 0.10
+    minimum_component_correlation: 0.90
+    minimum_free_moment_correlation: 0.70
+opensim:
+  required_version: 4.5.2
+  id_lowpass_cutoff_hz: 20.0
+  rra:
+    passes: 2
+    lowpass_cutoff_hz: 6.0
+    adjust_com_to_reduce_residuals: true
+    adjusted_com_body: torso
+    residual_force_optimal_force: {FX: 4.0, FY: 8.0, FZ: 4.0}
+    residual_moment_optimal_force: {MX: 2.0, MY: 2.0, MZ: 2.0}
+    reserve_optimal_force: 300.0
+    task_weight: {pelvis: 5.0, other: 1.0}
+    task_kp: 100.0
+    task_kv: 20.0
+thresholds:
+  median_nrmse: 0.02
+  maximum_nrmse: 0.05
+  minimum_correlation: 0.99
+  residual_force_fraction: 0.05
+  residual_moment_fraction: 0.01
+missing_policy: fail-closed-and-retain-result
+claim_boundary: mechanics evaluator integrity only; personalization is not validated by G6c

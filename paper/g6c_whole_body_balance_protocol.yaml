@@ -1,0 +1,46 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S
+gate_id: G6c-S
+title: RRA-independent whole-body Newton-Euler balance audit
+frozen_at: '2026-07-22'
+design:
+  roles:
+    model: static_derived_model
+    markers: heldout_markers
+    ground_reaction: heldout_ground_reaction
+    raw_c3d: raw_c3d
+    ik_setup: public_ik_setup
+  # One second of fixed padding on each side protects filtering and numerical
+  # differentiation. Only the same 66-row Subject 02 stride used by G6c is
+  # assessed. Neither window is selected from the resulting residual.
+  kinematics_window_s: [19.355, 22.015]
+  evaluation_window_s: [20.355, 21.015]
+  expected_evaluation_rows: 66
+  vertical_axis: 1
+  gravity_m_s2: [0.0, -9.80665, 0.0]
+  filter:
+    type: butterworth-zero-phase-sosfiltfilt
+    order: 4
+    cutoff_hz: 6.0
+    selection: inherited-from-frozen-rra-kinematics-processing
+    same_cutoff_for_kinematics_and_external-wrench: true
+  external_loads:
+    aggregation: combined_platform
+    platform_index_zero_based: 1
+    published_prefixes: [l, r]
+    c3d_to_ground_rotation:
+      - [0, -1, 0]
+      - [0, 0, 1]
+      - [-1, 0, 0]
+    c3d_time_offset_s: -0.01
+    contact_threshold_n: 20.0
+    transform_provenance: inherited-unchanged-from-g6c-source-audit
+opensim:
+  required_version: 4.5.2
+thresholds:
+  residual_force_fraction: 0.05
+  residual_moment_fraction: 0.01
+missing_policy: fail-closed-and-retain-result
+claim_boundary: >-
+  whole-body nonclosure localization only; the audit does not replace released
+  G6c evidence, validate RRA-derived mechanics, or validate personalization

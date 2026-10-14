@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/atlas-materialization-index-1.0.0.json",
+  "title": "BoundedAtlasMaterializationIndex",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "implementation_commit",
+    "code_dirty",
+    "scope",
+    "max_timepoints_per_record",
+    "source_assets",
+    "crosswalk",
+    "inputs",
+    "mappings",
+    "summary",
+    "tables",
+    "duckdb_queries",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "implementation_commit": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "code_dirty": {"type": "boolean"},
+    "scope": {"type": "string", "minLength": 1},
+    "max_timepoints_per_record": {"const": 100},
+    "source_assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "study_id",
+          "asset_id",
+          "local_name",
+          "size_bytes",
+          "sha256",
+          "checksum_algorithm",
+          "declared_checksum",
+          "verification_mode",
+          "frozen_source_inventory_sha256",
+          "source_release_registry_sha256",
+          "license",
+          "license_url",
+          "redistribution",
+          "attribution",
+          "pass"
+        ]
+      }
+    },
+    "crosswalk": {
+      "type": "object",
+      "required": ["crosswalk_id", "sha256", "ontology_asset_sha256"]
+    },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "corpus_sha256",
+        "coverage_sha256",
+        "mapping_outcomes_sha256",
+        "source_inventory_sha256",
+        "source_releases_sha256"
+      ]
+    },
+    "mappings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "mapping_id",
+          "mapping_name",
+          "study_id",
+          "asset_id",
+          "archive_sha256",
+          "archive_size_bytes",
+          "archive_verification_mode",
+          "frozen_first_normalized_sha256",
+          "frozen_first_digest_pass",
+          "records",
+          "comparison",
+          "comparison_path",
+          "comparison_sha256",
+          "release_decisions",
+          "release_artifacts"
+        ],
+        "properties": {
+          "mapping_id": {"type": "string", "minLength": 1},
+          "mapping_name": {"type": "string", "minLength": 1},
+          "study_id": {"type": "string", "minLength": 1},
+          "asset_id": {"type": "string", "minLength": 1},
+          "archive_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "archive_size_bytes": {"type": "integer", "minimum": 1},
+          "archive_verification_mode": {"type": "string", "minLength": 1},
+          "frozen_first_normalized_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "frozen_first_digest_pass": {"type": "boolean"},
+          "records": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "role",
+                "recording_id",
+                "recording_sha256",
+                "manifest_sha256",
+                "trust_sha256",
+                "recording_path",
+                "manifest_path",
+                "trust_path",
+                "source_member",
+                "source_member_sha256",
+                "source_member_crc32",
+                "normalized_record_sha256",
+                "sample_sha256",
+                "sample_count",
+                "source_channel_count",
+                "qualified_channel_count",
+                "excluded_source_channels",
+                "trust_dimensions",
+                "parse_summary"
+              ]
+            }
+          },
+          "comparison": {"type": "object"},
+          "comparison_path": {"type": "string", "minLength": 1},
+          "comparison_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "release_decisions": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "release_artifacts": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "mapping_count",
+        "recording_count",
+        "frozen_first_digest_passed",
+        "conditional_comparisons",
+        "conditional_releases",
+        "exchange_exports",
+        "source_channels",
+        "qualified_channels",
+        "excluded_source_channels",
+        "pass"
+      ]
+    },
+    "tables": {"type": "object"},
+    "duckdb_queries": {"type": "object"},
+    "claim_boundary": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

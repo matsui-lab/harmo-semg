@@ -1,0 +1,90 @@
+schema_version: 1.0.0
+experiment_id: E2-G6d-G6e
+gate_id: G6d-G6e
+title: Dynamic-only OpenSim personalization with frozen blind confirmation
+frozen_at: '2026-07-22'
+seed: 20260722
+design:
+  blind_subjects: ['05', '11', '18', '19']
+  development_subjects:
+    - '01'
+    - '02'
+    - '03'
+    - '04'
+    - '06'
+    - '07'
+    - '08'
+    - '09'
+    - '10'
+    - '12'
+    - '13'
+    - '14'
+    - '15'
+    - '16'
+    - '17'
+engine:
+  strategy: hybrid
+  addbiomechanics_version: v2.2
+  addbiomechanics_commit: 05890f1445e69bff582a6479249498824856fe04
+  container_image: sha256:c0b52dafa4aceabc3a56ada9f82d8ab102728237ccf82a98e194096e5b335287
+  container_platform: linux/amd64
+marker_classes:
+  anatomical:
+    - C7
+    - JN
+    - LASIS
+    - LHEE
+    - LLEK
+    - LLM
+    - LMEK
+    - LMM
+    - LMT2
+    - LMT5
+    - LPSIS
+    - RASIS
+    - RHEE
+    - RLEK
+    - RLM
+    - RMEK
+    - RMM
+    - RMT2
+    - RMT5
+    - RPSIS
+    - T10
+    - XIPH
+  tracking: [LLSHA, LLTHI, RLSHA, RLTHI]
+native_optimizer:
+  required_opensim_version: 4.5.2
+  ridge_candidates: [0.0, 0.01, 0.1, 1.0, 10.0]
+  covariance_shrinkage: 0.5
+  calibration_window_s: [20.0, 30.0]
+  iteration_count: 3
+  sampled_frame_stride: 20
+  within_trial_outlier_mad: 4.5
+  relaxation: 0.5
+  maximum_total_marker_displacement_m: 0.12
+  dynamic_weight: 1.0
+  anatomical_prior_weight: 10.0
+  tracking_prior_weight: 0.25
+  dynamic_noise_floor_m: 0.005
+  rigid_cluster_weight: 1.0
+  bilateral_symmetry_weight: 0.5
+functional_calibration:
+  score_bootstrap_residual_threshold_m: 0.006
+  sara_trial_axis_difference_threshold_deg: 5.0
+  fail_action: use-population-prior-and-record-functional_unidentifiable
+thresholds:
+  segment_scale_median_relative_error: 0.02
+  segment_scale_p95_relative_error: 0.05
+  ik_rms_error_m: 0.02
+  ik_max_error_m: 0.04
+  rra_angle_change_rms_deg: 5.0
+  residual_force_fraction: 0.05
+  residual_moment_fraction: 0.01
+  joint_angle_median_rmse_deg: 3.0
+  joint_angle_max_rmse_deg: 8.0
+  joint_moment_median_nrmse: 0.15
+  joint_moment_max_nrmse: 0.30
+  minimum_joint_moment_correlation: 0.90
+blind_rule: all four frozen subjects must pass every threshold before Study 31
+study31_rule: T1 fit; T2 and T3 independent evaluation; retain six source-absent rows in denominator 336

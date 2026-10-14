@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harmo"
+version = "0.3.1"
+description = "Harmonized sEMG and biomechanics data pipeline"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  # DuckDB 1.3 dropped CPython 3.8 wheels. Keep 3.8 installs reproducible
+  # instead of compiling DuckDB from source in validation environments.
+  "duckdb>=1.0,<1.3; python_version < '3.9'",
+  "duckdb>=1.0; python_version >= '3.9'",
+  "scipy",
+  "PyYAML>=6.0",
+  "fastapi>=0.111.0",
+  "uvicorn[standard]>=0.29.0",
+  "python-multipart>=0.0.9",
+  "pydantic>=2.7",
+  "lxml>=5.0",
+  "jsonschema>=4.0",
+]
+
+[project.optional-dependencies]
+timing = ["h5py>=3.8", "pyarrow>=12"]
+public-reuse = ["wfdb>=4.3,<5"]
+spark = ["pyspark>=3.5,<4", "pyarrow>=12"]
+c3d = [
+  "ezc3d>=1.5.16; python_version >= '3.10'",
+  "pyarrow>=12",
+]
+viz = ["streamlit", "plotly"]
+r-analysis = []  # R runtime is external; this marker enables harmo r-analyze features
+dev = [
+  "build",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+  "httpx>=0.27.0",
+  "pytest-asyncio>=0.24",
+  "h5py>=3.8",
+]
+validation = [
+  "hedtools>=0.4",
+  "h5py>=3.8",
+  "numpy>=1.24",
+  "fsspec>=2023.1",
+]
+publication = ["matplotlib>=3.7", "Pillow>=10", "PyYAML>=6.0"]
+legacy-gui = ["PyQt5>=5.15", "pyvista>=0.38", "pyvistaqt>=0.11"]
+
+[project.scripts]
+harmo = "harmo.cli:main"
+harmo-desktop = "harmo.desktop:main"
+harmo-local = "harmo.desktop:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"harmo" = ["semantic_workspace.html", "desktop.html"]
+"harmo.config" = ["templates/*.yaml"]
+"harmo.r_bridge" = ["scripts/*.R", "scripts/*.md"]
+"harmo.model.web_editor" = ["static/**/*"]
+
+[tool.setuptools.data-files]
+"share/harmo/schemas" = ["schemas/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
+asyncio_default_fixture_loop_scope = "function"

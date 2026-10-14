@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/exchange-2.0.0.json",
+  "title": "Evidence-qualified EMG ATLAS exchange index",
+  "type": "object",
+  "required": [
+    "schema",
+    "recording_id",
+    "recording_digest",
+    "run_id",
+    "intended_use",
+    "release_status",
+    "release_conditions",
+    "files",
+    "digests",
+    "trust_summary"
+  ],
+  "properties": {
+    "schema": {
+      "const": "https://matsui-lab.github.io/emg-atlas/schemas/exchange-2.0.0.json"
+    },
+    "recording_id": {"type": "string", "minLength": 1},
+    "recording_digest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "run_id": {"type": "string", "minLength": 1},
+    "intended_use": {"type": "string", "minLength": 1},
+    "release_status": {"enum": ["allow", "conditional"]},
+    "release_conditions": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "files": {
+      "type": "object",
+      "required": [
+        "recording",
+        "manifest",
+        "trust",
+        "comparability",
+        "release_decision"
+      ],
+      "properties": {
+        "recording": {"type": "string", "minLength": 1},
+        "manifest": {"type": "string", "minLength": 1},
+        "trust": {"type": "string", "minLength": 1},
+        "comparability": {"type": "string", "minLength": 1},
+        "release_decision": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "digests": {
+      "type": "object",
+      "required": [
+        "recording",
+        "manifest",
+        "trust",
+        "comparability",
+        "release_decision"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "trust_summary": {
+      "type": "object",
+      "required": [
+        "semantic_fidelity",
+        "scientific_validity",
+        "computational_reproducibility",
+        "traceability"
+      ],
+      "additionalProperties": {
+        "enum": ["pass", "warn", "fail", "unassessed"]
+      }
+    }
+  },
+  "additionalProperties": false
+}

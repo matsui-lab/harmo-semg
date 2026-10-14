@@ -1,0 +1,127 @@
+schema_version: '1.0'
+protocol_id: g3-cross-study-gait-physiology
+frozen_at: '2026-07-23'
+freeze_statement: >-
+  This protocol was committed before bulk download of the confirmatory source
+  files and before calculation or inspection of any EMG timing outcome.
+pre_outcome_amendment: >-
+  The common upper band-pass edge was set to 350 Hz after structural metadata
+  showed that some Study 38 records use 800 Hz sampling. This correction was
+  made before those files were downloaded or any EMG outcome was calculated.
+  A second structural amendment selected the first five source-ordered Walking
+  strides whose Foot equals the unilateral EMGSide. The initial implementation
+  stopped before producing an outcome when Subject 2 showed that the first five
+  Walking records can mix foot-reference sides.
+post_outcome_integrity_correction: >-
+  The first complete run (result SHA-256
+  6a2ede669e8da9d5f21102971932cd9dd60a3089d1daaa629dd69d61b9919dbb)
+  was declared invalid because the extractor discarded source MCOS column
+  names and used a positional channel assumption. Inspection of the source
+  metadata showed the order VL, RF, VM, TA, BF, ST, GM, GL, SM, SL, PL, PB.
+  The correction requires source-declared labels and does not alter any
+  subject, cycle, preprocessing, metric, or decision threshold.
+
+question: >-
+  Does the traceable harmonization path preserve established muscle-specific
+  timing structure in level walking across two independently collected public
+  EMG studies without treating incompatible amplitudes as commensurate?
+
+required_studies:
+  study_38:
+    doi: 10.1038/s41597-019-0323-z
+    repository_doi_prefix: 10.6084/m9.figshare.
+    subjects: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+    activity: Walking
+    cycle_selection: >-
+      The first five source-ordered Walking strides whose Foot field equals the
+      unilateral source-reported EMGSide. Do not use speed or EMG values for
+      selection.
+    representation: source raw stride EMG transformed by the frozen common envelope
+    expected_cycles_per_subject: 5
+  study_120:
+    doi: 10.1038/s41597-025-05391-0
+    repository_doi: 10.6084/m9.figshare.27677016.v1
+    subjects: [S011, S012, S013, S014, S015, S016, S017, S018, S019, S020]
+    activity: LevelWalking
+    cycle_selection: >-
+      All source-accepted LevelWalking steps from all available trials; retain
+      the source-defined right gait cycle and right-side EMG channels.
+    representation: source processed and time-normalized EMG envelope
+    minimum_cycles_per_subject: 5
+
+source_assets:
+  study_38:
+    Subject1.mat: {file_id: 17544206, bytes: 7468651, md5: 12094df62f730bb3d33800b43a90294a}
+    Subject2.mat: {file_id: 17544221, bytes: 8791860, md5: 118e9f1075d47964e7c11b3712c16abd}
+    Subject3.mat: {file_id: 17544218, bytes: 2822424, md5: f39a2a766ce664297dbaeed9c0f3fc44}
+    Subject4.mat: {file_id: 17544209, bytes: 5226547, md5: 6ce4929e3e079f1da26e26b200a8c424}
+    Subject5.mat: {file_id: 17544212, bytes: 7669490, md5: e7aaf4f33358070d035b2579c6e92c73}
+    Subject6.mat: {file_id: 17544245, bytes: 7947835, md5: acd51591eadd2f20b118283ef9505c99}
+    Subject7.mat: {file_id: 17544224, bytes: 9460021, md5: fed9fa4a47197af251eff8c0caf4a9f7}
+    Subject8.mat: {file_id: 17544227, bytes: 10862020, md5: ece269142589cdb680782ee547471ac8}
+    Subject9.mat: {file_id: 17544230, bytes: 3396152, md5: 36070ca6a0c36ac580f63a989e4ee5f7}
+    Subject10.mat: {file_id: 17544248, bytes: 6896427, md5: 6808f71117fd9dab2f500d442de87fe7}
+  study_120:
+    Gait120_011_to_020.zip:
+      file_id: 53167643
+      bytes: 1416035378
+      md5: 178b306d49c4b32423b529ba354eea63
+
+muscles:
+  tibialis anterior:
+    study_38_label: Tibialis Anterior
+    study_120_label_candidates: [Tibialis Anterior, TibialisAnterior, TA]
+    expected_peak_windows_percent: [[0, 20], [60, 100]]
+    active_windows_percent: [[0, 20], [60, 100]]
+    reference_window_percent: [20, 60]
+  medial gastrocnemius:
+    study_38_label: Gastrocnemius Medialis
+    study_120_label_candidates:
+      [Gastrocnemius Medialis, Medial Gastrocnemius, GastrocnemiusMedialis, GastrocnemuisMedialis, GM]
+    expected_peak_windows_percent: [[20, 60]]
+    active_windows_percent: [[20, 60]]
+    reference_window_percent: [60, 100]
+
+study_38_envelope:
+  mean_center: true
+  bandpass_hz: [20.0, 350.0]
+  butterworth_order: 4
+  zero_phase: true
+  rectify: absolute
+  hampel_window_seconds: 0.125
+  hampel_sigma: 3.0
+  rms_window_seconds: 0.125
+  normalized_grid_points: 101
+  interpolation: linear
+
+aggregation:
+  cycle_scale: divide_by_cycle_max
+  subject_curve: pointwise_median
+  amplitude_pooling_across_studies: false
+  timing_pooling: false
+  uncertainty_iterations: 10000
+  uncertainty_seed: 20260723
+
+decision_rules:
+  minimum_subjects_per_study: 10
+  minimum_cycles_per_subject: 5
+  minimum_subject_pattern_fraction_per_muscle: 0.70
+  require_positive_median_log2_phase_contrast: true
+  maximum_cross_study_centroid_difference_percent: 15.0
+  require_every_study_and_muscle: true
+  fail_closed_on_missing_or_nonfinite: true
+
+interpretation:
+  pass: >-
+    The harmonized timing representation retains a prespecified, established
+    level-walking activation structure in both source studies. It does not
+    validate amplitude comparability, clinical validity, force estimation, or
+    OpenSim mechanics.
+  fail: >-
+    The endpoint remains a traceable negative result. No thresholds, subjects,
+    cycles, channels, or preprocessing parameters may be changed after outcome
+    inspection.
+
+references:
+  - https://doi.org/10.1038/s41597-019-0323-z
+  - https://doi.org/10.1038/s41597-025-05391-0

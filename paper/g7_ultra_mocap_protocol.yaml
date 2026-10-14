@@ -1,0 +1,110 @@
+schema_version: '1.0'
+protocol_id: g7-held-out-ultra-mocap-adapter
+frozen_at: '2026-07-23'
+baseline_commit: e033a0d
+implementation_commit: 78cea5080b21ec4cad6787c1d49c13695540df34
+
+question: >-
+  Can a previously unopened upper-limb multimodal dataset be integrated as a
+  traceable adapter without adding dataset-ID branches to harmo core?
+
+dataset:
+  id: ultra-mocap
+  title: ULTRA-MoCap
+  article_doi: 10.1038/s41597-026-06687-5
+  repository_doi: 10.6084/m9.figshare.28751156.v1
+  repository_record: 28751156
+  license: CC BY 4.0
+  expected_subjects: [P01, P02, P03, P04, P05, P06, P07, P08, P09, P10, P11, P12, P13]
+  expected_trials_per_subject: 16
+  expected_trial_count: 208
+  expected_tasks:
+    Arm Swing: [Slow, Normal, Fast, VeryFast]
+    Crossbody Reach: [Slow, Normal, Fast]
+    Elbow Flexion: [Slow, Normal, Fast]
+    Shoulder Rotation: [Slow, Normal, Fast]
+    Overhead Reach: [Max, '180', '90']
+
+source_assets:
+  - role: processed-confirmatory-input
+    file_id: 53505362
+    name: ULTra-MoCap-processed.zip
+    bytes: 710577809
+    md5: e987a7327249290624f0dfb04504aea5
+    materialization: required
+  - role: raw-provenance-participants-01-06
+    file_id: 53505461
+    name: ULTra-MoCap-raw-0.zip
+    bytes: 2347794170
+    md5: 603706e4db8707ecacdc88ef419ae589
+    materialization: registered-not-required
+  - role: raw-provenance-participants-07-13
+    file_id: 53505458
+    name: ULTra-MoCap-raw-1.zip
+    bytes: 2119742453
+    md5: c80080b2ba1fe385247b3786978d9d6e
+    materialization: registered-not-required
+
+adapter_boundary:
+  allowed:
+    - studies/ultra_mocap
+    - src/harmo/adapters
+    - paper
+    - scripts/paper
+    - tests
+  core_paths:
+    - src/harmo
+  excluded_from_core:
+    - src/harmo/adapters
+  required_core_dataset_id_branches: 0
+  forbidden_core_tokens: [ultra-mocap, ultra_mocap, ULTRA-MoCap, ULTra-MoCap]
+
+processed_archive_contract:
+  required_members:
+    - All_subjects_data.h5
+  archive_integrity:
+    require_size: true
+    require_md5: true
+    require_zip_crc: true
+    reject_duplicate_members: true
+    reject_unsafe_paths: true
+  hdf5:
+    enumerate_all_groups_and_datasets: true
+    require_source_declared_labels_or_attributes: true
+    forbid_positional_semantic_mapping: true
+    expected_modalities: [emg, imu, joint-angle]
+    retain_nonfinite_counts: true
+    output_grid: source-synchronized
+    amplitude_transform: none
+
+decision_rules:
+  source_asset_count: 3
+  accounted_source_asset_count: 3
+  materialized_source_asset_count: 1
+  subjects_exact: true
+  trials_exact: true
+  every_trial_has_emg: true
+  every_trial_has_imu: true
+  every_trial_has_joint_angle: true
+  all_selected_arrays_readable: true
+  repeated_normalized_manifest_identical: true
+  core_dataset_id_branches: 0
+  fail_closed_on_unknown_structure: true
+
+metrics:
+  - source assets accounted/materialized
+  - subjects and trials discovered/converted
+  - modality completeness
+  - source sampling and time provenance
+  - finite/non-finite value counts
+  - normalized manifest SHA-256
+  - core and adapter changed lines
+  - dataset-ID branches in core
+  - active work seconds
+
+claim_boundary: >-
+  Passing demonstrates held-out extensibility, complete source accounting, and
+  deterministic traceable conversion of the processed multimodal release. It
+  does not validate the source authors' preprocessing, EMG amplitude
+  comparability, model accuracy, clinical generalization, or the two
+  non-materialized raw archives byte-for-byte.

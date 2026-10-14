@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/semantic-overlay-materialization-audit-1.0.0.json",
+  "title": "Semantic overlay R/M/T/C/D materialization audit",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "created_at",
+    "baseline_index_sha256",
+    "candidate_index_sha256",
+    "candidate_implementation_commit",
+    "candidate_code_dirty",
+    "audit_implementation_sha256",
+    "overlays",
+    "record_rows",
+    "mapping_rows",
+    "release_rows",
+    "dirty_control",
+    "summary",
+    "pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "created_at": {"type": "string", "minLength": 1},
+    "baseline_index_sha256": {"$ref": "#/$defs/sha256"},
+    "candidate_index_sha256": {"$ref": "#/$defs/sha256"},
+    "candidate_implementation_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "candidate_code_dirty": {"type": "boolean"},
+    "audit_implementation_sha256": {"$ref": "#/$defs/sha256"},
+    "overlays": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/overlay"}
+    },
+    "record_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/record"}
+    },
+    "mapping_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/mapping"}
+    },
+    "release_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/release"}
+    },
+    "dirty_control": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/dirtyControl"}
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {"type": "integer", "minimum": 0},
+          {"type": "boolean"}
+        ]
+      }
+    },
+    "pass": {"type": "boolean"},
+    "claim_boundary": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "overlay": {
+      "type": "object",
+      "required": ["study_id", "overlay_id", "sha256"],
+      "properties": {
+        "study_id": {"type": "string", "minLength": 1},
+        "overlay_id": {
+          "type": "string",
+          "pattern": "^semantic-overlay-[0-9a-f]{20}$"
+        },
+        "sha256": {"$ref": "#/$defs/sha256"}
+      },
+      "additionalProperties": false
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "mapping_id",
+        "role",
+        "recording_id",
+        "overlay_id",
+        "recording_bundle_invariant",
+        "normalized_record_invariant",
+        "sample_digest_invariant",
+        "non_overlay_manifest_inputs_invariant",
+        "baseline_overlay_absent",
+        "candidate_overlay_sha256",
+        "expected_overlay_sha256",
+        "overlay_checksum_bound",
+        "overlay_traceability_evidence_count",
+        "trust_dimensions_invariant",
+        "candidate_trust_dimensions"
+      ],
+      "properties": {
+        "mapping_id": {"type": "string", "minLength": 1},
+        "role": {"type": "string", "minLength": 1},
+        "recording_id": {"type": "string", "minLength": 1},
+        "overlay_id": {
+          "type": "string",
+          "pattern": "^semantic-overlay-[0-9a-f]{20}$"
+        },
+        "recording_bundle_invariant": {"type": "boolean"},
+        "normalized_record_invariant": {"type": "boolean"},
+        "sample_digest_invariant": {"type": "boolean"},
+        "non_overlay_manifest_inputs_invariant": {"type": "boolean"},
+        "baseline_overlay_absent": {"type": "boolean"},
+        "candidate_overlay_sha256": {"$ref": "#/$defs/sha256"},
+        "expected_overlay_sha256": {"$ref": "#/$defs/sha256"},
+        "overlay_checksum_bound": {"type": "boolean"},
+        "overlay_traceability_evidence_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "trust_dimensions_invariant": {"type": "boolean"},
+        "candidate_trust_dimensions": {
+          "type": "object",
+          "required": [
+            "semantic_fidelity",
+            "scientific_validity",
+            "computational_reproducibility",
+            "traceability"
+          ],
+          "additionalProperties": {
+            "enum": ["pass", "warn", "fail", "unassessed"]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "mapping": {
+      "type": "object",
+      "required": [
+        "mapping_id",
+        "study_id",
+        "overlay_id",
+        "comparison_policy_invariant",
+        "baseline_comparison_status",
+        "candidate_comparison_status"
+      ],
+      "properties": {
+        "mapping_id": {"type": "string", "minLength": 1},
+        "study_id": {"type": "string", "minLength": 1},
+        "overlay_id": {
+          "type": "string",
+          "pattern": "^semantic-overlay-[0-9a-f]{20}$"
+        },
+        "comparison_policy_invariant": {"type": "boolean"},
+        "baseline_comparison_status": {"type": "string", "minLength": 1},
+        "candidate_comparison_status": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "release": {
+      "type": "object",
+      "required": [
+        "mapping_id",
+        "recording_id",
+        "release_policy_invariant",
+        "baseline_status",
+        "candidate_status",
+        "candidate_exchange_exported"
+      ],
+      "properties": {
+        "mapping_id": {"type": "string", "minLength": 1},
+        "recording_id": {"type": "string", "minLength": 1},
+        "release_policy_invariant": {"type": "boolean"},
+        "baseline_status": {"type": "string", "minLength": 1},
+        "candidate_status": {"type": "string", "minLength": 1},
+        "candidate_exchange_exported": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "dirtyControl": {
+      "type": "object",
+      "required": [
+        "index_sha256",
+        "code_dirty",
+        "conditional_release_count",
+        "exchange_export_count",
+        "fail_closed"
+      ],
+      "properties": {
+        "index_sha256": {"$ref": "#/$defs/sha256"},
+        "code_dirty": {"type": "boolean"},
+        "conditional_release_count": {"type": "integer", "minimum": 0},
+        "exchange_export_count": {"type": "integer", "minimum": 0},
+        "fail_closed": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

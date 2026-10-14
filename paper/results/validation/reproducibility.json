@@ -1,0 +1,232 @@
+{
+  "clean_runs": true,
+  "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+  "design_pass": true,
+  "design_requested": true,
+  "environment_count": 2,
+  "environment_run_counts": {
+    "github-actions-ubuntu": 3,
+    "macOS-native": 3
+  },
+  "exact_numeric_match": true,
+  "expected_environment_run_counts": {
+    "github-actions-ubuntu": 3,
+    "macOS-native": 3
+  },
+  "max_observed_numeric_difference": 0.0,
+  "numeric_acceptance_rule": "exact canonical normalized-record digest equality",
+  "pass": true,
+  "reference_scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1",
+  "run_count": 6,
+  "run_protocol_pass": true,
+  "runs": [
+    {
+      "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+      "code_dirty": false,
+      "environment": {
+        "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+        "code_dirty": "false",
+        "github": {},
+        "implementation": "CPython",
+        "machine": "arm64",
+        "packages": {
+          "PyYAML": "6.0.3",
+          "duckdb": "1.5.4",
+          "ezc3d": "1.7.0",
+          "harmo": "0.3.0",
+          "numpy": "1.26.4",
+          "pandas": "2.3.3",
+          "pyarrow": "24.0.0",
+          "scipy": "1.15.3"
+        },
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "python": "3.12.11"
+      },
+      "environment_id": "macOS-native",
+      "manifest": "macos-run-1.json",
+      "matches_reference": true,
+      "normalized_record_sha256": [
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c",
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c"
+      ],
+      "run_id": "macOS-native-1",
+      "scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1"
+    },
+    {
+      "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+      "code_dirty": false,
+      "environment": {
+        "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+        "code_dirty": "false",
+        "github": {},
+        "implementation": "CPython",
+        "machine": "arm64",
+        "packages": {
+          "PyYAML": "6.0.3",
+          "duckdb": "1.5.4",
+          "ezc3d": "1.7.0",
+          "harmo": "0.3.0",
+          "numpy": "1.26.4",
+          "pandas": "2.3.3",
+          "pyarrow": "24.0.0",
+          "scipy": "1.15.3"
+        },
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "python": "3.12.11"
+      },
+      "environment_id": "macOS-native",
+      "manifest": "macos-run-2.json",
+      "matches_reference": true,
+      "normalized_record_sha256": [
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c",
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c"
+      ],
+      "run_id": "macOS-native-2",
+      "scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1"
+    },
+    {
+      "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+      "code_dirty": false,
+      "environment": {
+        "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+        "code_dirty": "false",
+        "github": {},
+        "implementation": "CPython",
+        "machine": "arm64",
+        "packages": {
+          "PyYAML": "6.0.3",
+          "duckdb": "1.5.4",
+          "ezc3d": "1.7.0",
+          "harmo": "0.3.0",
+          "numpy": "1.26.4",
+          "pandas": "2.3.3",
+          "pyarrow": "24.0.0",
+          "scipy": "1.15.3"
+        },
+        "platform": "macOS-15.6-arm64-arm-64bit",
+        "python": "3.12.11"
+      },
+      "environment_id": "macOS-native",
+      "manifest": "macos-run-3.json",
+      "matches_reference": true,
+      "normalized_record_sha256": [
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c",
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c"
+      ],
+      "run_id": "macOS-native-3",
+      "scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1"
+    },
+    {
+      "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+      "code_dirty": false,
+      "environment": {
+        "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+        "code_dirty": "false",
+        "github": {
+          "github_actions": "true",
+          "github_run_attempt": "1",
+          "github_run_id": "29790285235"
+        },
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "packages": {
+          "PyYAML": "6.0.3",
+          "duckdb": "1.5.4",
+          "ezc3d": "1.7.0",
+          "harmo": null,
+          "numpy": "1.26.4",
+          "pandas": "2.3.3",
+          "pyarrow": "24.0.0",
+          "scipy": "1.15.3"
+        },
+        "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+        "python": "3.12.13"
+      },
+      "environment_id": "github-actions-ubuntu",
+      "manifest": "ubuntu-run-1.json",
+      "matches_reference": true,
+      "normalized_record_sha256": [
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c",
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c"
+      ],
+      "run_id": "github-actions-ubuntu-1",
+      "scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1"
+    },
+    {
+      "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+      "code_dirty": false,
+      "environment": {
+        "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+        "code_dirty": "false",
+        "github": {
+          "github_actions": "true",
+          "github_run_attempt": "1",
+          "github_run_id": "29790285235"
+        },
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "packages": {
+          "PyYAML": "6.0.3",
+          "duckdb": "1.5.4",
+          "ezc3d": "1.7.0",
+          "harmo": null,
+          "numpy": "1.26.4",
+          "pandas": "2.3.3",
+          "pyarrow": "24.0.0",
+          "scipy": "1.15.3"
+        },
+        "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+        "python": "3.12.13"
+      },
+      "environment_id": "github-actions-ubuntu",
+      "manifest": "ubuntu-run-2.json",
+      "matches_reference": true,
+      "normalized_record_sha256": [
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c",
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c"
+      ],
+      "run_id": "github-actions-ubuntu-2",
+      "scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1"
+    },
+    {
+      "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+      "code_dirty": false,
+      "environment": {
+        "code_commit": "636e00f8accb07859d49eeec35fd90248dd3f9fe",
+        "code_dirty": "false",
+        "github": {
+          "github_actions": "true",
+          "github_run_attempt": "1",
+          "github_run_id": "29790285235"
+        },
+        "implementation": "CPython",
+        "machine": "x86_64",
+        "packages": {
+          "PyYAML": "6.0.3",
+          "duckdb": "1.5.4",
+          "ezc3d": "1.7.0",
+          "harmo": null,
+          "numpy": "1.26.4",
+          "pandas": "2.3.3",
+          "pyarrow": "24.0.0",
+          "scipy": "1.15.3"
+        },
+        "platform": "Linux-6.17.0-1020-azure-x86_64-with-glibc2.39",
+        "python": "3.12.13"
+      },
+      "environment_id": "github-actions-ubuntu",
+      "manifest": "ubuntu-run-3.json",
+      "matches_reference": true,
+      "normalized_record_sha256": [
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c",
+        "ed39db17fa42a25c4a53fb39adbc9ffccc5e2ed95449f2e7302c491c318a1d8c"
+      ],
+      "run_id": "github-actions-ubuntu-3",
+      "scientific_digest": "32b232d21dccdf22ab8458726f0007e33b572d7d949de03f514e56d666e577a1"
+    }
+  ],
+  "same_commit": true,
+  "same_scope": true,
+  "scope": "frozen-78-mapping-corpus",
+  "unique_run_ids": true
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/semantic-overlay-1.0.0.json",
+  "title": "Scope-bound semantic evidence overlay",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "overlay_id",
+    "study_id",
+    "target_scope_level",
+    "target_scope_selector",
+    "report_sha256",
+    "entries",
+    "blocked_claims",
+    "skipped_claims",
+    "claim_boundary",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "overlay_id": {"type": "string", "pattern": "^semantic-overlay-[0-9a-f]{20}$"},
+    "study_id": {"type": "string", "minLength": 1},
+    "target_scope_level": {"$ref": "#/$defs/scope"},
+    "target_scope_selector": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "report_sha256": {"$ref": "#/$defs/sha256"},
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/entry"}
+    },
+    "blocked_claims": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/disposition"}
+    },
+    "skipped_claims": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/disposition"}
+    },
+    "claim_boundary": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "scope": {
+      "enum": [
+        "dataset",
+        "cohort",
+        "subject",
+        "session",
+        "trial",
+        "channel-group",
+        "channel"
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "claim_id",
+        "property_path",
+        "value",
+        "claim_scope_level",
+        "claim_scope_selector",
+        "propagation",
+        "decision_status",
+        "evidence_refs"
+      ],
+      "properties": {
+        "claim_id": {"type": "string", "minLength": 1},
+        "property_path": {"type": "string", "minLength": 3},
+        "value": {},
+        "claim_scope_level": {"$ref": "#/$defs/scope"},
+        "claim_scope_selector": {
+          "type": "object",
+          "additionalProperties": {"type": "string", "minLength": 1}
+        },
+        "propagation": {"enum": ["none", "all-descendants"]},
+        "decision_status": {"enum": ["accepted", "corroborated"]},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^.+:sha256:[0-9a-f]{64}$"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "disposition": {
+      "type": "object",
+      "required": ["claim_id", "status", "reason"],
+      "properties": {
+        "claim_id": {"type": "string", "minLength": 1},
+        "status": {"type": "string", "minLength": 1},
+        "reason": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  }
+}

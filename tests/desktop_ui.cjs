@@ -1,0 +1,50 @@
+// Offline desktop lifecycle. Synthetic data only; no human confirmations.
+const {chromium}=require('playwright');
+const assert=require('node:assert/strict');
+(async()=>{
+  const home=new URL(process.argv[2]);
+  const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+  try{
+    const page=await browser.newPage({viewport:{width:1060,height:940}}),errors=[];
+    page.on('pageerror',e=>errors.push(e.message));
+    const headers={Authorization:'Bearer '+home.hash.slice(1),'Content-Type':'application/json',Origin:home.origin};
+    assert.equal((await page.request.get(home.origin+'/api/status')).status(),403);
+    assert.equal((await page.request.post(home.origin+'/api/demo',{headers:{...headers,Origin:'https://example.org'},data:{}})).status(),403);
+    assert.equal((await page.request.post(home.origin+'/api/workspace',{headers,data:{path:'/etc/passwd'}})).status(),400);
+    await page.goto(home.href);
+    await page.locator('#version').filter({hasText:/desktop\.1|local-browser\.1/}).waitFor();
+    await page.screenshot({path:'/private/tmp/harmo-desktop-launcher.png'});
+    await page.setViewportSize({width:392,height:900});
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    await page.screenshot({path:'/private/tmp/harmo-desktop-mobile.png'});
+    await page.setViewportSize({width:1060,height:940});
+    await page.locator('#demo').click();
+    await page.locator('#continueRun').waitFor({timeout:120000});
+    assert.equal(await page.locator('#reviewer').count(),0);
+    await page.screenshot({path:'/private/tmp/harmo-desktop-review.png'});
+    await page.locator('#continueRun').click();
+    await page.locator('#evaluate').click();
+    await page.waitForFunction(()=>!running,{timeout:180000});
+    assert.equal(await page.evaluate(()=>activeRun.phase),'evaluated');
+    assert.equal(await page.evaluate(()=>activeRun.review_metrics.reviewed_items),0);
+    await page.locator('#execute').click();
+    await page.waitForFunction(()=>!running,{timeout:180000});
+    assert.equal(await page.evaluate(()=>activeRun.phase),'executed');
+    assert.equal(await page.evaluate(()=>activeRun.curves),2);
+    assert.equal(await page.evaluate(()=>activeRun.scientific_approval),false);
+    await page.locator('#registerResult').click();
+    await page.waitForFunction(()=>!running,{timeout:180000});
+    assert.equal(await page.locator('#registerResult').innerText(),'Saved');
+    await page.locator('nav a').click();
+    await page.locator('#projects .row').first().waitFor();
+    const dl=page.waitForEvent('download');
+    await page.locator('#projects').getByRole('button',{name:'Export',exact:true}).first().click();
+    await (await dl).saveAs('/private/tmp/harmo-desktop-ui-export.harmo');
+    await page.waitForFunction(()=>!pending);
+    await page.screenshot({path:'/private/tmp/harmo-desktop-projects.png'});
+    await page.locator('#quit').click();
+    await page.getByText('Harmo has stopped. You can close this tab.').waitFor();
+    assert.deepEqual(errors,[]);
+    console.log(JSON.stringify({status:'passed',synthetic:true,curves:2,exported:true,quit:true,human_confirmations:0}));
+  }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

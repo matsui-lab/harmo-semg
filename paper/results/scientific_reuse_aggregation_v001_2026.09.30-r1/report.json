@@ -1,0 +1,7944 @@
+{
+  "status": "complete",
+  "plan": "paper/revision_plans/scientific_reuse_protocol_v005_2026.09.30-r1.md",
+  "conditions": [
+    "existing",
+    "common_trial",
+    "common_cycle"
+  ],
+  "orders": [
+    "waveform_first",
+    "feature_first"
+  ],
+  "features": [
+    "centroid",
+    "peak"
+  ],
+  "muscles": [
+    "tibialis anterior",
+    "medial gastrocnemius"
+  ],
+  "summary": [
+    {
+      "condition": "existing",
+      "muscle": "tibialis anterior",
+      "feature": "centroid",
+      "lencioni_medians": [
+        52.90452157578112,
+        52.48035305888953
+      ],
+      "gait120_medians": [
+        53.42772086740723,
+        53.53413460161637
+      ],
+      "study_difference_A": {
+        "estimate": 0.5231992916261134,
+        "ci95": [
+          -4.329851793257404,
+          5.045543332058962
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 1.0537815427268455,
+        "ci95": [
+          -4.036728770170512,
+          5.33469554014529
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": 0.5305822511007321,
+        "ci95": [
+          -1.8828647567363959,
+          1.8464093247642452
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": -0.005093604556154929,
+        "ci95": [
+          -0.49516242413903555,
+          1.3338898077148045
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": -0.05907207060617736,
+        "ci95": [
+          -0.6955289881847548,
+          0.542755284203345
+        ]
+      }
+    },
+    {
+      "condition": "existing",
+      "muscle": "tibialis anterior",
+      "feature": "peak",
+      "lencioni_medians": [
+        62.0,
+        64.5
+      ],
+      "gait120_medians": [
+        41.5,
+        73.25
+      ],
+      "study_difference_A": {
+        "estimate": -20.5,
+        "ci95": [
+          -59.5,
+          68.5
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 8.75,
+        "ci95": [
+          -55.0,
+          66.25
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": 29.25,
+        "ci95": [
+          -54.0,
+          63.0
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          2.0
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 2.5,
+        "ci95": [
+          0.5,
+          14.75
+        ]
+      }
+    },
+    {
+      "condition": "existing",
+      "muscle": "medial gastrocnemius",
+      "feature": "centroid",
+      "lencioni_medians": [
+        39.59410704647527,
+        39.82794605656787
+      ],
+      "gait120_medians": [
+        40.76489704519177,
+        40.58970746106188
+      ],
+      "study_difference_A": {
+        "estimate": 1.1707899987165007,
+        "ci95": [
+          -1.132320823614144,
+          6.024479842657087
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 0.7617614044940098,
+        "ci95": [
+          -1.3690343180639246,
+          5.975899308867177
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -0.40902859422249094,
+        "ci95": [
+          -0.8070457522574657,
+          0.31867165798614394
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": 0.027570478126691,
+        "ci95": [
+          -0.06500475747260737,
+          0.3982645584123077
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.013946589303529322,
+        "ci95": [
+          -0.1678154032139716,
+          0.2895673159374219
+        ]
+      }
+    },
+    {
+      "condition": "existing",
+      "muscle": "medial gastrocnemius",
+      "feature": "peak",
+      "lencioni_medians": [
+        38.5,
+        38.5
+      ],
+      "gait120_medians": [
+        41.0,
+        39.25
+      ],
+      "study_difference_A": {
+        "estimate": 2.5,
+        "ci95": [
+          -2.0,
+          7.5
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 0.75,
+        "ci95": [
+          -3.0,
+          7.0
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -1.75,
+        "ci95": [
+          -3.5,
+          1.0
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": -0.5,
+        "ci95": [
+          -1.5,
+          1.0
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": -1.0,
+        "ci95": [
+          -1.5,
+          0.0
+        ]
+      }
+    },
+    {
+      "condition": "common_trial",
+      "muscle": "tibialis anterior",
+      "feature": "centroid",
+      "lencioni_medians": [
+        52.90452157578112,
+        52.48035305888953
+      ],
+      "gait120_medians": [
+        51.12526429779694,
+        50.640965599830594
+      ],
+      "study_difference_A": {
+        "estimate": -1.779257277984179,
+        "ci95": [
+          -7.059361681839555,
+          2.637557703184207
+        ]
+      },
+      "study_difference_B": {
+        "estimate": -1.8393874590589334,
+        "ci95": [
+          -7.426606367459868,
+          2.4415265383595113
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -0.06013018107475432,
+        "ci95": [
+          -2.1023024103261676,
+          1.4220377993833182
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": -0.005093604556154929,
+        "ci95": [
+          -0.49516242413903555,
+          1.3338898077148045
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": -0.006710050852102967,
+        "ci95": [
+          -0.6105777525846108,
+          0.8296815723433966
+        ]
+      }
+    },
+    {
+      "condition": "common_trial",
+      "muscle": "tibialis anterior",
+      "feature": "peak",
+      "lencioni_medians": [
+        62.0,
+        64.5
+      ],
+      "gait120_medians": [
+        5.5,
+        23.25
+      ],
+      "study_difference_A": {
+        "estimate": -56.5,
+        "ci95": [
+          -62.0,
+          14.5
+        ]
+      },
+      "study_difference_B": {
+        "estimate": -41.25,
+        "ci95": [
+          -60.5,
+          22.75
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": 15.25,
+        "ci95": [
+          -53.0,
+          51.25
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          2.0
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.75,
+        "ci95": [
+          0.0,
+          18.0
+        ]
+      }
+    },
+    {
+      "condition": "common_trial",
+      "muscle": "medial gastrocnemius",
+      "feature": "centroid",
+      "lencioni_medians": [
+        39.59410704647527,
+        39.82794605656787
+      ],
+      "gait120_medians": [
+        40.72493655505379,
+        40.4082333057088
+      ],
+      "study_difference_A": {
+        "estimate": 1.1308295085785147,
+        "ci95": [
+          -1.6702112486833158,
+          6.449884700532685
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 0.5802872491409303,
+        "ci95": [
+          -1.5312186123610587,
+          6.365587562169395
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -0.5505422594375844,
+        "ci95": [
+          -1.3196846423608832,
+          0.4224461784484319
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": 0.027570478126691,
+        "ci95": [
+          -0.06500475747260737,
+          0.3982645584123077
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.28489209873826127,
+        "ci95": [
+          -0.19111406668515585,
+          0.5721159810577703
+        ]
+      }
+    },
+    {
+      "condition": "common_trial",
+      "muscle": "medial gastrocnemius",
+      "feature": "peak",
+      "lencioni_medians": [
+        38.5,
+        38.5
+      ],
+      "gait120_medians": [
+        42.5,
+        41.75
+      ],
+      "study_difference_A": {
+        "estimate": 4.0,
+        "ci95": [
+          -2.5,
+          8.5
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 3.25,
+        "ci95": [
+          -1.25,
+          8.25
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -0.75,
+        "ci95": [
+          -2.0,
+          2.0
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": -0.5,
+        "ci95": [
+          -1.5,
+          1.0
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.25,
+        "ci95": [
+          -0.75,
+          1.0
+        ]
+      }
+    },
+    {
+      "condition": "common_cycle",
+      "muscle": "tibialis anterior",
+      "feature": "centroid",
+      "lencioni_medians": [
+        52.90452157578112,
+        52.48035305888953
+      ],
+      "gait120_medians": [
+        48.912357128806896,
+        49.434780393564864
+      ],
+      "study_difference_A": {
+        "estimate": -3.992164446974222,
+        "ci95": [
+          -8.783395133650949,
+          0.42864995192181965
+        ]
+      },
+      "study_difference_B": {
+        "estimate": -3.045572665324663,
+        "ci95": [
+          -8.8188708368735,
+          0.9461247129669275
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": 0.946591781649559,
+        "ci95": [
+          -1.6890059930538968,
+          1.829830663907508
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": -0.005093604556154929,
+        "ci95": [
+          -0.49516242413903555,
+          1.3338898077148045
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": -0.06942421166899138,
+        "ci95": [
+          -0.8368978806143943,
+          0.5224232647579719
+        ]
+      }
+    },
+    {
+      "condition": "common_cycle",
+      "muscle": "tibialis anterior",
+      "feature": "peak",
+      "lencioni_medians": [
+        62.0,
+        64.5
+      ],
+      "gait120_medians": [
+        6.0,
+        7.25
+      ],
+      "study_difference_A": {
+        "estimate": -56.0,
+        "ci95": [
+          -61.0,
+          14.5
+        ]
+      },
+      "study_difference_B": {
+        "estimate": -57.25,
+        "ci95": [
+          -62.5,
+          1.75
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -1.25,
+        "ci95": [
+          -57.5,
+          2.5
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          2.0
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          1.25
+        ]
+      }
+    },
+    {
+      "condition": "common_cycle",
+      "muscle": "medial gastrocnemius",
+      "feature": "centroid",
+      "lencioni_medians": [
+        39.59410704647527,
+        39.82794605656787
+      ],
+      "gait120_medians": [
+        40.59947705553883,
+        40.39628069481629
+      ],
+      "study_difference_A": {
+        "estimate": 1.0053700090635544,
+        "ci95": [
+          -1.605597711699481,
+          6.3111227831874785
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 0.5683346382484231,
+        "ci95": [
+          -1.7409869528771722,
+          6.167255379160707
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -0.43703537081513133,
+        "ci95": [
+          -1.1055738098797292,
+          0.3832650794283907
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": 0.027570478126691,
+        "ci95": [
+          -0.06500475747260737,
+          0.3982645584123077
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.09078767107453345,
+        "ci95": [
+          -0.19716736384107492,
+          0.4889440591181895
+        ]
+      }
+    },
+    {
+      "condition": "common_cycle",
+      "muscle": "medial gastrocnemius",
+      "feature": "peak",
+      "lencioni_medians": [
+        38.5,
+        38.5
+      ],
+      "gait120_medians": [
+        42.5,
+        41.75
+      ],
+      "study_difference_A": {
+        "estimate": 4.0,
+        "ci95": [
+          -2.5,
+          8.5
+        ]
+      },
+      "study_difference_B": {
+        "estimate": 3.25,
+        "ci95": [
+          -1.25,
+          8.25
+        ]
+      },
+      "change_B_minus_A": {
+        "estimate": -0.75,
+        "ci95": [
+          -2.0,
+          2.0
+        ]
+      },
+      "lencioni_participant_change": {
+        "estimate": -0.5,
+        "ci95": [
+          -1.5,
+          1.0
+        ]
+      },
+      "gait120_participant_change": {
+        "estimate": 0.25,
+        "ci95": [
+          -0.75,
+          1.0
+        ]
+      }
+    }
+  ],
+  "participants": [
+    {
+      "study": "study_38",
+      "participant": "1",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject1.mat:Data[0]",
+        "Subject1.mat:Data[1]",
+        "Subject1.mat:Data[2]",
+        "Subject1.mat:Data[3]",
+        "Subject1.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        57.130487431070755,
+        63.0
+      ],
+      "B": [
+        56.77986201620517,
+        64.0
+      ],
+      "change_B_minus_A": [
+        -0.35062541486558274,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          58.72341608518278,
+          63.0
+        ],
+        [
+          59.02568795373063,
+          64.0
+        ],
+        [
+          56.77986201620517,
+          64.0
+        ],
+        [
+          54.58880722471416,
+          63.0
+        ],
+        [
+          55.30645751935055,
+          93.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "1",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject1.mat:Data[0]",
+        "Subject1.mat:Data[1]",
+        "Subject1.mat:Data[2]",
+        "Subject1.mat:Data[3]",
+        "Subject1.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        57.130487431070755,
+        63.0
+      ],
+      "B": [
+        56.77986201620517,
+        64.0
+      ],
+      "change_B_minus_A": [
+        -0.35062541486558274,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          58.72341608518278,
+          63.0
+        ],
+        [
+          59.02568795373063,
+          64.0
+        ],
+        [
+          56.77986201620517,
+          64.0
+        ],
+        [
+          54.58880722471416,
+          63.0
+        ],
+        [
+          55.30645751935055,
+          93.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "1",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject1.mat:Data[0]",
+        "Subject1.mat:Data[1]",
+        "Subject1.mat:Data[2]",
+        "Subject1.mat:Data[3]",
+        "Subject1.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        57.130487431070755,
+        63.0
+      ],
+      "B": [
+        56.77986201620517,
+        64.0
+      ],
+      "change_B_minus_A": [
+        -0.35062541486558274,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          58.72341608518278,
+          63.0
+        ],
+        [
+          59.02568795373063,
+          64.0
+        ],
+        [
+          56.77986201620517,
+          64.0
+        ],
+        [
+          54.58880722471416,
+          63.0
+        ],
+        [
+          55.30645751935055,
+          93.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "1",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject1.mat:Data[0]",
+        "Subject1.mat:Data[1]",
+        "Subject1.mat:Data[2]",
+        "Subject1.mat:Data[3]",
+        "Subject1.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        33.40446889716653,
+        34.0
+      ],
+      "B": [
+        33.37849126719671,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.025977629969823113,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          33.99779073319878,
+          34.0
+        ],
+        [
+          32.15441439910652,
+          35.0
+        ],
+        [
+          35.24127348079931,
+          34.0
+        ],
+        [
+          32.925041988409546,
+          32.0
+        ],
+        [
+          33.37849126719671,
+          33.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "1",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject1.mat:Data[0]",
+        "Subject1.mat:Data[1]",
+        "Subject1.mat:Data[2]",
+        "Subject1.mat:Data[3]",
+        "Subject1.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        33.40446889716653,
+        34.0
+      ],
+      "B": [
+        33.37849126719671,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.025977629969823113,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          33.99779073319878,
+          34.0
+        ],
+        [
+          32.15441439910652,
+          35.0
+        ],
+        [
+          35.24127348079931,
+          34.0
+        ],
+        [
+          32.925041988409546,
+          32.0
+        ],
+        [
+          33.37849126719671,
+          33.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "1",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject1.mat:Data[0]",
+        "Subject1.mat:Data[1]",
+        "Subject1.mat:Data[2]",
+        "Subject1.mat:Data[3]",
+        "Subject1.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        33.40446889716653,
+        34.0
+      ],
+      "B": [
+        33.37849126719671,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.025977629969823113,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          33.99779073319878,
+          34.0
+        ],
+        [
+          32.15441439910652,
+          35.0
+        ],
+        [
+          35.24127348079931,
+          34.0
+        ],
+        [
+          32.925041988409546,
+          32.0
+        ],
+        [
+          33.37849126719671,
+          33.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "2",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject2.mat:Data[1]",
+        "Subject2.mat:Data[2]",
+        "Subject2.mat:Data[4]",
+        "Subject2.mat:Data[6]",
+        "Subject2.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        57.08645008431966,
+        62.0
+      ],
+      "B": [
+        57.88321976991366,
+        65.0
+      ],
+      "change_B_minus_A": [
+        0.7967696855940005,
+        3.0
+      ],
+      "cycle_features": [
+        [
+          58.837146655840264,
+          66.0
+        ],
+        [
+          55.41229023634136,
+          67.0
+        ],
+        [
+          57.88321976991366,
+          61.0
+        ],
+        [
+          54.287066620224905,
+          63.0
+        ],
+        [
+          57.93621700532007,
+          65.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "2",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject2.mat:Data[1]",
+        "Subject2.mat:Data[2]",
+        "Subject2.mat:Data[4]",
+        "Subject2.mat:Data[6]",
+        "Subject2.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        57.08645008431966,
+        62.0
+      ],
+      "B": [
+        57.88321976991366,
+        65.0
+      ],
+      "change_B_minus_A": [
+        0.7967696855940005,
+        3.0
+      ],
+      "cycle_features": [
+        [
+          58.837146655840264,
+          66.0
+        ],
+        [
+          55.41229023634136,
+          67.0
+        ],
+        [
+          57.88321976991366,
+          61.0
+        ],
+        [
+          54.287066620224905,
+          63.0
+        ],
+        [
+          57.93621700532007,
+          65.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "2",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject2.mat:Data[1]",
+        "Subject2.mat:Data[2]",
+        "Subject2.mat:Data[4]",
+        "Subject2.mat:Data[6]",
+        "Subject2.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        57.08645008431966,
+        62.0
+      ],
+      "B": [
+        57.88321976991366,
+        65.0
+      ],
+      "change_B_minus_A": [
+        0.7967696855940005,
+        3.0
+      ],
+      "cycle_features": [
+        [
+          58.837146655840264,
+          66.0
+        ],
+        [
+          55.41229023634136,
+          67.0
+        ],
+        [
+          57.88321976991366,
+          61.0
+        ],
+        [
+          54.287066620224905,
+          63.0
+        ],
+        [
+          57.93621700532007,
+          65.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "2",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject2.mat:Data[1]",
+        "Subject2.mat:Data[2]",
+        "Subject2.mat:Data[4]",
+        "Subject2.mat:Data[6]",
+        "Subject2.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.88513379506102,
+        40.0
+      ],
+      "B": [
+        40.64794681638123,
+        39.0
+      ],
+      "change_B_minus_A": [
+        -0.23718697867979444,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          40.376191958248185,
+          40.0
+        ],
+        [
+          40.64794681638123,
+          40.0
+        ],
+        [
+          39.480371725547975,
+          39.0
+        ],
+        [
+          41.481373553704884,
+          39.0
+        ],
+        [
+          41.55398003600128,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "2",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject2.mat:Data[1]",
+        "Subject2.mat:Data[2]",
+        "Subject2.mat:Data[4]",
+        "Subject2.mat:Data[6]",
+        "Subject2.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.88513379506102,
+        40.0
+      ],
+      "B": [
+        40.64794681638123,
+        39.0
+      ],
+      "change_B_minus_A": [
+        -0.23718697867979444,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          40.376191958248185,
+          40.0
+        ],
+        [
+          40.64794681638123,
+          40.0
+        ],
+        [
+          39.480371725547975,
+          39.0
+        ],
+        [
+          41.481373553704884,
+          39.0
+        ],
+        [
+          41.55398003600128,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "2",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject2.mat:Data[1]",
+        "Subject2.mat:Data[2]",
+        "Subject2.mat:Data[4]",
+        "Subject2.mat:Data[6]",
+        "Subject2.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.88513379506102,
+        40.0
+      ],
+      "B": [
+        40.64794681638123,
+        39.0
+      ],
+      "change_B_minus_A": [
+        -0.23718697867979444,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          40.376191958248185,
+          40.0
+        ],
+        [
+          40.64794681638123,
+          40.0
+        ],
+        [
+          39.480371725547975,
+          39.0
+        ],
+        [
+          41.481373553704884,
+          39.0
+        ],
+        [
+          41.55398003600128,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "3",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject3.mat:Data[0]",
+        "Subject3.mat:Data[1]",
+        "Subject3.mat:Data[2]",
+        "Subject3.mat:Data[3]",
+        "Subject3.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        53.37291154785331,
+        6.0
+      ],
+      "B": [
+        55.24392147768892,
+        69.0
+      ],
+      "change_B_minus_A": [
+        1.8710099298356084,
+        63.0
+      ],
+      "cycle_features": [
+        [
+          56.716581478276204,
+          76.0
+        ],
+        [
+          51.735163677780946,
+          6.0
+        ],
+        [
+          57.63892430700079,
+          69.0
+        ],
+        [
+          55.24392147768892,
+          80.0
+        ],
+        [
+          49.3651052476478,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "3",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject3.mat:Data[0]",
+        "Subject3.mat:Data[1]",
+        "Subject3.mat:Data[2]",
+        "Subject3.mat:Data[3]",
+        "Subject3.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        53.37291154785331,
+        6.0
+      ],
+      "B": [
+        55.24392147768892,
+        69.0
+      ],
+      "change_B_minus_A": [
+        1.8710099298356084,
+        63.0
+      ],
+      "cycle_features": [
+        [
+          56.716581478276204,
+          76.0
+        ],
+        [
+          51.735163677780946,
+          6.0
+        ],
+        [
+          57.63892430700079,
+          69.0
+        ],
+        [
+          55.24392147768892,
+          80.0
+        ],
+        [
+          49.3651052476478,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "3",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject3.mat:Data[0]",
+        "Subject3.mat:Data[1]",
+        "Subject3.mat:Data[2]",
+        "Subject3.mat:Data[3]",
+        "Subject3.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        53.37291154785331,
+        6.0
+      ],
+      "B": [
+        55.24392147768892,
+        69.0
+      ],
+      "change_B_minus_A": [
+        1.8710099298356084,
+        63.0
+      ],
+      "cycle_features": [
+        [
+          56.716581478276204,
+          76.0
+        ],
+        [
+          51.735163677780946,
+          6.0
+        ],
+        [
+          57.63892430700079,
+          69.0
+        ],
+        [
+          55.24392147768892,
+          80.0
+        ],
+        [
+          49.3651052476478,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "3",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject3.mat:Data[0]",
+        "Subject3.mat:Data[1]",
+        "Subject3.mat:Data[2]",
+        "Subject3.mat:Data[3]",
+        "Subject3.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        38.675233859180736,
+        47.0
+      ],
+      "B": [
+        39.18310606753304,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.5078722083523033,
+        -5.0
+      ],
+      "cycle_features": [
+        [
+          39.18576774056046,
+          17.0
+        ],
+        [
+          42.15143970872337,
+          49.0
+        ],
+        [
+          38.853543515380025,
+          42.0
+        ],
+        [
+          39.18310606753304,
+          50.0
+        ],
+        [
+          37.492722172448325,
+          12.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "3",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject3.mat:Data[0]",
+        "Subject3.mat:Data[1]",
+        "Subject3.mat:Data[2]",
+        "Subject3.mat:Data[3]",
+        "Subject3.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        38.675233859180736,
+        47.0
+      ],
+      "B": [
+        39.18310606753304,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.5078722083523033,
+        -5.0
+      ],
+      "cycle_features": [
+        [
+          39.18576774056046,
+          17.0
+        ],
+        [
+          42.15143970872337,
+          49.0
+        ],
+        [
+          38.853543515380025,
+          42.0
+        ],
+        [
+          39.18310606753304,
+          50.0
+        ],
+        [
+          37.492722172448325,
+          12.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "3",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject3.mat:Data[0]",
+        "Subject3.mat:Data[1]",
+        "Subject3.mat:Data[2]",
+        "Subject3.mat:Data[3]",
+        "Subject3.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        38.675233859180736,
+        47.0
+      ],
+      "B": [
+        39.18310606753304,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.5078722083523033,
+        -5.0
+      ],
+      "cycle_features": [
+        [
+          39.18576774056046,
+          17.0
+        ],
+        [
+          42.15143970872337,
+          49.0
+        ],
+        [
+          38.853543515380025,
+          42.0
+        ],
+        [
+          39.18310606753304,
+          50.0
+        ],
+        [
+          37.492722172448325,
+          12.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "4",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject4.mat:Data[0]",
+        "Subject4.mat:Data[2]",
+        "Subject4.mat:Data[4]",
+        "Subject4.mat:Data[5]",
+        "Subject4.mat:Data[7]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        46.63674014825526,
+        7.0
+      ],
+      "B": [
+        45.99704071484277,
+        7.0
+      ],
+      "change_B_minus_A": [
+        -0.6396994334124884,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          49.648089142735074,
+          70.0
+        ],
+        [
+          45.862157473778105,
+          17.0
+        ],
+        [
+          45.99704071484277,
+          7.0
+        ],
+        [
+          47.24398947109703,
+          7.0
+        ],
+        [
+          45.063646690579425,
+          7.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "4",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject4.mat:Data[0]",
+        "Subject4.mat:Data[2]",
+        "Subject4.mat:Data[4]",
+        "Subject4.mat:Data[5]",
+        "Subject4.mat:Data[7]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        46.63674014825526,
+        7.0
+      ],
+      "B": [
+        45.99704071484277,
+        7.0
+      ],
+      "change_B_minus_A": [
+        -0.6396994334124884,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          49.648089142735074,
+          70.0
+        ],
+        [
+          45.862157473778105,
+          17.0
+        ],
+        [
+          45.99704071484277,
+          7.0
+        ],
+        [
+          47.24398947109703,
+          7.0
+        ],
+        [
+          45.063646690579425,
+          7.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "4",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject4.mat:Data[0]",
+        "Subject4.mat:Data[2]",
+        "Subject4.mat:Data[4]",
+        "Subject4.mat:Data[5]",
+        "Subject4.mat:Data[7]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        46.63674014825526,
+        7.0
+      ],
+      "B": [
+        45.99704071484277,
+        7.0
+      ],
+      "change_B_minus_A": [
+        -0.6396994334124884,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          49.648089142735074,
+          70.0
+        ],
+        [
+          45.862157473778105,
+          17.0
+        ],
+        [
+          45.99704071484277,
+          7.0
+        ],
+        [
+          47.24398947109703,
+          7.0
+        ],
+        [
+          45.063646690579425,
+          7.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "4",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject4.mat:Data[0]",
+        "Subject4.mat:Data[2]",
+        "Subject4.mat:Data[4]",
+        "Subject4.mat:Data[5]",
+        "Subject4.mat:Data[7]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        41.39389036979463,
+        36.0
+      ],
+      "B": [
+        41.79215492820694,
+        37.0
+      ],
+      "change_B_minus_A": [
+        0.3982645584123077,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          47.88419549002435,
+          40.0
+        ],
+        [
+          39.6738660668097,
+          35.0
+        ],
+        [
+          42.11964270773042,
+          37.0
+        ],
+        [
+          41.79215492820694,
+          39.0
+        ],
+        [
+          40.12411090933718,
+          35.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "4",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject4.mat:Data[0]",
+        "Subject4.mat:Data[2]",
+        "Subject4.mat:Data[4]",
+        "Subject4.mat:Data[5]",
+        "Subject4.mat:Data[7]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        41.39389036979463,
+        36.0
+      ],
+      "B": [
+        41.79215492820694,
+        37.0
+      ],
+      "change_B_minus_A": [
+        0.3982645584123077,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          47.88419549002435,
+          40.0
+        ],
+        [
+          39.6738660668097,
+          35.0
+        ],
+        [
+          42.11964270773042,
+          37.0
+        ],
+        [
+          41.79215492820694,
+          39.0
+        ],
+        [
+          40.12411090933718,
+          35.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "4",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject4.mat:Data[0]",
+        "Subject4.mat:Data[2]",
+        "Subject4.mat:Data[4]",
+        "Subject4.mat:Data[5]",
+        "Subject4.mat:Data[7]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        41.39389036979463,
+        36.0
+      ],
+      "B": [
+        41.79215492820694,
+        37.0
+      ],
+      "change_B_minus_A": [
+        0.3982645584123077,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          47.88419549002435,
+          40.0
+        ],
+        [
+          39.6738660668097,
+          35.0
+        ],
+        [
+          42.11964270773042,
+          37.0
+        ],
+        [
+          41.79215492820694,
+          39.0
+        ],
+        [
+          40.12411090933718,
+          35.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "5",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject5.mat:Data[0]",
+        "Subject5.mat:Data[1]",
+        "Subject5.mat:Data[2]",
+        "Subject5.mat:Data[3]",
+        "Subject5.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        44.06146100661227,
+        6.0
+      ],
+      "B": [
+        45.13490673568444,
+        6.0
+      ],
+      "change_B_minus_A": [
+        1.0734457290721693,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          39.73223646502016,
+          6.0
+        ],
+        [
+          47.54687303219235,
+          6.0
+        ],
+        [
+          42.05233722463731,
+          6.0
+        ],
+        [
+          45.13490673568444,
+          6.0
+        ],
+        [
+          45.70128348491212,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "5",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject5.mat:Data[0]",
+        "Subject5.mat:Data[1]",
+        "Subject5.mat:Data[2]",
+        "Subject5.mat:Data[3]",
+        "Subject5.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        44.06146100661227,
+        6.0
+      ],
+      "B": [
+        45.13490673568444,
+        6.0
+      ],
+      "change_B_minus_A": [
+        1.0734457290721693,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          39.73223646502016,
+          6.0
+        ],
+        [
+          47.54687303219235,
+          6.0
+        ],
+        [
+          42.05233722463731,
+          6.0
+        ],
+        [
+          45.13490673568444,
+          6.0
+        ],
+        [
+          45.70128348491212,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "5",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject5.mat:Data[0]",
+        "Subject5.mat:Data[1]",
+        "Subject5.mat:Data[2]",
+        "Subject5.mat:Data[3]",
+        "Subject5.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        44.06146100661227,
+        6.0
+      ],
+      "B": [
+        45.13490673568444,
+        6.0
+      ],
+      "change_B_minus_A": [
+        1.0734457290721693,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          39.73223646502016,
+          6.0
+        ],
+        [
+          47.54687303219235,
+          6.0
+        ],
+        [
+          42.05233722463731,
+          6.0
+        ],
+        [
+          45.13490673568444,
+          6.0
+        ],
+        [
+          45.70128348491212,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "5",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject5.mat:Data[0]",
+        "Subject5.mat:Data[1]",
+        "Subject5.mat:Data[2]",
+        "Subject5.mat:Data[3]",
+        "Subject5.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        39.0275811724065,
+        39.0
+      ],
+      "B": [
+        39.53070884744741,
+        40.0
+      ],
+      "change_B_minus_A": [
+        0.5031276750409077,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          37.764359804999536,
+          38.0
+        ],
+        [
+          40.01364895337952,
+          40.0
+        ],
+        [
+          39.42083593743362,
+          40.0
+        ],
+        [
+          39.54555275294059,
+          39.0
+        ],
+        [
+          39.53070884744741,
+          43.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "5",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject5.mat:Data[0]",
+        "Subject5.mat:Data[1]",
+        "Subject5.mat:Data[2]",
+        "Subject5.mat:Data[3]",
+        "Subject5.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        39.0275811724065,
+        39.0
+      ],
+      "B": [
+        39.53070884744741,
+        40.0
+      ],
+      "change_B_minus_A": [
+        0.5031276750409077,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          37.764359804999536,
+          38.0
+        ],
+        [
+          40.01364895337952,
+          40.0
+        ],
+        [
+          39.42083593743362,
+          40.0
+        ],
+        [
+          39.54555275294059,
+          39.0
+        ],
+        [
+          39.53070884744741,
+          43.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "5",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject5.mat:Data[0]",
+        "Subject5.mat:Data[1]",
+        "Subject5.mat:Data[2]",
+        "Subject5.mat:Data[3]",
+        "Subject5.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        39.0275811724065,
+        39.0
+      ],
+      "B": [
+        39.53070884744741,
+        40.0
+      ],
+      "change_B_minus_A": [
+        0.5031276750409077,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          37.764359804999536,
+          38.0
+        ],
+        [
+          40.01364895337952,
+          40.0
+        ],
+        [
+          39.42083593743362,
+          40.0
+        ],
+        [
+          39.54555275294059,
+          39.0
+        ],
+        [
+          39.53070884744741,
+          43.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "6",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject6.mat:Data[0]",
+        "Subject6.mat:Data[1]",
+        "Subject6.mat:Data[2]",
+        "Subject6.mat:Data[3]",
+        "Subject6.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        54.17781466636752,
+        62.0
+      ],
+      "B": [
+        53.75044176920013,
+        62.0
+      ],
+      "change_B_minus_A": [
+        -0.4273728971673876,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          54.11478929598175,
+          93.0
+        ],
+        [
+          54.25740393203503,
+          60.0
+        ],
+        [
+          53.75044176920013,
+          62.0
+        ],
+        [
+          53.49190570105904,
+          66.0
+        ],
+        [
+          49.81714615894464,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "6",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject6.mat:Data[0]",
+        "Subject6.mat:Data[1]",
+        "Subject6.mat:Data[2]",
+        "Subject6.mat:Data[3]",
+        "Subject6.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        54.17781466636752,
+        62.0
+      ],
+      "B": [
+        53.75044176920013,
+        62.0
+      ],
+      "change_B_minus_A": [
+        -0.4273728971673876,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          54.11478929598175,
+          93.0
+        ],
+        [
+          54.25740393203503,
+          60.0
+        ],
+        [
+          53.75044176920013,
+          62.0
+        ],
+        [
+          53.49190570105904,
+          66.0
+        ],
+        [
+          49.81714615894464,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "6",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject6.mat:Data[0]",
+        "Subject6.mat:Data[1]",
+        "Subject6.mat:Data[2]",
+        "Subject6.mat:Data[3]",
+        "Subject6.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        54.17781466636752,
+        62.0
+      ],
+      "B": [
+        53.75044176920013,
+        62.0
+      ],
+      "change_B_minus_A": [
+        -0.4273728971673876,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          54.11478929598175,
+          93.0
+        ],
+        [
+          54.25740393203503,
+          60.0
+        ],
+        [
+          53.75044176920013,
+          62.0
+        ],
+        [
+          53.49190570105904,
+          66.0
+        ],
+        [
+          49.81714615894464,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "6",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject6.mat:Data[0]",
+        "Subject6.mat:Data[1]",
+        "Subject6.mat:Data[2]",
+        "Subject6.mat:Data[3]",
+        "Subject6.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        43.74003608255012,
+        38.0
+      ],
+      "B": [
+        43.81453130556345,
+        36.0
+      ],
+      "change_B_minus_A": [
+        0.07449522301332934,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          48.9893899306803,
+          33.0
+        ],
+        [
+          43.32337190019992,
+          34.0
+        ],
+        [
+          43.81453130556345,
+          36.0
+        ],
+        [
+          44.53019992310258,
+          36.0
+        ],
+        [
+          39.333983452762666,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "6",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject6.mat:Data[0]",
+        "Subject6.mat:Data[1]",
+        "Subject6.mat:Data[2]",
+        "Subject6.mat:Data[3]",
+        "Subject6.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        43.74003608255012,
+        38.0
+      ],
+      "B": [
+        43.81453130556345,
+        36.0
+      ],
+      "change_B_minus_A": [
+        0.07449522301332934,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          48.9893899306803,
+          33.0
+        ],
+        [
+          43.32337190019992,
+          34.0
+        ],
+        [
+          43.81453130556345,
+          36.0
+        ],
+        [
+          44.53019992310258,
+          36.0
+        ],
+        [
+          39.333983452762666,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "6",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject6.mat:Data[0]",
+        "Subject6.mat:Data[1]",
+        "Subject6.mat:Data[2]",
+        "Subject6.mat:Data[3]",
+        "Subject6.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        43.74003608255012,
+        38.0
+      ],
+      "B": [
+        43.81453130556345,
+        36.0
+      ],
+      "change_B_minus_A": [
+        0.07449522301332934,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          48.9893899306803,
+          33.0
+        ],
+        [
+          43.32337190019992,
+          34.0
+        ],
+        [
+          43.81453130556345,
+          36.0
+        ],
+        [
+          44.53019992310258,
+          36.0
+        ],
+        [
+          39.333983452762666,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "7",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject7.mat:Data[0]",
+        "Subject7.mat:Data[1]",
+        "Subject7.mat:Data[2]",
+        "Subject7.mat:Data[3]",
+        "Subject7.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        50.12761492244128,
+        6.0
+      ],
+      "B": [
+        50.40183740809939,
+        6.0
+      ],
+      "change_B_minus_A": [
+        0.2742224856581075,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          50.40183740809939,
+          6.0
+        ],
+        [
+          46.244031585478446,
+          6.0
+        ],
+        [
+          53.85752209529007,
+          6.0
+        ],
+        [
+          56.39231017477914,
+          68.0
+        ],
+        [
+          46.6458059717455,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "7",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject7.mat:Data[0]",
+        "Subject7.mat:Data[1]",
+        "Subject7.mat:Data[2]",
+        "Subject7.mat:Data[3]",
+        "Subject7.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        50.12761492244128,
+        6.0
+      ],
+      "B": [
+        50.40183740809939,
+        6.0
+      ],
+      "change_B_minus_A": [
+        0.2742224856581075,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          50.40183740809939,
+          6.0
+        ],
+        [
+          46.244031585478446,
+          6.0
+        ],
+        [
+          53.85752209529007,
+          6.0
+        ],
+        [
+          56.39231017477914,
+          68.0
+        ],
+        [
+          46.6458059717455,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "7",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject7.mat:Data[0]",
+        "Subject7.mat:Data[1]",
+        "Subject7.mat:Data[2]",
+        "Subject7.mat:Data[3]",
+        "Subject7.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        50.12761492244128,
+        6.0
+      ],
+      "B": [
+        50.40183740809939,
+        6.0
+      ],
+      "change_B_minus_A": [
+        0.2742224856581075,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          50.40183740809939,
+          6.0
+        ],
+        [
+          46.244031585478446,
+          6.0
+        ],
+        [
+          53.85752209529007,
+          6.0
+        ],
+        [
+          56.39231017477914,
+          68.0
+        ],
+        [
+          46.6458059717455,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "7",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject7.mat:Data[0]",
+        "Subject7.mat:Data[1]",
+        "Subject7.mat:Data[2]",
+        "Subject7.mat:Data[3]",
+        "Subject7.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        37.180768118932924,
+        37.0
+      ],
+      "B": [
+        37.07673623395753,
+        38.0
+      ],
+      "change_B_minus_A": [
+        -0.10403188497539162,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          38.36475683059776,
+          38.0
+        ],
+        [
+          39.04944525289282,
+          39.0
+        ],
+        [
+          37.07673623395753,
+          38.0
+        ],
+        [
+          36.62848214171045,
+          37.0
+        ],
+        [
+          37.03550904206531,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "7",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject7.mat:Data[0]",
+        "Subject7.mat:Data[1]",
+        "Subject7.mat:Data[2]",
+        "Subject7.mat:Data[3]",
+        "Subject7.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        37.180768118932924,
+        37.0
+      ],
+      "B": [
+        37.07673623395753,
+        38.0
+      ],
+      "change_B_minus_A": [
+        -0.10403188497539162,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          38.36475683059776,
+          38.0
+        ],
+        [
+          39.04944525289282,
+          39.0
+        ],
+        [
+          37.07673623395753,
+          38.0
+        ],
+        [
+          36.62848214171045,
+          37.0
+        ],
+        [
+          37.03550904206531,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "7",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject7.mat:Data[0]",
+        "Subject7.mat:Data[1]",
+        "Subject7.mat:Data[2]",
+        "Subject7.mat:Data[3]",
+        "Subject7.mat:Data[8]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        37.180768118932924,
+        37.0
+      ],
+      "B": [
+        37.07673623395753,
+        38.0
+      ],
+      "change_B_minus_A": [
+        -0.10403188497539162,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          38.36475683059776,
+          38.0
+        ],
+        [
+          39.04944525289282,
+          39.0
+        ],
+        [
+          37.07673623395753,
+          38.0
+        ],
+        [
+          36.62848214171045,
+          37.0
+        ],
+        [
+          37.03550904206531,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "8",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject8.mat:Data[1]",
+        "Subject8.mat:Data[3]",
+        "Subject8.mat:Data[5]",
+        "Subject8.mat:Data[7]",
+        "Subject8.mat:Data[10]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        59.795707946054286,
+        67.0
+      ],
+      "B": [
+        61.86516110988575,
+        65.0
+      ],
+      "change_B_minus_A": [
+        2.0694531638314615,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          61.86516110988575,
+          65.0
+        ],
+        [
+          61.990980136668796,
+          68.0
+        ],
+        [
+          49.47575038152647,
+          5.0
+        ],
+        [
+          62.96085092037854,
+          67.0
+        ],
+        [
+          48.172997158898006,
+          4.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "8",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject8.mat:Data[1]",
+        "Subject8.mat:Data[3]",
+        "Subject8.mat:Data[5]",
+        "Subject8.mat:Data[7]",
+        "Subject8.mat:Data[10]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        59.795707946054286,
+        67.0
+      ],
+      "B": [
+        61.86516110988575,
+        65.0
+      ],
+      "change_B_minus_A": [
+        2.0694531638314615,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          61.86516110988575,
+          65.0
+        ],
+        [
+          61.990980136668796,
+          68.0
+        ],
+        [
+          49.47575038152647,
+          5.0
+        ],
+        [
+          62.96085092037854,
+          67.0
+        ],
+        [
+          48.172997158898006,
+          4.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "8",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject8.mat:Data[1]",
+        "Subject8.mat:Data[3]",
+        "Subject8.mat:Data[5]",
+        "Subject8.mat:Data[7]",
+        "Subject8.mat:Data[10]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        59.795707946054286,
+        67.0
+      ],
+      "B": [
+        61.86516110988575,
+        65.0
+      ],
+      "change_B_minus_A": [
+        2.0694531638314615,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          61.86516110988575,
+          65.0
+        ],
+        [
+          61.990980136668796,
+          68.0
+        ],
+        [
+          49.47575038152647,
+          5.0
+        ],
+        [
+          62.96085092037854,
+          67.0
+        ],
+        [
+          48.172997158898006,
+          4.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "8",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject8.mat:Data[1]",
+        "Subject8.mat:Data[3]",
+        "Subject8.mat:Data[5]",
+        "Subject8.mat:Data[7]",
+        "Subject8.mat:Data[10]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        32.097094085569736,
+        34.0
+      ],
+      "B": [
+        32.07773981880979,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.019354266759947336,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          32.10968580203766,
+          34.0
+        ],
+        [
+          32.07773981880979,
+          34.0
+        ],
+        [
+          33.06841643358227,
+          35.0
+        ],
+        [
+          29.966115127200208,
+          25.0
+        ],
+        [
+          31.333589596382566,
+          32.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "8",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject8.mat:Data[1]",
+        "Subject8.mat:Data[3]",
+        "Subject8.mat:Data[5]",
+        "Subject8.mat:Data[7]",
+        "Subject8.mat:Data[10]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        32.097094085569736,
+        34.0
+      ],
+      "B": [
+        32.07773981880979,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.019354266759947336,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          32.10968580203766,
+          34.0
+        ],
+        [
+          32.07773981880979,
+          34.0
+        ],
+        [
+          33.06841643358227,
+          35.0
+        ],
+        [
+          29.966115127200208,
+          25.0
+        ],
+        [
+          31.333589596382566,
+          32.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "8",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject8.mat:Data[1]",
+        "Subject8.mat:Data[3]",
+        "Subject8.mat:Data[5]",
+        "Subject8.mat:Data[7]",
+        "Subject8.mat:Data[10]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        32.097094085569736,
+        34.0
+      ],
+      "B": [
+        32.07773981880979,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.019354266759947336,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          32.10968580203766,
+          34.0
+        ],
+        [
+          32.07773981880979,
+          34.0
+        ],
+        [
+          33.06841643358227,
+          35.0
+        ],
+        [
+          29.966115127200208,
+          25.0
+        ],
+        [
+          31.333589596382566,
+          32.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "9",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject9.mat:Data[0]",
+        "Subject9.mat:Data[1]",
+        "Subject9.mat:Data[2]",
+        "Subject9.mat:Data[3]",
+        "Subject9.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        52.436131603708915,
+        71.0
+      ],
+      "B": [
+        51.210264348578924,
+        72.0
+      ],
+      "change_B_minus_A": [
+        -1.225867255129991,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          55.27406185158472,
+          68.0
+        ],
+        [
+          51.210264348578924,
+          69.0
+        ],
+        [
+          57.6515364917264,
+          73.0
+        ],
+        [
+          48.87024229648603,
+          72.0
+        ],
+        [
+          50.59757531333986,
+          72.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "9",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject9.mat:Data[0]",
+        "Subject9.mat:Data[1]",
+        "Subject9.mat:Data[2]",
+        "Subject9.mat:Data[3]",
+        "Subject9.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        52.436131603708915,
+        71.0
+      ],
+      "B": [
+        51.210264348578924,
+        72.0
+      ],
+      "change_B_minus_A": [
+        -1.225867255129991,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          55.27406185158472,
+          68.0
+        ],
+        [
+          51.210264348578924,
+          69.0
+        ],
+        [
+          57.6515364917264,
+          73.0
+        ],
+        [
+          48.87024229648603,
+          72.0
+        ],
+        [
+          50.59757531333986,
+          72.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "9",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject9.mat:Data[0]",
+        "Subject9.mat:Data[1]",
+        "Subject9.mat:Data[2]",
+        "Subject9.mat:Data[3]",
+        "Subject9.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        52.436131603708915,
+        71.0
+      ],
+      "B": [
+        51.210264348578924,
+        72.0
+      ],
+      "change_B_minus_A": [
+        -1.225867255129991,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          55.27406185158472,
+          68.0
+        ],
+        [
+          51.210264348578924,
+          69.0
+        ],
+        [
+          57.6515364917264,
+          73.0
+        ],
+        [
+          48.87024229648603,
+          72.0
+        ],
+        [
+          50.59757531333986,
+          72.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "9",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject9.mat:Data[0]",
+        "Subject9.mat:Data[1]",
+        "Subject9.mat:Data[2]",
+        "Subject9.mat:Data[3]",
+        "Subject9.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.16063292054404,
+        40.0
+      ],
+      "B": [
+        40.12518326568833,
+        39.0
+      ],
+      "change_B_minus_A": [
+        -0.03544965485571083,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          40.12518326568833,
+          40.0
+        ],
+        [
+          39.66582471029624,
+          37.0
+        ],
+        [
+          38.518571964448846,
+          39.0
+        ],
+        [
+          40.727799602946654,
+          40.0
+        ],
+        [
+          40.733121222579854,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "9",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject9.mat:Data[0]",
+        "Subject9.mat:Data[1]",
+        "Subject9.mat:Data[2]",
+        "Subject9.mat:Data[3]",
+        "Subject9.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.16063292054404,
+        40.0
+      ],
+      "B": [
+        40.12518326568833,
+        39.0
+      ],
+      "change_B_minus_A": [
+        -0.03544965485571083,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          40.12518326568833,
+          40.0
+        ],
+        [
+          39.66582471029624,
+          37.0
+        ],
+        [
+          38.518571964448846,
+          39.0
+        ],
+        [
+          40.727799602946654,
+          40.0
+        ],
+        [
+          40.733121222579854,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "9",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject9.mat:Data[0]",
+        "Subject9.mat:Data[1]",
+        "Subject9.mat:Data[2]",
+        "Subject9.mat:Data[3]",
+        "Subject9.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.16063292054404,
+        40.0
+      ],
+      "B": [
+        40.12518326568833,
+        39.0
+      ],
+      "change_B_minus_A": [
+        -0.03544965485571083,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          40.12518326568833,
+          40.0
+        ],
+        [
+          39.66582471029624,
+          37.0
+        ],
+        [
+          38.518571964448846,
+          39.0
+        ],
+        [
+          40.727799602946654,
+          40.0
+        ],
+        [
+          40.733121222579854,
+          38.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "10",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject10.mat:Data[0]",
+        "Subject10.mat:Data[1]",
+        "Subject10.mat:Data[2]",
+        "Subject10.mat:Data[3]",
+        "Subject10.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        51.4479532005739,
+        94.0
+      ],
+      "B": [
+        51.16354350580348,
+        94.0
+      ],
+      "change_B_minus_A": [
+        -0.28440969477041733,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          51.16354350580348,
+          94.0
+        ],
+        [
+          46.71326339740942,
+          7.0
+        ],
+        [
+          45.13077721618022,
+          7.0
+        ],
+        [
+          56.444404145225796,
+          94.0
+        ],
+        [
+          56.993624066846195,
+          94.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "10",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject10.mat:Data[0]",
+        "Subject10.mat:Data[1]",
+        "Subject10.mat:Data[2]",
+        "Subject10.mat:Data[3]",
+        "Subject10.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        51.4479532005739,
+        94.0
+      ],
+      "B": [
+        51.16354350580348,
+        94.0
+      ],
+      "change_B_minus_A": [
+        -0.28440969477041733,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          51.16354350580348,
+          94.0
+        ],
+        [
+          46.71326339740942,
+          7.0
+        ],
+        [
+          45.13077721618022,
+          7.0
+        ],
+        [
+          56.444404145225796,
+          94.0
+        ],
+        [
+          56.993624066846195,
+          94.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "10",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject10.mat:Data[0]",
+        "Subject10.mat:Data[1]",
+        "Subject10.mat:Data[2]",
+        "Subject10.mat:Data[3]",
+        "Subject10.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        51.4479532005739,
+        94.0
+      ],
+      "B": [
+        51.16354350580348,
+        94.0
+      ],
+      "change_B_minus_A": [
+        -0.28440969477041733,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          51.16354350580348,
+          94.0
+        ],
+        [
+          46.71326339740942,
+          7.0
+        ],
+        [
+          45.13077721618022,
+          7.0
+        ],
+        [
+          56.444404145225796,
+          94.0
+        ],
+        [
+          56.993624066846195,
+          94.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "10",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "Subject10.mat:Data[0]",
+        "Subject10.mat:Data[1]",
+        "Subject10.mat:Data[2]",
+        "Subject10.mat:Data[3]",
+        "Subject10.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.44834316369816,
+        43.0
+      ],
+      "B": [
+        40.6785198992016,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.23017673550344142,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          42.99469749236455,
+          43.0
+        ],
+        [
+          40.6785198992016,
+          42.0
+        ],
+        [
+          40.09919950850756,
+          43.0
+        ],
+        [
+          41.46101332944982,
+          42.0
+        ],
+        [
+          40.04166903350518,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "10",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "Subject10.mat:Data[0]",
+        "Subject10.mat:Data[1]",
+        "Subject10.mat:Data[2]",
+        "Subject10.mat:Data[3]",
+        "Subject10.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.44834316369816,
+        43.0
+      ],
+      "B": [
+        40.6785198992016,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.23017673550344142,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          42.99469749236455,
+          43.0
+        ],
+        [
+          40.6785198992016,
+          42.0
+        ],
+        [
+          40.09919950850756,
+          43.0
+        ],
+        [
+          41.46101332944982,
+          42.0
+        ],
+        [
+          40.04166903350518,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_38",
+      "participant": "10",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "Subject10.mat:Data[0]",
+        "Subject10.mat:Data[1]",
+        "Subject10.mat:Data[2]",
+        "Subject10.mat:Data[3]",
+        "Subject10.mat:Data[4]"
+      ],
+      "n_cycles": 5,
+      "A": [
+        40.44834316369816,
+        43.0
+      ],
+      "B": [
+        40.6785198992016,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.23017673550344142,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          42.99469749236455,
+          43.0
+        ],
+        [
+          40.6785198992016,
+          42.0
+        ],
+        [
+          40.09919950850756,
+          43.0
+        ],
+        [
+          41.46101332944982,
+          42.0
+        ],
+        [
+          40.04166903350518,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S011",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        52.66767826831272,
+        5.0
+      ],
+      "B": [
+        52.70778100267212,
+        7.0
+      ],
+      "change_B_minus_A": [
+        0.04010273435940093,
+        2.0
+      ],
+      "cycle_features": [
+        [
+          51.70107034433787,
+          5.0
+        ],
+        [
+          45.48648711936573,
+          7.0
+        ],
+        [
+          54.1749309614438,
+          77.0
+        ],
+        [
+          54.88321658794578,
+          80.0
+        ],
+        [
+          54.48285060920486,
+          73.0
+        ],
+        [
+          51.320037177201975,
+          5.0
+        ],
+        [
+          52.09430494879988,
+          7.0
+        ],
+        [
+          53.32125705654436,
+          4.0
+        ],
+        [
+          48.46682884289928,
+          5.0
+        ],
+        [
+          55.012488298351414,
+          77.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S011",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        48.213469575735644,
+        5.0
+      ],
+      "B": [
+        47.26594965181485,
+        5.0
+      ],
+      "change_B_minus_A": [
+        -0.9475199239207939,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          46.9831297519713,
+          5.0
+        ],
+        [
+          45.568079335075154,
+          4.0
+        ],
+        [
+          53.46434119725062,
+          77.0
+        ],
+        [
+          53.07102704806931,
+          4.0
+        ],
+        [
+          49.0951355744805,
+          7.0
+        ],
+        [
+          44.019306182052524,
+          5.0
+        ],
+        [
+          46.49036786928949,
+          7.0
+        ],
+        [
+          49.37634759962782,
+          5.0
+        ],
+        [
+          46.77425561842088,
+          5.0
+        ],
+        [
+          47.5487695516584,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S011",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        45.71159303944843,
+        6.0
+      ],
+      "B": [
+        44.80722127861504,
+        6.0
+      ],
+      "change_B_minus_A": [
+        -0.9043717608333921,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          44.39516876314605,
+          6.0
+        ],
+        [
+          44.89907038787657,
+          6.0
+        ],
+        [
+          51.81491417910242,
+          77.0
+        ],
+        [
+          51.62783760659938,
+          6.0
+        ],
+        [
+          46.0846761205587,
+          6.0
+        ],
+        [
+          41.367461787087755,
+          6.0
+        ],
+        [
+          44.22970180553022,
+          7.0
+        ],
+        [
+          46.188298040121566,
+          6.0
+        ],
+        [
+          44.71537216935351,
+          6.0
+        ],
+        [
+          44.314229157442604,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S011",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        39.94846667346237,
+        38.0
+      ],
+      "B": [
+        39.711798771098614,
+        36.5
+      ],
+      "change_B_minus_A": [
+        -0.2366679023637559,
+        -1.5
+      ],
+      "cycle_features": [
+        [
+          41.420693896774566,
+          41.0
+        ],
+        [
+          38.977983482999214,
+          38.0
+        ],
+        [
+          40.31845210848394,
+          35.0
+        ],
+        [
+          40.19998692244301,
+          33.0
+        ],
+        [
+          38.61966224293678,
+          33.0
+        ],
+        [
+          39.223610619754226,
+          37.0
+        ],
+        [
+          38.71295807199719,
+          36.0
+        ],
+        [
+          37.15451728254618,
+          32.0
+        ],
+        [
+          41.430277472872575,
+          42.0
+        ],
+        [
+          43.05869965111389,
+          39.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S011",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        40.12247075551496,
+        37.0
+      ],
+      "B": [
+        40.457383235323874,
+        38.0
+      ],
+      "change_B_minus_A": [
+        0.3349124798089136,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          41.75528695930756,
+          41.0
+        ],
+        [
+          40.06742733417786,
+          38.0
+        ],
+        [
+          40.8473391364699,
+          35.0
+        ],
+        [
+          41.29693712088228,
+          40.0
+        ],
+        [
+          39.03346651853853,
+          38.0
+        ],
+        [
+          39.80135875003237,
+          37.0
+        ],
+        [
+          39.09116718111933,
+          36.0
+        ],
+        [
+          37.37851888380085,
+          37.0
+        ],
+        [
+          41.83990711961192,
+          45.0
+        ],
+        [
+          44.074078944377916,
+          40.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S011",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        40.0103805019124,
+        37.0
+      ],
+      "B": [
+        40.35819592648508,
+        38.0
+      ],
+      "change_B_minus_A": [
+        0.3478154245726799,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          41.73105028192627,
+          41.0
+        ],
+        [
+          39.946571614209674,
+          38.0
+        ],
+        [
+          40.76982023876048,
+          35.0
+        ],
+        [
+          41.270483915439755,
+          40.0
+        ],
+        [
+          38.98248079974933,
+          38.0
+        ],
+        [
+          39.700236445072335,
+          37.0
+        ],
+        [
+          38.9668717495508,
+          36.0
+        ],
+        [
+          37.36014643874107,
+          37.0
+        ],
+        [
+          41.672823848178254,
+          45.0
+        ],
+        [
+          43.89257108743446,
+          40.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S012",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        52.093830717979785,
+        2.0
+      ],
+      "B": [
+        53.2948121228889,
+        10.0
+      ],
+      "change_B_minus_A": [
+        1.2009814049091148,
+        8.0
+      ],
+      "cycle_features": [
+        [
+          49.03372298141375,
+          5.0
+        ],
+        [
+          54.365180336344515,
+          1.0
+        ],
+        [
+          38.93729863775152,
+          15.0
+        ],
+        [
+          53.51924585498747,
+          99.0
+        ],
+        [
+          56.138450595105475,
+          100.0
+        ],
+        [
+          54.54784140127602,
+          3.0
+        ],
+        [
+          53.07037839079034,
+          100.0
+        ],
+        [
+          49.450729639485836,
+          2.0
+        ],
+        [
+          46.285085321428404,
+          3.0
+        ],
+        [
+          54.37076887724658,
+          100.0
+        ]
+      ],
+      "endpoint_peak_count": 3
+    },
+    {
+      "study": "study_120",
+      "participant": "S012",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        49.62689122999373,
+        5.0
+      ],
+      "B": [
+        49.353255648745304,
+        5.0
+      ],
+      "change_B_minus_A": [
+        -0.2736355812484277,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          49.19462124855123,
+          5.0
+        ],
+        [
+          49.51189004893938,
+          5.0
+        ],
+        [
+          41.35333881687382,
+          22.0
+        ],
+        [
+          52.724330505386156,
+          5.0
+        ],
+        [
+          55.51928343319152,
+          100.0
+        ],
+        [
+          48.862977082306266,
+          4.0
+        ],
+        [
+          51.300296754388164,
+          100.0
+        ],
+        [
+          46.01937110882245,
+          5.0
+        ],
+        [
+          45.66990366664996,
+          5.0
+        ],
+        [
+          53.66284694487492,
+          100.0
+        ]
+      ],
+      "endpoint_peak_count": 3
+    },
+    {
+      "study": "study_120",
+      "participant": "S012",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        48.28272118170378,
+        6.0
+      ],
+      "B": [
+        49.14556377443801,
+        6.5
+      ],
+      "change_B_minus_A": [
+        0.862842592734232,
+        0.5
+      ],
+      "cycle_features": [
+        [
+          48.238403685560044,
+          6.0
+        ],
+        [
+          50.55030098156078,
+          7.0
+        ],
+        [
+          41.00003214601823,
+          22.0
+        ],
+        [
+          50.663398973894296,
+          6.0
+        ],
+        [
+          53.5755873943161,
+          76.0
+        ],
+        [
+          48.32752772983449,
+          6.0
+        ],
+        [
+          55.511832396896004,
+          94.0
+        ],
+        [
+          44.75516780773052,
+          6.0
+        ],
+        [
+          44.249951173793896,
+          6.0
+        ],
+        [
+          49.96359981904153,
+          7.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S012",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        42.57651287388845,
+        44.0
+      ],
+      "B": [
+        42.728182215314355,
+        44.5
+      ],
+      "change_B_minus_A": [
+        0.15166934142590804,
+        0.5
+      ],
+      "cycle_features": [
+        [
+          45.21233438165932,
+          46.0
+        ],
+        [
+          45.8409379523564,
+          46.0
+        ],
+        [
+          39.74056843260998,
+          44.0
+        ],
+        [
+          38.691806993192195,
+          43.0
+        ],
+        [
+          43.38706724264212,
+          44.0
+        ],
+        [
+          41.29083609123216,
+          40.0
+        ],
+        [
+          43.86372430440669,
+          45.0
+        ],
+        [
+          42.37468210158318,
+          42.0
+        ],
+        [
+          42.23877748635971,
+          46.0
+        ],
+        [
+          43.08168232904553,
+          45.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S012",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        43.569961895273444,
+        46.0
+      ],
+      "B": [
+        43.62690076203841,
+        45.5
+      ],
+      "change_B_minus_A": [
+        0.05693886676496618,
+        -0.5
+      ],
+      "cycle_features": [
+        [
+          46.03265403945793,
+          46.0
+        ],
+        [
+          45.96318442780098,
+          46.0
+        ],
+        [
+          41.03154830072584,
+          44.0
+        ],
+        [
+          39.58324961942872,
+          44.0
+        ],
+        [
+          43.36312203940972,
+          44.0
+        ],
+        [
+          42.08281345023466,
+          44.0
+        ],
+        [
+          44.49535875575507,
+          46.0
+        ],
+        [
+          44.19147299980502,
+          45.0
+        ],
+        [
+          42.924741971116376,
+          46.0
+        ],
+        [
+          43.8906794846671,
+          47.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S012",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        43.451850404471564,
+        46.0
+      ],
+      "B": [
+        43.46423335757997,
+        45.5
+      ],
+      "change_B_minus_A": [
+        0.01238295310840698,
+        -0.5
+      ],
+      "cycle_features": [
+        [
+          45.99725522026339,
+          46.0
+        ],
+        [
+          45.913603134827085,
+          46.0
+        ],
+        [
+          40.89569847825265,
+          44.0
+        ],
+        [
+          39.32443997052729,
+          44.0
+        ],
+        [
+          43.286506774821504,
+          44.0
+        ],
+        [
+          41.91864039115283,
+          44.0
+        ],
+        [
+          44.39589209790766,
+          46.0
+        ],
+        [
+          44.307036867701534,
+          45.0
+        ],
+        [
+          42.85870913721428,
+          46.0
+        ],
+        [
+          43.64195994033843,
+          47.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S013",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        56.91251325205105,
+        78.0
+      ],
+      "B": [
+        57.35118560263611,
+        79.0
+      ],
+      "change_B_minus_A": [
+        0.43867235058505827,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          61.49599307889067,
+          79.0
+        ],
+        [
+          57.41778713258285,
+          82.0
+        ],
+        [
+          55.592258224913955,
+          78.0
+        ],
+        [
+          61.062906148355204,
+          81.0
+        ],
+        [
+          57.36740008046786,
+          79.0
+        ],
+        [
+          57.334971124804355,
+          78.0
+        ],
+        [
+          57.88616181884048,
+          81.0
+        ],
+        [
+          55.37372015394468,
+          77.0
+        ],
+        [
+          54.59559626620864,
+          82.0
+        ],
+        [
+          53.85061048694366,
+          77.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S013",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        52.623637365600146,
+        78.0
+      ],
+      "B": [
+        52.47654919754616,
+        78.0
+      ],
+      "change_B_minus_A": [
+        -0.14708816805398328,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          56.16687667043649,
+          79.0
+        ],
+        [
+          55.452719160726474,
+          78.0
+        ],
+        [
+          51.21880236262372,
+          78.0
+        ],
+        [
+          60.37994103062051,
+          81.0
+        ],
+        [
+          51.23355566914321,
+          80.0
+        ],
+        [
+          52.67814615518833,
+          78.0
+        ],
+        [
+          52.27495223990399,
+          9.0
+        ],
+        [
+          54.59675559394121,
+          77.0
+        ],
+        [
+          49.443762667689775,
+          11.0
+        ],
+        [
+          50.72795268428103,
+          77.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S013",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        51.57053667281619,
+        78.0
+      ],
+      "B": [
+        51.54451371695057,
+        77.5
+      ],
+      "change_B_minus_A": [
+        -0.026022955865620645,
+        -0.5
+      ],
+      "cycle_features": [
+        [
+          55.83718190694448,
+          79.0
+        ],
+        [
+          55.290746437280625,
+          78.0
+        ],
+        [
+          49.8450490366729,
+          78.0
+        ],
+        [
+          58.62423020708358,
+          81.0
+        ],
+        [
+          49.7422347633167,
+          6.0
+        ],
+        [
+          51.33826681856498,
+          78.0
+        ],
+        [
+          51.750760615336155,
+          9.0
+        ],
+        [
+          53.971086848464886,
+          77.0
+        ],
+        [
+          48.431191547790625,
+          11.0
+        ],
+        [
+          49.59774069255957,
+          77.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S013",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        40.212695739676725,
+        14.0
+      ],
+      "B": [
+        39.851016554230156,
+        14.0
+      ],
+      "change_B_minus_A": [
+        -0.36167918544656885,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          41.71788922716257,
+          42.0
+        ],
+        [
+          44.31689971453606,
+          44.0
+        ],
+        [
+          40.77680298860571,
+          16.0
+        ],
+        [
+          38.92049843728947,
+          13.0
+        ],
+        [
+          38.421862185388,
+          13.0
+        ],
+        [
+          39.59320578219661,
+          14.0
+        ],
+        [
+          41.74595173875764,
+          15.0
+        ],
+        [
+          39.42644356769307,
+          14.0
+        ],
+        [
+          34.553393033740065,
+          14.0
+        ],
+        [
+          40.1088273262637,
+          14.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S013",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        37.970027390146214,
+        13.0
+      ],
+      "B": [
+        38.602292791113825,
+        12.5
+      ],
+      "change_B_minus_A": [
+        0.6322654009676114,
+        -0.5
+      ],
+      "cycle_features": [
+        [
+          41.494540276889175,
+          12.0
+        ],
+        [
+          38.5843144370915,
+          11.0
+        ],
+        [
+          43.97460179980827,
+          16.0
+        ],
+        [
+          33.33280874671723,
+          12.0
+        ],
+        [
+          35.13411027861955,
+          10.0
+        ],
+        [
+          39.81921290117357,
+          12.0
+        ],
+        [
+          38.62027114513616,
+          14.0
+        ],
+        [
+          39.20796608010387,
+          13.0
+        ],
+        [
+          34.712147374757066,
+          14.0
+        ],
+        [
+          37.176726443180144,
+          13.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S013",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        37.340487183180024,
+        13.0
+      ],
+      "B": [
+        37.74328396768098,
+        12.5
+      ],
+      "change_B_minus_A": [
+        0.402796784500957,
+        -0.5
+      ],
+      "cycle_features": [
+        [
+          40.91158716207282,
+          12.0
+        ],
+        [
+          38.20316667810008,
+          11.0
+        ],
+        [
+          42.95087362063657,
+          16.0
+        ],
+        [
+          32.89336245819182,
+          12.0
+        ],
+        [
+          34.263536180626716,
+          10.0
+        ],
+        [
+          39.44021061395467,
+          12.0
+        ],
+        [
+          37.28340125726187,
+          14.0
+        ],
+        [
+          38.344939042013465,
+          13.0
+        ],
+        [
+          33.91709063091492,
+          14.0
+        ],
+        [
+          36.076617705867534,
+          13.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S014",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        50.935749784570326,
+        78.0
+      ],
+      "B": [
+        51.73972800992344,
+        77.0
+      ],
+      "change_B_minus_A": [
+        0.8039782253531129,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          49.79079816334083,
+          8.0
+        ],
+        [
+          44.405589864169684,
+          9.0
+        ],
+        [
+          48.435504641841305,
+          9.0
+        ],
+        [
+          53.225688893872636,
+          78.0
+        ],
+        [
+          55.09104518559527,
+          77.0
+        ],
+        [
+          51.75511768052871,
+          79.0
+        ],
+        [
+          55.030979117392775,
+          77.0
+        ],
+        [
+          51.72433833931817,
+          77.0
+        ],
+        [
+          56.65918079428236,
+          100.0
+        ],
+        [
+          45.55677229724286,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 1
+    },
+    {
+      "study": "study_120",
+      "participant": "S014",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        48.65462314479819,
+        8.0
+      ],
+      "B": [
+        48.113744613928404,
+        10.5
+      ],
+      "change_B_minus_A": [
+        -0.540878530869783,
+        2.5
+      ],
+      "cycle_features": [
+        [
+          47.20606065083718,
+          8.0
+        ],
+        [
+          41.02619597565632,
+          10.0
+        ],
+        [
+          47.23988806805717,
+          9.0
+        ],
+        [
+          47.50749154961649,
+          11.0
+        ],
+        [
+          53.01167854613493,
+          77.0
+        ],
+        [
+          53.112366803712256,
+          78.0
+        ],
+        [
+          54.124677209300536,
+          78.0
+        ],
+        [
+          51.259377412886714,
+          77.0
+        ],
+        [
+          48.719997678240325,
+          10.0
+        ],
+        [
+          44.56390298723379,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S014",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        48.02991879068794,
+        8.0
+      ],
+      "B": [
+        47.19302091007354,
+        10.5
+      ],
+      "change_B_minus_A": [
+        -0.8368978806143943,
+        2.5
+      ],
+      "cycle_features": [
+        [
+          46.016050176526704,
+          8.0
+        ],
+        [
+          40.45185393013043,
+          10.0
+        ],
+        [
+          46.94478061877552,
+          9.0
+        ],
+        [
+          47.44126120137157,
+          11.0
+        ],
+        [
+          51.36938260681201,
+          77.0
+        ],
+        [
+          50.99226486243504,
+          78.0
+        ],
+        [
+          53.500346450743415,
+          78.0
+        ],
+        [
+          51.15576871309538,
+          77.0
+        ],
+        [
+          46.55069245665988,
+          7.0
+        ],
+        [
+          44.32891793808828,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S014",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        46.463029206886546,
+        47.0
+      ],
+      "B": [
+        46.295213803672574,
+        46.0
+      ],
+      "change_B_minus_A": [
+        -0.1678154032139716,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          45.66725276710938,
+          48.0
+        ],
+        [
+          47.76629099917242,
+          48.0
+        ],
+        [
+          47.21423142036666,
+          47.0
+        ],
+        [
+          46.21263967104374,
+          45.0
+        ],
+        [
+          48.84839006366936,
+          49.0
+        ],
+        [
+          46.37778793630141,
+          44.0
+        ],
+        [
+          46.02926050474471,
+          45.0
+        ],
+        [
+          47.51623326136597,
+          47.0
+        ],
+        [
+          43.66103896020704,
+          44.0
+        ],
+        [
+          45.23249392048599,
+          44.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S014",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        46.325561079117094,
+        45.0
+      ],
+      "B": [
+        46.19353361873726,
+        46.0
+      ],
+      "change_B_minus_A": [
+        -0.13202746037983104,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          46.05168113678299,
+          48.0
+        ],
+        [
+          47.570861263744206,
+          47.0
+        ],
+        [
+          47.55866217786462,
+          49.0
+        ],
+        [
+          46.06337342730004,
+          45.0
+        ],
+        [
+          48.52464968636596,
+          46.0
+        ],
+        [
+          45.9666690457092,
+          44.0
+        ],
+        [
+          46.32369381017449,
+          47.0
+        ],
+        [
+          47.23576280388574,
+          46.0
+        ],
+        [
+          43.353839826650386,
+          43.0
+        ],
+        [
+          45.02887002136417,
+          44.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S014",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        46.31686938214505,
+        45.0
+      ],
+      "B": [
+        46.105560747713994,
+        46.0
+      ],
+      "change_B_minus_A": [
+        -0.21130863443105596,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          46.133528982860526,
+          48.0
+        ],
+        [
+          47.521264048239296,
+          47.0
+        ],
+        [
+          47.553283095737136,
+          49.0
+        ],
+        [
+          46.06587511827451,
+          45.0
+        ],
+        [
+          48.43926828693028,
+          46.0
+        ],
+        [
+          45.99915561380327,
+          44.0
+        ],
+        [
+          46.077592512567456,
+          47.0
+        ],
+        [
+          47.34152052072473,
+          46.0
+        ],
+        [
+          43.26625706657411,
+          43.0
+        ],
+        [
+          45.0067351551169,
+          44.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S015",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        55.35958534795432,
+        75.0
+      ],
+      "B": [
+        54.47561137419848,
+        75.5
+      ],
+      "change_B_minus_A": [
+        -0.8839739737558432,
+        0.5
+      ],
+      "cycle_features": [
+        [
+          48.51752946473754,
+          75.0
+        ],
+        [
+          52.1567607611576,
+          78.0
+        ],
+        [
+          54.976054342145375,
+          74.0
+        ],
+        [
+          53.260729619640856,
+          76.0
+        ],
+        [
+          58.57149274445253,
+          76.0
+        ],
+        [
+          56.20615730053218,
+          75.0
+        ],
+        [
+          51.80560992132187,
+          77.0
+        ],
+        [
+          53.975168406251576,
+          72.0
+        ],
+        [
+          59.83627413000207,
+          74.0
+        ],
+        [
+          55.81524824703592,
+          77.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S015",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        54.44012375742832,
+        75.0
+      ],
+      "B": [
+        55.85171470793284,
+        75.0
+      ],
+      "change_B_minus_A": [
+        1.4115909505045252,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          46.93615266942456,
+          1.0
+        ],
+        [
+          48.90393002302328,
+          6.0
+        ],
+        [
+          56.16263582871062,
+          75.0
+        ],
+        [
+          52.852799408411165,
+          76.0
+        ],
+        [
+          58.08249642216199,
+          76.0
+        ],
+        [
+          56.688296552512995,
+          75.0
+        ],
+        [
+          51.33154669700953,
+          78.0
+        ],
+        [
+          55.540793587155065,
+          72.0
+        ],
+        [
+          57.616509943229225,
+          74.0
+        ],
+        [
+          56.47429553349303,
+          100.0
+        ]
+      ],
+      "endpoint_peak_count": 1
+    },
+    {
+      "study": "study_120",
+      "participant": "S015",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        54.15170031188736,
+        75.0
+      ],
+      "B": [
+        54.01491546758638,
+        75.0
+      ],
+      "change_B_minus_A": [
+        -0.13678484430098337,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          47.2309220076346,
+          48.0
+        ],
+        [
+          46.639926041107046,
+          6.0
+        ],
+        [
+          56.26534459181382,
+          75.0
+        ],
+        [
+          52.66350908932066,
+          76.0
+        ],
+        [
+          58.46970320540251,
+          76.0
+        ],
+        [
+          57.012825503242404,
+          75.0
+        ],
+        [
+          51.22327970004055,
+          78.0
+        ],
+        [
+          54.86023827178769,
+          72.0
+        ],
+        [
+          58.436269037822136,
+          74.0
+        ],
+        [
+          53.16959266338506,
+          77.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S015",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        38.316326330567485,
+        42.0
+      ],
+      "B": [
+        38.33291949198775,
+        38.5
+      ],
+      "change_B_minus_A": [
+        0.016593161420267677,
+        -3.5
+      ],
+      "cycle_features": [
+        [
+          40.64612290569911,
+          43.0
+        ],
+        [
+          43.14565275846468,
+          44.0
+        ],
+        [
+          37.61155089807631,
+          42.0
+        ],
+        [
+          40.31812655275985,
+          26.0
+        ],
+        [
+          38.30885342341706,
+          38.0
+        ],
+        [
+          36.807379607186206,
+          21.0
+        ],
+        [
+          35.97949553080683,
+          41.0
+        ],
+        [
+          34.87707421817731,
+          23.0
+        ],
+        [
+          38.35698556055845,
+          39.0
+        ],
+        [
+          41.25822625283797,
+          35.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S015",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        38.43032909743507,
+        42.0
+      ],
+      "B": [
+        37.99116209729979,
+        40.5
+      ],
+      "change_B_minus_A": [
+        -0.4391670001352779,
+        -1.5
+      ],
+      "cycle_features": [
+        [
+          40.36402978967856,
+          43.0
+        ],
+        [
+          45.71081138934944,
+          46.0
+        ],
+        [
+          36.96015449425755,
+          44.0
+        ],
+        [
+          43.50975829831864,
+          24.0
+        ],
+        [
+          38.17779537744957,
+          42.0
+        ],
+        [
+          37.56840106934255,
+          20.0
+        ],
+        [
+          35.60837555015378,
+          41.0
+        ],
+        [
+          37.80452881715001,
+          23.0
+        ],
+        [
+          36.63324149887915,
+          40.0
+        ],
+        [
+          39.35677888713218,
+          30.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S015",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        38.84274545199868,
+        42.0
+      ],
+      "B": [
+        38.645578088157606,
+        40.5
+      ],
+      "change_B_minus_A": [
+        -0.19716736384107492,
+        -1.5
+      ],
+      "cycle_features": [
+        [
+          42.74842503214504,
+          43.0
+        ],
+        [
+          44.778978692977034,
+          46.0
+        ],
+        [
+          37.59952233279412,
+          44.0
+        ],
+        [
+          43.6873662115405,
+          24.0
+        ],
+        [
+          38.35468873614162,
+          42.0
+        ],
+        [
+          37.59068021563993,
+          20.0
+        ],
+        [
+          35.32547277848276,
+          41.0
+        ],
+        [
+          39.70753638618298,
+          23.0
+        ],
+        [
+          37.252023841248146,
+          40.0
+        ],
+        [
+          38.9364674401736,
+          30.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S016",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 8,
+      "A": [
+        55.485546603751324,
+        75.0
+      ],
+      "B": [
+        55.7670789468049,
+        75.5
+      ],
+      "change_B_minus_A": [
+        0.281532343053577,
+        0.5
+      ],
+      "cycle_features": [
+        [
+          49.3049481013331,
+          3.0
+        ],
+        [
+          55.847548304061235,
+          0.0
+        ],
+        [
+          56.956550245795306,
+          77.0
+        ],
+        [
+          55.68660958954857,
+          100.0
+        ],
+        [
+          52.04057077600219,
+          5.0
+        ],
+        [
+          56.85716737417321,
+          75.0
+        ],
+        [
+          53.080027575917526,
+          98.0
+        ],
+        [
+          59.12600405605983,
+          76.0
+        ]
+      ],
+      "endpoint_peak_count": 2
+    },
+    {
+      "study": "study_120",
+      "participant": "S016",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 8,
+      "A": [
+        53.020478191304,
+        6.0
+      ],
+      "B": [
+        53.15414625765378,
+        39.5
+      ],
+      "change_B_minus_A": [
+        0.13366806634977735,
+        33.5
+      ],
+      "cycle_features": [
+        [
+          48.297573147084016,
+          8.0
+        ],
+        [
+          54.7148574265366,
+          72.0
+        ],
+        [
+          53.4027878133225,
+          1.0
+        ],
+        [
+          52.90550470198506,
+          98.0
+        ],
+        [
+          46.37976163548575,
+          5.0
+        ],
+        [
+          54.44526282109706,
+          75.0
+        ],
+        [
+          49.49276568588354,
+          8.0
+        ],
+        [
+          56.28315040078983,
+          71.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S016",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 8,
+      "A": [
+        51.8733746311679,
+        6.0
+      ],
+      "B": [
+        51.760549163695536,
+        8.0
+      ],
+      "change_B_minus_A": [
+        -0.1128254674723621,
+        2.0
+      ],
+      "cycle_features": [
+        [
+          47.31534139228802,
+          8.0
+        ],
+        [
+          52.53726031070763,
+          72.0
+        ],
+        [
+          52.88070316210415,
+          6.0
+        ],
+        [
+          50.98383801668344,
+          6.0
+        ],
+        [
+          43.52018475828995,
+          7.0
+        ],
+        [
+          52.93316260844206,
+          75.0
+        ],
+        [
+          48.38294550944353,
+          8.0
+        ],
+        [
+          55.90895823911332,
+          71.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S016",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 8,
+      "A": [
+        41.317098350706814,
+        43.0
+      ],
+      "B": [
+        41.328398367893605,
+        42.0
+      ],
+      "change_B_minus_A": [
+        0.011300017186790967,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          42.49409540586151,
+          43.0
+        ],
+        [
+          40.46043079728684,
+          42.0
+        ],
+        [
+          39.61814893518436,
+          27.0
+        ],
+        [
+          40.270156505165104,
+          42.0
+        ],
+        [
+          42.2188386586713,
+          42.0
+        ],
+        [
+          39.83284006349813,
+          42.0
+        ],
+        [
+          42.19636593850037,
+          47.0
+        ],
+        [
+          42.84363726197929,
+          44.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S016",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 8,
+      "A": [
+        41.32740235459262,
+        43.0
+      ],
+      "B": [
+        40.35908337609372,
+        43.0
+      ],
+      "change_B_minus_A": [
+        -0.9683189784988997,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          42.25567009290086,
+          43.0
+        ],
+        [
+          40.514666594957866,
+          44.0
+        ],
+        [
+          38.377979675017,
+          25.0
+        ],
+        [
+          39.708983724359335,
+          42.0
+        ],
+        [
+          40.203500157229584,
+          42.0
+        ],
+        [
+          39.602100648670536,
+          43.0
+        ],
+        [
+          42.272124260622626,
+          47.0
+        ],
+        [
+          42.28878706366926,
+          44.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S016",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 8,
+      "A": [
+        41.188573609165246,
+        43.0
+      ],
+      "B": [
+        40.4343654631475,
+        43.0
+      ],
+      "change_B_minus_A": [
+        -0.7542081460177457,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          42.237735665088685,
+          43.0
+        ],
+        [
+          40.39912024488663,
+          44.0
+        ],
+        [
+          38.38822671619786,
+          25.0
+        ],
+        [
+          39.20088499206282,
+          42.0
+        ],
+        [
+          40.46961068140837,
+          42.0
+        ],
+        [
+          39.557083621302176,
+          43.0
+        ],
+        [
+          42.32820573147887,
+          47.0
+        ],
+        [
+          42.116149840222924,
+          44.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S017",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 9,
+      "A": [
+        59.56083611602672,
+        75.0
+      ],
+      "B": [
+        57.32854962400947,
+        78.0
+      ],
+      "change_B_minus_A": [
+        -2.232286492017252,
+        3.0
+      ],
+      "cycle_features": [
+        [
+          54.90430110793685,
+          78.0
+        ],
+        [
+          56.999509154497815,
+          98.0
+        ],
+        [
+          58.57389915354202,
+          73.0
+        ],
+        [
+          56.27694860296797,
+          76.0
+        ],
+        [
+          60.56304971656567,
+          100.0
+        ],
+        [
+          60.18542249258087,
+          75.0
+        ],
+        [
+          55.71125415156219,
+          100.0
+        ],
+        [
+          57.32854962400947,
+          71.0
+        ],
+        [
+          59.487159989511376,
+          100.0
+        ]
+      ],
+      "endpoint_peak_count": 3
+    },
+    {
+      "study": "study_120",
+      "participant": "S017",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 9,
+      "A": [
+        53.837754204572505,
+        3.0
+      ],
+      "B": [
+        54.11423756621315,
+        75.0
+      ],
+      "change_B_minus_A": [
+        0.27648336164064347,
+        72.0
+      ],
+      "cycle_features": [
+        [
+          54.11423756621315,
+          78.0
+        ],
+        [
+          53.02265761195075,
+          4.0
+        ],
+        [
+          53.615309852623305,
+          4.0
+        ],
+        [
+          55.71744099490531,
+          76.0
+        ],
+        [
+          55.91620541193054,
+          100.0
+        ],
+        [
+          55.59525463755318,
+          75.0
+        ],
+        [
+          53.346668852007795,
+          100.0
+        ],
+        [
+          56.795162505197894,
+          72.0
+        ],
+        [
+          51.437759062106274,
+          4.0
+        ]
+      ],
+      "endpoint_peak_count": 2
+    },
+    {
+      "study": "study_120",
+      "participant": "S017",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 9,
+      "A": [
+        50.518590836177246,
+        5.0
+      ],
+      "B": [
+        51.63144272890354,
+        6.0
+      ],
+      "change_B_minus_A": [
+        1.1128518927262903,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          50.48365448287373,
+          78.0
+        ],
+        [
+          50.822419642708134,
+          5.0
+        ],
+        [
+          52.26675524825014,
+          5.0
+        ],
+        [
+          51.63144272890354,
+          76.0
+        ],
+        [
+          50.3019296424929,
+          5.0
+        ],
+        [
+          53.875618328422775,
+          75.0
+        ],
+        [
+          52.169865140324724,
+          6.0
+        ],
+        [
+          52.81082256538646,
+          72.0
+        ],
+        [
+          46.2019013374572,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S017",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 9,
+      "A": [
+        43.59533165867892,
+        38.0
+      ],
+      "B": [
+        44.02279694912786,
+        37.0
+      ],
+      "change_B_minus_A": [
+        0.4274652904489358,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          44.421329061840616,
+          40.0
+        ],
+        [
+          45.34121285654879,
+          36.0
+        ],
+        [
+          43.72273357823398,
+          38.0
+        ],
+        [
+          44.562869494209494,
+          34.0
+        ],
+        [
+          43.15430858918874,
+          37.0
+        ],
+        [
+          40.269956492447754,
+          34.0
+        ],
+        [
+          44.02279694912786,
+          37.0
+        ],
+        [
+          43.360417017464826,
+          34.0
+        ],
+        [
+          44.93960663247075,
+          41.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S017",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 9,
+      "A": [
+        44.467828825327175,
+        38.0
+      ],
+      "B": [
+        44.786243118800215,
+        39.0
+      ],
+      "change_B_minus_A": [
+        0.3184142934730403,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          45.16542946044167,
+          40.0
+        ],
+        [
+          45.87542394113701,
+          37.0
+        ],
+        [
+          43.87334061048293,
+          39.0
+        ],
+        [
+          45.37732504092697,
+          39.0
+        ],
+        [
+          43.334745823247275,
+          39.0
+        ],
+        [
+          41.501215057876685,
+          37.0
+        ],
+        [
+          44.786243118800215,
+          37.0
+        ],
+        [
+          43.28316833707017,
+          34.0
+        ],
+        [
+          45.86457432965876,
+          41.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S017",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 9,
+      "A": [
+        44.32936170784367,
+        38.0
+      ],
+      "B": [
+        44.470977919863174,
+        39.0
+      ],
+      "change_B_minus_A": [
+        0.1416162120195068,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          45.15375648967001,
+          40.0
+        ],
+        [
+          45.7360951971702,
+          37.0
+        ],
+        [
+          43.61474227428917,
+          39.0
+        ],
+        [
+          45.32693085884412,
+          39.0
+        ],
+        [
+          43.01764516526581,
+          39.0
+        ],
+        [
+          41.40869453063017,
+          37.0
+        ],
+        [
+          44.470977919863174,
+          37.0
+        ],
+        [
+          43.34753643134823,
+          34.0
+        ],
+        [
+          45.90979214559739,
+          41.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S018",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        49.84796287311011,
+        6.0
+      ],
+      "B": [
+        49.68971599753836,
+        71.0
+      ],
+      "change_B_minus_A": [
+        -0.15824687557175565,
+        65.0
+      ],
+      "cycle_features": [
+        [
+          49.24730991715482,
+          5.0
+        ],
+        [
+          49.938485188815896,
+          5.0
+        ],
+        [
+          46.268154337739425,
+          5.0
+        ],
+        [
+          45.99644060053107,
+          4.0
+        ],
+        [
+          48.85107323581958,
+          70.0
+        ],
+        [
+          51.438943384000666,
+          100.0
+        ],
+        [
+          49.62105847115329,
+          72.0
+        ],
+        [
+          53.5281865230449,
+          100.0
+        ],
+        [
+          51.538328038126544,
+          100.0
+        ],
+        [
+          49.75837352392343,
+          100.0
+        ]
+      ],
+      "endpoint_peak_count": 4
+    },
+    {
+      "study": "study_120",
+      "participant": "S018",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        48.49091824220988,
+        5.0
+      ],
+      "B": [
+        49.320599814553276,
+        6.5
+      ],
+      "change_B_minus_A": [
+        0.8296815723433966,
+        1.5
+      ],
+      "cycle_features": [
+        [
+          45.84715441664817,
+          5.0
+        ],
+        [
+          49.17798132683691,
+          5.0
+        ],
+        [
+          44.99046376737632,
+          5.0
+        ],
+        [
+          43.80341442134825,
+          7.0
+        ],
+        [
+          47.804645310211676,
+          9.0
+        ],
+        [
+          49.70292264430841,
+          100.0
+        ],
+        [
+          51.91482139051838,
+          72.0
+        ],
+        [
+          53.27531130534174,
+          100.0
+        ],
+        [
+          49.9460983899213,
+          6.0
+        ],
+        [
+          49.46321830226965,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 2
+    },
+    {
+      "study": "study_120",
+      "participant": "S018",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        46.26023399847524,
+        6.0
+      ],
+      "B": [
+        46.551615642782885,
+        6.0
+      ],
+      "change_B_minus_A": [
+        0.29138164430764135,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          43.31780843341566,
+          6.0
+        ],
+        [
+          48.22267457860139,
+          6.0
+        ],
+        [
+          42.93885246434849,
+          7.0
+        ],
+        [
+          42.7355313990452,
+          6.0
+        ],
+        [
+          46.10497608795495,
+          6.0
+        ],
+        [
+          46.60190799551776,
+          6.0
+        ],
+        [
+          51.65275832146293,
+          72.0
+        ],
+        [
+          51.49746969356318,
+          76.0
+        ],
+        [
+          47.798357492766634,
+          6.0
+        ],
+        [
+          46.501323290048006,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S018",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        39.17216721850696,
+        40.0
+      ],
+      "B": [
+        39.08719115312755,
+        40.0
+      ],
+      "change_B_minus_A": [
+        -0.08497606537940783,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          38.74523194092645,
+          40.0
+        ],
+        [
+          37.659327663249485,
+          40.0
+        ],
+        [
+          38.8670209651276,
+          42.0
+        ],
+        [
+          39.307361341127496,
+          44.0
+        ],
+        [
+          35.2760268293662,
+          30.0
+        ],
+        [
+          38.503199157824696,
+          40.0
+        ],
+        [
+          40.16761617511207,
+          39.0
+        ],
+        [
+          44.21163609490376,
+          39.0
+        ],
+        [
+          40.06156643490816,
+          45.0
+        ],
+        [
+          39.589816193108575,
+          41.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S018",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        39.58623643988348,
+        45.0
+      ],
+      "B": [
+        39.83760634388696,
+        44.0
+      ],
+      "change_B_minus_A": [
+        0.25136990400348225,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          39.42325744622424,
+          45.0
+        ],
+        [
+          37.61028726782424,
+          40.0
+        ],
+        [
+          39.637157951926255,
+          44.0
+        ],
+        [
+          40.41119135374861,
+          44.0
+        ],
+        [
+          37.8143656174239,
+          44.0
+        ],
+        [
+          39.091457825021855,
+          40.0
+        ],
+        [
+          40.786144437879265,
+          39.0
+        ],
+        [
+          45.180248421481856,
+          44.0
+        ],
+        [
+          40.805399324653855,
+          45.0
+        ],
+        [
+          40.03805473584766,
+          42.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S018",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        39.42080285879562,
+        45.0
+      ],
+      "B": [
+        39.46076198892518,
+        44.0
+      ],
+      "change_B_minus_A": [
+        0.039959130129560094,
+        -1.0
+      ],
+      "cycle_features": [
+        [
+          39.205968685423166,
+          45.0
+        ],
+        [
+          37.358675190038554,
+          40.0
+        ],
+        [
+          39.286525376696034,
+          44.0
+        ],
+        [
+          39.63499860115432,
+          44.0
+        ],
+        [
+          37.80075517607818,
+          44.0
+        ],
+        [
+          39.04420930966476,
+          40.0
+        ],
+        [
+          40.75930785637407,
+          39.0
+        ],
+        [
+          45.324183962594105,
+          44.0
+        ],
+        [
+          40.549944332877644,
+          45.0
+        ],
+        [
+          39.76908205476852,
+          42.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S019",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        54.187763466501735,
+        3.0
+      ],
+      "B": [
+        53.773457080343846,
+        6.5
+      ],
+      "change_B_minus_A": [
+        -0.4143063861578895,
+        3.5
+      ],
+      "cycle_features": [
+        [
+          50.25272260563997,
+          3.0
+        ],
+        [
+          54.535454855551045,
+          75.0
+        ],
+        [
+          57.482146665376405,
+          75.0
+        ],
+        [
+          59.77695526137509,
+          100.0
+        ],
+        [
+          53.011459305136654,
+          0.0
+        ],
+        [
+          51.994518455098614,
+          4.0
+        ],
+        [
+          51.507232208511994,
+          0.0
+        ],
+        [
+          55.31190439000202,
+          77.0
+        ],
+        [
+          45.50319162258166,
+          8.0
+        ],
+        [
+          55.903451128425736,
+          5.0
+        ]
+      ],
+      "endpoint_peak_count": 3
+    },
+    {
+      "study": "study_120",
+      "participant": "S019",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        52.90670788565083,
+        3.0
+      ],
+      "B": [
+        51.92867555091588,
+        6.5
+      ],
+      "change_B_minus_A": [
+        -0.9780323347349551,
+        3.5
+      ],
+      "cycle_features": [
+        [
+          49.285454303341176,
+          100.0
+        ],
+        [
+          50.99781148004105,
+          2.0
+        ],
+        [
+          56.185931555925634,
+          100.0
+        ],
+        [
+          58.116819288517526,
+          98.0
+        ],
+        [
+          52.48496554361083,
+          4.0
+        ],
+        [
+          51.37238555822092,
+          4.0
+        ],
+        [
+          50.48289774252697,
+          5.0
+        ],
+        [
+          52.74389684599574,
+          5.0
+        ],
+        [
+          43.71152611349837,
+          8.0
+        ],
+        [
+          54.13631851743803,
+          100.0
+        ]
+      ],
+      "endpoint_peak_count": 3
+    },
+    {
+      "study": "study_120",
+      "participant": "S019",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        49.541993075910014,
+        6.0
+      ],
+      "B": [
+        49.723997012691726,
+        6.0
+      ],
+      "change_B_minus_A": [
+        0.18200393678171167,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          47.2812439581719,
+          5.0
+        ],
+        [
+          50.02800515545883,
+          6.0
+        ],
+        [
+          53.12437561730056,
+          75.0
+        ],
+        [
+          55.56373811879253,
+          6.0
+        ],
+        [
+          50.0592840927067,
+          6.0
+        ],
+        [
+          47.818872070648965,
+          6.0
+        ],
+        [
+          47.041985162350244,
+          6.0
+        ],
+        [
+          52.3466141495675,
+          6.0
+        ],
+        [
+          41.078617046674175,
+          8.0
+        ],
+        [
+          49.41998886992463,
+          6.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S019",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        35.52388036800774,
+        37.0
+      ],
+      "B": [
+        36.07449252257702,
+        35.0
+      ],
+      "change_B_minus_A": [
+        0.5506121545692793,
+        -2.0
+      ],
+      "cycle_features": [
+        [
+          34.238836330343446,
+          35.0
+        ],
+        [
+          36.811654401391664,
+          38.0
+        ],
+        [
+          37.36856388137617,
+          35.0
+        ],
+        [
+          32.50573663044074,
+          37.0
+        ],
+        [
+          34.04759058298703,
+          31.0
+        ],
+        [
+          37.31409859018085,
+          34.0
+        ],
+        [
+          34.136792554775305,
+          32.0
+        ],
+        [
+          36.60106933158803,
+          35.0
+        ],
+        [
+          37.858527207840794,
+          37.0
+        ],
+        [
+          35.547915713566,
+          37.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S019",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        35.576392532338,
+        36.0
+      ],
+      "B": [
+        36.14850851339577,
+        36.5
+      ],
+      "change_B_minus_A": [
+        0.5721159810577703,
+        0.5
+      ],
+      "cycle_features": [
+        [
+          34.66367285125434,
+          36.0
+        ],
+        [
+          37.43453627774833,
+          42.0
+        ],
+        [
+          36.85111518883944,
+          31.0
+        ],
+        [
+          33.27059288173104,
+          37.0
+        ],
+        [
+          34.12914555512467,
+          36.0
+        ],
+        [
+          36.65763022623685,
+          34.0
+        ],
+        [
+          34.4621655309534,
+          32.0
+        ],
+        [
+          36.73418677724091,
+          40.0
+        ],
+        [
+          37.89265769604462,
+          37.0
+        ],
+        [
+          35.639386800554696,
+          37.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S019",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial03.Step02",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial04.Step02",
+        "LevelWalking.Trial05.Step01",
+        "LevelWalking.Trial05.Step02"
+      ],
+      "n_cycles": 10,
+      "A": [
+        35.524861110807166,
+        36.0
+      ],
+      "B": [
+        36.154933804470865,
+        36.5
+      ],
+      "change_B_minus_A": [
+        0.6300726936636991,
+        0.5
+      ],
+      "cycle_features": [
+        [
+          34.59700321898076,
+          36.0
+        ],
+        [
+          37.40620674714443,
+          42.0
+        ],
+        [
+          36.80113074237862,
+          31.0
+        ],
+        [
+          33.08177485423143,
+          37.0
+        ],
+        [
+          34.08212899620417,
+          36.0
+        ],
+        [
+          36.62604002312778,
+          34.0
+        ],
+        [
+          34.445895727395914,
+          32.0
+        ],
+        [
+          36.70887130278506,
+          40.0
+        ],
+        [
+          37.84379163762915,
+          37.0
+        ],
+        [
+          35.68382758581395,
+          37.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S020",
+      "muscle": "tibialis anterior",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 7,
+      "A": [
+        37.68890155627049,
+        8.0
+      ],
+      "B": [
+        36.99337256808573,
+        34.0
+      ],
+      "change_B_minus_A": [
+        -0.6955289881847548,
+        26.0
+      ],
+      "cycle_features": [
+        [
+          39.55661717081321,
+          6.0
+        ],
+        [
+          36.99337256808573,
+          34.0
+        ],
+        [
+          34.81645019357178,
+          8.0
+        ],
+        [
+          41.736135681382,
+          100.0
+        ],
+        [
+          40.966701242189224,
+          36.0
+        ],
+        [
+          35.40881628526227,
+          36.0
+        ],
+        [
+          36.779265366314185,
+          9.0
+        ]
+      ],
+      "endpoint_peak_count": 1
+    },
+    {
+      "study": "study_120",
+      "participant": "S020",
+      "muscle": "tibialis anterior",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 7,
+      "A": [
+        38.4546314462648,
+        36.0
+      ],
+      "B": [
+        39.32878994111353,
+        36.0
+      ],
+      "change_B_minus_A": [
+        0.8741584948487287,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          39.32878994111353,
+          36.0
+        ],
+        [
+          40.45937558503875,
+          34.0
+        ],
+        [
+          36.24264929018718,
+          37.0
+        ],
+        [
+          40.43156921083524,
+          35.0
+        ],
+        [
+          40.408867783971125,
+          36.0
+        ],
+        [
+          35.665545567293755,
+          36.0
+        ],
+        [
+          36.37948160125504,
+          35.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S020",
+      "muscle": "tibialis anterior",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 7,
+      "A": [
+        36.43198165952613,
+        36.0
+      ],
+      "B": [
+        35.23755952645679,
+        36.0
+      ],
+      "change_B_minus_A": [
+        -1.194422133069338,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          38.09928994831499,
+          36.0
+        ],
+        [
+          35.23755952645679,
+          34.0
+        ],
+        [
+          35.10018473535317,
+          37.0
+        ],
+        [
+          37.524877293246455,
+          35.0
+        ],
+        [
+          38.43224512056165,
+          36.0
+        ],
+        [
+          33.00010988530454,
+          36.0
+        ],
+        [
+          34.72841077434848,
+          35.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S020",
+      "muscle": "medial gastrocnemius",
+      "condition": "existing",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 7,
+      "A": [
+        61.76800573381769,
+        73.0
+      ],
+      "B": [
+        61.96612949735715,
+        73.0
+      ],
+      "change_B_minus_A": [
+        0.19812376353946348,
+        0.0
+      ],
+      "cycle_features": [
+        [
+          60.48575934359615,
+          73.0
+        ],
+        [
+          59.672154121870435,
+          71.0
+        ],
+        [
+          61.96612949735715,
+          75.0
+        ],
+        [
+          60.89011952698187,
+          61.0
+        ],
+        [
+          63.6770647505672,
+          71.0
+        ],
+        [
+          65.56452190473716,
+          73.0
+        ],
+        [
+          63.03266853607184,
+          74.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S020",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_trial",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 7,
+      "A": [
+        62.76269993875611,
+        72.0
+      ],
+      "B": [
+        63.85535514464301,
+        73.0
+      ],
+      "change_B_minus_A": [
+        1.0926552058869063,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          61.31169128598692,
+          73.0
+        ],
+        [
+          60.33655573289834,
+          72.0
+        ],
+        [
+          63.933686484863976,
+          75.0
+        ],
+        [
+          61.02300147863945,
+          69.0
+        ],
+        [
+          65.90484454647883,
+          72.0
+        ],
+        [
+          67.3791901022978,
+          73.0
+        ],
+        [
+          63.85535514464301,
+          74.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    },
+    {
+      "study": "study_120",
+      "participant": "S020",
+      "muscle": "medial gastrocnemius",
+      "condition": "common_cycle",
+      "cycle_ids": [
+        "LevelWalking.Trial01.Step01",
+        "LevelWalking.Trial01.Step02",
+        "LevelWalking.Trial02.Step01",
+        "LevelWalking.Trial02.Step02",
+        "LevelWalking.Trial03.Step01",
+        "LevelWalking.Trial04.Step01",
+        "LevelWalking.Trial05.Step01"
+      ],
+      "n_cycles": 7,
+      "A": [
+        62.79667652566999,
+        72.0
+      ],
+      "B": [
+        63.81450882530554,
+        73.0
+      ],
+      "change_B_minus_A": [
+        1.0178322996355504,
+        1.0
+      ],
+      "cycle_features": [
+        [
+          61.18693617890952,
+          73.0
+        ],
+        [
+          60.403964845277784,
+          72.0
+        ],
+        [
+          63.91104975589146,
+          75.0
+        ],
+        [
+          60.79671198201734,
+          69.0
+        ],
+        [
+          65.96085508246445,
+          72.0
+        ],
+        [
+          67.0261685006634,
+          73.0
+        ],
+        [
+          63.81450882530554,
+          74.0
+        ]
+      ],
+      "endpoint_peak_count": 0
+    }
+  ],
+  "checks": {
+    "participants": 20,
+    "participant_muscle_pairs": 40,
+    "lencioni_cycles": 50,
+    "gait120_cycles": 94,
+    "gait120_trials": 50,
+    "A_curve_checks_including_repeated_lencioni": 120,
+    "A_curve_max_difference": 0.0,
+    "protected_inputs_unchanged": true
+  },
+  "bootstrap": {
+    "iterations": 100000,
+    "seed": 20260930,
+    "rng": "PCG64",
+    "unit": "participant"
+  },
+  "inputs": {
+    "paper/revision_plans/scientific_reuse_protocol_v005_2026.09.30-r1.md": "2310897e289e3c6f265123463848a0969e620d255cb3f134bc5972268d5ad010",
+    "paper/results/scientific_reuse_common_processing_v001_2026.09.28-r1/report.json": "8f18a0e1fd299cd843a5e464ac75449dd56067c52a610e7bb9ce2c065445771e",
+    "paper/results/gait120_raw_alignment_v001_2026.09.28-r1/report.json": "f1e66f2a65db49ecde5eb7aa4d8f6e5dc8c6e00eb268b9da6bfef34e52c2bf93",
+    "paper/physiology_positive_control_protocol.yaml": "9682b70ae5a1fec55e247ac74f9c4249e58a1249f764e3ba2dfb4ead57771267",
+    "paper/revision_plans/scientific_reuse_protocol_v003_2026.09.28-r3.md": "f995c6787bfbb6269306cd3f90ca2de2f2325f42685ac3ba4d5883ff5712d90f",
+    "paper/results/gait120_raw_alignment_v001_2026.09.28-r1/Matlab_Codes_for_Processing_source.zip": "fba7a633f65066242903129c274c4dde3cb60fb314034345fc62619c7f7b0075",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/1/source.subject-curve.csv": "1ef640229a6187c802d44e27cdf7c8bafe3ac61bde92f2851cf1d73caccaf05f",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/2/source.subject-curve.csv": "f9e1698bef40e84d36ed7254c967bac184ea6dfd11f659dbf2eae7bdabc32fad",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/3/source.subject-curve.csv": "ea69539c7ae99e7f10125f70369e755d108c992df0219a60c046d2b44c10b5e0",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/4/source.subject-curve.csv": "85d98048d92cf741f40e93774c12f9ece737d94f785aed47161f5c346a7cdc54",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/5/source.subject-curve.csv": "1076325dadee08bfd0d5c108130edd2c83adb2d16dcdce81ab884e1896ddc2f7",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/6/source.subject-curve.csv": "acf84a64f4f41f97fbef429d28e8911b5283121863723f1697730a772bb3b5a6",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/7/source.subject-curve.csv": "d2bdac7343eb7be3a095a68106340a9c8078784ec56f141bc694ee8a94d64772",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/8/source.subject-curve.csv": "34c146770668c6040573ace16f53575bcf04b0c28db77ade4e0a870960178062",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/9/source.subject-curve.csv": "96b288d1fbed59c1d6d0bb94b8f69479e3bc9f60e5b97fa26b8781456636f9c2",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_38/10/source.subject-curve.csv": "34bbbd428477e25ef6991fe9f49fd96e7fcf47505d578d9679fd0370e9c79c40",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S011/source.subject-curve.csv": "31976fecd40c5955cb45781fddadae5b4dae95fc606c066bef06810daeda34da",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S012/source.subject-curve.csv": "1348c18a04e0042379e774af9cf04dff43523b37ea85528142bf23a8eb859008",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S013/source.subject-curve.csv": "7fbfd340c89c905dc62952eb1a0d3f608a5fd3f55367594a5346db5e274d5a1e",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S014/source.subject-curve.csv": "cf26872fd9840a8c0ffb802fb152ad68188648d787c31e75ac1b890849b178e5",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S015/source.subject-curve.csv": "0349d78dbe3ccb6951d02555bdc5765391466a076d397b1486b0ced32641bdc0",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S016/source.subject-curve.csv": "4b67652b90832d74b60f621a70cdf0ffeb4f9e6592f151ac05885639cab8e9be",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S017/source.subject-curve.csv": "b528b1a4afd08c9083c715694632e11d327b91a789ec56e3b4f3fe42c9078e3e",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S018/source.subject-curve.csv": "6ca4f50781786ed34bfeed8656b9cdf456f16e8b0b0ab698ec6bb1177b6d24bd",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S019/source.subject-curve.csv": "8a562e1c35c61dce7161c377dd7704af2d4841cd5a5914a9068671273a767431",
+    "paper/results/registered_reuse_clean_v001_2026.09.13-r1/timing-001/resolution/source-contracts/study_120/S020/source.subject-curve.csv": "57db7fb013b601aef89156af8226b7838a8cf4cc554629630802031a6352efe7",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject1.mat": "d634e02d6f4620f4caf3bae2c4305a0d55364eb241a3a711ac8f24d34f33ed66",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject2.mat": "f66df974eee2c88516aa63e24e45383f7dd93017762fc21f89e4dc60065d094b",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject3.mat": "379c5a1bcede443fd8db88e2668c5041ff959c9b51d23f66e5134123ea446654",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject4.mat": "9cd24d57fcf82cba539b5596fb7da3c094b5d624ff91111ce08ba334acff5ef9",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject5.mat": "e60f84be452f386b1aa68554e2d3c3b0bc5b6d009960f9af9d649a60191692df",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject6.mat": "9dc0c2cd0263e7e8110c77798fb08be6dc58aeabd9e1b49c8646604a4c01cfb8",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject7.mat": "5f2a1a24ef4ce3b31574859f0b7569bef81a11bea8311a1d5d269d9d519d8a1b",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject8.mat": "84a3a7f53d55a567338de266bf0e2d24560b2eed841032b5d6707a05865bd449",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject9.mat": "8e6edfaaee59804a7c87193e90fc1687c92e87e2f3eaffe4f7d3a0d1823935aa",
+    "downloads/additional_framework_v001_2026.09.12-r1/Subject10.mat": "b9b038bf5635edaaae079a3a7f4736a2d1762c6feb4ceaa4b05bdd7f6e60e762",
+    "downloads/additional_framework_v001_2026.09.12-r1/Gait120_011_to_020.zip": "7ff89a84364983e3f606e430f0c3caf0a6c4bbc0ac60e0a835174d7674b7e816"
+  },
+  "protected_inputs": {
+    "paper/MANUSCRIPT_VERSION": "c23effc59ad1e32a77bfcfd170960219d3cad777cda13875f8f67173b1b773f5",
+    "paper/cmpb/Fig1.pdf": "1f02a0bdbe3a75daa962e42b961dc1057924f05063514d560dea38e9e19573f0",
+    "paper/cmpb/Fig2.pdf": "697e6ef695680dfdfb30f67057819140c4dcfa72bbe4c40896e1da41af4950ea",
+    "paper/cmpb/Fig3.pdf": "119e86411816fd3cad08fff2964bbffca3842387f4dea7f18508dac5ee72e9b3",
+    "paper/cmpb/FigS1.pdf": "5deca6e7d2669d1230380f63e93704fa2690e957a6f9e0907a60b2b3718e89eb",
+    "paper/cmpb/FigS2.pdf": "dad2b364ad35aa1bfe51c676138fd9a9ae68e30799b8babe102e1da0ae1073f0",
+    "paper/japanese/v012_2026.09.27-r4/manuscript.md": "dbf2022a5b77b8c26ee5ab6b4ae29cdd0be113074cad7b15a7c47dc017c810d3",
+    "paper/literature_semantic_enrichment.yaml": "bdd0d595abcc7355bc94f2630aed32837ba6de5ee3010f43c6cb821498c67dc8",
+    "paper/paper.md": "30a1f91b040a78a3383b5572e4a47751d72717ac75fff052fb4c5c29fc064098",
+    "paper/physiology_positive_control_protocol.yaml": "9682b70ae5a1fec55e247ac74f9c4249e58a1249f764e3ba2dfb4ead57771267",
+    "paper/results/validation/active_mapping_semantic_coverage.json": "59029eaf28224bcfb63ba07cf827bcd14f214f8c9acf740b3dbe8d1784f06be1",
+    "paper/results/validation/adapter_metrics.json": "1d6201ae4c6944393853fbb4b11d53c3f5d9f0ede0859871f8d530d89251e8e6",
+    "paper/results/validation/anatomy_crosswalk_validation.json": "3cf85cba56eff70074470b359923d22bcd03f608ad1877ab8baf6a1a59c55b2c",
+    "paper/results/validation/comparability_resolution_study.json": "5412c40881fd7527e7d1d6074bb9a52f5988827b53e7858ddee2a39ed1bc1d9c",
+    "paper/results/validation/corpus_execution.json": "d1c09a0c071be22980253aed23d89a2ad0ae863ae987365c18c9a376f6088e0f",
+    "paper/results/validation/evidence_qualification_pilot.json": "532d8bb03cae49d612d251405c8632df2d05333bf289cad026c8cd615b77ea84",
+    "paper/results/validation/evidence_qualification_pilot_reproducibility.json": "c5c2dbf9a58a35437b98e09255240db8a9a3822f92f84db3562dd324a5214552",
+    "paper/results/validation/fault_detection.json": "c320fcde930632e8ffe1e5a0e8ecf9eff6819b0334afef38a28a49304d4f3973",
+    "paper/results/validation/format_fidelity.json": "99805433e4379d4b8e601cafa91c24ba3dc065471b0f7035a5488c3c6325badd",
+    "paper/results/validation/full_record_materialization_benchmark.json": "255c7e75c3930699eee73510f1d61660afd8fc6e10879f909c434fc565a8c000",
+    "paper/results/validation/g3_channel_mapping_correction.json": "cf8e41cc6cb730de0d8ae384ab1864d03baa8f8fda77da63dce09ad2a4a35d22",
+    "paper/results/validation/g6_local_model_audit.json": "59a260187be97d622f810169f254befcae3265054eab05fa63540e938049d680",
+    "paper/results/validation/g6_mechanics_disposition.json": "a0740cdf0356491e54fe176e2f2dfa6f634be3d609a8c09e2775aa06b56180dd",
+    "paper/results/validation/g6_mechanics_disposition_reproducibility.json": "5fe41d6534c423ad9006c6422d61afefc3e77225d485d1a07ee9bb14b0c3e0df",
+    "paper/results/validation/g6b_dynamic_calibration_pilot.json": "437faa622671918b801c78adbdaaa9aadfd93db0b15ba86c93930f04b88d049f",
+    "paper/results/validation/g6b_dynamic_mechanics_pilot.json": "4d4e6bc8ce8b9134ca348510668090ad796107f497c4a022025f4c95c194ea42",
+    "paper/results/validation/g6b_dynamic_model_pilot.json": "c1f6c44b99277e7eda439a49e75785e180e2a6eefbd33d425afe5c561a88338d",
+    "paper/results/validation/g6b_dynamic_registration_pilot.json": "fd74a54fa90485912ca6b4904ed786fac2158adf61373c1650c88cc7e7f61a8a",
+    "paper/results/validation/g6b_registered_mechanics_exploratory.json": "7b570a012ea94fddde23d2ed3e74751381bdddf430367a947c59b061ebd2c30f",
+    "paper/results/validation/g6c_mechanics_audit.json": "aab27a81571a28918d4296378b47cd06c3048e9b404fd189e1add028c430680e",
+    "paper/results/validation/g6c_s2_mechanics_localization.json": "c8705f8f3b43df0a337b38d32bb6ae0f7669d74c70ef00d49edd774c0e63fcc6",
+    "paper/results/validation/g6c_s2_mechanics_localization_reproducibility.json": "832240431e6a53028a4dfbe8e9c9932c75b585071fb0791ae89527987cedd096",
+    "paper/results/validation/g6c_s3_state_reconstruction.json": "0daab4682c61a4bfcaeb02a0e5af2f1d2910ae0374c8f69aebb241eab22a960e",
+    "paper/results/validation/g6c_s3_state_reconstruction_reproducibility.json": "d8d024a8f8b2285ffb0f1c69c1b2fb0331f9403d3bdf6d5c6681b42f360e08d7",
+    "paper/results/validation/g6c_s4_moment_localization.json": "d4feb9277c5df074af7ed7293edd9a56b53a55035b831ac340241f7f3d85f527",
+    "paper/results/validation/g6c_s4_moment_localization_reproducibility.json": "cff87209a97e8a84c6fd55ec5d922aff556629105495835d902bdbf8bfff737d",
+    "paper/results/validation/g6c_s5_rra_sensitivity.json": "7ffaec8ae019c10fbe27f660a2a85f5c8f95838ab635687c13fb1cc2d49daabf",
+    "paper/results/validation/g6c_s5_rra_sensitivity_reproducibility.json": "827eeb8e755e2bbc7d2acf348f8b2bdd4285537d7ae7d1c7de17cce298515021",
+    "paper/results/validation/g6c_s6_structural_adequacy.json": "de237635d51e6ec62e00a15f2ed1a2e8590674cf67e47a58a9ded0e1c807f785",
+    "paper/results/validation/g6c_s6_structural_adequacy_reproducibility.json": "4f50095c4a21911583d6565077ba965570b812ad3d27a24dfd81c30f544dd131",
+    "paper/results/validation/g6c_s6b_structural_contrast.json": "5a5a6272068cb41de2b31ed173e355dc7fede6ed600b6f2ecdd2bd3d2665ee47",
+    "paper/results/validation/g6c_s6b_structural_contrast_reproducibility.json": "5f07c479c43c5cb4c3002bd219822f03823a2181d728752491f43faff0ed0638",
+    "paper/results/validation/g6c_s6c_structural_identifiability.json": "7a1e2df3946b60df742348eaf40fb06c301336001f71395ba4754bebe0c62044",
+    "paper/results/validation/g6c_s6c_structural_identifiability_reproducibility.json": "a28c0cb09e2b65bd1ea73109ece6690c9551f2870fc7f246ffeae8acaafddfa9",
+    "paper/results/validation/g6c_s6d_bounded_arm_sensitivity.json": "ecfa9e35d10de2b461e879ff8332e33bbdbfb918565b7ab8cddd98606c1ef6d3",
+    "paper/results/validation/g6c_s6d_bounded_arm_sensitivity_reproducibility.json": "57cbb0588be11ca98799df9e28b9847556582883c44e8eec89ba9ae0cf799710",
+    "paper/results/validation/g6c_whole_body_balance.json": "c3cdb2d5effb704780c24e864d288cbcfafd194e0b2309b3d0492cf3a07ba9e2",
+    "paper/results/validation/g6c_whole_body_balance_reproducibility.json": "f8d049fbae0dcba27af0247b00de41c8dd4dd677f3ed49403229d541647b28dc",
+    "paper/results/validation/gate_audit.json": "10dbe48b3339e095e8bd55ee5db523a3f988aaaf79270b45e5de12e30fdb14ed",
+    "paper/results/validation/literature_semantic_enrichment.json": "79dcdce874e2a844f6fdc713d403caefda4566fcb23e37a673de6f5b200e3752",
+    "paper/results/validation/mapping_outcomes.json": "a194516d5af21bdc5d9814a36b4279017db5e5ed086b976ef189417cd16fcd4d",
+    "paper/results/validation/opensim_quality.json": "105cb676406caaea95c8716c4e5ce67d4b581c14459572bf132473323f3fdb47",
+    "paper/results/validation/opensim_quality_summary.json": "f905426a6892383dbf3c6e44c2a4ac1142d65ba668961406a9c2c737c7aa6449",
+    "paper/results/validation/physiology_positive_control.json": "71df14ae5e5bf80005122dce27e5bc3b1492a822098d358b26832f5ac924d9a0",
+    "paper/results/validation/physiology_positive_control_reproducibility.json": "213e44ad7d6ce90d8da178ff7857681057027841f0cd530613c01075140e96c1",
+    "paper/results/validation/reproducibility.json": "46908174f71284abbc6c6dc10eecc2cf5dd29c5e714f516b30939a5283df1d9b",
+    "paper/results/validation/semantic_coverage_comparison.json": "d542c3ed0b508e9ac6d1e3f64daf519d36078a55d05a0eb2b0576d643f7b3a36",
+    "paper/results/validation/semantic_overlay_materialization_audit.json": "32e9ba2c502acd52ee77d0de37640a9f98c1375156f472f2ec5ef1a34869b06e",
+    "paper/results/validation/semantic_overlay_study28_emg.json": "c802e47acf50723932653060ec3b7c1b8d1318caa4fbc2165b6c18ca88c7adb1",
+    "paper/results/validation/semantic_overlay_study33_dataset.json": "7530cd99c239e4fc00431e644e6c9b9a205af8692991448f03a646bf26af193d",
+    "paper/results/validation/source_inventory.json": "ed0711eeea57938c3e58b823ac6b36f742f928852568aee12fe0ff68b91b92d5",
+    "paper/results/validation/source_release_verification.json": "20290a44410facc664149000e1ef34f90b00f1500e5c72b8cd87695672f356ec",
+    "paper/results/validation/study32_p01_real_data_pilot.json": "690d5e45a4ceefe9ed15178b53b5a028b7eb40b1750bbfc2782c09e320b9e290",
+    "paper/results/validation/study32_real_data_cohort.json": "02eb2ddffcb0e569f6df3022104052c95904a8593b92234e4989032753ba77b7",
+    "paper/results/validation/task_anatomy_semantic_validation.json": "ae63f13a66605dc4d1c2a221a7ac5f89adb93db599b438b4bca0fb309124e62b",
+    "paper/results/validation/ultra_mocap_adapter_cross_process_reproducibility.json": "0cd04e41526d78846982266b9131950ca9d1cf4f63e19f4f8de156685994465f",
+    "paper/results/validation/ultra_mocap_adapter_reproducibility.json": "bb75bb9d6c673dd9d03da10221a64c3b334fc4225ca66554a04c56c1a7e6dd6e",
+    "paper/results/validation/ultra_mocap_source_manifest.json": "846821fd1d288be52ffa77f30c0f45bcb13af416f330259baede6efcf7916dfd",
+    "paper/results/validation/ultra_mocap_trial_manifest.json": "2eb9fcc384a32c726f73e822997521a517bcc3ae7697cdd569f5ca83b385a171"
+  },
+  "analysis_sources": {
+    "scripts/paper/scientific_reuse_aggregation_v001.py": "de7605cec7176d1e77bdb9e9af1a9ee4624a7d5cf184506190bcfc23a0d000c8",
+    "scripts/paper/scientific_reuse_common_processing_v001.py": "4cee9627533e33019ca54428614fd166382a850681b2cf0291ff48f75ae32c80",
+    "scripts/paper/check_gait120_raw_alignment_v001.py": "4dbe206ccdd162ba90195c8f13472cd307fba4c33ae5ab45f27ee4b3c1b79c04",
+    "src/harmo/physiology_control.py": "2418801bb1c13cd7994772cc8e9f0202fe14a0e1e6b78e5b30a0af7e134422c8"
+  },
+  "environment": {
+    "python": "3.12.11",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "limits": [
+    "Different estimands, neither is ground truth.",
+    "Selected 20 participants; fixed cycles; exploratory intervals.",
+    "Linear peak medians may mix gait-boundary peaks or distinct lobes; not physiological delays.",
+    "No new full-pattern decisions for feature-first summaries."
+  ]
+}

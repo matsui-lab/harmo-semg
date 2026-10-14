@@ -1,0 +1,4095 @@
+{
+  "claim_boundary": "Accepted claims may enrich only their declared dataset or channel-group scope. They do not create subject- or trial-specific observations, prove electrode-to-single-muscle identity, replace absent static calibration measurements, or establish physiological comparability.",
+  "claims": [
+    {
+      "claim_id": "study31-article-emg-rate",
+      "evidence_sha256": "4f9ad072d36540b76d18342a6fb2f7c238e5e3dc0e00cf385f9292c1a0740f20",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation & data collection",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          411,
+          431
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": 2000
+    },
+    {
+      "claim_id": "study31-article-emg-channel-count",
+      "evidence_sha256": "19880ac2eccf1769b8c938c1a50ff2795a494da452d917567f1bca72780021fe",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation & data collection",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          313,
+          350
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": 8
+    },
+    {
+      "claim_id": "study31-article-emg-muscles",
+      "evidence_sha256": "1887adfb18980329247d74b03a90a27227e6e561b50ee8cd00e030d0de0df36c",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation & data collection",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          446,
+          535
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_lateralis",
+        "tibialis_anterior",
+        "vastus_lateralis"
+      ]
+    },
+    {
+      "claim_id": "study31-article-emg-sides",
+      "evidence_sha256": "050a121a1127b4a4e3895a6e65646989e8b759ea57aad1a9df728df8c2aadcfe",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation & data collection",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          496,
+          535
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "claim_id": "study31-article-emg-unit",
+      "evidence_sha256": "d0e01a56223c3735d8256a408e9f7ff94c169823839f85ab7a4ecd76c2995713",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Raw data",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          614,
+          653
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.raw_unit",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "representation": "raw",
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": "V"
+    },
+    {
+      "claim_id": "study31-article-emg-bandpass",
+      "evidence_sha256": "0cc461ecd40ce37922f52cbf38b523cf8378e1bd914840f0a7f0617f0054760c",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Dataset elaboration",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1935,
+          2056
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "processing.emg.bandpass_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "processed-emg"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": [
+        20,
+        450
+      ]
+    },
+    {
+      "claim_id": "study31-article-emg-rms-window",
+      "evidence_sha256": "0d1d25e59dcdcde5decfb8182e0b77d02b379aaa9be2b18e25a2b87c06c8cf48",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Dataset elaboration",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2143,
+          2196
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "processing.emg.rms_window_ms",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "processed-emg-envelope"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": 300
+    },
+    {
+      "claim_id": "study31-article-static-performed",
+      "evidence_sha256": "db58cf31440bad571c83fa41c9d6f6914eab357da1418f169db4bef248983cdd",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Experimental protocol",
+      "machine_action": "boundary-only",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1903,
+          1950
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "acquisition.motion_capture.static_trial_performed",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "cohort",
+      "scope_selector": {
+        "modality": "motion-capture"
+      },
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "value": true
+    },
+    {
+      "claim_id": "study31-config-emg-rate",
+      "evidence_sha256": "91c0326d8e7d5fbff1ba19c358e1da799e0b39397bea27684335dc70b21d7c71",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          301,
+          427
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-device-config",
+      "source_role": "observation",
+      "source_sha256": "263d7e27a5a90f9aad3ae3519d377b3d25ce79ffc80c5d63eb8e59dd737e48f7",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "value": 2000
+    },
+    {
+      "claim_id": "study31-config-emg-channel-count",
+      "evidence_sha256": "9d7b07e660aa2cb2025cf938dc131950dcd1135738a3bbd0f20c9384e27e4c08",
+      "extraction_method": "frozen-regex:count",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 8,
+      "match_spans": [
+        [
+          2603,
+          2620
+        ],
+        [
+          2670,
+          2688
+        ],
+        [
+          2747,
+          2764
+        ],
+        [
+          2817,
+          2834
+        ],
+        [
+          2886,
+          2903
+        ],
+        [
+          2954,
+          2972
+        ],
+        [
+          3032,
+          3049
+        ],
+        [
+          3103,
+          3120
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-channel-config",
+      "source_role": "observation",
+      "source_sha256": "59cb4be7e5ec3c0316d7fe52eb5099c904273421d019d6f52efa02af7ad8234d",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "value": 8
+    },
+    {
+      "claim_id": "study31-config-emg-muscles",
+      "evidence_sha256": "69ef9e34cdef308fc901fe8d7b0c7fc1c7d3d53c8472764aaa14636794210008",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 8,
+      "match_spans": [
+        [
+          2645,
+          2667
+        ],
+        [
+          2713,
+          2744
+        ],
+        [
+          2789,
+          2814
+        ],
+        [
+          2859,
+          2883
+        ],
+        [
+          2929,
+          2951
+        ],
+        [
+          2998,
+          3029
+        ],
+        [
+          3075,
+          3100
+        ],
+        [
+          3146,
+          3170
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-channel-config",
+      "source_role": "observation",
+      "source_sha256": "59cb4be7e5ec3c0316d7fe52eb5099c904273421d019d6f52efa02af7ad8234d",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_lateralis",
+        "tibialis_anterior",
+        "vastus_lateralis"
+      ]
+    },
+    {
+      "claim_id": "study31-config-emg-sides",
+      "evidence_sha256": "ca0ce1c81abf1be638a2ac4ef43718d6b3a244dcfb3731303d67a6741c53c09d",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 8,
+      "match_spans": [
+        [
+          2603,
+          2644
+        ],
+        [
+          2670,
+          2712
+        ],
+        [
+          2747,
+          2788
+        ],
+        [
+          2817,
+          2858
+        ],
+        [
+          2886,
+          2928
+        ],
+        [
+          2954,
+          2997
+        ],
+        [
+          3032,
+          3074
+        ],
+        [
+          3103,
+          3145
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-channel-config",
+      "source_role": "observation",
+      "source_sha256": "59cb4be7e5ec3c0316d7fe52eb5099c904273421d019d6f52efa02af7ad8234d",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "value": [
+        "Left",
+        "Right"
+      ]
+    },
+    {
+      "claim_id": "study31-config-emg-unit",
+      "evidence_sha256": "0cce3b59b96f0ac1d65c3336974e07c4112d221d935b8ca3a803865c1918c8dc",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          650,
+          724
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.raw_unit",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "representation": "raw",
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study31-channel-config",
+      "source_role": "observation",
+      "source_sha256": "59cb4be7e5ec3c0316d7fe52eb5099c904273421d019d6f52efa02af7ad8234d",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "value": "V"
+    },
+    {
+      "claim_id": "study32-article-emg-rate",
+      "evidence_sha256": "db9459bd40cb02fa12ee9bc7e2da3256c3dbda36909750b252f31ef62eb0f8c2",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1238,
+          1261
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": 2000
+    },
+    {
+      "claim_id": "study32-article-emg-channel-count",
+      "evidence_sha256": "49ed80dc763b9ccbf4352b58e462a028bf82821ebd937209c42afc07db434329",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "enrich",
+      "match_count": 2,
+      "match_spans": [
+        [
+          1164,
+          1203
+        ],
+        [
+          2755,
+          2794
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": 64
+    },
+    {
+      "claim_id": "study32-article-emg-sides",
+      "evidence_sha256": "4b9661275f29c943f5940b5e4208df41fe309b9bdfa54bdba099fec45acf9865",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1109,
+          1156
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": [
+        "right"
+      ]
+    },
+    {
+      "claim_id": "study32-article-emg-region",
+      "evidence_sha256": "34a26609e19ddbe6a59367c8b59c946a0adf5d6bebf834464fe1fd8252f84727",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2714,
+          2810
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.anatomical_region",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": "lower_leg"
+    },
+    {
+      "claim_id": "study32-article-grid-placement",
+      "evidence_sha256": "9930ac8aa84fe2fb9e037b1a8797b84a2f88856dfe8b55fe2e366745920a539a",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2116,
+          2268
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.grid_placement_reference",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": "fibular_head_and_lateral_tibia"
+    },
+    {
+      "claim_id": "study32-article-raw-scale",
+      "evidence_sha256": "7a6645e8207b80fc42f8fb63091f2d369e382c58cead7ddc54b4c42c791a4819",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Data Records",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1274,
+          1339
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "processing.emg.raw_to_mv_scale_factor",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "raw-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": 0.000286
+    },
+    {
+      "claim_id": "study32-article-single-muscle-limit",
+      "evidence_sha256": "d89bcb97ab1df50642479a57346696ddec01009ef5a3e7a2001553e56aad7251",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "boundary-only",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2426,
+          2521
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "limitations.emg.channel_specific_muscle_identity",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "value": "not-established"
+    },
+    {
+      "claim_id": "study32-config-emg-rate",
+      "evidence_sha256": "2c091e108691420fdc03ba39772abdf220cfafd200b01b660b10935c4b1a1140",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          347,
+          461
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-device-config",
+      "source_role": "observation",
+      "source_sha256": "d1afd197f8303c148b011f74e3d89c09a0f1780b9a1bb2fd4557c9e4b6b3f559",
+      "source_type": "repository-config",
+      "study_id": "study_32",
+      "value": 2000
+    },
+    {
+      "claim_id": "study32-config-emg-channel-count",
+      "evidence_sha256": "bd38273f8b903c8dde1f6a2605de18c2a8e7084ca088895cd368e970d573ed06",
+      "extraction_method": "frozen-regex:count",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 64,
+      "match_spans": [
+        [
+          1267,
+          1287
+        ],
+        [
+          1315,
+          1335
+        ],
+        [
+          1363,
+          1383
+        ],
+        [
+          1411,
+          1431
+        ],
+        [
+          1459,
+          1479
+        ],
+        [
+          1507,
+          1527
+        ],
+        [
+          1555,
+          1575
+        ],
+        [
+          1603,
+          1623
+        ],
+        [
+          1651,
+          1671
+        ],
+        [
+          1699,
+          1720
+        ],
+        [
+          1748,
+          1769
+        ],
+        [
+          1797,
+          1818
+        ],
+        [
+          1846,
+          1867
+        ],
+        [
+          1895,
+          1916
+        ],
+        [
+          1944,
+          1965
+        ],
+        [
+          1993,
+          2014
+        ],
+        [
+          2042,
+          2063
+        ],
+        [
+          2091,
+          2112
+        ],
+        [
+          2140,
+          2161
+        ],
+        [
+          2189,
+          2210
+        ],
+        [
+          2238,
+          2259
+        ],
+        [
+          2287,
+          2308
+        ],
+        [
+          2336,
+          2357
+        ],
+        [
+          2385,
+          2406
+        ],
+        [
+          2434,
+          2455
+        ],
+        [
+          2483,
+          2504
+        ],
+        [
+          2532,
+          2553
+        ],
+        [
+          2581,
+          2602
+        ],
+        [
+          2630,
+          2651
+        ],
+        [
+          2679,
+          2700
+        ],
+        [
+          2728,
+          2749
+        ],
+        [
+          2777,
+          2798
+        ],
+        [
+          2826,
+          2847
+        ],
+        [
+          2875,
+          2896
+        ],
+        [
+          2924,
+          2945
+        ],
+        [
+          2973,
+          2994
+        ],
+        [
+          3022,
+          3043
+        ],
+        [
+          3071,
+          3092
+        ],
+        [
+          3120,
+          3141
+        ],
+        [
+          3169,
+          3190
+        ],
+        [
+          3218,
+          3239
+        ],
+        [
+          3267,
+          3288
+        ],
+        [
+          3316,
+          3337
+        ],
+        [
+          3365,
+          3386
+        ],
+        [
+          3414,
+          3435
+        ],
+        [
+          3463,
+          3484
+        ],
+        [
+          3512,
+          3533
+        ],
+        [
+          3561,
+          3582
+        ],
+        [
+          3610,
+          3631
+        ],
+        [
+          3659,
+          3680
+        ],
+        [
+          3708,
+          3729
+        ],
+        [
+          3757,
+          3778
+        ],
+        [
+          3806,
+          3827
+        ],
+        [
+          3855,
+          3876
+        ],
+        [
+          3904,
+          3925
+        ],
+        [
+          3953,
+          3974
+        ],
+        [
+          4002,
+          4023
+        ],
+        [
+          4051,
+          4072
+        ],
+        [
+          4100,
+          4121
+        ],
+        [
+          4149,
+          4170
+        ],
+        [
+          4198,
+          4219
+        ],
+        [
+          4247,
+          4268
+        ],
+        [
+          4296,
+          4317
+        ],
+        [
+          4345,
+          4366
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-channel-config",
+      "source_role": "observation",
+      "source_sha256": "b09d34a4444a8bb74159021eb1c5dbaf1d85149701b695711022a42147a3a440",
+      "source_type": "repository-config",
+      "study_id": "study_32",
+      "value": 64
+    },
+    {
+      "claim_id": "study32-config-emg-sides",
+      "evidence_sha256": "b1e46786b2095feeb244e510b1649a669c328f9af04e3e9d35fcfd0bfcf45e39",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 64,
+      "match_spans": [
+        [
+          1267,
+          1312
+        ],
+        [
+          1315,
+          1360
+        ],
+        [
+          1363,
+          1408
+        ],
+        [
+          1411,
+          1456
+        ],
+        [
+          1459,
+          1504
+        ],
+        [
+          1507,
+          1552
+        ],
+        [
+          1555,
+          1600
+        ],
+        [
+          1603,
+          1648
+        ],
+        [
+          1651,
+          1696
+        ],
+        [
+          1699,
+          1745
+        ],
+        [
+          1748,
+          1794
+        ],
+        [
+          1797,
+          1843
+        ],
+        [
+          1846,
+          1892
+        ],
+        [
+          1895,
+          1941
+        ],
+        [
+          1944,
+          1990
+        ],
+        [
+          1993,
+          2039
+        ],
+        [
+          2042,
+          2088
+        ],
+        [
+          2091,
+          2137
+        ],
+        [
+          2140,
+          2186
+        ],
+        [
+          2189,
+          2235
+        ],
+        [
+          2238,
+          2284
+        ],
+        [
+          2287,
+          2333
+        ],
+        [
+          2336,
+          2382
+        ],
+        [
+          2385,
+          2431
+        ],
+        [
+          2434,
+          2480
+        ],
+        [
+          2483,
+          2529
+        ],
+        [
+          2532,
+          2578
+        ],
+        [
+          2581,
+          2627
+        ],
+        [
+          2630,
+          2676
+        ],
+        [
+          2679,
+          2725
+        ],
+        [
+          2728,
+          2774
+        ],
+        [
+          2777,
+          2823
+        ],
+        [
+          2826,
+          2872
+        ],
+        [
+          2875,
+          2921
+        ],
+        [
+          2924,
+          2970
+        ],
+        [
+          2973,
+          3019
+        ],
+        [
+          3022,
+          3068
+        ],
+        [
+          3071,
+          3117
+        ],
+        [
+          3120,
+          3166
+        ],
+        [
+          3169,
+          3215
+        ],
+        [
+          3218,
+          3264
+        ],
+        [
+          3267,
+          3313
+        ],
+        [
+          3316,
+          3362
+        ],
+        [
+          3365,
+          3411
+        ],
+        [
+          3414,
+          3460
+        ],
+        [
+          3463,
+          3509
+        ],
+        [
+          3512,
+          3558
+        ],
+        [
+          3561,
+          3607
+        ],
+        [
+          3610,
+          3656
+        ],
+        [
+          3659,
+          3705
+        ],
+        [
+          3708,
+          3754
+        ],
+        [
+          3757,
+          3803
+        ],
+        [
+          3806,
+          3852
+        ],
+        [
+          3855,
+          3901
+        ],
+        [
+          3904,
+          3950
+        ],
+        [
+          3953,
+          3999
+        ],
+        [
+          4002,
+          4048
+        ],
+        [
+          4051,
+          4097
+        ],
+        [
+          4100,
+          4146
+        ],
+        [
+          4149,
+          4195
+        ],
+        [
+          4198,
+          4244
+        ],
+        [
+          4247,
+          4293
+        ],
+        [
+          4296,
+          4342
+        ],
+        [
+          4345,
+          4391
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "high-density-surface-emg"
+      },
+      "source_id": "study32-channel-config",
+      "source_role": "observation",
+      "source_sha256": "b09d34a4444a8bb74159021eb1c5dbaf1d85149701b695711022a42147a3a440",
+      "source_type": "repository-config",
+      "study_id": "study_32",
+      "value": [
+        "Right"
+      ]
+    },
+    {
+      "claim_id": "study1-article-task-conditions",
+      "evidence_sha256": "f4cc5ffd020c0990a7c54db8f6dda89e308c811dd0eeaa68f09fbe1373edebb2",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Experimental protocol",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          377,
+          456
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.task.condition_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {},
+      "source_id": "study1-article-jats",
+      "source_role": "authority",
+      "source_sha256": "2564b343cb782ab5d6b2448b18183bbee99fbd6d8f44f9e45205ff07d9b1a9cd",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_1",
+      "value": [
+        "level_down",
+        "level_up",
+        "ramp_7.5_down",
+        "ramp_7.5_up",
+        "ramp_10_down",
+        "ramp_10_up"
+      ]
+    },
+    {
+      "claim_id": "study1-article-documented-modalities",
+      "evidence_sha256": "298f1559d4cf55308a3cf295e7e4d98dbb6bac286f8404bdcc31f0a839cd822c",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and participant preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          102,
+          273
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.documented_modalities",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {},
+      "source_id": "study1-article-jats",
+      "source_role": "authority",
+      "source_sha256": "2564b343cb782ab5d6b2448b18183bbee99fbd6d8f44f9e45205ff07d9b1a9cd",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_1",
+      "value": [
+        "force-plate",
+        "motion-capture"
+      ]
+    },
+    {
+      "claim_id": "study120-article-emg-rate",
+      "evidence_sha256": "08d7b47d9c04c322b930f48e72be5f04665bf6073a458bd9062cbadf5b546dc5",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Motion capture and electromyography details",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          635,
+          737
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": 2000
+    },
+    {
+      "claim_id": "study120-article-emg-channel-count",
+      "evidence_sha256": "b89c6d9c34c67426fab31611306168c78f1a404f498a96b5f63c4e0af125feae",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Experimental preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          431,
+          511
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": 12
+    },
+    {
+      "claim_id": "study120-article-emg-muscles",
+      "evidence_sha256": "b6e79204a6552689d60e65faf4cf59cb1eabe8558d330c98c7f4e0d0b23eae8c",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Experimental preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          513,
+          795
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_lateralis",
+        "gastrocnemius_medialis",
+        "peroneus_brevis",
+        "peroneus_longus",
+        "rectus_femoris",
+        "semitendinosus",
+        "soleus_lateralis",
+        "soleus_medialis",
+        "tibialis_anterior",
+        "vastus_lateralis",
+        "vastus_medialis"
+      ]
+    },
+    {
+      "claim_id": "study120-article-emg-side",
+      "evidence_sha256": "00fd9495c43f8e12695c0163d2e1f64390057bb209557e44a902d6b94e2eaf92",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Experimental preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          477,
+          511
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": [
+        "right"
+      ]
+    },
+    {
+      "claim_id": "study120-article-emg-raw-unit",
+      "evidence_sha256": "92a0d4be539a788a49c70a29f451e8b31cb4ad5ec0a6a9f24f68b064e79e85b9",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Surface EMG signal data",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          279,
+          321
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.raw_unit",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "representation": "raw",
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": "V"
+    },
+    {
+      "claim_id": "study120-article-emg-bandpass",
+      "evidence_sha256": "9f8a786a98b8ddb2866fe72c6b75d702abd4f970d008a5289e54e501f6b46914",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data processing",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2189,
+          2232
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "processing.emg.bandpass_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "processed-emg"
+      },
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": [
+        20,
+        500
+      ]
+    },
+    {
+      "claim_id": "study120-article-population-boundary",
+      "evidence_sha256": "bd7e063d2d66359ef71213b443b92b12d591c7cb93f8b841d0322a856c21a8d0",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data limitations",
+      "machine_action": "boundary-only",
+      "match_count": 1,
+      "match_spans": [
+        [
+          55,
+          112
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "limitations.population.generalizability",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {},
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "value": "healthy_males_20_59_only"
+    },
+    {
+      "claim_id": "study120-config-emg-rate",
+      "evidence_sha256": "15490e7e4d9ea21b7b0ed298aa15c978d6d9e3fbd33b9f9b2891f52966bd822d",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          281,
+          406
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-device-config",
+      "source_role": "observation",
+      "source_sha256": "43441a9b7385264cf3ccd168fc5ded1c9351a3e596f79d86350edf11e6cf024b",
+      "source_type": "repository-config",
+      "study_id": "study_120",
+      "value": 2000
+    },
+    {
+      "claim_id": "study120-config-emg-channel-count",
+      "evidence_sha256": "54db0c9d088fecfcf680a28306281797d15be033a4e779702705e278d71d84f6",
+      "extraction_method": "frozen-regex:count",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 12,
+      "match_spans": [
+        [
+          341,
+          370
+        ],
+        [
+          424,
+          458
+        ],
+        [
+          517,
+          552
+        ],
+        [
+          612,
+          639
+        ],
+        [
+          682,
+          710
+        ],
+        [
+          769,
+          795
+        ],
+        [
+          846,
+          874
+        ],
+        [
+          927,
+          954
+        ],
+        [
+          1006,
+          1032
+        ],
+        [
+          1083,
+          1110
+        ],
+        [
+          1161,
+          1188
+        ],
+        [
+          1240,
+          1267
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-channel-config",
+      "source_role": "observation",
+      "source_sha256": "c34ad7257d3dd58c3499f5c0d5bff336b65b0cb17e790f446bdd143218acd82e",
+      "source_type": "repository-config",
+      "study_id": "study_120",
+      "value": 12
+    },
+    {
+      "claim_id": "study120-config-emg-side",
+      "evidence_sha256": "c373013184adc0095fd7dcc46851b8dd397e3a8b7b7083c0712143f44a7575a8",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 21,
+      "match_spans": [
+        [
+          384,
+          395
+        ],
+        [
+          472,
+          483
+        ],
+        [
+          566,
+          577
+        ],
+        [
+          653,
+          664
+        ],
+        [
+          724,
+          735
+        ],
+        [
+          809,
+          820
+        ],
+        [
+          888,
+          899
+        ],
+        [
+          968,
+          979
+        ],
+        [
+          1046,
+          1057
+        ],
+        [
+          1124,
+          1135
+        ],
+        [
+          1202,
+          1213
+        ],
+        [
+          1281,
+          1292
+        ],
+        [
+          1352,
+          1363
+        ],
+        [
+          1430,
+          1441
+        ],
+        [
+          1508,
+          1519
+        ],
+        [
+          1586,
+          1597
+        ],
+        [
+          1666,
+          1677
+        ],
+        [
+          1746,
+          1757
+        ],
+        [
+          1832,
+          1843
+        ],
+        [
+          1921,
+          1932
+        ],
+        [
+          2010,
+          2021
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-channel-config",
+      "source_role": "observation",
+      "source_sha256": "c34ad7257d3dd58c3499f5c0d5bff336b65b0cb17e790f446bdd143218acd82e",
+      "source_type": "repository-config",
+      "study_id": "study_120",
+      "value": [
+        "Right"
+      ]
+    },
+    {
+      "claim_id": "study120-config-emg-raw-unit",
+      "evidence_sha256": "0cce3b59b96f0ac1d65c3336974e07c4112d221d935b8ca3a803865c1918c8dc",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          38,
+          112
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.raw_unit",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "representation": "raw",
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study120-channel-config",
+      "source_role": "observation",
+      "source_sha256": "c34ad7257d3dd58c3499f5c0d5bff336b65b0cb17e790f446bdd143218acd82e",
+      "source_type": "repository-config",
+      "study_id": "study_120",
+      "value": "V"
+    },
+    {
+      "claim_id": "study28-article-emg-capacity",
+      "evidence_sha256": "409ca54f2ea8509023f4840c3da28e24e396bddbb6c1d5281c990d331d01c603",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and materials",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          632,
+          694
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "acquisition.emg.device_channel_capacity",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": 16
+    },
+    {
+      "claim_id": "study28-article-emg-channel-count",
+      "evidence_sha256": "cf5333b4844f9d64866d025298714fd6191e712505a4e9ea32461e6b7f8aeae8",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Data collection protocol",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2215,
+          2241
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": 14
+    },
+    {
+      "claim_id": "study28-article-emg-muscles",
+      "evidence_sha256": "51218ca225b8ea5a080654730ab8c790adbe17fd7cd2331e6703468f7bfb8dd9",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data collection protocol",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1997,
+          2200
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.covered_muscle_groups",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": [
+        "biceps_femoris",
+        "erector_spinae",
+        "gastrocnemius",
+        "rectus_femoris",
+        "semitendinosus",
+        "tibialis_anterior",
+        "vastus_lateralis"
+      ]
+    },
+    {
+      "claim_id": "study28-article-emg-sides",
+      "evidence_sha256": "30af0cec1fd3745bd3b1fd6f404f9c2446574b120ad5036b58507ca9a46d8c94",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data collection protocol",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1929,
+          1992
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": [
+        "left",
+        "right"
+      ]
+    },
+    {
+      "claim_id": "study28-article-emg-bandpass",
+      "evidence_sha256": "2e374dca3657d2bb4576562e96ca1dcfde88e10560dd8332ddc8ae8969edb3b9",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data processing",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2048,
+          2154
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "processing.emg.bandpass_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "processed-emg"
+      },
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": [
+        10,
+        300
+      ]
+    },
+    {
+      "claim_id": "study28-article-emg-envelope-window",
+      "evidence_sha256": "0b11d7b2265f78fcfe50d9d90ad80ddca1ff6c142308f18e47ebcd342ecf1607",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Data processing",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2181,
+          2208
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "processing.emg.moving_average_window_ms",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "processed-emg-envelope"
+      },
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": 50
+    },
+    {
+      "claim_id": "study28-article-emg-missingness",
+      "evidence_sha256": "d322bf199c3221944c8f0ab77aae765ab0e3c5606a5f696cfd18213a27830576",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data Records",
+      "machine_action": "boundary-only",
+      "match_count": 1,
+      "match_spans": [
+        [
+          5572,
+          5690
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "limitations.emg.missing_participant_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {},
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "value": 30
+    },
+    {
+      "claim_id": "study28-config-emg-channel-count",
+      "evidence_sha256": "771263e8862ab3d15d37ab44b523fd85a248d31f5da3f9761ed8c8490b57f4a3",
+      "extraction_method": "frozen-regex:count",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 14,
+      "match_spans": [
+        [
+          536,
+          560
+        ],
+        [
+          614,
+          639
+        ],
+        [
+          698,
+          722
+        ],
+        [
+          773,
+          797
+        ],
+        [
+          850,
+          874
+        ],
+        [
+          925,
+          949
+        ],
+        [
+          1000,
+          1025
+        ],
+        [
+          1082,
+          1106
+        ],
+        [
+          1159,
+          1184
+        ],
+        [
+          1242,
+          1266
+        ],
+        [
+          1316,
+          1340
+        ],
+        [
+          1392,
+          1416
+        ],
+        [
+          1466,
+          1490
+        ],
+        [
+          1540,
+          1565
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-channel-config",
+      "source_role": "observation",
+      "source_sha256": "2229e0fa23983cd959cf23116c2ac6b286bc9354cfe350d030458ee5eaada6e9",
+      "source_type": "repository-config",
+      "study_id": "study_28",
+      "value": 14
+    },
+    {
+      "claim_id": "study28-config-emg-muscles",
+      "evidence_sha256": "1ed82e2850900d605ffbecfc1432d20f3e6edc04b7947f2cf2f81c5bcd1656d8",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 14,
+      "match_spans": [
+        [
+          586,
+          611
+        ],
+        [
+          665,
+          695
+        ],
+        [
+          748,
+          770
+        ],
+        [
+          823,
+          847
+        ],
+        [
+          900,
+          922
+        ],
+        [
+          975,
+          997
+        ],
+        [
+          1051,
+          1073
+        ],
+        [
+          1131,
+          1156
+        ],
+        [
+          1209,
+          1239
+        ],
+        [
+          1291,
+          1313
+        ],
+        [
+          1365,
+          1389
+        ],
+        [
+          1441,
+          1463
+        ],
+        [
+          1515,
+          1537
+        ],
+        [
+          1590,
+          1612
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-channel-config",
+      "source_role": "observation",
+      "source_sha256": "2229e0fa23983cd959cf23116c2ac6b286bc9354cfe350d030458ee5eaada6e9",
+      "source_type": "repository-config",
+      "study_id": "study_28",
+      "value": [
+        "biceps_femoris",
+        "erector_spinae",
+        "gastrocnemius_medialis",
+        "rectus_femoris",
+        "semitendinosus",
+        "tibialis_anterior",
+        "vastus_lateralis"
+      ]
+    },
+    {
+      "claim_id": "study28-config-emg-sides",
+      "evidence_sha256": "71659b2a28a687230b65345db15fd9f4dc50e99becf877dc4faea676d1df63a9",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 14,
+      "match_spans": [
+        [
+          574,
+          585
+        ],
+        [
+          653,
+          664
+        ],
+        [
+          736,
+          747
+        ],
+        [
+          811,
+          822
+        ],
+        [
+          888,
+          899
+        ],
+        [
+          963,
+          974
+        ],
+        [
+          1039,
+          1050
+        ],
+        [
+          1120,
+          1130
+        ],
+        [
+          1198,
+          1208
+        ],
+        [
+          1280,
+          1290
+        ],
+        [
+          1354,
+          1364
+        ],
+        [
+          1430,
+          1440
+        ],
+        [
+          1504,
+          1514
+        ],
+        [
+          1579,
+          1589
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study28-channel-config",
+      "source_role": "observation",
+      "source_sha256": "2229e0fa23983cd959cf23116c2ac6b286bc9354cfe350d030458ee5eaada6e9",
+      "source_type": "repository-config",
+      "study_id": "study_28",
+      "value": [
+        "Left",
+        "Right"
+      ]
+    },
+    {
+      "claim_id": "study33-article-task-families",
+      "evidence_sha256": "6a50fee837693cdca0323ff5f2f737290fa0dd94395d394e77f6284a0fa59260",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          243,
+          324
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.task.family_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {},
+      "source_id": "study33-article-metadata",
+      "source_role": "authority",
+      "source_sha256": "0401fea7579933ccad2224b41c992bd66190fd37f33c100cb0a11a2a387e65c3",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_33",
+      "value": [
+        "level-ground",
+        "ramp",
+        "stair",
+        "transition"
+      ]
+    },
+    {
+      "claim_id": "study33-config-emg-rate",
+      "evidence_sha256": "94e4f59a3ac3624330ae9255670447b69cffee16f2225300d1875c2526a8694e",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          387,
+          486
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.sampling_rate_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study33-device-config",
+      "source_role": "observation",
+      "source_sha256": "1dda8a13d86a3c71aef50a1989685cbe65771ce1ab73a9017236b10f729a81e0",
+      "source_type": "repository-config",
+      "study_id": "study_33",
+      "value": 1000
+    },
+    {
+      "claim_id": "study33-config-emg-channel-count",
+      "evidence_sha256": "5941d4abd8ff3ec680b52f2b484eb7a030c413adfa13def9550761234007bd5a",
+      "extraction_method": "frozen-regex:count",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 11,
+      "match_spans": [
+        [
+          788,
+          811
+        ],
+        [
+          870,
+          899
+        ],
+        [
+          953,
+          972
+        ],
+        [
+          1015,
+          1042
+        ],
+        [
+          1094,
+          1122
+        ],
+        [
+          1175,
+          1201
+        ],
+        [
+          1252,
+          1278
+        ],
+        [
+          1329,
+          1356
+        ],
+        [
+          1407,
+          1428
+        ],
+        [
+          1473,
+          1499
+        ],
+        [
+          1550,
+          1583
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study33-channel-config",
+      "source_role": "observation",
+      "source_sha256": "5244434cd72375cbb444f1d2bc259ff6c354c51ccca826df6c857fed26c74ef5",
+      "source_type": "repository-config",
+      "study_id": "study_33",
+      "value": 11
+    },
+    {
+      "claim_id": "study33-config-emg-side",
+      "evidence_sha256": "819864ee2de3922aa8db98435f998e289d42aee1c81f3febb99a018ee510f566",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 18,
+      "match_spans": [
+        [
+          825,
+          836
+        ],
+        [
+          913,
+          924
+        ],
+        [
+          986,
+          997
+        ],
+        [
+          1056,
+          1067
+        ],
+        [
+          1136,
+          1147
+        ],
+        [
+          1215,
+          1226
+        ],
+        [
+          1292,
+          1303
+        ],
+        [
+          1370,
+          1381
+        ],
+        [
+          1442,
+          1453
+        ],
+        [
+          1513,
+          1524
+        ],
+        [
+          1597,
+          1608
+        ],
+        [
+          5392,
+          5403
+        ],
+        [
+          5505,
+          5516
+        ],
+        [
+          5614,
+          5625
+        ],
+        [
+          5725,
+          5736
+        ],
+        [
+          5832,
+          5843
+        ],
+        [
+          6114,
+          6125
+        ],
+        [
+          6575,
+          6586
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.laterality_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study33-channel-config",
+      "source_role": "observation",
+      "source_sha256": "5244434cd72375cbb444f1d2bc259ff6c354c51ccca826df6c857fed26c74ef5",
+      "source_type": "repository-config",
+      "study_id": "study_33",
+      "value": [
+        "Right"
+      ]
+    },
+    {
+      "claim_id": "study33-config-emg-unit",
+      "evidence_sha256": "0cce3b59b96f0ac1d65c3336974e07c4112d221d935b8ca3a803865c1918c8dc",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          59,
+          133
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.raw_unit",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "representation": "raw",
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study33-channel-config",
+      "source_role": "observation",
+      "source_sha256": "5244434cd72375cbb444f1d2bc259ff6c354c51ccca826df6c857fed26c74ef5",
+      "source_type": "repository-config",
+      "study_id": "study_33",
+      "value": "V"
+    },
+    {
+      "claim_id": "study38-article-emg-rates",
+      "evidence_sha256": "6b669346b892cc1658b724befcb30603b80e3c39e8038dc839fbd16b8bffc3eb",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and subjects preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          678,
+          715
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.sampling_rate_hz_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-article-jats",
+      "source_role": "authority",
+      "source_sha256": "d1e83284ddefe66ee1960c797977f2f16b7b78df8435578aa8613e150de70738",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_38",
+      "value": [
+        800,
+        960,
+        1000
+      ]
+    },
+    {
+      "claim_id": "study38-article-emg-channel-count",
+      "evidence_sha256": "c66d3ab3afdce1c2d1997130aa438dc60120dfdc970cce41c218b808d9b8203f",
+      "extraction_method": "frozen-regex:capture",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and subjects preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          351,
+          391
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "coverage_scope": "per-recording",
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-article-jats",
+      "source_role": "authority",
+      "source_sha256": "d1e83284ddefe66ee1960c797977f2f16b7b78df8435578aa8613e150de70738",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_38",
+      "value": 8
+    },
+    {
+      "claim_id": "study38-article-emg-muscles",
+      "evidence_sha256": "1b90b0697fa642d0cb71986545f7c2032c76871a81d40a3965468fc4fb03367a",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and subjects preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2224,
+          2401
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-article-jats",
+      "source_role": "authority",
+      "source_sha256": "d1e83284ddefe66ee1960c797977f2f16b7b78df8435578aa8613e150de70738",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_38",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_medialis",
+        "gluteus_maximus",
+        "peroneus_longus",
+        "rectus_femoris",
+        "soleus",
+        "tibialis_anterior",
+        "vastus_medialis"
+      ]
+    },
+    {
+      "claim_id": "study38-article-emg-side",
+      "evidence_sha256": "459df20fdf57c8ff7bf04cf80908d855091bb4d2500e3da6799cd02e3285e4e2",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and subjects preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2135,
+          2195
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.laterality_basis",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-article-jats",
+      "source_role": "authority",
+      "source_sha256": "d1e83284ddefe66ee1960c797977f2f16b7b78df8435578aa8613e150de70738",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_38",
+      "value": "dominant-side"
+    },
+    {
+      "claim_id": "study38-article-emg-acquisition-bandpass",
+      "evidence_sha256": "6c30c661a557f064c28522bbb9348931b0d9486ce09ea74e6e030c397688aa3d",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Instrumentation and subjects preparation",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2054,
+          2103
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "acquisition.emg.bandpass_hz",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-article-jats",
+      "source_role": "authority",
+      "source_sha256": "d1e83284ddefe66ee1960c797977f2f16b7b78df8435578aa8613e150de70738",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_38",
+      "value": [
+        10,
+        400
+      ]
+    },
+    {
+      "claim_id": "study38-config-emg-rates",
+      "evidence_sha256": "8f923a181557d485632f470285a9d3e1dda9e6af555582da8421dbd6f4f9bcfa",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1201,
+          1245
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.sampling_rate_hz_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-device-config",
+      "source_role": "observation",
+      "source_sha256": "1a2bb780b0477a4a3d6714252fafbe8d82e6ce90ccc39c3d01362e8dd857403e",
+      "source_type": "repository-config",
+      "study_id": "study_38",
+      "value": [
+        800,
+        960,
+        1000
+      ]
+    },
+    {
+      "claim_id": "study38-config-emg-muscles",
+      "evidence_sha256": "c9d6887284840260eb0f1383f5ce02be3351436b5c3a25114cb3af6d55c3f94f",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 16,
+      "match_spans": [
+        [
+          541,
+          566
+        ],
+        [
+          617,
+          631
+        ],
+        [
+          698,
+          728
+        ],
+        [
+          788,
+          811
+        ],
+        [
+          870,
+          892
+        ],
+        [
+          952,
+          975
+        ],
+        [
+          1034,
+          1056
+        ],
+        [
+          1116,
+          1139
+        ],
+        [
+          1206,
+          1231
+        ],
+        [
+          1281,
+          1295
+        ],
+        [
+          1361,
+          1391
+        ],
+        [
+          1450,
+          1473
+        ],
+        [
+          1531,
+          1553
+        ],
+        [
+          1612,
+          1635
+        ],
+        [
+          1693,
+          1715
+        ],
+        [
+          1774,
+          1797
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study38-channel-config",
+      "source_role": "observation",
+      "source_sha256": "db65a175dce49c8681444a5b74d95537fbbd777b4e446de6022bf2fb2edf3663",
+      "source_type": "repository-config",
+      "study_id": "study_38",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_medialis",
+        "gluteus_maximus",
+        "peroneus_longus",
+        "rectus_femoris",
+        "soleus",
+        "tibialis_anterior",
+        "vastus_medialis"
+      ]
+    },
+    {
+      "claim_id": "study43-article-emg-rates",
+      "evidence_sha256": "c8433aebf4a8ea069f7fbd0f80343c4f4d4a9aefa7645f905fc1829d3a289e74",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Surface electromyography and inertial measurement units",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          541,
+          628
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.sampling_rate_hz_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "value": [
+        1259,
+        1778
+      ]
+    },
+    {
+      "claim_id": "study43-article-emg-channel-count",
+      "evidence_sha256": "cd9be0ab58134fd53e7f7f419efacb56822093ea0933f8075c9ad12be1bdee09",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Surface electromyography and inertial measurement units",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1113,
+          1201
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "value": 8
+    },
+    {
+      "claim_id": "study43-article-emg-muscles",
+      "evidence_sha256": "6a1db399ae9a7474e4121bb19269e398288bc1fc36023095770a07f07b9b9a29",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Surface electromyography and inertial measurement units",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1246,
+          1383
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_lateralis",
+        "gastrocnemius_medialis",
+        "rectus_femoris",
+        "semitendinosus",
+        "tibialis_anterior",
+        "vastus_lateralis",
+        "vastus_medialis"
+      ]
+    },
+    {
+      "claim_id": "study43-article-emg-side",
+      "evidence_sha256": "552bbd9adbf857dc52d95ca800878a025575a7444ed00c58210df0ab1a7635a9",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Surface electromyography and inertial measurement units",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1168,
+          1201
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "recording.emg.laterality_basis",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "value": "dominant-side"
+    },
+    {
+      "claim_id": "study43-article-raw-state",
+      "evidence_sha256": "f038c4bc5181f2a8ff3fd8947cfb0a78921b0f00704245a65e8a65df605cd0c8",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "Data preprocessing",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          1132,
+          1205
+        ]
+      ],
+      "message": null,
+      "propagation": "all-descendants",
+      "property_path": "processing.emg.source_state",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "representation": "raw-emg"
+      },
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "value": "unfiltered"
+    },
+    {
+      "claim_id": "study43-article-static-trial",
+      "evidence_sha256": "05af2ad8dc438a234e189f559ffe80465404028813c87eb21c85a5d3f5d9a3f5",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "During data collection",
+      "machine_action": "boundary-only",
+      "match_count": 1,
+      "match_spans": [
+        [
+          2,
+          51
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "acquisition.motion_capture.static_trial_performed",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "subject",
+      "scope_selector": {
+        "modality": "motion-capture"
+      },
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "value": true
+    },
+    {
+      "claim_id": "study43-config-emg-rates",
+      "evidence_sha256": "f2bdea4b497b616e6f615dbe48873ac36b9c3d0150c953c68e97ad585e2e2d27",
+      "extraction_method": "frozen-regex:presence",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 1,
+      "match_spans": [
+        [
+          417,
+          454
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.sampling_rate_hz_set",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "dataset",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-device-config",
+      "source_role": "observation",
+      "source_sha256": "3b5246527841120a43ebd3267ceca7f903ffdb4a72a71febc11138dfa3ec3ab2",
+      "source_type": "repository-config",
+      "study_id": "study_43",
+      "value": [
+        1259,
+        1778
+      ]
+    },
+    {
+      "claim_id": "study43-config-emg-channel-count",
+      "evidence_sha256": "c90cbe5adf63b1cd49bf10e5e826278d965f02d58e024bbe6f316eaa91338b5b",
+      "extraction_method": "frozen-regex:count",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 8,
+      "match_spans": [
+        [
+          1966,
+          1993
+        ],
+        [
+          2035,
+          2079
+        ],
+        [
+          2126,
+          2171
+        ],
+        [
+          2219,
+          2258
+        ],
+        [
+          2299,
+          2337
+        ],
+        [
+          2377,
+          2405
+        ],
+        [
+          2444,
+          2472
+        ],
+        [
+          2511,
+          2539
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.channel_count",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-channel-config",
+      "source_role": "observation",
+      "source_sha256": "eda357fceeb93f617eefc5a1dd6e820aa8e913cfc55db9c876c2d0f5b94904f5",
+      "source_type": "repository-config",
+      "study_id": "study_43",
+      "value": 8
+    },
+    {
+      "claim_id": "study43-config-emg-muscles",
+      "evidence_sha256": "fe2dfc32a7f01dec989244ddfe8a8dd4de294e3180df477824ef908ff44584ab",
+      "extraction_method": "frozen-regex:set",
+      "extraction_status": "extracted",
+      "locator": "document",
+      "machine_action": "enrich",
+      "match_count": 8,
+      "match_spans": [
+        [
+          2007,
+          2032
+        ],
+        [
+          2093,
+          2123
+        ],
+        [
+          2185,
+          2216
+        ],
+        [
+          2272,
+          2296
+        ],
+        [
+          2351,
+          2374
+        ],
+        [
+          2419,
+          2441
+        ],
+        [
+          2486,
+          2508
+        ],
+        [
+          2553,
+          2575
+        ]
+      ],
+      "message": null,
+      "propagation": "none",
+      "property_path": "recording.emg.covered_muscles",
+      "requires_human_review": false,
+      "schema_version": "1.0.0",
+      "scope_level": "channel-group",
+      "scope_selector": {
+        "sensor_type": "surface-emg"
+      },
+      "source_id": "study43-channel-config",
+      "source_role": "observation",
+      "source_sha256": "eda357fceeb93f617eefc5a1dd6e820aa8e913cfc55db9c876c2d0f5b94904f5",
+      "source_type": "repository-config",
+      "study_id": "study_43",
+      "value": [
+        "biceps_femoris",
+        "gastrocnemius_lateralis",
+        "gastrocnemius_medialis",
+        "rectus_femoris",
+        "semitendinosus",
+        "tibialis_anterior",
+        "vastus_lateralis",
+        "vastus_medialis"
+      ]
+    }
+  ],
+  "code_dirty": false,
+  "created_at": "2026-07-25T07:29:49.976549Z",
+  "decisions": [
+    {
+      "claim_id": "study31-article-emg-rate",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study31-config-emg-rate"
+      ],
+      "evidence_refs": [
+        "study31-article-emg-rate:sha256:4f9ad072d36540b76d18342a6fb2f7c238e5e3dc0e00cf385f9292c1a0740f20",
+        "study31-config-emg-rate:sha256:91c0326d8e7d5fbff1ba19c358e1da799e0b39397bea27684335dc70b21d7c71"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study31-article-emg-channel-count",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study31-config-emg-channel-count"
+      ],
+      "evidence_refs": [
+        "study31-article-emg-channel-count:sha256:19880ac2eccf1769b8c938c1a50ff2795a494da452d917567f1bca72780021fe",
+        "study31-config-emg-channel-count:sha256:9d7b07e660aa2cb2025cf938dc131950dcd1135738a3bbd0f20c9384e27e4c08"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study31-article-emg-muscles",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study31-config-emg-muscles"
+      ],
+      "evidence_refs": [
+        "study31-article-emg-muscles:sha256:1887adfb18980329247d74b03a90a27227e6e561b50ee8cd00e030d0de0df36c",
+        "study31-config-emg-muscles:sha256:69ef9e34cdef308fc901fe8d7b0c7fc1c7d3d53c8472764aaa14636794210008"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study31-article-emg-sides",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study31-config-emg-sides"
+      ],
+      "evidence_refs": [
+        "study31-article-emg-sides:sha256:050a121a1127b4a4e3895a6e65646989e8b759ea57aad1a9df728df8c2aadcfe",
+        "study31-config-emg-sides:sha256:ca0ce1c81abf1be638a2ac4ef43718d6b3a244dcfb3731303d67a6741c53c09d"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study31-article-emg-unit",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study31-config-emg-unit"
+      ],
+      "evidence_refs": [
+        "study31-article-emg-unit:sha256:d0e01a56223c3735d8256a408e9f7ff94c169823839f85ab7a4ecd76c2995713",
+        "study31-config-emg-unit:sha256:0cce3b59b96f0ac1d65c3336974e07c4112d221d935b8ca3a803865c1918c8dc"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study31-article-emg-bandpass",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study31-article-emg-bandpass:sha256:0cc461ecd40ce37922f52cbf38b523cf8378e1bd914840f0a7f0617f0054760c"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study31-article-emg-rms-window",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study31-article-emg-rms-window:sha256:0d1d25e59dcdcde5decfb8182e0b77d02b379aaa9be2b18e25a2b87c06c8cf48"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study31-article-static-performed",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study31-article-static-performed:sha256:db58cf31440bad571c83fa41c9d6f6914eab357da1418f169db4bef248983cdd"
+      ],
+      "machine_action": "boundary-only",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study32-article-emg-rate",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study32-config-emg-rate"
+      ],
+      "evidence_refs": [
+        "study32-article-emg-rate:sha256:db9459bd40cb02fa12ee9bc7e2da3256c3dbda36909750b252f31ef62eb0f8c2",
+        "study32-config-emg-rate:sha256:2c091e108691420fdc03ba39772abdf220cfafd200b01b660b10935c4b1a1140"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study32-article-emg-channel-count",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study32-config-emg-channel-count"
+      ],
+      "evidence_refs": [
+        "study32-article-emg-channel-count:sha256:49ed80dc763b9ccbf4352b58e462a028bf82821ebd937209c42afc07db434329",
+        "study32-config-emg-channel-count:sha256:bd38273f8b903c8dde1f6a2605de18c2a8e7084ca088895cd368e970d573ed06"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study32-article-emg-sides",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study32-config-emg-sides"
+      ],
+      "evidence_refs": [
+        "study32-article-emg-sides:sha256:4b9661275f29c943f5940b5e4208df41fe309b9bdfa54bdba099fec45acf9865",
+        "study32-config-emg-sides:sha256:b1e46786b2095feeb244e510b1649a669c328f9af04e3e9d35fcfd0bfcf45e39"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study32-article-emg-region",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study32-article-emg-region:sha256:34a26609e19ddbe6a59367c8b59c946a0adf5d6bebf834464fe1fd8252f84727"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study32-article-grid-placement",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study32-article-grid-placement:sha256:9930ac8aa84fe2fb9e037b1a8797b84a2f88856dfe8b55fe2e366745920a539a"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study32-article-raw-scale",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study32-article-raw-scale:sha256:7a6645e8207b80fc42f8fb63091f2d369e382c58cead7ddc54b4c42c791a4819"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study32-article-single-muscle-limit",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study32-article-single-muscle-limit:sha256:d89bcb97ab1df50642479a57346696ddec01009ef5a3e7a2001553e56aad7251"
+      ],
+      "machine_action": "boundary-only",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study1-article-task-conditions",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study1-article-task-conditions:sha256:f4cc5ffd020c0990a7c54db8f6dda89e308c811dd0eeaa68f09fbe1373edebb2"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study1-article-documented-modalities",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study1-article-documented-modalities:sha256:298f1559d4cf55308a3cf295e7e4d98dbb6bac286f8404bdcc31f0a839cd822c"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study120-article-emg-rate",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study120-config-emg-rate"
+      ],
+      "evidence_refs": [
+        "study120-article-emg-rate:sha256:08d7b47d9c04c322b930f48e72be5f04665bf6073a458bd9062cbadf5b546dc5",
+        "study120-config-emg-rate:sha256:15490e7e4d9ea21b7b0ed298aa15c978d6d9e3fbd33b9f9b2891f52966bd822d"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study120-article-emg-channel-count",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study120-config-emg-channel-count"
+      ],
+      "evidence_refs": [
+        "study120-article-emg-channel-count:sha256:b89c6d9c34c67426fab31611306168c78f1a404f498a96b5f63c4e0af125feae",
+        "study120-config-emg-channel-count:sha256:54db0c9d088fecfcf680a28306281797d15be033a4e779702705e278d71d84f6"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study120-article-emg-muscles",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study120-article-emg-muscles:sha256:b6e79204a6552689d60e65faf4cf59cb1eabe8558d330c98c7f4e0d0b23eae8c"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study120-article-emg-side",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study120-config-emg-side"
+      ],
+      "evidence_refs": [
+        "study120-article-emg-side:sha256:00fd9495c43f8e12695c0163d2e1f64390057bb209557e44a902d6b94e2eaf92",
+        "study120-config-emg-side:sha256:c373013184adc0095fd7dcc46851b8dd397e3a8b7b7083c0712143f44a7575a8"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study120-article-emg-raw-unit",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study120-config-emg-raw-unit"
+      ],
+      "evidence_refs": [
+        "study120-article-emg-raw-unit:sha256:92a0d4be539a788a49c70a29f451e8b31cb4ad5ec0a6a9f24f68b064e79e85b9",
+        "study120-config-emg-raw-unit:sha256:0cce3b59b96f0ac1d65c3336974e07c4112d221d935b8ca3a803865c1918c8dc"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study120-article-emg-bandpass",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study120-article-emg-bandpass:sha256:9f8a786a98b8ddb2866fe72c6b75d702abd4f970d008a5289e54e501f6b46914"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study120-article-population-boundary",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study120-article-population-boundary:sha256:bd7e063d2d66359ef71213b443b92b12d591c7cb93f8b841d0322a856c21a8d0"
+      ],
+      "machine_action": "boundary-only",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study28-article-emg-capacity",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study28-article-emg-capacity:sha256:409ca54f2ea8509023f4840c3da28e24e396bddbb6c1d5281c990d331d01c603"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study28-article-emg-channel-count",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study28-config-emg-channel-count"
+      ],
+      "evidence_refs": [
+        "study28-article-emg-channel-count:sha256:cf5333b4844f9d64866d025298714fd6191e712505a4e9ea32461e6b7f8aeae8",
+        "study28-config-emg-channel-count:sha256:771263e8862ab3d15d37ab44b523fd85a248d31f5da3f9761ed8c8490b57f4a3"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study28-article-emg-muscles",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study28-article-emg-muscles:sha256:51218ca225b8ea5a080654730ab8c790adbe17fd7cd2331e6703468f7bfb8dd9"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study28-article-emg-sides",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study28-config-emg-sides"
+      ],
+      "evidence_refs": [
+        "study28-article-emg-sides:sha256:30af0cec1fd3745bd3b1fd6f404f9c2446574b120ad5036b58507ca9a46d8c94",
+        "study28-config-emg-sides:sha256:71659b2a28a687230b65345db15fd9f4dc50e99becf877dc4faea676d1df63a9"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study28-article-emg-bandpass",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study28-article-emg-bandpass:sha256:2e374dca3657d2bb4576562e96ca1dcfde88e10560dd8332ddc8ae8969edb3b9"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study28-article-emg-envelope-window",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study28-article-emg-envelope-window:sha256:0b11d7b2265f78fcfe50d9d90ad80ddca1ff6c142308f18e47ebcd342ecf1607"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study28-article-emg-missingness",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study28-article-emg-missingness:sha256:d322bf199c3221944c8f0ab77aae765ab0e3c5606a5f696cfd18213a27830576"
+      ],
+      "machine_action": "boundary-only",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study33-article-task-families",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study33-article-task-families:sha256:6a50fee837693cdca0323ff5f2f737290fa0dd94395d394e77f6284a0fa59260"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study38-article-emg-rates",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study38-config-emg-rates"
+      ],
+      "evidence_refs": [
+        "study38-article-emg-rates:sha256:6b669346b892cc1658b724befcb30603b80e3c39e8038dc839fbd16b8bffc3eb",
+        "study38-config-emg-rates:sha256:8f923a181557d485632f470285a9d3e1dda9e6af555582da8421dbd6f4f9bcfa"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study38-article-emg-channel-count",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study38-article-emg-channel-count:sha256:c66d3ab3afdce1c2d1997130aa438dc60120dfdc970cce41c218b808d9b8203f"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study38-article-emg-muscles",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study38-config-emg-muscles"
+      ],
+      "evidence_refs": [
+        "study38-article-emg-muscles:sha256:1b90b0697fa642d0cb71986545f7c2032c76871a81d40a3965468fc4fb03367a",
+        "study38-config-emg-muscles:sha256:c9d6887284840260eb0f1383f5ce02be3351436b5c3a25114cb3af6d55c3f94f"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study38-article-emg-side",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study38-article-emg-side:sha256:459df20fdf57c8ff7bf04cf80908d855091bb4d2500e3da6799cd02e3285e4e2"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study38-article-emg-acquisition-bandpass",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study38-article-emg-acquisition-bandpass:sha256:6c30c661a557f064c28522bbb9348931b0d9486ce09ea74e6e030c397688aa3d"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study43-article-emg-rates",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study43-config-emg-rates"
+      ],
+      "evidence_refs": [
+        "study43-article-emg-rates:sha256:c8433aebf4a8ea069f7fbd0f80343c4f4d4a9aefa7645f905fc1829d3a289e74",
+        "study43-config-emg-rates:sha256:f2bdea4b497b616e6f615dbe48873ac36b9c3d0150c953c68e97ad585e2e2d27"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study43-article-emg-channel-count",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study43-config-emg-channel-count"
+      ],
+      "evidence_refs": [
+        "study43-article-emg-channel-count:sha256:cd9be0ab58134fd53e7f7f419efacb56822093ea0933f8075c9ad12be1bdee09",
+        "study43-config-emg-channel-count:sha256:c90cbe5adf63b1cd49bf10e5e826278d965f02d58e024bbe6f316eaa91338b5b"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study43-article-emg-muscles",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [
+        "study43-config-emg-muscles"
+      ],
+      "evidence_refs": [
+        "study43-article-emg-muscles:sha256:6a1db399ae9a7474e4121bb19269e398288bc1fc36023095770a07f07b9b9a29",
+        "study43-config-emg-muscles:sha256:fe2dfc32a7f01dec989244ddfe8a8dd4de294e3180df477824ef908ff44584ab"
+      ],
+      "machine_action": "enrich",
+      "reason": "article claim is explicitly extracted and agrees with repository evidence at an overlapping scope",
+      "status": "corroborated"
+    },
+    {
+      "claim_id": "study43-article-emg-side",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study43-article-emg-side:sha256:552bbd9adbf857dc52d95ca800878a025575a7444ed00c58210df0ab1a7635a9"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study43-article-raw-state",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study43-article-raw-state:sha256:f038c4bc5181f2a8ff3fd8947cfb0a78921b0f00704245a65e8a65df605cd0c8"
+      ],
+      "machine_action": "enrich",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    },
+    {
+      "claim_id": "study43-article-static-trial",
+      "conflicting_claim_ids": [],
+      "corroborating_claim_ids": [],
+      "evidence_refs": [
+        "study43-article-static-trial:sha256:05af2ad8dc438a234e189f559ffe80465404028813c87eb21c85a5d3f5d9a3f5"
+      ],
+      "machine_action": "boundary-only",
+      "reason": "explicit article claim is accepted only at its declared scope; no recording-specific observation was available",
+      "status": "accepted"
+    }
+  ],
+  "implementation_commit": "3a9564b2208975c7977acd578225c8788981d925",
+  "plan_sha256": "bdd0d595abcc7355bc94f2630aed32837ba6de5ee3010f43c6cb821498c67dc8",
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "6a413fbd865d4b88d44750a19a04fe1a4bd52004f2b4da315b5ae12d8fff110b",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-021-00881-3",
+      "release_binding": "doi:10.6084/m9.figshare.c.4923162.v1",
+      "retrieved_at": "2026-07-25T07:29:49.803795Z",
+      "size_bytes": 93011,
+      "source_id": "study31-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study31",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8041842/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "263d7e27a5a90f9aad3ae3519d377b3d25ce79ffc80c5d63eb8e59dd737e48f7",
+      "error": null,
+      "identifier": "repository:studies/study31/definitions/study_descrption.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.c.4923162.v1",
+      "retrieved_at": null,
+      "size_bytes": 1357,
+      "source_id": "study31-device-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "uri": "studies/study31/definitions/study_descrption.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "59cb4be7e5ec3c0316d7fe52eb5099c904273421d019d6f52efa02af7ad8234d",
+      "error": null,
+      "identifier": "repository:studies/study31/definitions/channels.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.c.4923162.v1",
+      "retrieved_at": null,
+      "size_bytes": 3709,
+      "source_id": "study31-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study31",
+      "uri": "studies/study31/definitions/channels.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "b944c02eb2d0134b15a7357a859cb308ea786d2ca09cb967fc4e7373e5a7d174",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-023-02679-x",
+      "release_binding": "doi:10.6084/m9.figshare.22227337.v2",
+      "retrieved_at": "2026-07-25T07:29:49.804627Z",
+      "size_bytes": 77909,
+      "source_id": "study32-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_32",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10638431/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "d1afd197f8303c148b011f74e3d89c09a0f1780b9a1bb2fd4557c9e4b6b3f559",
+      "error": null,
+      "identifier": "repository:studies/study_32/definitions/study_descripirions.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.22227337.v2",
+      "retrieved_at": null,
+      "size_bytes": 1354,
+      "source_id": "study32-device-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_32",
+      "uri": "studies/study_32/definitions/study_descripirions.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "b09d34a4444a8bb74159021eb1c5dbaf1d85149701b695711022a42147a3a440",
+      "error": null,
+      "identifier": "repository:studies/study_32/definitions/channels.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.22227337.v2",
+      "retrieved_at": null,
+      "size_bytes": 6364,
+      "source_id": "study32-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_32",
+      "uri": "studies/study_32/definitions/channels.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "2564b343cb782ab5d6b2448b18183bbee99fbd6d8f44f9e45205ff07d9b1a9cd",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-025-06535-y",
+      "release_binding": "doi:10.6084/m9.figshare.29300888.v2",
+      "retrieved_at": "2026-07-25T07:29:49.805238Z",
+      "size_bytes": 100622,
+      "source_id": "study1-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_1",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12796155/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "42ed5b7bdbf87cfd85b38b7272a5eb32a61eaea575f7c47601cd41f8c8190ecb",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-025-05391-0",
+      "release_binding": "doi:10.6084/m9.figshare.27677016.v1",
+      "retrieved_at": "2026-07-25T07:29:49.805540Z",
+      "size_bytes": 90652,
+      "source_id": "study120-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_120",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12177048/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "43441a9b7385264cf3ccd168fc5ded1c9351a3e596f79d86350edf11e6cf024b",
+      "error": null,
+      "identifier": "repository:studies/study_120/definitions/study_descrption.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.27677016.v1",
+      "retrieved_at": null,
+      "size_bytes": 842,
+      "source_id": "study120-device-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_120",
+      "uri": "studies/study_120/definitions/study_descrption.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "c34ad7257d3dd58c3499f5c0d5bff336b65b0cb17e790f446bdd143218acd82e",
+      "error": null,
+      "identifier": "repository:studies/study_120/definitions/channels.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.27677016.v1",
+      "retrieved_at": null,
+      "size_bytes": 3406,
+      "source_id": "study120-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_120",
+      "uri": "studies/study_120/definitions/channels.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "c4b1f3693711788da37fba5e65dfef3ea4de7b2910dec2ae5d56a02034fa210e",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-023-02767-y",
+      "release_binding": "doi:10.6084/m9.figshare.c.6503791.v1",
+      "retrieved_at": "2026-07-25T07:29:49.806116Z",
+      "size_bytes": 95940,
+      "source_id": "study28-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_28",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10692332/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "2229e0fa23983cd959cf23116c2ac6b286bc9354cfe350d030458ee5eaada6e9",
+      "error": null,
+      "identifier": "repository:studies/study_28/definitions/channels.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.c.6503791.v1",
+      "retrieved_at": null,
+      "size_bytes": 4218,
+      "source_id": "study28-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_28",
+      "uri": "studies/study_28/definitions/channels.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "0401fea7579933ccad2224b41c992bd66190fd37f33c100cb0a11a2a387e65c3",
+      "error": null,
+      "identifier": "doi:10.1016/j.jbiomech.2021.110320",
+      "release_binding": "doi:10.17632/fcgm3chfff.1",
+      "retrieved_at": "2026-07-25T07:29:49.806453Z",
+      "size_bytes": 1904,
+      "source_id": "study33-article-metadata",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_33",
+      "uri": "https://api.elsevier.com/content/article/PII:S0021929021001007?httpAccept=text/xml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "1dda8a13d86a3c71aef50a1989685cbe65771ce1ab73a9017236b10f729a81e0",
+      "error": null,
+      "identifier": "repository:studies/study_33/definitions/study_description.yaml",
+      "release_binding": "doi:10.17632/fcgm3chfff.1",
+      "retrieved_at": null,
+      "size_bytes": 1011,
+      "source_id": "study33-device-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_33",
+      "uri": "studies/study_33/definitions/study_description.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "5244434cd72375cbb444f1d2bc259ff6c354c51ccca826df6c857fed26c74ef5",
+      "error": null,
+      "identifier": "repository:studies/study_33/definitions/channels.yaml",
+      "release_binding": "doi:10.17632/fcgm3chfff.1",
+      "retrieved_at": null,
+      "size_bytes": 7897,
+      "source_id": "study33-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_33",
+      "uri": "studies/study_33/definitions/channels.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "d1e83284ddefe66ee1960c797977f2f16b7b78df8435578aa8613e150de70738",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-019-0323-z",
+      "release_binding": "doi:10.6084/m9.figshare.9784964.v1",
+      "retrieved_at": "2026-07-25T07:29:49.806966Z",
+      "size_bytes": 94228,
+      "source_id": "study38-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_38",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6897988/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "1a2bb780b0477a4a3d6714252fafbe8d82e6ce90ccc39c3d01362e8dd857403e",
+      "error": null,
+      "identifier": "repository:studies/study_38/definitions/study_description.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.9784964.v1",
+      "retrieved_at": null,
+      "size_bytes": 1523,
+      "source_id": "study38-device-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_38",
+      "uri": "studies/study_38/definitions/study_description.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "db65a175dce49c8681444a5b74d95537fbbd777b4e446de6022bf2fb2edf3663",
+      "error": null,
+      "identifier": "repository:studies/study_38/definitions/channels.yaml",
+      "release_binding": "doi:10.6084/m9.figshare.9784964.v1",
+      "retrieved_at": null,
+      "size_bytes": 3336,
+      "source_id": "study38-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_38",
+      "uri": "studies/study_38/definitions/channels.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "6992d17344bfb08ad9243448311e9a43bfdcbb7f3f471d64c9c37e704ff56fc0",
+      "error": null,
+      "identifier": "doi:10.1038/s41597-024-03740-z",
+      "release_binding": "doi:10.26180/24515092.v4",
+      "retrieved_at": "2026-07-25T07:29:49.807471Z",
+      "size_bytes": 86580,
+      "source_id": "study43-article-jats",
+      "source_role": "authority",
+      "source_type": "peer-reviewed-article",
+      "study_id": "study_43",
+      "uri": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11322156/fullTextXML"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "3b5246527841120a43ebd3267ceca7f903ffdb4a72a71febc11138dfa3ec3ab2",
+      "error": null,
+      "identifier": "repository:studies/study_43/definitions/study_description.yaml",
+      "release_binding": "doi:10.26180/24515092.v4",
+      "retrieved_at": null,
+      "size_bytes": 1042,
+      "source_id": "study43-device-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_43",
+      "uri": "studies/study_43/definitions/study_description.yaml"
+    },
+    {
+      "acquisition_status": "acquired",
+      "content_sha256": "eda357fceeb93f617eefc5a1dd6e820aa8e913cfc55db9c876c2d0f5b94904f5",
+      "error": null,
+      "identifier": "repository:studies/study_43/definitions/channels.yaml",
+      "release_binding": "doi:10.26180/24515092.v4",
+      "retrieved_at": null,
+      "size_bytes": 3066,
+      "source_id": "study43-channel-config",
+      "source_role": "observation",
+      "source_type": "repository-config",
+      "study_id": "study_43",
+      "uri": "studies/study_43/definitions/channels.yaml"
+    }
+  ],
+  "summary": {
+    "accepted_decision_count": 24,
+    "authority_claim_count": 43,
+    "boundary_evidence_count": 5,
+    "claim_count": 67,
+    "conditional_decision_count": 0,
+    "conflicting_decision_count": 0,
+    "corroborated_decision_count": 19,
+    "enrichment_ready_count": 38,
+    "extracted_claim_count": 67,
+    "observation_claim_count": 24,
+    "rejected_decision_count": 0,
+    "source_acquired": 21,
+    "source_count": 21,
+    "unresolved_decision_count": 0
+  },
+  "working_tree_sha256": null
+}

@@ -1,0 +1,2 @@
+include LICENSE CITATION.cff
+recursive-include schemas *.json

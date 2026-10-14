@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/anatomy-crosswalk-1.0.0.json",
+  "title": "AnatomyCrosswalk",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "crosswalk_id",
+    "source_ontology",
+    "source_version",
+    "target_release",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "crosswalk_id": {"type": "string", "minLength": 1},
+    "source_ontology": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
+    "target_release": {
+      "type": "object",
+      "required": [
+        "ontology",
+        "release_tag",
+        "version_iri",
+        "data_version",
+        "asset_url",
+        "asset_sha256",
+        "asset_size_bytes",
+        "license",
+        "license_url"
+      ],
+      "properties": {
+        "ontology": {"type": "string", "minLength": 1},
+        "release_tag": {"type": "string", "minLength": 1},
+        "version_iri": {"type": "string", "minLength": 1},
+        "data_version": {"type": "string", "minLength": 1},
+        "asset_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "asset_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "asset_size_bytes": {"type": "integer", "minimum": 1},
+        "license": {"type": "string", "minLength": 1},
+        "license_url": {"type": "string", "format": "uri", "pattern": "^https://"}
+      },
+      "additionalProperties": false
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_term_id",
+          "source_label",
+          "target_term_id",
+          "target_label",
+          "predicate",
+          "match_basis",
+          "matched_text"
+        ],
+        "properties": {
+          "source_term_id": {"type": "string", "minLength": 1},
+          "source_label": {"type": "string", "minLength": 1},
+          "target_term_id": {"type": "string", "minLength": 1},
+          "target_label": {"type": "string", "minLength": 1},
+          "predicate": {"enum": ["exactMatch", "closeMatch", "broadMatch"]},
+          "match_basis": {"enum": ["preferred-label", "exact-synonym"]},
+          "matched_text": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

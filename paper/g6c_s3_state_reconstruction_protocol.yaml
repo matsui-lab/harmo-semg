@@ -1,0 +1,56 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S3
+gate_id: G6c-S3
+title: RRA-native state reconstruction and Newton-Euler identity audit
+frozen_at: '2026-07-22'
+design:
+  source_result: paper/results/validation/g6c_s2_mechanics_localization.json
+  source_work_artifacts:
+    adjusted_model: rra_adjusted_model.osim
+    adaptive_kinematics: rra_kinematics_adaptive.sto
+    source_grid_kinematics: rra_kinematics_source_grid.sto
+    factorial_timeseries: g6c_s2_factorial_timeseries.csv
+    worker_report: g6c_s2_mechanics_localization_worker.json
+    pass2_directory: padded_rra/rra_pass2
+  public_ground_reaction_role: heldout_ground_reaction
+  comparison_window_s: [20.36, 21.01]
+  expected_minimum_native_rows: 600
+  identity_primary_grid: external-load-native-1-ms-grid
+  adaptive_substeps_role: interpolation-diagnostic-only
+  gravity_m_s2: [0.0, -9.80665, 0.0]
+  vertical_axis: 1
+  residual_force_application:
+    body: pelvis
+    point_source: model-body-mass-center
+  native_dynamics:
+    position_source: pass2-states-value
+    speed_source: pass2-states-speed
+    generalized_acceleration_source: pass2-Kinematics-dudt
+    external_load_filter: none-match-rra-external-loads
+    body_acceleration: SimbodyMatterSubsystem-calcBodyAccelerationFromUDot
+    angular_momentum_rate: analytic-rigid-body-sum-about-system-com
+  comparison:
+    position_derived_source: g6c-s2-adjusted-model-rra-kinematics-public-mot
+    selection: protocol-frozen-not-outcome-fitted
+thresholds:
+  residual_force_fraction: 0.05
+  residual_moment_fraction: 0.01
+  maximum_force_identity_error_fraction: 1.0e-8
+  maximum_moment_identity_error_fraction: 1.0e-8
+  maximum_position_constraint_error: 1.0e-8
+  maximum_velocity_constraint_error: 1.0e-8
+  maximum_q_state_difference: 1.0e-10
+  maximum_u_state_difference: 1.0e-10
+  maximum_body_angular_momentum_error_nms: 1.0e-10
+missing_policy: fail-closed-and-retain-result
+claim_boundary: >-
+  evaluator-bias localization and RRA-native mechanics identity only; passing
+  the identity does not make excessive residual actuators acceptable and does
+  not validate dynamic-only personalization, joint moments, or muscle forces
+audit_history:
+  - >-
+    The first full-adaptive-grid execution retained a 0.18% force and 0.15%
+    moment identity difference exclusively at 115 integrator substeps between
+    observed force samples. The unchanged 1e-8 identity threshold is therefore
+    evaluated on the 651 observed 1-ms external-load times; all adaptive
+    substeps remain reported as an interpolation diagnostic.

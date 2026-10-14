@@ -1,0 +1,106 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S5
+gate_id: G6c-S5
+title: External-yaw and frontal-plane RRA sensitivity factorial
+frozen_at: '2026-07-22'
+design:
+  source_results:
+    s2: paper/results/validation/g6c_s2_mechanics_localization.json
+    s3: paper/results/validation/g6c_s3_state_reconstruction.json
+    s4: paper/results/validation/g6c_s4_moment_localization.json
+  source_work_artifacts:
+    desired_kinematics: padded_ik/ik_motion.mot
+    rra_actuators: padded_rra/rra_actuators.xml
+    rra_tasks: padded_rra/rra_tasks.xml
+    s2_worker_report: g6c_s2_mechanics_localization_worker.json
+    s2_plan: g6c_s2_mechanics_localization_plan.json
+  public_source_roles:
+    model: static_derived_model
+    ground_reaction: heldout_ground_reaction
+    raw_c3d: raw_c3d
+  rra_window_s: [19.355, 22.015]
+  native_target_window_s: [20.36, 21.01]
+  angle_grid:
+    start_s: 20.36
+    end_s: 21.01
+    sampling_hz: 100.0
+    expected_rows: 66
+  vertical_axis: 1
+  public_prefixes: [l, r]
+  baseline_cell: published_original__standard
+  external_source:
+    platform_index_zero_based: 1
+    c3d_to_ground_rotation:
+      - [0, -1, 0]
+      - [0, 0, 1]
+      - [-1, 0, 0]
+    c3d_time_offset_s: -0.01
+    contact_threshold_n: 20.0
+    lowpass_cutoff_hz: 6.0
+    lowpass_order: 4
+  external_conditions:
+    - id: published_original
+      operation: byte-identical-public-mot
+      role: primary-source-faithful
+      admissible_for_mechanics_rescue: true
+    - id: published_wrench_6hz
+      operation: side-origin-wrench-lowpass-and-reconstruction
+      role: source-faithful-preprocessing-sensitivity
+      admissible_for_mechanics_rescue: true
+    - id: raw_free_6hz
+      operation: replace-total-free-moment-with-filtered-raw-c3d
+      allocation: absolute-vertical-force-share
+      role: source-amplitude-sensitivity-side-allocation-unobserved
+      admissible_for_mechanics_rescue: false
+    - id: zero_free
+      operation: zero-all-free-moment-components
+      role: physically-invalid-negative-control
+      admissible_for_mechanics_rescue: false
+  tracking_conditions:
+    - id: standard
+      operation: byte-identical-g6c-task-set
+      admissible_for_mechanics_rescue: true
+    - id: frontal_relaxed_5x
+      operation: multiply-named-task-weights
+      coordinates: [pelvis_list, lumbar_bending]
+      multiplier: 0.2
+      role: prespecified-frontal-plane-sensitivity
+      admissible_for_mechanics_rescue: true
+  cells:
+    - {id: published_original__standard, external: published_original, tracking: standard}
+    - {id: published_original__frontal_relaxed_5x, external: published_original, tracking: frontal_relaxed_5x}
+    - {id: published_wrench_6hz__standard, external: published_wrench_6hz, tracking: standard}
+    - {id: published_wrench_6hz__frontal_relaxed_5x, external: published_wrench_6hz, tracking: frontal_relaxed_5x}
+    - {id: raw_free_6hz__standard, external: raw_free_6hz, tracking: standard}
+    - {id: raw_free_6hz__frontal_relaxed_5x, external: raw_free_6hz, tracking: frontal_relaxed_5x}
+    - {id: zero_free__standard, external: zero_free, tracking: standard}
+    - {id: zero_free__frontal_relaxed_5x, external: zero_free, tracking: frontal_relaxed_5x}
+opensim:
+  required_version: 4.5.2
+  passes: 2
+  lowpass_cutoff_hz: 6.0
+  adjust_com_to_reduce_residuals: true
+  adjusted_com_body: torso
+thresholds:
+  expected_cell_count: 8
+  residual_force_fraction: 0.05
+  residual_moment_fraction: 0.01
+  rra_angle_change_rms_deg: 5.0
+  minimum_meaningful_relative_reduction: 0.25
+  maximum_baseline_force_rms_difference_n: 1.0e-6
+  maximum_baseline_moment_rms_difference_nm: 1.0e-6
+  maximum_wrench_roundtrip_error: 1.0e-6
+  maximum_raw_total_reconstruction_error_nm: 1.0e-10
+missing_policy: fail-closed-retain-all-cells
+execution_failure_policy:
+  action: record-cell-failure-and-continue-remaining-frozen-cells
+  imputation: prohibited
+  rescue_eligibility_if_any_cell_fails: false
+  interpretation: numerical-nonconvergence-is-an-observed-factorial-outcome
+claim_boundary: >-
+  G6c-S5 is a complete prespecified sensitivity factorial on one previously
+  inspected Subject 02 stride. A passing admissible cell is only a rescue
+  candidate requiring independent confirmation. Raw-free allocation and zero
+  free moment are diagnostic-only and can never validate or replace the source
+  pipeline. No S5 outcome validates personalization, joint moments, muscle
+  forces, or clinical use.

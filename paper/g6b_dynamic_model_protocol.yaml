@@ -1,0 +1,98 @@
+schema_version: 1.0.0
+experiment_id: E2
+gate_id: G6b-2
+title: Cross-subject-template dynamic-derived OpenSim model pilot
+frozen_at: '2026-07-21'
+freeze_state: frozen-before-target-model-outcome-computation
+scientific_question: >-
+  Can dynamic marker geometry and public anthropometry generate a
+  subject-specific OpenSim model without access to that subject's static
+  calibration trial, while retaining measurable agreement with an independently
+  published static-derived model?
+claim_boundary: >-
+  This one-target-subject pilot evaluates isotropic segment scaling and model
+  generation fidelity only. It does not validate marker placement, IK, inverse
+  dynamics, RRA, muscle force, physiological interpretation, or clinical use.
+design_note: >-
+  File identities, marker-to-body relationships, and Subject 02 anthropometry
+  were inspected to make the design executable. Subject 02 dynamic-versus-static
+  model outcomes were not calculated before this protocol and its thresholds
+  were fixed.
+source_manifest: paper/g6b_dynamic_model_sources.yaml
+design:
+  template_subject_id: '01'
+  target_subject_id: '02'
+  template_model_role: template_model
+  anthropometry_source_role: anthropometry
+  dynamic_calibration_roles:
+    - dynamic_calibration_278ms
+    - dynamic_calibration_3ms
+    - dynamic_calibration_333ms
+  hidden_reference_model_role: target_static_scaled_model
+  heldout_dynamic_role: heldout_dynamic_4ms
+  estimation_input_roles:
+    - template_model
+    - anthropometry
+    - dynamic_calibration_278ms
+    - dynamic_calibration_3ms
+    - dynamic_calibration_333ms
+  target_mass_kg: 81.0
+  target_height_m: 1.817
+  anthropometry_locator:
+    workbook_role: anthropometry
+    worksheet: Participant information
+    subject_row_label: 2
+    fields: {height: Height (cm), mass: Body mass (kg)}
+estimation:
+  within_trial: median-after-MAD-outlier-rejection
+  across_trials: equal-trial-weighted-median
+  outlier_mad: 4.5
+  missing_policy: fail-body-and-retain-in-denominator
+model_scaling:
+  method: isotropic-body-scaling-from-same-body-marker-pairs
+  preserve_mass_distribution: false
+  required_bodies:
+    - pelvis
+    - femur_r
+    - tibia_r
+    - patella_r
+    - talus_r
+    - calcn_r
+    - toes_r
+    - femur_l
+    - tibia_l
+    - patella_l
+    - talus_l
+    - calcn_l
+    - toes_l
+    - torso
+  inheritance:
+    patella_r: femur_r
+    talus_r: toes_r
+    calcn_r: toes_r
+    patella_l: femur_l
+    talus_l: toes_l
+    calcn_l: toes_l
+thresholds:
+  direct_body_coverage: 1.0
+  median_body_scale_error: 0.03
+  p95_body_scale_error: 0.08
+  model_generation_error: 0.000001
+  mass_relative_error: 0.000001
+measurements:
+  - {id: pelvis_width_anterior, body: pelvis, marker_a: LASIS, marker_b: RASIS}
+  - {id: pelvis_width_posterior, body: pelvis, marker_a: LPSIS, marker_b: RPSIS}
+  - {id: pelvis_depth_left, body: pelvis, marker_a: LASIS, marker_b: LPSIS}
+  - {id: pelvis_depth_right, body: pelvis, marker_a: RASIS, marker_b: RPSIS}
+  - {id: femur_left_cluster, body: femur_l, marker_a: LLTHI, marker_b: LLEK}
+  - {id: femur_right_cluster, body: femur_r, marker_a: RLTHI, marker_b: RLEK}
+  - {id: tibia_left_cluster, body: tibia_l, marker_a: LLSHA, marker_b: LLM}
+  - {id: tibia_right_cluster, body: tibia_r, marker_a: RLSHA, marker_b: RLM}
+  - {id: foot_left_width, body: toes_l, marker_a: LMT2, marker_b: LMT5}
+  - {id: foot_right_width, body: toes_r, marker_a: RMT2, marker_b: RMT5}
+  - {id: torso_posterior, body: torso, marker_a: C7, marker_b: T10}
+  - {id: torso_anterior, body: torso, marker_a: JN, marker_b: XIPH}
+next_stage:
+  id: G6b-3
+  endpoint: held-out IK, ID, two-pass RRA, and joint-moment waveform comparison
+  status: requires G6b-2 pass

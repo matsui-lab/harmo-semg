@@ -1,0 +1,127 @@
+schema_version: 1.0.0
+crosswalk_id: harmo-muscle-to-uberon/2026-06
+source_ontology: HarmoAnatomy
+source_version: 1.0.0
+target_release:
+  ontology: UBERON
+  release_tag: v2026-06-23
+  version_iri: http://purl.obolibrary.org/obo/uberon/releases/2026-06-19/uberon-base.owl
+  data_version: uberon/releases/2026-06-19/uberon-base.owl
+  asset_url: https://github.com/obophenotype/uberon/releases/download/v2026-06-23/uberon-base.obo
+  asset_sha256: 7fa4e85ce41dbccfba33996544a938315e44b536250e599fbfcc097e5e9d64bf
+  asset_size_bytes: 13355146
+  license: CC BY 3.0
+  license_url: https://creativecommons.org/licenses/by/3.0/
+entries:
+  - source_term_id: HARMOMUSCLE:biceps_femoris
+    source_label: biceps femoris muscle
+    target_term_id: UBERON:0001374
+    target_label: biceps femoris
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: biceps femoris
+  - source_term_id: HARMOMUSCLE:erector_spinae
+    source_label: erector spinae muscle
+    target_term_id: UBERON:0002462
+    target_label: erector spinae muscle group
+    predicate: exactMatch
+    match_basis: exact-synonym
+    matched_text: erector spinae
+  - source_term_id: HARMOMUSCLE:external_oblique
+    source_label: external oblique muscle
+    target_term_id: UBERON:0005442
+    target_label: abdominal external oblique muscle
+    predicate: exactMatch
+    match_basis: exact-synonym
+    matched_text: external oblique
+  - source_term_id: HARMOMUSCLE:gastrocnemius_lateralis
+    source_label: gastrocnemius lateralis muscle
+    target_term_id: UBERON:0011908
+    target_label: gastrocnemius lateralis
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: gastrocnemius lateralis
+  - source_term_id: HARMOMUSCLE:gastrocnemius_medialis
+    source_label: gastrocnemius medialis muscle
+    target_term_id: UBERON:0011907
+    target_label: gastrocnemius medialis
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: gastrocnemius medialis
+  - source_term_id: HARMOMUSCLE:gluteus_maximus
+    source_label: gluteus maximus muscle
+    target_term_id: UBERON:0001370
+    target_label: gluteus maximus
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: gluteus maximus
+  - source_term_id: HARMOMUSCLE:gluteus_medius
+    source_label: gluteus medius muscle
+    target_term_id: UBERON:0001371
+    target_label: gluteus medius
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: gluteus medius
+  - source_term_id: HARMOMUSCLE:gracilis
+    source_label: gracilis muscle
+    target_term_id: UBERON:0000950
+    target_label: gracilis
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: gracilis
+  - source_term_id: HARMOMUSCLE:peroneus_brevis
+    source_label: peroneus brevis muscle
+    target_term_id: UBERON:0010526
+    target_label: fibularis brevis
+    predicate: exactMatch
+    match_basis: exact-synonym
+    matched_text: peroneus brevis
+  - source_term_id: HARMOMUSCLE:peroneus_longus
+    source_label: peroneus longus muscle
+    target_term_id: UBERON:0001387
+    target_label: fibularis longus
+    predicate: exactMatch
+    match_basis: exact-synonym
+    matched_text: peroneus longus
+  - source_term_id: HARMOMUSCLE:rectus_femoris
+    source_label: rectus femoris muscle
+    target_term_id: UBERON:0001378
+    target_label: rectus femoris
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: rectus femoris
+  - source_term_id: HARMOMUSCLE:semitendinosus
+    source_label: semitendinosus muscle
+    target_term_id: UBERON:0001375
+    target_label: semitendinosus
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: semitendinosus
+  - source_term_id: HARMOMUSCLE:soleus
+    source_label: soleus muscle
+    target_term_id: UBERON:0001389
+    target_label: soleus muscle
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: soleus muscle
+  - source_term_id: HARMOMUSCLE:tibialis_anterior
+    source_label: tibialis anterior muscle
+    target_term_id: UBERON:0001385
+    target_label: tibialis anterior
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: tibialis anterior
+  - source_term_id: HARMOMUSCLE:vastus_lateralis
+    source_label: vastus lateralis muscle
+    target_term_id: UBERON:0001379
+    target_label: vastus lateralis
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: vastus lateralis
+  - source_term_id: HARMOMUSCLE:vastus_medialis
+    source_label: vastus medialis muscle
+    target_term_id: UBERON:0001380
+    target_label: vastus medialis
+    predicate: exactMatch
+    match_basis: preferred-label
+    matched_text: vastus medialis

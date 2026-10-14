@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/qualification-index-1.0.0.json",
+  "title": "EMG ATLAS qualification index",
+  "type": "object",
+  "required": [
+    "schema",
+    "recording_id",
+    "intended_use",
+    "release_status",
+    "exchange_exported",
+    "files",
+    "digests"
+  ],
+  "properties": {
+    "schema": {
+      "const": "https://matsui-lab.github.io/emg-atlas/schemas/qualification-index-1.0.0.json"
+    },
+    "recording_id": {"type": "string", "minLength": 1},
+    "intended_use": {"type": "string", "minLength": 1},
+    "release_status": {
+      "enum": ["allow", "conditional", "quarantine", "deny"]
+    },
+    "exchange_exported": {"type": "boolean"},
+    "files": {
+      "type": "object",
+      "required": [
+        "recording",
+        "manifest",
+        "trust",
+        "comparability",
+        "release_decision"
+      ],
+      "additionalProperties": {"type": "string", "minLength": 1}
+    },
+    "digests": {
+      "type": "object",
+      "required": [
+        "recording",
+        "manifest",
+        "trust",
+        "comparability",
+        "release_decision"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

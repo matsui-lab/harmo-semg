@@ -1,0 +1,111 @@
+schema_version: '1.0'
+protocol_id: g8-methods-paper-reporting
+frozen_at: '2026-07-23'
+relationship_to_scientific_endpoints: >-
+  Post-outcome reporting protocol. It may organize and visualize frozen G0-G7
+  evidence but must not change scientific denominators, thresholds, outcomes,
+  or claim boundaries.
+
+manuscript:
+  path: paper/paper.md
+  required_sections:
+    - Abstract
+    - Introduction
+    - Conceptual framework
+    - Methods
+    - Results
+    - Discussion
+    - Limitations
+    - Data and code availability
+    - Ethics statement
+    - Competing interests
+    - Funding
+    - AI usage disclosure
+  forbidden_placeholder_phrases:
+    - State the distinction
+    - Define the four evidence dimensions
+    - Describe the public contracts
+    - Report experiments A-G
+    - Separate transformation verification
+    - Release source, tests, fixtures
+  references: paper/references.bib
+
+figures:
+  - id: figure1
+    basename: figure1_evidence_framework
+    role: context separation, linked evidence records, purpose-specific
+      comparability, and release decision
+  - id: figure2
+    basename: figure2_implementation
+    role: implemented inputs, processing rules, outputs, and bounded worked examples
+  - id: figure3
+    basename: figure3_conversion_reproducibility
+    role: reproducible heterogeneous conversion and held-out extensibility
+  - id: figure4
+    basename: figure4_evidence_qualification
+    role: article-assisted semantics, format-fidelity audit, and intended-use
+      qualification
+  - id: figure5
+    basename: figure5_full_record_query
+    role: deterministic full-record materialization and direct DuckDB query
+  - id: figure6
+    basename: figure6_physiology_positive_control
+    role: participant-level timing positive control in two independent studies
+  - id: figure7
+    basename: figure7_mechanics_release_boundary
+    role: complete G6 denominator, negative endpoint, and deny-by-default export
+figure_formats: [svg, png]
+figure_supplemental_artifacts:
+  - paper/figures/candidates/figure2_implementation_gui_v016_2026.09.16-r5/figure2_implementation_gui_v016_2026.09.16-r5.pdf
+  - paper/figures/figure2_implementation.pdf
+  - paper/figures/candidates/figure2_three_panel_v001_2026.09.09-r1/figure2_three_panel_v001_2026.09.09-r1.pdf
+  - paper/figures/candidates/figure3_three_panel_v002_2026.09.09-r2/figure3_three_panel_v002_2026.09.09-r2.pdf
+  - paper/figures/editable/figure4_full_record_query.pdf
+  - paper/figures/editable/figure5_physiology_positive_control.pdf
+  - paper/figures/editable/figure6_mechanics_release_boundary.pdf
+  - paper/figures/editable/figures2_to_6_results_editable.pptx
+  - paper/figures/editable/figures2_to_6_captions.txt
+
+tables:
+  - id: table1
+    basename: table1_public_studies
+    role: eight active source studies, releases, licences, EMG, and mappings
+  - id: table2
+    basename: table2_validation_endpoints
+    role: frozen A-G endpoints plus separately identified post-A-G full-record
+      validation H, with denominator, outcome, and claim boundary
+  - id: table_s1
+    basename: table_s1_reporting_evidence
+    role: result artifacts and immutable SHA-256 values
+table_formats: [csv, md]
+
+reporting_rules:
+  primary_inference_unit: participant
+  retain_negative_and_unassessed: true
+  do_not_pool_incompatible_amplitudes: true
+  distinguish_scientific_endpoint_from_reporting_completion: true
+  distinguish_local_archive_readiness_from_external_deposition: true
+  mechanics_default_export: deny
+  archive_public_source_data: false
+  archive_source_references_and_manifests: true
+
+local_completion:
+  required:
+    - no manuscript placeholder phrases
+    - all figures and tables generated from committed evidence
+    - all generated artifacts checksum-indexed
+    - manuscript claims agree with G0-G7 result JSON
+    - all tests and reporting audit pass
+    - deterministic source archive prepared and checksum-recorded
+
+external_submission_metadata:
+  required_before_journal_submission:
+    - final author list and affiliations
+    - corresponding author and email
+    - target journal and style
+    - funding statement
+    - competing-interest confirmation
+    - archive deposition DOI
+  policy: >-
+    Missing external metadata is never invented. Local reporting readiness and
+    final journal-submission readiness are reported separately.

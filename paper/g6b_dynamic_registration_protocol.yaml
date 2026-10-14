@@ -1,0 +1,88 @@
+schema_version: 1.0.0
+experiment_id: E2R
+gate_id: G6b-3R
+title: Multi-frame dynamic marker registration feasibility pilot
+frozen_at: '2026-07-22'
+freeze_state: frozen-before-registration-outcome-computation
+relationship_to_g6b3: >-
+  Post-outcome method development prompted by the retained negative G6b-3
+  result. G6b-3 thresholds and result remain unchanged.
+scientific_question: >-
+  Can time-invariant, target-specific marker locations be estimated from three
+  dynamic calibration trials without access to the target static-derived model
+  or the 4.00 m/s benchmark trial?
+claim_boundary: >-
+  This is a one-subject retrospective feasibility experiment. The G6b-3
+  benchmark outcome was known before this method was designed, so a repeated
+  4.00 m/s assessment is exploratory and cannot be treated as independent
+  confirmation. Population, clinical, muscle-force, and physiological validity
+  are outside scope.
+source_manifest: paper/g6b_dynamic_registration_sources.yaml
+preconditions:
+  target_subject_id: '02'
+  g6b2_result: paper/results/validation/g6b_dynamic_model_pilot.json
+  g6b2_result_sha256: c1f6c44b99277e7eda439a49e75785e180e2a6eefbd33d425afe5c561a88338d
+  base_dynamic_model_sha256: d6e9d5477eadf0850c44cdb597e0c0b70d1cb2febc6a84a41e6fc38966b0c899
+  retained_g6b3_result: paper/results/validation/g6b_dynamic_mechanics_pilot.json
+  retained_g6b3_result_sha256: 4d4e6bc8ce8b9134ca348510668090ad796107f497c4a022025f4c95c194ea42
+design:
+  calibration_roles:
+    - dynamic_calibration_278ms
+    - dynamic_calibration_3ms
+    - dynamic_calibration_333ms
+  ik_setup_role: public_ik_setup
+  excluded_from_registration_worker:
+    - target_static_scaled_model
+    - heldout_dynamic_4ms
+    - heldout_markers
+    - heldout_ground_reaction
+    - heldout_events
+  calibration_window_s: [20.0, 30.0]
+  active_markers:
+    - C7
+    - JN
+    - RASIS
+    - LASIS
+    - RPSIS
+    - LPSIS
+    - RLTHI
+    - RLEK
+    - RLSHA
+    - RLM
+    - RHEE
+    - RMT2
+    - RMT5
+    - LLTHI
+    - LLEK
+    - LLSHA
+    - LLM
+    - LHEE
+    - LMT2
+    - LMT5
+    - XIPH
+    - T10
+registration:
+  method: alternating-ik-and-body-local-marker-median
+  iteration_count: 3
+  sampled_frame_stride: 10
+  within_trial_outlier_mad: 4.5
+  across_trial_aggregation: equal-trial-weighted-coordinate-median
+  relaxation: 1.0
+  maximum_total_marker_displacement_m: 0.12
+  segment_scale_updated: false
+  mass_properties_updated: false
+  joint_definitions_updated: false
+  marker_parent_frames_updated: false
+  source_trc_modified_in_place: false
+thresholds:
+  marker_coverage_fraction: 1.0
+  minimum_trial_rms_improvement_fraction: 0.25
+  final_calibration_ik_rms_error_m: 0.02
+  final_calibration_ik_max_error_m: 0.04
+  maximum_marker_displacement_m: 0.12
+  maximum_within_trial_local_mad_m: 0.025
+missing_policy: fail-endpoint-and-retain-in-denominator
+next_evaluation:
+  benchmark: repeat-unchanged-g6b3-pipeline-with-registered-model
+  interpretation: exploratory-because-original-heldout-result-was-already-observed
+  independent_confirmation: preregister-an-unseen-subject-before-materialization

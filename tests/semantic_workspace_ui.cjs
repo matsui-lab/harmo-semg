@@ -1,0 +1,90 @@
+// Local browser regression test; creates only synthetic, in-memory decisions.
+const {chromium}=require('playwright');
+const {pathToFileURL}=require('node:url');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+(async()=>{
+  const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+  try {
+    const page=await browser.newPage({viewport:{width:1056,height:980}}),errors=[];
+    page.on('pageerror',e=>errors.push(e.message));
+    const root=path.resolve(__dirname,'..'),folder=path.resolve(process.argv[2]);
+    await page.goto(pathToFileURL(path.join(root,'src/harmo/semantic_workspace.html')).href);
+    assert.equal(await page.locator('#empty').isVisible(),true);
+    assert.equal(await page.locator('#workspace').isVisible(),false);
+    await page.locator('#load').setInputFiles(path.join(folder,'workspace.json'));
+    await page.locator('#workspace').waitFor({state:'visible'});
+    assert.match(await page.locator('#title').innerText(),/Tibialis anterior/);
+    await page.goto(pathToFileURL(path.join(folder,'review.html')).href);
+    assert.equal(await page.locator('#integration').isVisible(),false);
+    assert.equal(await page.locator('#reviewDetails').getAttribute('open'),null);
+    assert((await page.locator('body').innerText()).length<3400);
+    assert.equal(await page.locator('html').getAttribute('lang'),'en');
+    assert.equal(await page.locator('#reviewer').count(),0);
+    assert(!/[\u3040-\u30ff\u3400-\u9fff]/.test(await page.locator('body').innerText()));
+    assert.match(await page.locator('.sourceOverview').innerText(),/1000 Hz/);
+    assert.match(await page.locator('.sourceOverview').innerText(),/Figshare/);
+    assert.match(await page.locator('.sourceOverview').innerText(),/Scientific Data/);
+    assert.match(await page.locator('.wavePlot').textContent(),/unit unverified/);
+    const firstWave=await page.locator('.wavePlot path').getAttribute('d');
+    assert(firstWave.startsWith('M'));
+    assert.equal(await page.locator('#edit').getAttribute('open'),null);
+    assert.equal(await page.locator('#source').inputValue(),'header');
+    assert.match(await page.locator('#compactEvidence').innerText(),/Tibialis Anterior/);
+    await page.screenshot({path:'/private/tmp/harmo-workspace-v003-desktop.png',fullPage:true});
+    assert.equal(await page.locator('#scopeCheck').count(),0);
+    assert.equal(await page.evaluate(()=>edits.reviewer),'');
+    assert.equal(await page.evaluate(()=>edits.review_actor.kind),'anonymous-local-session');
+    assert.equal(await page.evaluate(()=>edits.decisions.filter(d=>d.action==='confirm').length),0);
+    await page.locator('#reviewDetails > summary').click();
+    await page.locator('#source').selectOption('document-1');
+    await page.locator('#cite').uncheck();
+    await page.locator('#confirm').click();
+    assert.match(await page.locator('#status').innerText(),/channel label alone/i);
+    await page.locator('#cite').check();
+    await page.locator('#confirm').click();
+    assert.match(await page.locator('#position').innerText(),/2 \/ 8/);
+    const confirmed=await page.evaluate(()=>edits.decisions.find(d=>d.action==='confirm'));
+    assert.equal(confirmed.value,'tibialis anterior');
+    assert.deepEqual(confirmed.evidence_ids,['header','document-1']);
+    assert.match(confirmed.scope_reason,/explicitly confirmed/);
+    await page.locator('#hold').click();
+    await page.locator('#holdReason').selectOption({label:'Missing evidence'});
+    await page.locator('#saveHold').click();
+    assert.equal(await page.evaluate(()=>edits.decisions.filter(d=>d.action==='hold').length),1);
+    assert.notEqual(await page.locator('.wavePlot path').getAttribute('d'),firstWave);
+    // Editing a candidate still requires a reason and an explicit button click.
+    await page.locator('#edit > summary').click();
+    await page.locator('#value').fill('edited-muscle');
+    await page.locator('#confirm').click();
+    assert.match(await page.locator('#status').innerText(),/why you changed/);
+    await page.locator('#reviewDetails > summary').click();
+    const download=page.waitForEvent('download');await page.locator('#export').click();
+    await (await download).saveAs('/private/tmp/harmo-workspace-v003-synthetic-decisions.json');
+    await page.setViewportSize({width:392,height:850});
+    await page.screenshot({path:'/private/tmp/harmo-workspace-v003-mobile.png',fullPage:true});
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+    // A missing or conflicting candidate must not silently pick the rule value.
+    await page.evaluate(()=>{const it=item();it.rule.values=['left'];it.llm_candidate={value:'right',evidence_ids:[]};it.status='rule_llm_conflict';delete drafts[it.target.target_id];render();});
+    assert.equal(await page.locator('#value').inputValue(),'');
+    assert.equal(await page.locator('#confirm').isDisabled(),true);
+    assert.match(await page.locator('#compactEvidence').innerText(),/Candidates conflict/);
+    await page.evaluate(()=>{const it=item();it.rule.values=[];it.llm_candidate=null;it.sources=[];delete drafts[it.target.target_id];render();});
+    assert.match(await page.locator('#compactEvidence').innerText(),/No evidence selected/);
+    assert.equal(await page.locator('#confirm').isDisabled(),true);
+    // Guidance distinguishes absent evidence from extraction failure, without
+    // adding a hold or confirmation on behalf of the reviewer.
+    const priorDecisions=await page.evaluate(()=>JSON.stringify(edits.decisions));
+    await page.evaluate(()=>{item().guidance={category:'additional_evidence',title:'Muscle: evidence needed',instruction:'No value entry is needed.',next_action:'Add a channel definition.',required_evidence:'Methods',impact:'Muscle mapping',confirmation_allowed:false};render();});
+    assert.equal(await page.locator('#edit').isVisible(),false);
+    assert.equal(await page.locator('#confirm').isDisabled(),true);
+    assert.match(await page.locator('#reviewGuidance').innerText(),/No value entry/);
+    await page.evaluate(()=>{item().guidance={...item().guidance,category:'inspect_evidence',title:'Inspect sources',instruction:'Sources exist but no candidate was generated.',confirmation_allowed:true};render();});
+    await page.locator('#edit > summary').click();
+    await page.locator('#value').fill('soleus');
+    assert.equal(await page.locator('#edit').getAttribute('open'),'');
+    assert.equal(await page.evaluate(()=>JSON.stringify(edits.decisions)),priorDecisions);
+    assert.deepEqual(errors,[]);
+    console.log('PASS: template import, populated question, evidence preview, explicit confirmation, hold, edit safeguards, export, missing/conflicting candidates, mobile layout; no JavaScript errors.');
+  } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

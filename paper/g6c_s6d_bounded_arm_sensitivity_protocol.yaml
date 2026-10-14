@@ -1,0 +1,49 @@
+schema_version: 1.0.0
+experiment_id: E2-G6c-S6d
+gate_id: G6c-S6d
+title: Cross-stride bounded harmonic arm-kinematics sensitivity
+frozen_at: '2026-07-23'
+post_outcome_status: >-
+  exploratory-post-S6c; grid and reporting contract fixed before the versioned
+  execution, but not preregistered before feasibility inspection
+design:
+  source_results:
+    s6: paper/results/validation/g6c_s6_structural_adequacy.json
+    s6b: paper/results/validation/g6c_s6b_structural_contrast.json
+    s6c: paper/results/validation/g6c_s6c_structural_identifiability.json
+  study31_stride_requirements_artifact: g6c_s6_study31_stride_requirements.csv
+  columns:
+    phase_points: 101
+    momentum: required_angular_momentum_nms_y
+    torque: periodic_moment_nm_y
+  grid:
+    waveform: zero-mean-single-harmonic
+    amplitude_reference: >-
+      Study 1 observed-versus-torso-welded vertical orbital angular-momentum
+      peak-to-peak contrast from the checksum-bound S6b result
+    amplitude_multipliers: [0.0, 0.5, 1.0, 1.5]
+    phase_shifts_deg: [0, 45, 90, 135, 180, 225, 270, 315]
+    zero_amplitude_duplicate_policy: retain-phase-zero-only
+    candidate_momentum: A*sin(2*pi*phase+shift), trapezoidal-mean-removed
+    candidate_torque: analytic-time-derivative-using-each-stride-duration
+    unexplained_waveform: required-minus-candidate
+    selection_objective: >-
+      equal weight mean of squared momentum and torque unexplained RMS ratios
+    selection: leave-one-stride-out; one common cell chosen on the training
+      stride and evaluated without refitting on the other stride
+    pooled_best: descriptive-only
+descriptive_thresholds:
+  momentum_relative_reduction_reference: 0.25
+  torque_relative_reduction_reference: 0.25
+  maximum_selected_amplitude_span: 0.5
+  maximum_selected_circular_phase_span_deg: 45
+missing_policy: fail-closed-retain-all-cells
+claim_boundary: >-
+  G6c-S6d is an exploratory, post-outcome, noncausal sensitivity analysis.
+  Its harmonic is not an observation of Subject 02 arm motion, its amplitude
+  reference comes from a different participant and activity, and no full-body
+  OpenSim model or RRA is executed. Every fixed grid cell is retained, and
+  leave-one-stride-out selection limits within-trial phase/amplitude fitting.
+  Even strong waveform compatibility cannot identify the Subject 02 residual
+  cause, authorize paired full-body RRA, rescue G6d, validate personalization,
+  validate joint or muscle forces, or support clinical use.

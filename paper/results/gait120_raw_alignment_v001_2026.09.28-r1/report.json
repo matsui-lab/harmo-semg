@@ -1,0 +1,4782 @@
+{
+  "status": "source_defined_intervals_and_tables_aligned",
+  "not_tested": [
+    "numerical reproduction of original MATLAB processing",
+    "new harmonization effects"
+  ],
+  "code": {
+    "url": "https://ndownloader.figshare.com/files/53172812",
+    "bytes": 11235,
+    "sha256": "fba7a633f65066242903129c274c4dde3cb60fb314034345fc62619c7f7b0075",
+    "license": "CC BY 4.0; retain attribution to Junyo Boo (2025)",
+    "file": "emgProcessedDataConstruction.m",
+    "line_locators": {
+      "target_emg_frame_start": 81,
+      "target_emg_frame_end": 82
+    }
+  },
+  "raw_archive": {
+    "bytes": 1416035378,
+    "sha256": "7ff89a84364983e3f606e430f0c3caf0a6c4bbc0ac60e0a835174d7674b7e816",
+    "md5": "178b306d49c4b32423b529ba354eea63"
+  },
+  "participants": [
+    {
+      "participant": "S011",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S012",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S013",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S014",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S015",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S016",
+      "trials": 5,
+      "cycles": 8
+    },
+    {
+      "participant": "S017",
+      "trials": 5,
+      "cycles": 9
+    },
+    {
+      "participant": "S018",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S019",
+      "trials": 5,
+      "cycles": 10
+    },
+    {
+      "participant": "S020",
+      "trials": 5,
+      "cycles": 7
+    }
+  ],
+  "cycles": [
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        468,
+        773
+      ],
+      "cycle_frames": [
+        478,
+        590
+      ],
+      "raw_trial_samples": 6120,
+      "python_start": 200,
+      "python_stop_exclusive": 2460,
+      "cycle_samples": 2260,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2260,
+          12
+        ],
+        "EMGs_env": [
+          2260,
+          12
+        ],
+        "EMGs_norm": [
+          2260,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        468,
+        773
+      ],
+      "cycle_frames": [
+        590,
+        698
+      ],
+      "raw_trial_samples": 6120,
+      "python_start": 2440,
+      "python_stop_exclusive": 4620,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        474,
+        754
+      ],
+      "cycle_frames": [
+        492,
+        601
+      ],
+      "raw_trial_samples": 5620,
+      "python_start": 360,
+      "python_stop_exclusive": 2560,
+      "cycle_samples": 2200,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2200,
+          12
+        ],
+        "EMGs_env": [
+          2200,
+          12
+        ],
+        "EMGs_norm": [
+          2200,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        474,
+        754
+      ],
+      "cycle_frames": [
+        601,
+        709
+      ],
+      "raw_trial_samples": 5620,
+      "python_start": 2540,
+      "python_stop_exclusive": 4720,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        461,
+        746
+      ],
+      "cycle_frames": [
+        474,
+        583
+      ],
+      "raw_trial_samples": 5720,
+      "python_start": 260,
+      "python_stop_exclusive": 2460,
+      "cycle_samples": 2200,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2200,
+          12
+        ],
+        "EMGs_env": [
+          2200,
+          12
+        ],
+        "EMGs_norm": [
+          2200,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        461,
+        746
+      ],
+      "cycle_frames": [
+        583,
+        689
+      ],
+      "raw_trial_samples": 5720,
+      "python_start": 2440,
+      "python_stop_exclusive": 4580,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        433,
+        713
+      ],
+      "cycle_frames": [
+        453,
+        560
+      ],
+      "raw_trial_samples": 5620,
+      "python_start": 400,
+      "python_stop_exclusive": 2560,
+      "cycle_samples": 2160,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2160,
+          12
+        ],
+        "EMGs_env": [
+          2160,
+          12
+        ],
+        "EMGs_norm": [
+          2160,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        433,
+        713
+      ],
+      "cycle_frames": [
+        560,
+        664
+      ],
+      "raw_trial_samples": 5620,
+      "python_start": 2540,
+      "python_stop_exclusive": 4640,
+      "cycle_samples": 2100,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2100,
+          12
+        ],
+        "EMGs_env": [
+          2100,
+          12
+        ],
+        "EMGs_norm": [
+          2100,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        495,
+        788
+      ],
+      "cycle_frames": [
+        507,
+        615
+      ],
+      "raw_trial_samples": 5880,
+      "python_start": 240,
+      "python_stop_exclusive": 2420,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S011",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        495,
+        788
+      ],
+      "cycle_frames": [
+        615,
+        721
+      ],
+      "raw_trial_samples": 5880,
+      "python_start": 2400,
+      "python_stop_exclusive": 4540,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        355,
+        610
+      ],
+      "cycle_frames": [
+        389,
+        489
+      ],
+      "raw_trial_samples": 5120,
+      "python_start": 680,
+      "python_stop_exclusive": 2700,
+      "cycle_samples": 2020,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2020,
+          12
+        ],
+        "EMGs_env": [
+          2020,
+          12
+        ],
+        "EMGs_norm": [
+          2020,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        355,
+        610
+      ],
+      "cycle_frames": [
+        489,
+        589
+      ],
+      "raw_trial_samples": 5120,
+      "python_start": 2680,
+      "python_stop_exclusive": 4700,
+      "cycle_samples": 2020,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2020,
+          12
+        ],
+        "EMGs_env": [
+          2020,
+          12
+        ],
+        "EMGs_norm": [
+          2020,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        407,
+        657
+      ],
+      "cycle_frames": [
+        412,
+        513
+      ],
+      "raw_trial_samples": 5020,
+      "python_start": 100,
+      "python_stop_exclusive": 2140,
+      "cycle_samples": 2040,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2040,
+          12
+        ],
+        "EMGs_env": [
+          2040,
+          12
+        ],
+        "EMGs_norm": [
+          2040,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        407,
+        657
+      ],
+      "cycle_frames": [
+        513,
+        613
+      ],
+      "raw_trial_samples": 5020,
+      "python_start": 2120,
+      "python_stop_exclusive": 4140,
+      "cycle_samples": 2020,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2020,
+          12
+        ],
+        "EMGs_env": [
+          2020,
+          12
+        ],
+        "EMGs_norm": [
+          2020,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        383,
+        615
+      ],
+      "cycle_frames": [
+        389,
+        489
+      ],
+      "raw_trial_samples": 4660,
+      "python_start": 120,
+      "python_stop_exclusive": 2140,
+      "cycle_samples": 2020,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2020,
+          12
+        ],
+        "EMGs_env": [
+          2020,
+          12
+        ],
+        "EMGs_norm": [
+          2020,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        383,
+        615
+      ],
+      "cycle_frames": [
+        489,
+        590
+      ],
+      "raw_trial_samples": 4660,
+      "python_start": 2120,
+      "python_stop_exclusive": 4160,
+      "cycle_samples": 2040,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2040,
+          12
+        ],
+        "EMGs_env": [
+          2040,
+          12
+        ],
+        "EMGs_norm": [
+          2040,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        362,
+        610
+      ],
+      "cycle_frames": [
+        380,
+        481
+      ],
+      "raw_trial_samples": 4980,
+      "python_start": 360,
+      "python_stop_exclusive": 2400,
+      "cycle_samples": 2040,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2040,
+          12
+        ],
+        "EMGs_env": [
+          2040,
+          12
+        ],
+        "EMGs_norm": [
+          2040,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        362,
+        610
+      ],
+      "cycle_frames": [
+        481,
+        582
+      ],
+      "raw_trial_samples": 4980,
+      "python_start": 2380,
+      "python_stop_exclusive": 4420,
+      "cycle_samples": 2040,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2040,
+          12
+        ],
+        "EMGs_env": [
+          2040,
+          12
+        ],
+        "EMGs_norm": [
+          2040,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        390,
+        646
+      ],
+      "cycle_frames": [
+        400,
+        501
+      ],
+      "raw_trial_samples": 5140,
+      "python_start": 200,
+      "python_stop_exclusive": 2240,
+      "cycle_samples": 2040,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2040,
+          12
+        ],
+        "EMGs_env": [
+          2040,
+          12
+        ],
+        "EMGs_norm": [
+          2040,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S012",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        390,
+        646
+      ],
+      "cycle_frames": [
+        501,
+        602
+      ],
+      "raw_trial_samples": 5140,
+      "python_start": 2220,
+      "python_stop_exclusive": 4260,
+      "cycle_samples": 2040,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2040,
+          12
+        ],
+        "EMGs_env": [
+          2040,
+          12
+        ],
+        "EMGs_norm": [
+          2040,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        475,
+        816
+      ],
+      "cycle_frames": [
+        513,
+        621
+      ],
+      "raw_trial_samples": 6840,
+      "python_start": 760,
+      "python_stop_exclusive": 2940,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        475,
+        816
+      ],
+      "cycle_frames": [
+        621,
+        729
+      ],
+      "raw_trial_samples": 6840,
+      "python_start": 2920,
+      "python_stop_exclusive": 5100,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        443,
+        746
+      ],
+      "cycle_frames": [
+        494,
+        602
+      ],
+      "raw_trial_samples": 6080,
+      "python_start": 1020,
+      "python_stop_exclusive": 3200,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        443,
+        746
+      ],
+      "cycle_frames": [
+        602,
+        706
+      ],
+      "raw_trial_samples": 6080,
+      "python_start": 3180,
+      "python_stop_exclusive": 5280,
+      "cycle_samples": 2100,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2100,
+          12
+        ],
+        "EMGs_env": [
+          2100,
+          12
+        ],
+        "EMGs_norm": [
+          2100,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        484,
+        784
+      ],
+      "cycle_frames": [
+        493,
+        598
+      ],
+      "raw_trial_samples": 6020,
+      "python_start": 180,
+      "python_stop_exclusive": 2300,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        484,
+        784
+      ],
+      "cycle_frames": [
+        598,
+        702
+      ],
+      "raw_trial_samples": 6020,
+      "python_start": 2280,
+      "python_stop_exclusive": 4380,
+      "cycle_samples": 2100,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2100,
+          12
+        ],
+        "EMGs_env": [
+          2100,
+          12
+        ],
+        "EMGs_norm": [
+          2100,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        447,
+        746
+      ],
+      "cycle_frames": [
+        492,
+        600
+      ],
+      "raw_trial_samples": 6000,
+      "python_start": 900,
+      "python_stop_exclusive": 3080,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        447,
+        746
+      ],
+      "cycle_frames": [
+        600,
+        705
+      ],
+      "raw_trial_samples": 6000,
+      "python_start": 3060,
+      "python_stop_exclusive": 5180,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        466,
+        752
+      ],
+      "cycle_frames": [
+        504,
+        610
+      ],
+      "raw_trial_samples": 5740,
+      "python_start": 760,
+      "python_stop_exclusive": 2900,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S013",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        466,
+        752
+      ],
+      "cycle_frames": [
+        610,
+        716
+      ],
+      "raw_trial_samples": 5740,
+      "python_start": 2880,
+      "python_stop_exclusive": 5020,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        480,
+        777
+      ],
+      "cycle_frames": [
+        501,
+        613
+      ],
+      "raw_trial_samples": 5960,
+      "python_start": 420,
+      "python_stop_exclusive": 2680,
+      "cycle_samples": 2260,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2260,
+          12
+        ],
+        "EMGs_env": [
+          2260,
+          12
+        ],
+        "EMGs_norm": [
+          2260,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        480,
+        777
+      ],
+      "cycle_frames": [
+        613,
+        720
+      ],
+      "raw_trial_samples": 5960,
+      "python_start": 2660,
+      "python_stop_exclusive": 4820,
+      "cycle_samples": 2160,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2160,
+          12
+        ],
+        "EMGs_env": [
+          2160,
+          12
+        ],
+        "EMGs_norm": [
+          2160,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        411,
+        722
+      ],
+      "cycle_frames": [
+        444,
+        552
+      ],
+      "raw_trial_samples": 6240,
+      "python_start": 660,
+      "python_stop_exclusive": 2840,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        411,
+        722
+      ],
+      "cycle_frames": [
+        552,
+        662
+      ],
+      "raw_trial_samples": 6240,
+      "python_start": 2820,
+      "python_stop_exclusive": 5040,
+      "cycle_samples": 2220,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2220,
+          12
+        ],
+        "EMGs_env": [
+          2220,
+          12
+        ],
+        "EMGs_norm": [
+          2220,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        491,
+        873
+      ],
+      "cycle_frames": [
+        543,
+        661
+      ],
+      "raw_trial_samples": 7660,
+      "python_start": 1040,
+      "python_stop_exclusive": 3420,
+      "cycle_samples": 2380,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2380,
+          12
+        ],
+        "EMGs_env": [
+          2380,
+          12
+        ],
+        "EMGs_norm": [
+          2380,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        491,
+        873
+      ],
+      "cycle_frames": [
+        661,
+        778
+      ],
+      "raw_trial_samples": 7660,
+      "python_start": 3400,
+      "python_stop_exclusive": 5760,
+      "cycle_samples": 2360,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2360,
+          12
+        ],
+        "EMGs_env": [
+          2360,
+          12
+        ],
+        "EMGs_norm": [
+          2360,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        510,
+        897
+      ],
+      "cycle_frames": [
+        551,
+        672
+      ],
+      "raw_trial_samples": 7760,
+      "python_start": 820,
+      "python_stop_exclusive": 3260,
+      "cycle_samples": 2440,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2440,
+          12
+        ],
+        "EMGs_env": [
+          2440,
+          12
+        ],
+        "EMGs_norm": [
+          2440,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        510,
+        897
+      ],
+      "cycle_frames": [
+        672,
+        789
+      ],
+      "raw_trial_samples": 7760,
+      "python_start": 3240,
+      "python_stop_exclusive": 5600,
+      "cycle_samples": 2360,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2360,
+          12
+        ],
+        "EMGs_env": [
+          2360,
+          12
+        ],
+        "EMGs_norm": [
+          2360,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        408,
+        711
+      ],
+      "cycle_frames": [
+        437,
+        546
+      ],
+      "raw_trial_samples": 6080,
+      "python_start": 580,
+      "python_stop_exclusive": 2780,
+      "cycle_samples": 2200,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2200,
+          12
+        ],
+        "EMGs_env": [
+          2200,
+          12
+        ],
+        "EMGs_norm": [
+          2200,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S014",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        408,
+        711
+      ],
+      "cycle_frames": [
+        546,
+        651
+      ],
+      "raw_trial_samples": 6080,
+      "python_start": 2760,
+      "python_stop_exclusive": 4880,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        394,
+        668
+      ],
+      "cycle_frames": [
+        422,
+        527
+      ],
+      "raw_trial_samples": 5500,
+      "python_start": 560,
+      "python_stop_exclusive": 2680,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        394,
+        668
+      ],
+      "cycle_frames": [
+        527,
+        633
+      ],
+      "raw_trial_samples": 5500,
+      "python_start": 2660,
+      "python_stop_exclusive": 4800,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        403,
+        678
+      ],
+      "cycle_frames": [
+        420,
+        531
+      ],
+      "raw_trial_samples": 5520,
+      "python_start": 340,
+      "python_stop_exclusive": 2580,
+      "cycle_samples": 2240,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2240,
+          12
+        ],
+        "EMGs_env": [
+          2240,
+          12
+        ],
+        "EMGs_norm": [
+          2240,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        403,
+        678
+      ],
+      "cycle_frames": [
+        531,
+        637
+      ],
+      "raw_trial_samples": 5520,
+      "python_start": 2560,
+      "python_stop_exclusive": 4700,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        398,
+        664
+      ],
+      "cycle_frames": [
+        414,
+        521
+      ],
+      "raw_trial_samples": 5340,
+      "python_start": 320,
+      "python_stop_exclusive": 2480,
+      "cycle_samples": 2160,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2160,
+          12
+        ],
+        "EMGs_env": [
+          2160,
+          12
+        ],
+        "EMGs_norm": [
+          2160,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        398,
+        664
+      ],
+      "cycle_frames": [
+        521,
+        627
+      ],
+      "raw_trial_samples": 5340,
+      "python_start": 2460,
+      "python_stop_exclusive": 4600,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        390,
+        667
+      ],
+      "cycle_frames": [
+        416,
+        522
+      ],
+      "raw_trial_samples": 5560,
+      "python_start": 520,
+      "python_stop_exclusive": 2660,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        390,
+        667
+      ],
+      "cycle_frames": [
+        522,
+        629
+      ],
+      "raw_trial_samples": 5560,
+      "python_start": 2640,
+      "python_stop_exclusive": 4800,
+      "cycle_samples": 2160,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2160,
+          12
+        ],
+        "EMGs_env": [
+          2160,
+          12
+        ],
+        "EMGs_norm": [
+          2160,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        401,
+        671
+      ],
+      "cycle_frames": [
+        427,
+        538
+      ],
+      "raw_trial_samples": 5420,
+      "python_start": 520,
+      "python_stop_exclusive": 2760,
+      "cycle_samples": 2240,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2240,
+          12
+        ],
+        "EMGs_env": [
+          2240,
+          12
+        ],
+        "EMGs_norm": [
+          2240,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S015",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        401,
+        671
+      ],
+      "cycle_frames": [
+        538,
+        641
+      ],
+      "raw_trial_samples": 5420,
+      "python_start": 2740,
+      "python_stop_exclusive": 4820,
+      "cycle_samples": 2080,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2080,
+          12
+        ],
+        "EMGs_env": [
+          2080,
+          12
+        ],
+        "EMGs_norm": [
+          2080,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        336,
+        571
+      ],
+      "cycle_frames": [
+        359,
+        457
+      ],
+      "raw_trial_samples": 4720,
+      "python_start": 460,
+      "python_stop_exclusive": 2440,
+      "cycle_samples": 1980,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1980,
+          12
+        ],
+        "EMGs_env": [
+          1980,
+          12
+        ],
+        "EMGs_norm": [
+          1980,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        336,
+        571
+      ],
+      "cycle_frames": [
+        457,
+        553
+      ],
+      "raw_trial_samples": 4720,
+      "python_start": 2420,
+      "python_stop_exclusive": 4360,
+      "cycle_samples": 1940,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1940,
+          12
+        ],
+        "EMGs_env": [
+          1940,
+          12
+        ],
+        "EMGs_norm": [
+          1940,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        375,
+        592
+      ],
+      "cycle_frames": [
+        396,
+        492
+      ],
+      "raw_trial_samples": 4360,
+      "python_start": 420,
+      "python_stop_exclusive": 2360,
+      "cycle_samples": 1940,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1940,
+          12
+        ],
+        "EMGs_env": [
+          1940,
+          12
+        ],
+        "EMGs_norm": [
+          1940,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        375,
+        592
+      ],
+      "cycle_frames": [
+        492,
+        588
+      ],
+      "raw_trial_samples": 4360,
+      "python_start": 2340,
+      "python_stop_exclusive": 4280,
+      "cycle_samples": 1940,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1940,
+          12
+        ],
+        "EMGs_env": [
+          1940,
+          12
+        ],
+        "EMGs_norm": [
+          1940,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        379,
+        606
+      ],
+      "cycle_frames": [
+        393,
+        491
+      ],
+      "raw_trial_samples": 4560,
+      "python_start": 280,
+      "python_stop_exclusive": 2260,
+      "cycle_samples": 1980,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1980,
+          12
+        ],
+        "EMGs_env": [
+          1980,
+          12
+        ],
+        "EMGs_norm": [
+          1980,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        379,
+        606
+      ],
+      "cycle_frames": [
+        491,
+        589
+      ],
+      "raw_trial_samples": 4560,
+      "python_start": 2240,
+      "python_stop_exclusive": 4220,
+      "cycle_samples": 1980,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1980,
+          12
+        ],
+        "EMGs_env": [
+          1980,
+          12
+        ],
+        "EMGs_norm": [
+          1980,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        382,
+        619
+      ],
+      "cycle_frames": [
+        498,
+        597
+      ],
+      "raw_trial_samples": 4760,
+      "python_start": 2320,
+      "python_stop_exclusive": 4320,
+      "cycle_samples": 2000,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2000,
+          12
+        ],
+        "EMGs_env": [
+          2000,
+          12
+        ],
+        "EMGs_norm": [
+          2000,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S016",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        387,
+        627
+      ],
+      "cycle_frames": [
+        509,
+        607
+      ],
+      "raw_trial_samples": 4820,
+      "python_start": 2440,
+      "python_stop_exclusive": 4420,
+      "cycle_samples": 1980,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          1980,
+          12
+        ],
+        "EMGs_env": [
+          1980,
+          12
+        ],
+        "EMGs_norm": [
+          1980,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        533,
+        859
+      ],
+      "cycle_frames": [
+        671,
+        784
+      ],
+      "raw_trial_samples": 6540,
+      "python_start": 2760,
+      "python_stop_exclusive": 5040,
+      "cycle_samples": 2280,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2280,
+          12
+        ],
+        "EMGs_env": [
+          2280,
+          12
+        ],
+        "EMGs_norm": [
+          2280,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        498,
+        841
+      ],
+      "cycle_frames": [
+        513,
+        626
+      ],
+      "raw_trial_samples": 6880,
+      "python_start": 300,
+      "python_stop_exclusive": 2580,
+      "cycle_samples": 2280,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2280,
+          12
+        ],
+        "EMGs_env": [
+          2280,
+          12
+        ],
+        "EMGs_norm": [
+          2280,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        498,
+        841
+      ],
+      "cycle_frames": [
+        626,
+        740
+      ],
+      "raw_trial_samples": 6880,
+      "python_start": 2560,
+      "python_stop_exclusive": 4860,
+      "cycle_samples": 2300,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2300,
+          12
+        ],
+        "EMGs_env": [
+          2300,
+          12
+        ],
+        "EMGs_norm": [
+          2300,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        481,
+        792
+      ],
+      "cycle_frames": [
+        512,
+        624
+      ],
+      "raw_trial_samples": 6240,
+      "python_start": 620,
+      "python_stop_exclusive": 2880,
+      "cycle_samples": 2260,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2260,
+          12
+        ],
+        "EMGs_env": [
+          2260,
+          12
+        ],
+        "EMGs_norm": [
+          2260,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        481,
+        792
+      ],
+      "cycle_frames": [
+        624,
+        737
+      ],
+      "raw_trial_samples": 6240,
+      "python_start": 2860,
+      "python_stop_exclusive": 5140,
+      "cycle_samples": 2280,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2280,
+          12
+        ],
+        "EMGs_env": [
+          2280,
+          12
+        ],
+        "EMGs_norm": [
+          2280,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        591,
+        908
+      ],
+      "cycle_frames": [
+        609,
+        720
+      ],
+      "raw_trial_samples": 6360,
+      "python_start": 360,
+      "python_stop_exclusive": 2600,
+      "cycle_samples": 2240,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2240,
+          12
+        ],
+        "EMGs_env": [
+          2240,
+          12
+        ],
+        "EMGs_norm": [
+          2240,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        591,
+        908
+      ],
+      "cycle_frames": [
+        720,
+        833
+      ],
+      "raw_trial_samples": 6360,
+      "python_start": 2580,
+      "python_stop_exclusive": 4860,
+      "cycle_samples": 2280,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2280,
+          12
+        ],
+        "EMGs_env": [
+          2280,
+          12
+        ],
+        "EMGs_norm": [
+          2280,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        503,
+        843
+      ],
+      "cycle_frames": [
+        530,
+        643
+      ],
+      "raw_trial_samples": 6820,
+      "python_start": 540,
+      "python_stop_exclusive": 2820,
+      "cycle_samples": 2280,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2280,
+          12
+        ],
+        "EMGs_env": [
+          2280,
+          12
+        ],
+        "EMGs_norm": [
+          2280,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S017",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        503,
+        843
+      ],
+      "cycle_frames": [
+        643,
+        753
+      ],
+      "raw_trial_samples": 6820,
+      "python_start": 2800,
+      "python_stop_exclusive": 5020,
+      "cycle_samples": 2220,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2220,
+          12
+        ],
+        "EMGs_env": [
+          2220,
+          12
+        ],
+        "EMGs_norm": [
+          2220,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        464,
+        755
+      ],
+      "cycle_frames": [
+        482,
+        590
+      ],
+      "raw_trial_samples": 5840,
+      "python_start": 360,
+      "python_stop_exclusive": 2540,
+      "cycle_samples": 2180,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2180,
+          12
+        ],
+        "EMGs_env": [
+          2180,
+          12
+        ],
+        "EMGs_norm": [
+          2180,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        464,
+        755
+      ],
+      "cycle_frames": [
+        590,
+        697
+      ],
+      "raw_trial_samples": 5840,
+      "python_start": 2520,
+      "python_stop_exclusive": 4680,
+      "cycle_samples": 2160,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2160,
+          12
+        ],
+        "EMGs_env": [
+          2160,
+          12
+        ],
+        "EMGs_norm": [
+          2160,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        435,
+        681
+      ],
+      "cycle_frames": [
+        444,
+        550
+      ],
+      "raw_trial_samples": 4940,
+      "python_start": 180,
+      "python_stop_exclusive": 2320,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        435,
+        681
+      ],
+      "cycle_frames": [
+        550,
+        653
+      ],
+      "raw_trial_samples": 4940,
+      "python_start": 2300,
+      "python_stop_exclusive": 4380,
+      "cycle_samples": 2080,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2080,
+          12
+        ],
+        "EMGs_env": [
+          2080,
+          12
+        ],
+        "EMGs_norm": [
+          2080,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        470,
+        736
+      ],
+      "cycle_frames": [
+        491,
+        595
+      ],
+      "raw_trial_samples": 5340,
+      "python_start": 420,
+      "python_stop_exclusive": 2520,
+      "cycle_samples": 2100,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2100,
+          12
+        ],
+        "EMGs_env": [
+          2100,
+          12
+        ],
+        "EMGs_norm": [
+          2100,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        470,
+        736
+      ],
+      "cycle_frames": [
+        595,
+        698
+      ],
+      "raw_trial_samples": 5340,
+      "python_start": 2500,
+      "python_stop_exclusive": 4580,
+      "cycle_samples": 2080,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2080,
+          12
+        ],
+        "EMGs_env": [
+          2080,
+          12
+        ],
+        "EMGs_norm": [
+          2080,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        518,
+        846
+      ],
+      "cycle_frames": [
+        549,
+        664
+      ],
+      "raw_trial_samples": 6580,
+      "python_start": 620,
+      "python_stop_exclusive": 2940,
+      "cycle_samples": 2320,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2320,
+          12
+        ],
+        "EMGs_env": [
+          2320,
+          12
+        ],
+        "EMGs_norm": [
+          2320,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        518,
+        846
+      ],
+      "cycle_frames": [
+        664,
+        779
+      ],
+      "raw_trial_samples": 6580,
+      "python_start": 2920,
+      "python_stop_exclusive": 5240,
+      "cycle_samples": 2320,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2320,
+          12
+        ],
+        "EMGs_env": [
+          2320,
+          12
+        ],
+        "EMGs_norm": [
+          2320,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        424,
+        732
+      ],
+      "cycle_frames": [
+        463,
+        576
+      ],
+      "raw_trial_samples": 6180,
+      "python_start": 780,
+      "python_stop_exclusive": 3060,
+      "cycle_samples": 2280,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2280,
+          12
+        ],
+        "EMGs_env": [
+          2280,
+          12
+        ],
+        "EMGs_norm": [
+          2280,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S018",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        424,
+        732
+      ],
+      "cycle_frames": [
+        576,
+        685
+      ],
+      "raw_trial_samples": 6180,
+      "python_start": 3040,
+      "python_stop_exclusive": 5240,
+      "cycle_samples": 2200,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2200,
+          12
+        ],
+        "EMGs_env": [
+          2200,
+          12
+        ],
+        "EMGs_norm": [
+          2200,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        434,
+        742
+      ],
+      "cycle_frames": [
+        439,
+        545
+      ],
+      "raw_trial_samples": 6180,
+      "python_start": 100,
+      "python_stop_exclusive": 2240,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        434,
+        742
+      ],
+      "cycle_frames": [
+        545,
+        648
+      ],
+      "raw_trial_samples": 6180,
+      "python_start": 2220,
+      "python_stop_exclusive": 4300,
+      "cycle_samples": 2080,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2080,
+          12
+        ],
+        "EMGs_env": [
+          2080,
+          12
+        ],
+        "EMGs_norm": [
+          2080,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        408,
+        710
+      ],
+      "cycle_frames": [
+        422,
+        526
+      ],
+      "raw_trial_samples": 6060,
+      "python_start": 280,
+      "python_stop_exclusive": 2380,
+      "cycle_samples": 2100,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2100,
+          12
+        ],
+        "EMGs_env": [
+          2100,
+          12
+        ],
+        "EMGs_norm": [
+          2100,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        408,
+        710
+      ],
+      "cycle_frames": [
+        526,
+        631
+      ],
+      "raw_trial_samples": 6060,
+      "python_start": 2360,
+      "python_stop_exclusive": 4480,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        432,
+        730
+      ],
+      "cycle_frames": [
+        436,
+        539
+      ],
+      "raw_trial_samples": 5980,
+      "python_start": 80,
+      "python_stop_exclusive": 2160,
+      "cycle_samples": 2080,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2080,
+          12
+        ],
+        "EMGs_env": [
+          2080,
+          12
+        ],
+        "EMGs_norm": [
+          2080,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial03.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        432,
+        730
+      ],
+      "cycle_frames": [
+        539,
+        644
+      ],
+      "raw_trial_samples": 5980,
+      "python_start": 2140,
+      "python_stop_exclusive": 4260,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        429,
+        705
+      ],
+      "cycle_frames": [
+        430,
+        530
+      ],
+      "raw_trial_samples": 5540,
+      "python_start": 20,
+      "python_stop_exclusive": 2040,
+      "cycle_samples": 2020,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2020,
+          12
+        ],
+        "EMGs_env": [
+          2020,
+          12
+        ],
+        "EMGs_norm": [
+          2020,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial04.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        429,
+        705
+      ],
+      "cycle_frames": [
+        530,
+        630
+      ],
+      "raw_trial_samples": 5540,
+      "python_start": 2020,
+      "python_stop_exclusive": 4040,
+      "cycle_samples": 2020,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2020,
+          12
+        ],
+        "EMGs_env": [
+          2020,
+          12
+        ],
+        "EMGs_norm": [
+          2020,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        383,
+        675
+      ],
+      "cycle_frames": [
+        384,
+        491
+      ],
+      "raw_trial_samples": 5860,
+      "python_start": 20,
+      "python_stop_exclusive": 2180,
+      "cycle_samples": 2160,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2160,
+          12
+        ],
+        "EMGs_env": [
+          2160,
+          12
+        ],
+        "EMGs_norm": [
+          2160,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S019",
+      "cycle": "LevelWalking.Trial05.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        383,
+        675
+      ],
+      "cycle_frames": [
+        491,
+        593
+      ],
+      "raw_trial_samples": 5860,
+      "python_start": 2160,
+      "python_stop_exclusive": 4220,
+      "cycle_samples": 2060,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2060,
+          12
+        ],
+        "EMGs_env": [
+          2060,
+          12
+        ],
+        "EMGs_norm": [
+          2060,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial01.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        413,
+        753
+      ],
+      "cycle_frames": [
+        433,
+        538
+      ],
+      "raw_trial_samples": 6820,
+      "python_start": 400,
+      "python_stop_exclusive": 2520,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial01.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        413,
+        753
+      ],
+      "cycle_frames": [
+        538,
+        644
+      ],
+      "raw_trial_samples": 6820,
+      "python_start": 2500,
+      "python_stop_exclusive": 4640,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial02.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        390,
+        728
+      ],
+      "cycle_frames": [
+        420,
+        525
+      ],
+      "raw_trial_samples": 6780,
+      "python_start": 600,
+      "python_stop_exclusive": 2720,
+      "cycle_samples": 2120,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2120,
+          12
+        ],
+        "EMGs_env": [
+          2120,
+          12
+        ],
+        "EMGs_norm": [
+          2120,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial02.Step02",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        390,
+        728
+      ],
+      "cycle_frames": [
+        525,
+        631
+      ],
+      "raw_trial_samples": 6780,
+      "python_start": 2700,
+      "python_stop_exclusive": 4840,
+      "cycle_samples": 2140,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2140,
+          12
+        ],
+        "EMGs_env": [
+          2140,
+          12
+        ],
+        "EMGs_norm": [
+          2140,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial03.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        462,
+        733
+      ],
+      "cycle_frames": [
+        547,
+        650
+      ],
+      "raw_trial_samples": 5440,
+      "python_start": 1700,
+      "python_stop_exclusive": 3780,
+      "cycle_samples": 2080,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2080,
+          12
+        ],
+        "EMGs_env": [
+          2080,
+          12
+        ],
+        "EMGs_norm": [
+          2080,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial04.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        458,
+        731
+      ],
+      "cycle_frames": [
+        535,
+        637
+      ],
+      "raw_trial_samples": 5480,
+      "python_start": 1540,
+      "python_stop_exclusive": 3600,
+      "cycle_samples": 2060,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2060,
+          12
+        ],
+        "EMGs_env": [
+          2060,
+          12
+        ],
+        "EMGs_norm": [
+          2060,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    },
+    {
+      "participant": "S020",
+      "cycle": "LevelWalking.Trial05.Step01",
+      "fs": 2000,
+      "marker_fs": 100,
+      "trial_frames": [
+        468,
+        774
+      ],
+      "cycle_frames": [
+        546,
+        648
+      ],
+      "raw_trial_samples": 6140,
+      "python_start": 1560,
+      "python_stop_exclusive": 3620,
+      "cycle_samples": 2060,
+      "source_labels": [
+        "VastusLateralis",
+        "RectusFemoris",
+        "VastusMedialis",
+        "TibialisAnterior",
+        "BicepsFemoris",
+        "Semitendinosus",
+        "GastrocnemuisMedialis",
+        "GastrocnemiusLateralis",
+        "SoleusMedialis",
+        "SoleusLateralis",
+        "PeroneusLongus",
+        "PeroneusBrevis"
+      ],
+      "processed_shapes": {
+        "EMGs_filt": [
+          2060,
+          12
+        ],
+        "EMGs_env": [
+          2060,
+          12
+        ],
+        "EMGs_norm": [
+          2060,
+          12
+        ],
+        "EMGs_interpolated": [
+          101,
+          12
+        ]
+      }
+    }
+  ],
+  "n_participants": 10,
+  "n_trials": 50,
+  "n_cycles": 94,
+  "protected_inputs_unchanged": true,
+  "analysis_sha256": "4dbe206ccdd162ba90195c8f13472cd307fba4c33ae5ab45f27ee4b3c1b79c04"
+}

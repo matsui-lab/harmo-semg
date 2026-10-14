@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/validation-gate-audit-1.0.0.json",
+  "title": "harmo-semg empirical validation gate audit",
+  "type": "object",
+  "required": ["audit_version", "registry_digest", "checks", "passed_checks", "failed_checks", "submission_ready"],
+  "properties": {
+    "audit_version": {"const": "1.0.0"},
+    "registry_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate", "pass", "message"],
+        "properties": {
+          "gate": {"enum": ["M0", "G3", "G4", "G5", "G6", "G7"]},
+          "pass": {"type": "boolean"},
+          "message": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "passed_checks": {"type": "integer", "minimum": 0},
+    "failed_checks": {"type": "integer", "minimum": 0},
+    "submission_ready": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}

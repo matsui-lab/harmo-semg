@@ -1,0 +1,41 @@
+schema_version: '1.0'
+protocol_id: g10-study38-full-record-materialization
+study_id: study_38
+subjects: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+selection:
+  activity: Walking
+  rule: all source-ordered records whose Foot equals the source EMGSide
+  truncation: none
+  resampling: none
+channels:
+  Tibialis Anterior: tibialis_anterior
+  Soleus: soleus
+  Gastrocnemius Medialis: gastrocnemius_medialis
+  Peroneus Longus: peroneus_longus
+  Rectus Femoris: rectus_femoris
+  Vastus Medialis: vastus_medialis
+  Biceps Femoris: biceps_femoris
+  Gluteus Maximus: gluteus_maximus
+source_assets:
+  '1': {bytes: 7468651, md5: 12094df62f730bb3d33800b43a90294a}
+  '2': {bytes: 8791860, md5: 118e9f1075d47964e7c11b3712c16abd}
+  '3': {bytes: 2822424, md5: f39a2a766ce664297dbaeed9c0f3fc44}
+  '4': {bytes: 5226547, md5: 6ce4929e3e079f1da26e26b200a8c424}
+  '5': {bytes: 7669490, md5: e7aaf4f33358070d035b2579c6e92c73}
+  '6': {bytes: 7947835, md5: acd51591eadd2f20b118283ef9505c99}
+  '7': {bytes: 9460021, md5: fed9fa4a47197af251eff8c0caf4a9f7}
+  '8': {bytes: 10862020, md5: ece269142589cdb680782ee547471ac8}
+  '9': {bytes: 3396152, md5: 36070ca6a0c36ac580f63a989e4ee5f7}
+  '10': {bytes: 6896427, md5: 6808f71117fd9dab2f500d442de87fe7}
+expected_record_count: 130
+expected_timepoint_count: 138638
+reproducibility_runs: 2
+query_benchmark:
+  warmups: 3
+  repeats: 25
+claim_boundary: >-
+  This benchmark establishes complete, non-truncated materialization of every
+  same-side Walking EMG cycle in the frozen ten-subject Study 38 cohort,
+  deterministic R/M/T/C/D evidence products, and local DuckDB query latency.
+  It does not cover every task in the source collection, cross-study amplitude
+  pooling, distributed-cluster scaling, clinical validity, or AI utility.

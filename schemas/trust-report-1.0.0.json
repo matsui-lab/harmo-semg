@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/trust-report-1.0.0.json",
+  "title": "TrustReport",
+  "type": "object",
+  "required": ["subject_id", "evidence", "generated_at", "schema_version"],
+  "properties": {
+    "subject_id": {"type": "string", "minLength": 1},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dimension", "status", "rule_id", "message", "metric", "threshold", "artifact_id"],
+        "properties": {
+          "dimension": {"enum": ["semantic_fidelity", "scientific_validity", "computational_reproducibility", "traceability"]},
+          "status": {"enum": ["pass", "warn", "fail", "unassessed"]},
+          "rule_id": {"type": "string", "minLength": 1},
+          "message": {"type": "string"},
+          "metric": {"type": ["number", "null"]},
+          "threshold": {"type": ["number", "null"]},
+          "artifact_id": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "generated_at": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "1.0.0"}
+  },
+  "additionalProperties": false
+}

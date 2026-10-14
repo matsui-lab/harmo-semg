@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/anatomy-crosswalk-validation-1.0.0.json",
+  "title": "AnatomyCrosswalkValidation",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "implementation_commit",
+    "code_dirty",
+    "scope",
+    "crosswalk_id",
+    "crosswalk_sha256",
+    "ontology",
+    "ontology_release_tag",
+    "ontology_version_iri",
+    "ontology_asset_sha256",
+    "verified_entries",
+    "verified_exact_matches",
+    "pass",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "implementation_commit": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "code_dirty": {"type": "boolean"},
+    "scope": {"type": "string", "minLength": 1},
+    "crosswalk_id": {"type": "string", "minLength": 1},
+    "crosswalk_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "ontology": {"type": "string", "minLength": 1},
+    "ontology_release_tag": {"type": "string", "minLength": 1},
+    "ontology_version_iri": {"type": "string", "minLength": 1},
+    "ontology_asset_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "verified_entries": {"type": "integer", "minimum": 1},
+    "verified_exact_matches": {"type": "integer", "minimum": 0},
+    "pass": {"type": "boolean"},
+    "claim_boundary": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

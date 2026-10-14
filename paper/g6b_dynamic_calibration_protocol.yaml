@@ -1,0 +1,71 @@
+schema_version: 1.0.0
+experiment_id: E2
+gate_id: G6b
+title: Static-hidden recovery of subject-specific scaling measurements
+frozen_at: '2026-07-21'
+freeze_state: frozen-before-outcome-computation
+scientific_question: >-
+  When an original static calibration trial is missing from a public
+  biomechanics release, can subject-specific scaling measurements be recovered
+  from multiple dynamic trials with quantified uncertainty and source lineage?
+claim_boundary: >-
+  The pilot evaluates recovery of marker-pair measurements only. It does not
+  establish OpenSim IK, inverse-dynamics, RRA, muscle-force, physiological, or
+  clinical validity.
+design_note: >-
+  Public source structure and marker names were inspected to make the design
+  executable. No static-versus-dynamic measurement outcome was calculated
+  before this protocol and its thresholds were fixed.
+source_manifest: paper/g6b_public_sources.yaml
+pilot:
+  dataset_id: running-biomechanics-osf-7qbxc
+  subject_id: '01'
+  static_reference_role: static_reference
+  calibration_roles:
+    - dynamic_calibration_278ms
+    - dynamic_calibration_3ms
+    - dynamic_calibration_333ms
+  heldout_dynamic_role: heldout_dynamic_4ms
+  reference_model_role: published_static_scaled_model
+estimation:
+  within_trial: median-after-MAD-outlier-rejection
+  across_trials: equal-trial-weighted-median
+  outlier_mad: 4.5
+  bootstrap_iterations: 10000
+  bootstrap_seed: 20260721
+  missing_policy: fail-measurement-and-retain-in-denominator
+thresholds:
+  measurement_coverage: 0.90
+  median_absolute_relative_error: 0.02
+  p95_absolute_relative_error: 0.05
+  heldout_p95_absolute_relative_error: 0.05
+measurements:
+  - {id: pelvis_width_anterior, body: pelvis, measurement_class: rigid-body, marker_a: LASIS, marker_b: RASIS}
+  - {id: pelvis_width_posterior, body: pelvis, measurement_class: rigid-body, marker_a: LPSIS, marker_b: RPSIS}
+  - {id: pelvis_depth_left, body: pelvis, measurement_class: rigid-body, marker_a: LASIS, marker_b: LPSIS}
+  - {id: pelvis_depth_right, body: pelvis, measurement_class: rigid-body, marker_a: RASIS, marker_b: RPSIS}
+  - {id: femur_left_cluster, body: femur_l, measurement_class: rigid-body, marker_a: LLTHI, marker_b: LLEK}
+  - {id: femur_right_cluster, body: femur_r, measurement_class: rigid-body, marker_a: RLTHI, marker_b: RLEK}
+  - {id: tibia_left_length, body: tibia_l, measurement_class: anatomical-length, marker_a: LLEK, marker_b: LLM}
+  - {id: tibia_right_length, body: tibia_r, measurement_class: anatomical-length, marker_a: RLEK, marker_b: RLM}
+  - {id: tibia_left_cluster, body: tibia_l, measurement_class: rigid-body, marker_a: LLSHA, marker_b: LLM}
+  - {id: tibia_right_cluster, body: tibia_r, measurement_class: rigid-body, marker_a: RLSHA, marker_b: RLM}
+  - {id: foot_left_length_2, body: calcn_l, measurement_class: rigid-body, marker_a: LHEE, marker_b: LMT2}
+  - {id: foot_left_length_5, body: calcn_l, measurement_class: rigid-body, marker_a: LHEE, marker_b: LMT5}
+  - {id: foot_left_width, body: calcn_l, measurement_class: rigid-body, marker_a: LMT2, marker_b: LMT5}
+  - {id: foot_right_length_2, body: calcn_r, measurement_class: rigid-body, marker_a: RHEE, marker_b: RMT2}
+  - {id: foot_right_length_5, body: calcn_r, measurement_class: rigid-body, marker_a: RHEE, marker_b: RMT5}
+  - {id: foot_right_width, body: calcn_r, measurement_class: rigid-body, marker_a: RMT2, marker_b: RMT5}
+  - {id: torso_posterior, body: torso, measurement_class: rigid-body, marker_a: C7, marker_b: T10}
+  - {id: torso_anterior, body: torso, measurement_class: rigid-body, marker_a: JN, marker_b: XIPH}
+next_stages:
+  - id: G6b-2
+    endpoint: dynamic-derived model versus published static-derived model
+    status: requires model-synthesis implementation after G6b-1
+  - id: G6b-3
+    endpoint: held-out IK, ID, two-pass RRA, and joint-moment waveform comparison
+    status: requires G6b-2 pass
+  - id: G6b-4
+    endpoint: apply validated method to the 330 source-available Study 31 trials
+    status: requires G6b-2 and G6b-3 pass
+

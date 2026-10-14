@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/comparability-assertion-1.0.0.json",
+  "title": "ComparabilityAssertion",
+  "type": "object",
+  "required": ["left_id", "right_id", "variable", "status", "rationale", "conditions", "rule_version", "schema_version"],
+  "properties": {
+    "left_id": {"type": "string", "minLength": 1},
+    "right_id": {"type": "string", "minLength": 1},
+    "variable": {"type": "string", "minLength": 1},
+    "status": {"enum": ["comparable", "conditionally_comparable", "not_comparable", "unassessed"]},
+    "rationale": {"type": "string", "minLength": 1},
+    "conditions": {"type": "array", "items": {"type": "string"}},
+    "rule_version": {"type": "string", "minLength": 1},
+    "schema_version": {"const": "1.0.0"}
+  },
+  "additionalProperties": false
+}

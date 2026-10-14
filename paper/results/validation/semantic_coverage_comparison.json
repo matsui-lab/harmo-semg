@@ -1,0 +1,400 @@
+{
+  "claim_boundary": "Coverage counts declared properties, not recording completeness. Paper-assisted properties remain at their source scope; they do not create subject/trial observations or prove comparability.",
+  "created_at": "2026-07-25T07:29:50.115267Z",
+  "enrichment_report_sha256": "79dcdce874e2a844f6fdc713d403caefda4566fcb23e37a673de6f5b200e3752",
+  "schema_version": "1.0.0",
+  "study_rows": [
+    {
+      "authority_enrichment_claim_count": 7,
+      "authority_enrichment_properties": [
+        "processing.emg.bandpass_hz",
+        "processing.emg.rms_window_ms",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "authority_enrichment_property_count": 7,
+      "authority_source_ids": [
+        "study31-article-jats"
+      ],
+      "boundary_claim_count": 1,
+      "boundary_properties": [
+        "acquisition.motion_capture.static_trial_performed"
+      ],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 5,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 5,
+      "file_only_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "file_only_property_count": 5,
+      "observation_source_ids": [
+        "study31-channel-config",
+        "study31-device-config"
+      ],
+      "paper_adds_emg_semantics": true,
+      "paper_assisted_properties": [
+        "processing.emg.bandpass_hz",
+        "processing.emg.rms_window_ms",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "paper_assisted_property_count": 7,
+      "properties_added_by_literature": [
+        "processing.emg.bandpass_hz",
+        "processing.emg.rms_window_ms"
+      ],
+      "properties_added_by_literature_count": 2,
+      "study_id": "study31",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 2,
+      "authority_enrichment_properties": [
+        "recording.documented_modalities",
+        "recording.task.condition_set"
+      ],
+      "authority_enrichment_property_count": 2,
+      "authority_source_ids": [
+        "study1-article-jats"
+      ],
+      "boundary_claim_count": 0,
+      "boundary_properties": [],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 0,
+      "emg_semantics_present": false,
+      "file_only_claim_count": 0,
+      "file_only_properties": [],
+      "file_only_property_count": 0,
+      "observation_source_ids": [],
+      "paper_adds_emg_semantics": false,
+      "paper_assisted_properties": [
+        "recording.documented_modalities",
+        "recording.task.condition_set"
+      ],
+      "paper_assisted_property_count": 2,
+      "properties_added_by_literature": [
+        "recording.documented_modalities",
+        "recording.task.condition_set"
+      ],
+      "properties_added_by_literature_count": 2,
+      "study_id": "study_1",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 6,
+      "authority_enrichment_properties": [
+        "processing.emg.bandpass_hz",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "authority_enrichment_property_count": 6,
+      "authority_source_ids": [
+        "study120-article-jats"
+      ],
+      "boundary_claim_count": 1,
+      "boundary_properties": [
+        "limitations.population.generalizability"
+      ],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 4,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 4,
+      "file_only_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "file_only_property_count": 4,
+      "observation_source_ids": [
+        "study120-channel-config",
+        "study120-device-config"
+      ],
+      "paper_adds_emg_semantics": true,
+      "paper_assisted_properties": [
+        "processing.emg.bandpass_hz",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "paper_assisted_property_count": 6,
+      "properties_added_by_literature": [
+        "processing.emg.bandpass_hz",
+        "recording.emg.covered_muscles"
+      ],
+      "properties_added_by_literature_count": 2,
+      "study_id": "study_120",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 6,
+      "authority_enrichment_properties": [
+        "acquisition.emg.device_channel_capacity",
+        "processing.emg.bandpass_hz",
+        "processing.emg.moving_average_window_ms",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscle_groups",
+        "recording.emg.laterality_set"
+      ],
+      "authority_enrichment_property_count": 6,
+      "authority_source_ids": [
+        "study28-article-jats"
+      ],
+      "boundary_claim_count": 1,
+      "boundary_properties": [
+        "limitations.emg.missing_participant_count"
+      ],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 2,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 3,
+      "file_only_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set"
+      ],
+      "file_only_property_count": 3,
+      "observation_source_ids": [
+        "study28-channel-config"
+      ],
+      "paper_adds_emg_semantics": true,
+      "paper_assisted_properties": [
+        "acquisition.emg.device_channel_capacity",
+        "processing.emg.bandpass_hz",
+        "processing.emg.moving_average_window_ms",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscle_groups",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_set"
+      ],
+      "paper_assisted_property_count": 7,
+      "properties_added_by_literature": [
+        "acquisition.emg.device_channel_capacity",
+        "processing.emg.bandpass_hz",
+        "processing.emg.moving_average_window_ms",
+        "recording.emg.covered_muscle_groups"
+      ],
+      "properties_added_by_literature_count": 4,
+      "study_id": "study_28",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 6,
+      "authority_enrichment_properties": [
+        "processing.emg.raw_to_mv_scale_factor",
+        "recording.emg.anatomical_region",
+        "recording.emg.channel_count",
+        "recording.emg.grid_placement_reference",
+        "recording.emg.laterality_set",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "authority_enrichment_property_count": 6,
+      "authority_source_ids": [
+        "study32-article-jats"
+      ],
+      "boundary_claim_count": 1,
+      "boundary_properties": [
+        "limitations.emg.channel_specific_muscle_identity"
+      ],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 3,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 3,
+      "file_only_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.laterality_set",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "file_only_property_count": 3,
+      "observation_source_ids": [
+        "study32-channel-config",
+        "study32-device-config"
+      ],
+      "paper_adds_emg_semantics": true,
+      "paper_assisted_properties": [
+        "processing.emg.raw_to_mv_scale_factor",
+        "recording.emg.anatomical_region",
+        "recording.emg.channel_count",
+        "recording.emg.grid_placement_reference",
+        "recording.emg.laterality_set",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "paper_assisted_property_count": 6,
+      "properties_added_by_literature": [
+        "processing.emg.raw_to_mv_scale_factor",
+        "recording.emg.anatomical_region",
+        "recording.emg.grid_placement_reference"
+      ],
+      "properties_added_by_literature_count": 3,
+      "study_id": "study_32",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 1,
+      "authority_enrichment_properties": [
+        "recording.task.family_set"
+      ],
+      "authority_enrichment_property_count": 1,
+      "authority_source_ids": [
+        "study33-article-metadata"
+      ],
+      "boundary_claim_count": 0,
+      "boundary_properties": [],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 0,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 4,
+      "file_only_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz"
+      ],
+      "file_only_property_count": 4,
+      "observation_source_ids": [
+        "study33-channel-config",
+        "study33-device-config"
+      ],
+      "paper_adds_emg_semantics": false,
+      "paper_assisted_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.laterality_set",
+        "recording.emg.raw_unit",
+        "recording.emg.sampling_rate_hz",
+        "recording.task.family_set"
+      ],
+      "paper_assisted_property_count": 5,
+      "properties_added_by_literature": [
+        "recording.task.family_set"
+      ],
+      "properties_added_by_literature_count": 1,
+      "study_id": "study_33",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 5,
+      "authority_enrichment_properties": [
+        "acquisition.emg.bandpass_hz",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_basis",
+        "recording.emg.sampling_rate_hz_set"
+      ],
+      "authority_enrichment_property_count": 5,
+      "authority_source_ids": [
+        "study38-article-jats"
+      ],
+      "boundary_claim_count": 0,
+      "boundary_properties": [],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 2,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 2,
+      "file_only_properties": [
+        "recording.emg.covered_muscles",
+        "recording.emg.sampling_rate_hz_set"
+      ],
+      "file_only_property_count": 2,
+      "observation_source_ids": [
+        "study38-channel-config",
+        "study38-device-config"
+      ],
+      "paper_adds_emg_semantics": true,
+      "paper_assisted_properties": [
+        "acquisition.emg.bandpass_hz",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_basis",
+        "recording.emg.sampling_rate_hz_set"
+      ],
+      "paper_assisted_property_count": 5,
+      "properties_added_by_literature": [
+        "acquisition.emg.bandpass_hz",
+        "recording.emg.channel_count",
+        "recording.emg.laterality_basis"
+      ],
+      "properties_added_by_literature_count": 3,
+      "study_id": "study_38",
+      "unresolved_claim_count": 0
+    },
+    {
+      "authority_enrichment_claim_count": 5,
+      "authority_enrichment_properties": [
+        "processing.emg.source_state",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_basis",
+        "recording.emg.sampling_rate_hz_set"
+      ],
+      "authority_enrichment_property_count": 5,
+      "authority_source_ids": [
+        "study43-article-jats"
+      ],
+      "boundary_claim_count": 1,
+      "boundary_properties": [
+        "acquisition.motion_capture.static_trial_performed"
+      ],
+      "conflicting_claim_count": 0,
+      "corroborated_authority_claim_count": 3,
+      "emg_semantics_present": true,
+      "file_only_claim_count": 3,
+      "file_only_properties": [
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.sampling_rate_hz_set"
+      ],
+      "file_only_property_count": 3,
+      "observation_source_ids": [
+        "study43-channel-config",
+        "study43-device-config"
+      ],
+      "paper_adds_emg_semantics": true,
+      "paper_assisted_properties": [
+        "processing.emg.source_state",
+        "recording.emg.channel_count",
+        "recording.emg.covered_muscles",
+        "recording.emg.laterality_basis",
+        "recording.emg.sampling_rate_hz_set"
+      ],
+      "paper_assisted_property_count": 5,
+      "properties_added_by_literature": [
+        "processing.emg.source_state",
+        "recording.emg.laterality_basis"
+      ],
+      "properties_added_by_literature_count": 2,
+      "study_id": "study_43",
+      "unresolved_claim_count": 0
+    }
+  ],
+  "summary": {
+    "boundary_claim_count": 5,
+    "conflicting_claim_count": 0,
+    "corroborated_authority_claim_count": 19,
+    "emg_semantic_study_count": 7,
+    "file_only_study_property_pairs": 24,
+    "literature_added_study_property_pairs": 19,
+    "paper_assisted_study_property_pairs": 43,
+    "studies_with_authority_evidence": 8,
+    "studies_with_file_only_evidence": 7,
+    "studies_with_literature_added_emg_properties": 6,
+    "studies_with_literature_added_properties": 8,
+    "study_count": 8,
+    "unresolved_claim_count": 0
+  }
+}

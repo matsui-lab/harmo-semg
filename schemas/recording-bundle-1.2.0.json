@@ -1,0 +1,437 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://matsui-lab.github.io/emg-atlas/schemas/recording-bundle-1.2.0.json",
+  "title": "HarmoRecordingBundle with first-class task and anatomy semantics",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "recording_id",
+    "study_id",
+    "subject_id",
+    "session_id",
+    "samples",
+    "timebase",
+    "channels",
+    "sources",
+    "events",
+    "warnings",
+    "temporal_reference",
+    "processing_state",
+    "task"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.2.0"},
+    "recording_id": {"type": "string", "minLength": 1},
+    "study_id": {"type": "string", "minLength": 1},
+    "subject_id": {"type": "string", "minLength": 1},
+    "session_id": {"type": "string", "minLength": 1},
+    "samples": {"$ref": "#/$defs/arrayReference"},
+    "timebase": {"$ref": "#/$defs/timebase"},
+    "channels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/channel"}
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/sourceAsset"}
+    },
+    "events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/event"}
+    },
+    "warnings": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/warning"}
+    },
+    "temporal_reference": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/temporalReference"}
+      ]
+    },
+    "processing_state": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/processingState"}
+      ]
+    },
+    "task": {
+      "oneOf": [
+        {"type": "null"},
+        {"$ref": "#/$defs/task"}
+      ]
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "evidenceRef": {
+      "type": "string",
+      "pattern": "^.+:sha256:[0-9a-f]{64}$"
+    },
+    "arrayReference": {
+      "type": "object",
+      "required": ["uri", "format", "dtype", "shape", "checksum"],
+      "properties": {
+        "uri": {"type": "string", "minLength": 1},
+        "format": {"type": "string", "minLength": 1},
+        "dtype": {"type": "string", "minLength": 1},
+        "shape": {
+          "type": "array",
+          "prefixItems": [
+            {"type": "integer", "minimum": 1},
+            {"type": "integer", "minimum": 1}
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "checksum": {
+          "oneOf": [
+            {"type": "null"},
+            {"$ref": "#/$defs/sha256"}
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "timebase": {
+      "type": "object",
+      "required": [
+        "sampling_rate_hz",
+        "sample_count",
+        "start_seconds",
+        "timestamps_uri",
+        "clock"
+      ],
+      "properties": {
+        "sampling_rate_hz": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0
+        },
+        "sample_count": {"type": "integer", "minimum": 1},
+        "start_seconds": {"type": "number"},
+        "timestamps_uri": {"type": ["string", "null"]},
+        "clock": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "ontologyTerm": {
+      "type": "object",
+      "required": ["ontology", "ontology_version", "term_id", "label"],
+      "properties": {
+        "ontology": {"type": "string", "minLength": 1},
+        "ontology_version": {"type": "string", "minLength": 1},
+        "term_id": {"type": "string", "minLength": 1},
+        "label": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "semanticMapping": {
+      "type": "object",
+      "required": [
+        "method",
+        "mapping_version",
+        "status",
+        "evidence_refs",
+        "confidence"
+      ],
+      "properties": {
+        "method": {"type": "string", "minLength": 1},
+        "mapping_version": {"type": "string", "minLength": 1},
+        "status": {"enum": ["mapped", "provisional", "unmapped"]},
+        "evidence_refs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/evidenceRef"}
+        },
+        "confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"status": {"const": "mapped"}},
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {"evidence_refs": {"minItems": 1}}
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "anatomicalEntity": {
+      "type": "object",
+      "required": [
+        "entity_type",
+        "canonical_label",
+        "ontology_term",
+        "laterality",
+        "source_label",
+        "mapping"
+      ],
+      "properties": {
+        "entity_type": {
+          "enum": [
+            "muscle",
+            "muscle-group",
+            "body-region",
+            "anatomical-landmark",
+            "bone",
+            "joint",
+            "model-body"
+          ]
+        },
+        "canonical_label": {"type": "string", "minLength": 1},
+        "ontology_term": {"$ref": "#/$defs/ontologyTerm"},
+        "laterality": {
+          "enum": [
+            "left",
+            "right",
+            "bilateral",
+            "midline",
+            "not-applicable",
+            "unknown"
+          ]
+        },
+        "source_label": {"type": "string", "minLength": 1},
+        "mapping": {"$ref": "#/$defs/semanticMapping"}
+      },
+      "additionalProperties": false
+    },
+    "channel": {
+      "type": "object",
+      "required": [
+        "channel_id",
+        "name",
+        "unit",
+        "sensor_type",
+        "muscle",
+        "side",
+        "coordinates",
+        "source_name",
+        "anatomy"
+      ],
+      "properties": {
+        "channel_id": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "unit": {"type": "string", "minLength": 1},
+        "sensor_type": {"type": "string", "minLength": 1},
+        "muscle": {"type": ["string", "null"]},
+        "side": {
+          "enum": ["left", "right", "midline", "unknown", null]
+        },
+        "coordinates": {
+          "type": ["object", "null"],
+          "additionalProperties": {"type": "number"}
+        },
+        "source_name": {"type": ["string", "null"]},
+        "anatomy": {
+          "oneOf": [
+            {"type": "null"},
+            {"$ref": "#/$defs/anatomicalEntity"}
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceAsset": {
+      "type": "object",
+      "required": [
+        "uri",
+        "sha256",
+        "size_bytes",
+        "media_type",
+        "dataset_release"
+      ],
+      "properties": {
+        "uri": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "size_bytes": {"type": ["integer", "null"], "minimum": 0},
+        "media_type": {"type": ["string", "null"]},
+        "dataset_release": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "onset_seconds",
+        "label",
+        "duration_seconds",
+        "source_label",
+        "hed_tags"
+      ],
+      "properties": {
+        "event_id": {"type": "string", "minLength": 1},
+        "onset_seconds": {"type": "number", "minimum": 0},
+        "label": {"type": "string", "minLength": 1},
+        "duration_seconds": {"type": "number", "minimum": 0},
+        "source_label": {"type": ["string", "null"]},
+        "hed_tags": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "warning": {
+      "type": "object",
+      "required": [
+        "code",
+        "severity",
+        "message",
+        "field",
+        "evidence",
+        "dimension"
+      ],
+      "properties": {
+        "code": {"type": "string", "minLength": 1},
+        "severity": {"enum": ["info", "warning", "error"]},
+        "message": {"type": "string"},
+        "field": {"type": ["string", "null"]},
+        "evidence": {"type": ["string", "null"]},
+        "dimension": {
+          "enum": [
+            "semantic_fidelity",
+            "scientific_validity",
+            "computational_reproducibility",
+            "traceability"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "temporalReference": {
+      "type": "object",
+      "required": [
+        "axis",
+        "unit",
+        "start",
+        "end",
+        "sample_count",
+        "landmark_start",
+        "landmark_end",
+        "side",
+        "method",
+        "compatibility_group",
+        "validation_evidence_refs"
+      ],
+      "properties": {
+        "axis": {
+          "enum": [
+            "elapsed-seconds",
+            "sample-index",
+            "gait-cycle-percent"
+          ]
+        },
+        "unit": {"type": "string", "minLength": 1},
+        "start": {"type": "number"},
+        "end": {"type": "number"},
+        "sample_count": {"type": "integer", "minimum": 2},
+        "landmark_start": {"type": "string", "minLength": 1},
+        "landmark_end": {"type": "string", "minLength": 1},
+        "side": {"enum": ["left", "right", "midline"]},
+        "method": {"type": "string", "minLength": 1},
+        "compatibility_group": {"type": "string", "minLength": 1},
+        "validation_evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceRef"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "processingOperation": {
+      "type": "object",
+      "required": [
+        "operation",
+        "parameters",
+        "software",
+        "software_version"
+      ],
+      "properties": {
+        "operation": {"type": "string", "minLength": 1},
+        "parameters": {"type": "object"},
+        "software": {"type": "string", "minLength": 1},
+        "software_version": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "processingState": {
+      "type": "object",
+      "required": [
+        "representation",
+        "operations",
+        "amplitude_scale",
+        "amplitude_comparability",
+        "timing_compatibility_group",
+        "validation_evidence_refs",
+        "source_recording_sha256"
+      ],
+      "properties": {
+        "representation": {"type": "string", "minLength": 1},
+        "operations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/processingOperation"}
+        },
+        "amplitude_scale": {"type": "string", "minLength": 1},
+        "amplitude_comparability": {
+          "enum": [
+            "not-established",
+            "within-recording-only",
+            "cross-recording-validated"
+          ]
+        },
+        "timing_compatibility_group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation_evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceRef"}
+        },
+        "source_recording_sha256": {"$ref": "#/$defs/sha256"}
+      },
+      "additionalProperties": false
+    },
+    "task": {
+      "type": "object",
+      "required": [
+        "activity",
+        "source_label",
+        "ontology_terms",
+        "facets",
+        "mapping",
+        "compatibility_group"
+      ],
+      "properties": {
+        "activity": {"type": "string", "minLength": 1},
+        "source_label": {"type": "string", "minLength": 1},
+        "ontology_terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/ontologyTerm"}
+        },
+        "facets": {
+          "type": "object",
+          "propertyNames": {"minLength": 1},
+          "additionalProperties": {"type": "string", "minLength": 1}
+        },
+        "mapping": {"$ref": "#/$defs/semanticMapping"},
+        "compatibility_group": {"type": ["string", "null"], "minLength": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

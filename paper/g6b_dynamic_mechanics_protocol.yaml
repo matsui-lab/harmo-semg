@@ -1,0 +1,105 @@
+schema_version: 1.0.0
+experiment_id: E2
+gate_id: G6b-3
+title: Held-out OpenSim mechanics comparison after static-free model synthesis
+frozen_at: '2026-07-21'
+freeze_state: frozen-before-mechanics-outcome-computation
+scientific_question: >-
+  Does a dynamic-derived model that never used the target subject's static
+  calibration retain acceptable marker fit, dynamic consistency, and lower-limb
+  mechanics on a held-out running stride relative to the published
+  static-derived model?
+claim_boundary: >-
+  This is a one-subject, one-held-out-stride implementation pilot. Agreement
+  between two OpenSim models is not ground-truth validation and does not
+  establish muscle-force, physiological, population, rehabilitation, or
+  clinical validity.
+design_note: >-
+  Public file identities, file structure, marker tasks, GRF columns, and event
+  times were inspected to make the run executable. No IK, RRA, residual, ID, or
+  waveform comparison outcome for either model was calculated before this
+  protocol and its thresholds were fixed.
+source_manifest: paper/g6b_dynamic_mechanics_sources.yaml
+preconditions:
+  g6b2_result: paper/results/validation/g6b_dynamic_model_pilot.json
+  g6b2_required_status: pass
+  dynamic_model_sha256: d6e9d5477eadf0850c44cdb597e0c0b70d1cb2febc6a84a41e6fc38966b0c899
+  target_subject_id: '02'
+models:
+  dynamic_derived:
+    source: external-derived-artifact-from-g6b2
+    target_static_used_in_synthesis: false
+  static_derived:
+    role: static_derived_model
+    comparison_reference_only: true
+heldout_trial:
+  marker_role: heldout_markers
+  ground_reaction_role: heldout_ground_reaction
+  event_role: heldout_events
+  speed: 4.00 m/s
+  event_sheet: sheet1
+  event_sequence: [IC R, TO R, IC L, TO L, IC R]
+  selection_rule: earliest-complete-right-stride-with-first-IC-at-or-after-20s
+  start_time_s: 20.355
+  end_time_s: 21.015
+  duration_s: 0.660
+opensim:
+  required_version: 4.5.2
+  ik_setup_role: public_ik_setup
+  id_setup_role: public_id_setup
+  ik_accuracy: inherited-from-public-setup
+  active_marker_task_count: 22
+  marker_weights: inherited-from-public-setup
+  compatibility_normalization:
+    source_issue: public TRC uses Times where OpenSim 4.5.2 requires Time
+    operation: replace-exact-Frame#-Times-header-token-with-Time
+    expected_replacement_count: 1
+    source_bytes_modified_in_place: false
+    numeric_rows_modified: false
+  external_loads:
+    right: {body: calcn_r, prefix: R_ground}
+    left: {body: calcn_l, prefix: L_ground}
+  rra:
+    passes: 2
+    desired_kinematics: original-ik-for-both-passes
+    lowpass_cutoff_hz: 6.0
+    adjust_com_to_reduce_residuals: true
+    adjusted_com_body: torso
+    residual_force_optimal_force: {FX: 4.0, FY: 8.0, FZ: 4.0}
+    residual_moment_optimal_force: {MX: 2.0, MY: 2.0, MZ: 2.0}
+    reserve_optimal_force: 300.0
+    task_weight: {pelvis: 5.0, other: 1.0}
+    task_kp: 100.0
+    task_kv: 20.0
+  id:
+    coordinate_source: final-pass-rra-kinematics
+    model_source: final-pass-rra-adjusted-model
+    lowpass_cutoff_hz: 6.0
+normalization:
+  residual_force: rms-resultant-total-external-force
+  residual_moment: rms-resultant-total-external-force-times-model-com-height
+  joint_moment_waveform: reference-waveform-rms
+primary_coordinates:
+  - hip_flexion_r
+  - knee_angle_r
+  - ankle_angle_r
+  - hip_flexion_l
+  - knee_angle_l
+  - ankle_angle_l
+thresholds:
+  ik_rms_error_m: 0.02
+  ik_max_error_m: 0.04
+  dynamic_ik_rms_degradation_m: 0.005
+  rra_angle_change_rms_deg: 5.0
+  residual_force_fraction: 0.05
+  residual_moment_fraction: 0.01
+  median_joint_angle_rmse_deg: 3.0
+  max_joint_angle_rmse_deg: 8.0
+  median_joint_moment_nrmse: 0.15
+  max_joint_moment_nrmse: 0.30
+  minimum_joint_moment_correlation: 0.90
+missing_policy: fail-endpoint-and-retain-in-denominator
+next_stage:
+  id: G6b-4
+  endpoint: apply the validated method to the 330 source-available Study 31 trials
+  status: requires all G6b-3 checks to pass

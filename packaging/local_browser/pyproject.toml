@@ -1,0 +1,16 @@
+[project]
+name = "harmo-local-distribution"
+version = "0.3.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "harmo[timing,public-reuse,c3d]==0.3.0",
+  "numpy==2.2.6",
+  "scipy==1.15.3",
+  "pandas==2.2.3",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+harmo = { path = "wheels/harmo-0.3.0-py3-none-any.whl" }
